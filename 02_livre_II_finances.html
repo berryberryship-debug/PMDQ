@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Livre II — Finances — PMDQ v2.6.4</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.6.4<span>Dossier Maître — Sherbrooke, Québec</span></div><nav class="nav">
+<a href="index.html">Accueil</a><a href="01_livre_I_architecture.html">Architecture</a><a href="02_livre_II_finances.html" class="active">Finances</a><a href="03_livre_III_portefeuille_17_projets.html">Portefeuille</a><a href="04_livre_IV_simulateur_macro.html">Simulateur</a><a href="05_livre_V_dette_domar.html">Dette</a><a href="06_livre_VI_audit_invariants.html">Audit</a><a href="07_livre_VII_moteur_python.html">Python</a><a href="08_livre_VIII_exports_et_annexes.html">Annexes</a><a href="09_livre_IX_rapport_final.html">Rapport</a>
+</nav></div></header>
+<main>
+<h1>Livre II — Cadre financier</h1>
+<p class="lede">Enveloppe FQBC, assiette, scénarios, 6 encadrés normatifs.</p>
+
+<h2>Enveloppe FQBC</h2>
+<table><thead><tr><th>Poste</th><th>4 ans</th><th>Statut</th></tr></thead><tbody>
+<tr><td>Logement modulaire</td><td>2,40 G$</td><td><span class="badge info">[P/T]</span></td></tr>
+<tr><td>Déjeuner scolaire</td><td>1,20 G$</td><td><span class="badge yellow">[C/P]</span></td></tr>
+<tr><td>Instituts polytechniques régionaux</td><td>0,80 G$</td><td><span class="badge info">[P/T]</span></td></tr>
+<tr><td>Allocation garde à domicile</td><td>0,70 G$</td><td><span class="badge info">[P/T]</span></td></tr>
+<tr><td>7e année primaire</td><td>0,60 G$</td><td><span class="badge info">[P/T]</span></td></tr>
+<tr><td>Réseau santé</td><td>0,50 G$</td><td><span class="badge info">[P/T]</span></td></tr>
+<tr><td>Réserve de contingence</td><td>0,45 G$</td><td><span class="badge info">[P]</span></td></tr>
+<tr><td>Autorité fluviale + ressources</td><td>0,45 G$</td><td><span class="badge info">[P/T]</span></td></tr>
+<tr><td>Brigades forestières</td><td>0,40 G$</td><td><span class="badge info">[P/T]</span></td></tr>
+<tr><td>R&amp;D von Kármán + matériaux −40 °C</td><td>0,30 G$</td><td><span class="badge red">[T]</span></td></tr>
+<tr><td>Recherche appliquée régionale</td><td>0,25 G$</td><td><span class="badge info">[P/T]</span></td></tr>
+<tr><td>Urbanisme souterrain Estrie</td><td>0,20 G$</td><td><span class="badge info">[P/T]</span></td></tr>
+<tr><td>Communs autogérés / réinsertion</td><td>0,15 G$</td><td><span class="badge info">[P/T]</span></td></tr>
+<tr><td><strong>Total</strong></td><td><strong>8,40 G$</strong></td><td><span class="badge yellow">[C/P/T]</span></td></tr>
+</tbody></table>
+
+<h2>Séparation des ressources</h2>
+<table><thead><tr><th>Catégorie</th><th>Montant</th><th>Usage</th></tr></thead><tbody>
+<tr><td>Ressources certaines (R + Ré + É)</td><td><strong>8,40 G$</strong></td><td>Mesures fermes</td></tr>
+<tr><td>Transferts conditionnels attendus (Co)</td><td>1,28 G$</td><td>Projets engagés après encaissement</td></tr>
+<tr><td><strong>Total valeur attendue</strong></td><td><strong>9,68 G$</strong></td><td>Indicateur, non budget garanti</td></tr>
+</tbody></table>
+
+<h2>Les 6 encadrés normatifs</h2>
+<table><thead><tr><th>#</th><th>Objet</th><th>Condition exécutoire</th></tr></thead><tbody>
+<tr><td>1</td><td>Ratio de Rendement Collectif D</td><td>D &gt; 1,30</td></tr>
+<tr><td>2</td><td>Ressource globale</td><td>R + Ré + É + Co</td></tr>
+<tr><td>3</td><td>Ressource admissible</td><td>R + Ré + É (Co exclus)</td></tr>
+<tr><td>4</td><td>Règle de décaissement</td><td>min(prévu, R_adm + report − réserve)</td></tr>
+<tr><td>5</td><td>Réserve préventive</td><td>15 % de l'assiette</td></tr>
+<tr><td>6</td><td>Équation de Domar</td><td>s* = (i−g)/(1+g) × d</td></tr>
+</tbody></table>
+
+<h2>Scénarios de ressources</h2>
+<table><thead><tr><th>Scénario</th><th>Réaffectations</th><th>Économies</th><th>Redevances</th><th>Total</th></tr></thead><tbody>
+<tr><td>A — Conservateur</td><td>6,42</td><td>3,21</td><td>0</td><td>9,63 G$</td></tr>
+<tr><td><strong>B — Central</strong></td><td><strong>5,14</strong></td><td><strong>2,57</strong></td><td><strong>0,69</strong></td><td><strong>8,40 G$</strong></td></tr>
+<tr><td>C — Prudent</td><td>3,21</td><td>1,93</td><td>0</td><td>5,14 G$</td></tr>
+</tbody></table>
+
+<div class="alert"><h4>Note d'audit — écart enveloppe</h4><p>La somme des coûts du portefeuille (12,090 G$) dépasse l'enveloppe FQBC (8,400 G$) de 3,690 G$. Deux explications : portefeuille prospectif OU postes hors enveloppe. Statut <span class="badge yellow">[T]</span>.</p></div>
+
+<h2>Sous-matrice des 2,57 G$ d'économies (scénario B)</h2>
+<table><thead><tr><th>Réf.</th><th>Ministère</th><th>Mécanisme</th><th>Montant</th><th>Risque</th></tr></thead><tbody>
+<tr><td>É-01</td><td>MSSS</td><td>Progiciels cliniques → solutions souveraines</td><td>0,48 G$</td><td>Double comptage MCN (0,09)</td></tr>
+<tr><td>É-02</td><td>MEQ</td><td>Migration plateformes éducatives publiques</td><td>0,22 G$</td><td>—</td></tr>
+<tr><td>É-03</td><td>MCN</td><td>Mutualisation hébergement + arrêt licences</td><td>0,42 G$</td><td>Zone de collision MSSS</td></tr>
+<tr><td>É-04</td><td>MTMD</td><td>Clause 50/50 sur dépassements chantiers</td><td>0,50 G$</td><td>Recouvrement conditionnel</td></tr>
+<tr><td>É-05</td><td>SQI</td><td>Pénalités 50/50 chantiers immobiliers</td><td>0,35 G$</td><td>Chevauchement MTMD</td></tr>
+<tr><td>É-06</td><td>SCT</td><td>Plafonnement firmes consultants externes</td><td>0,60 G$</td><td>Agrégation MCN/MSSS</td></tr>
+<tr><td colspan="3"><strong>Total</strong></td><td><strong>2,57 G$</strong></td><td></td></tr>
+</tbody></table>
+
+<div class="alert info"><h4>Deux anomalies financières à traiter</h4><p><strong>FIN-001</strong> : 0,85 G$ de pénalités (É-04 + É-05) mal classées en économies (É). Devraient être en revenus conditionnels (Co) selon SP 1202.</p><p><strong>FIN-002</strong> : 0,09 G$ de double comptage MSSS/MCN.</p></div>
+</main>
+<footer class="footer"><p><strong>Dossier Maître PMDQ — Version 2.6.4</strong></p><p>Documentairement clos. Arithmétiquement propre. Techniquement arbitré. Non adopté.</p></footer>
+</body></html>

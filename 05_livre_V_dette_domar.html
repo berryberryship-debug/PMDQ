@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Livre V — Dette & Domar — PMDQ v2.6.4</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.6.4<span>Dossier Maître — Sherbrooke, Québec</span></div><nav class="nav">
+<a href="index.html">Accueil</a><a href="01_livre_I_architecture.html">Architecture</a><a href="02_livre_II_finances.html">Finances</a><a href="03_livre_III_portefeuille_17_projets.html">Portefeuille</a><a href="04_livre_IV_simulateur_macro.html">Simulateur</a><a href="05_livre_V_dette_domar.html" class="active">Dette</a><a href="06_livre_VI_audit_invariants.html">Audit</a><a href="07_livre_VII_moteur_python.html">Python</a><a href="08_livre_VIII_exports_et_annexes.html">Annexes</a><a href="09_livre_IX_rapport_final.html">Rapport</a>
+</nav></div></header>
+<main>
+<h1>Livre V — Dette publique et modèle de Domar</h1>
+<p class="lede">Soutenabilité, sensibilités, trajectoires.</p>
+
+<h2>Base statistique officielle</h2>
+<table><thead><tr><th>Indicateur</th><th>Valeur</th><th>Source</th></tr></thead><tbody>
+<tr><td>Dette brute au 31 mars 2026</td><td><strong>272,644 G$</strong></td><td>[R1]</td></tr>
+<tr><td>Dette nette au 31 mars 2026</td><td>250,289 G$</td><td>[R1]</td></tr>
+<tr><td>Ratio dette brute / PIB</td><td><strong>42,3 %</strong></td><td>[R1]</td></tr>
+<tr><td>PIB implicite dérivé</td><td>644,55 G$</td><td>[C]</td></tr>
+<tr><td>Programme de financement brut 2026-2027</td><td>26,224 G$</td><td>[R2]</td></tr>
+</tbody></table>
+
+<h2>Équation de Domar</h2>
+<pre><code>Approximation de premier ordre :
+    s* ≈ (i - g) × d
+
+Formule exacte (retenue pour le calcul) :
+    s* = [(i - g) / (1 + g)] × d
+
+Où :
+    s* = solde primaire stabilisant (fraction du PIB)
+    i  = taux d'intérêt effectif
+    g  = taux de croissance nominale
+    d  = ratio dette brute / PIB</code></pre>
+
+<h2>Les trois scénarios stabilisateurs</h2>
+<table><thead><tr><th>Scénario</th><th>i</th><th>g</th><th>i-g</th><th>s* (% PIB)</th><th>s* (G$/an)</th></tr></thead><tbody>
+<tr><td>Favorable</td><td>4,00 %</td><td>3,20 %</td><td>+0,80 %</td><td>0,334 %</td><td><strong>2,11</strong></td></tr>
+<tr><td><strong>Central</strong></td><td><strong>4,60 %</strong></td><td><strong>2,71 %</strong></td><td><strong>+1,89 %</strong></td><td><strong>0,793 %</strong></td><td><strong>5,02</strong></td></tr>
+<tr><td>Défavorable</td><td>5,50 %</td><td>1,80 %</td><td>+3,70 %</td><td>1,567 %</td><td><strong>9,91</strong></td></tr>
+</tbody></table>
+
+<div class="alert info"><h4>Vérification arithmétique</h4><p>Favorable : (0,0400 − 0,0320) / 1,0320 × 0,423 = 0,00328 → 2,11 G$</p><p>Central : (0,0460 − 0,0271) / 1,0271 × 0,423 = 0,00779 → 5,02 G$</p><p>Défavorable : (0,0550 − 0,0180) / 1,0180 × 0,423 = 0,01538 → 9,91 G$</p></div>
+
+<h2>Trajectoires de ratio dette/PIB — effort fixe 5,02 G$/an</h2>
+<p>Interprétation : le gouvernement dégage <strong>5,02 G$/an</strong> dans les trois cas. On observe alors si la dette baisse, reste stable ou explose.</p>
+
+<table><thead><tr><th>Année</th><th>Favorable</th><th>Central</th><th>Défavorable</th></tr></thead><tbody>
+<tr><td>0</td><td>42,3 %</td><td>42,3 %</td><td>42,3 %</td></tr>
+<tr><td>5</td><td>38,9 %</td><td>42,3 %</td><td>46,8 %</td></tr>
+<tr><td>10</td><td>35,5 %</td><td>42,3 %</td><td>52,6 %</td></tr>
+<tr><td>15</td><td>32,1 %</td><td>42,3 %</td><td>60,2 %</td></tr>
+<tr><td>20</td><td>28,7 %</td><td>42,3 %</td><td>70,1 %</td></tr>
+<tr><td>25</td><td><strong>25,3 %</strong></td><td><strong>42,3 %</strong></td><td><strong>83,5 %</strong></td></tr>
+</tbody></table>
+
+<div class="kpis">
+<div class="kpi"><div class="kpi__value green">−17 pts</div><div class="kpi__label">Baisse (favorable)</div></div>
+<div class="kpi"><div class="kpi__value">0 pt</div><div class="kpi__label">Stable (central)</div></div>
+<div class="kpi"><div class="kpi__value red">+41 pts</div><div class="kpi__label">Hausse (défavorable)</div></div>
+<div class="kpi"><div class="kpi__value">25 ans</div><div class="kpi__label">Horizon</div></div>
+</div>
+
+<div class="alert"><h4>Lecture stratégique</h4><p>Avec le <strong>même effort</strong> de 5,02 G$/an :</p><ul><li>En conditions favorables → la dette passe de 42,3 % à <strong>25,3 %</strong> du PIB en 25 ans.</li><li>En conditions centrales → la dette reste à <strong>42,3 %</strong> (stabilisation parfaite).</li><li>En conditions défavorables → la dette explose à <strong>83,5 %</strong> du PIB.</li></ul><p>Conclusion : 5,02 G$/an suffit en conditions centrales, devient insuffisant si les conditions se dégradent. Cela justifie de viser un effort <strong>supérieur</strong> au minimum central pour couvrir le risque.</p></div>
+
+<h2>Équation dynamique de la dette</h2>
+<pre><code>d_t = [(1 + i_t) / (1 + g_t)] × d_{t-1} − s_t + a_t
+
+Où :
+    d_t   = ratio dette/PIB à l'année t
+    i_t   = taux d'intérêt effectif
+    g_t   = taux de croissance nominale
+    s_t   = solde primaire (fraction du PIB)
+    a_t   = ajustements stock-flux (autres facteurs)</code></pre>
+
+<h2>Sensibilité au taux d'actualisation</h2>
+<table><thead><tr><th>Taux</th><th>Effet sur le calcul</th></tr></thead><tbody>
+<tr><td>2,0 %</td><td>Effort stabilisant légèrement plus élevé</td></tr>
+<tr><td><strong>3,5 %</strong></td><td>Hypothèse centrale documentée</td></tr>
+<tr><td>5,0 %</td><td>Effort stabilisant légèrement plus bas</td></tr>
+<tr><td>7,0 %</td><td>Sensibilité haute</td></tr>
+</tbody></table>
+
+<div class="alert info"><h4>Avertissement méthodologique</h4><p>Ces montants constituent des <strong>sensibilités simplifiées</strong> de stabilisation macroéconomique selon l'équation de Domar. Ils ne constituent en aucun cas des « besoins budgétaires » ou des déficits programmés du Québec.</p></div>
+</main>
+<footer class="footer"><p><strong>Dossier Maître PMDQ — Version 2.6.4</strong></p><p>Documentairement clos. Arithmétiquement propre. Techniquement arbitré. Non adopté.</p></footer>
+</body></html>

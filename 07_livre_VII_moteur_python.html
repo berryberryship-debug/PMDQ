@@ -1,0 +1,130 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Livre VII — Python — PMDQ v2.6.4</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.6.4<span>Dossier Maître — Sherbrooke, Québec</span></div><nav class="nav">
+<a href="index.html">Accueil</a><a href="01_livre_I_architecture.html">Architecture</a><a href="02_livre_II_finances.html">Finances</a><a href="03_livre_III_portefeuille_17_projets.html">Portefeuille</a><a href="04_livre_IV_simulateur_macro.html">Simulateur</a><a href="05_livre_V_dette_domar.html">Dette</a><a href="06_livre_VI_audit_invariants.html">Audit</a><a href="07_livre_VII_moteur_python.html" class="active">Python</a><a href="08_livre_VIII_exports_et_annexes.html">Annexes</a><a href="09_livre_IX_rapport_final.html">Rapport</a>
+</nav></div></header>
+<main>
+<h1>Livre VII — Moteur Python</h1>
+<p class="lede">Modèle Pydantic strict, tests anti-entropiques, API de validation.</p>
+
+<h2>ModeleRatioD — Pydantic strict</h2>
+<pre><code>from pydantic import BaseModel, ConfigDict, Field, field_validator
+from math import isfinite
+from typing import Literal
+
+
+class ModeleRatioD(BaseModel):
+    model_config = ConfigDict(
+        strict=True, extra="forbid",
+        allow_inf_nan=False, str_strip_whitespace=True
+    )
+    identifiant_projet: str = Field(..., min_length=1, max_length=100)
+    axe_rattachement: str = Field(..., min_length=1, max_length=80)
+    valeur_creee_nette: float = Field(..., gt=0)
+    cout_cycle_vie: float = Field(..., gt=0)
+    cout_risque: float = Field(..., ge=0)
+    taux_actualisation: float = Field(..., ge=0.0, le=0.20)
+    horizon_annees: int = Field(..., gt=0, le=100)
+    categorie: Literal["M", "C", "P", "T"]
+
+    @field_validator("valeur_creee_nette", "cout_cycle_vie",
+                     "cout_risque", "taux_actualisation")
+    @classmethod
+    def verifier_valeur_finie(cls, valeur: float) -> float:
+        if not isfinite(valeur):
+            raise ValueError("NaN et infinis interdits.")
+        return valeur
+
+    @property
+    def cout_total(self) -> float:
+        return self.cout_cycle_vie + self.cout_risque
+
+    def evaluer_ratio(self) -> float:
+        return self.valeur_creee_nette / self.cout_total
+
+    def statut(self) -> Literal["CONFORME", "REJETE"]:
+        return "CONFORME" if self.evaluer_ratio() > 1.30 else "REJETE"</code></pre>
+
+<h2>Les 7 mécanismes de protection anti-entropique</h2>
+<table><thead><tr><th>Mécanisme</th><th>Effet</th></tr></thead><tbody>
+<tr><td><code>strict=True</code></td><td>Interdit la coercition de type (str → float)</td></tr>
+<tr><td><code>extra="forbid"</code></td><td>Rejette tout champ non déclaré</td></tr>
+<tr><td><code>allow_inf_nan=False</code></td><td>Bloque NaN et ±∞ dès la construction</td></tr>
+<tr><td><code>isfinite(valeur)</code></td><td>Validateur explicite redondant (défense en profondeur)</td></tr>
+<tr><td><code>Field(gt=...)</code> / <code>Field(ge=...)</code></td><td>Bornes numériques strictes</td></tr>
+<tr><td><code>Literal["M","C","P","T"]</code></td><td>Catégorisation épistémique verrouillée</td></tr>
+<tr><td><code>min_length</code> / <code>max_length</code></td><td>Bornes textuelles</td></tr>
+</tbody></table>
+
+<h2>Tests anti-entropiques</h2>
+<table><thead><tr><th>Test</th><th>Entrée</th><th>Résultat</th></tr></thead><tbody>
+<tr><td>Injection NaN</td><td><code>float("nan")</code></td><td><span class="badge green">Rejeté ✔</span></td></tr>
+<tr><td>Injection infini</td><td><code>float("inf")</code></td><td><span class="badge green">Rejeté ✔</span></td></tr>
+<tr><td>Champ non déclaré</td><td><code>champ_inconnu="valeur"</code></td><td><span class="badge green">Rejeté ✔</span></td></tr>
+<tr><td>Coercition type</td><td><code>"100.0"</code> (str au lieu de float)</td><td><span class="badge green">Rejeté ✔</span></td></tr>
+<tr><td>Catégorie invalide</td><td><code>"X"</code></td><td><span class="badge green">Rejeté ✔</span></td></tr>
+</tbody></table>
+
+<div class="alert success"><h4>Taux de réussite : 100 %</h4><p>5 tests sur 5 passent (audit Volet 15 — niveau N3 exemplaire).</p></div>
+
+<h2>Instanciation de référence — RESEAU-NARP-001</h2>
+<pre><code>projet_narp = ModeleRatioD(
+    identifiant_projet="RESEAU-NARP-001",
+    axe_rattachement="Santé",
+    valeur_creee_nette=1_850_000_000.0,   # 1,850 G$
+    cout_cycle_vie=980_000_000.0,          # 0,980 G$
+    cout_risque=180_000_000.0,             # 0,180 G$
+    taux_actualisation=0.045,              # 4,5 %
+    horizon_annees=10,
+    categorie="T",
+)
+
+# Calcul :
+#   cout_total = 0,980e9 + 0,180e9 = 1,160e9
+#   ratio      = 1,850e9 / 1,160e9 = 1,5948275862...
+#   arrondi    = 1,5948
+#   statut     = "CONFORME" (1,5948 > 1,30)</code></pre>
+
+<h2>Instanciation du projet REJETÉ — COMM-AUTOG-013</h2>
+<pre><code>projet_comm = ModeleRatioD(
+    identifiant_projet="COMM-AUTOG-013",
+    axe_rattachement="Justice",
+    valeur_creee_nette=190_000_000.0,      # 0,190 G$
+    cout_cycle_vie=130_000_000.0,          # 0,130 G$
+    cout_risque=20_000_000.0,              # 0,020 G$
+    taux_actualisation=0.040,              # 4,0 %
+    horizon_annees=8,
+    categorie="P",
+)
+
+# Calcul :
+#   cout_total = 0,130e9 + 0,020e9 = 0,150e9
+#   ratio      = 0,190e9 / 0,150e9 = 1,2666666667...
+#   arrondi    = 1,2667
+#   statut     = "REJETE" (1,2667 ≤ 1,30)</code></pre>
+
+<h2>API de validation (spécification)</h2>
+<table><thead><tr><th>Endpoint</th><th>Méthode</th><th>Entrée</th><th>Sortie</th></tr></thead><tbody>
+<tr><td><code>/api/v1/projets</code></td><td>POST</td><td>JSON conforme</td><td>Ratio D + statut</td></tr>
+<tr><td><code>/api/v1/projets/{id}</code></td><td>GET</td><td>Identifiant</td><td>Fiche complète</td></tr>
+<tr><td><code>/api/v1/portefeuille</code></td><td>GET</td><td>—</td><td>17 projets + stats</td></tr>
+<tr><td><code>/api/v1/audit/tests</code></td><td>GET</td><td>—</td><td>Rapport tests anti-NaN/∞</td></tr>
+</tbody></table>
+
+<h2>Contraintes de l'API</h2>
+<ul>
+<li>Content-Type : application/json</li>
+<li>Erreur 422 : schéma Pydantic non respecté</li>
+<li>Erreur 404 : projet non trouvé</li>
+<li>Erreur 400 : règle métier violée</li>
+<li>Journalisation intégrale (registre immuable, art. 25)</li>
+</ul>
+
+<h2>Articulation avec les autres livres</h2>
+<table><thead><tr><th>Livre</th><th>Articulation</th></tr></thead><tbody>
+<tr><td>Livre II — Finances</td><td>Encadré 1 : règle D > 1,30 appliquée par le code</td></tr>
+<tr><td>Livre III — Portefeuille</td><td>17 projets instanciés et validés</td></tr>
+<tr><td>Livre VI — Audit</td><td>Volet 9 (ratio D) + Volet 15 (anti-NaN)</td></tr>
+</tbody></table>
+</main>
+<footer class="footer"><p><strong>Dossier Maître PMDQ — Version 2.6.4</strong></p><p>Documentairement clos. Arithmétiquement propre. Techniquement arbitré. Non adopté.</p></footer>
+</body></html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Livre IV — Simulateur — PMDQ v2.6.4</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.6.4<span>Dossier Maître — Sherbrooke, Québec</span></div><nav class="nav">
+<a href="index.html">Accueil</a><a href="01_livre_I_architecture.html">Architecture</a><a href="02_livre_II_finances.html">Finances</a><a href="03_livre_III_portefeuille_17_projets.html">Portefeuille</a><a href="04_livre_IV_simulateur_macro.html" class="active">Simulateur</a><a href="05_livre_V_dette_domar.html">Dette</a><a href="06_livre_VI_audit_invariants.html">Audit</a><a href="07_livre_VII_moteur_python.html">Python</a><a href="08_livre_VIII_exports_et_annexes.html">Annexes</a><a href="09_livre_IX_rapport_final.html">Rapport</a>
+</nav></div></header>
+<main>
+<h1>Livre IV — Simulateur budgétaire</h1>
+<p class="lede">Règle de déclenchement, réserve préventive, exécution sur 4 exercices.</p>
+
+<h2>Règle de déclenchement exécutoire</h2>
+<pre><code>Décaissements autorisés_t ≤ Ressources encaissées_t
+                          + Crédits légalement votés_t
+                          + Report_{t-1}
+                          − Réserve exigée_t</code></pre>
+
+<h2>Réserve préventive (15 %)</h2>
+<pre><code>Réserve_t = 0,15 × ( R_admissible_t + Report_{t-1} )
+Réserve_4 = 0   (libération à l'exercice final)</code></pre>
+
+<h2>Simulateur — scénario B central</h2>
+<table><thead><tr><th>Ex.</th><th>R_adm</th><th>Report</th><th>Assiette</th><th>Réserve</th><th>Plafond</th><th>Prévu</th><th>Décaissé</th><th>Susp.</th></tr></thead><tbody>
+<tr><td>An 1</td><td>2,100</td><td>0,000</td><td>2,100</td><td>0,315</td><td>1,785</td><td>1,600</td><td><strong>1,600</strong></td><td>0,000</td></tr>
+<tr><td>An 2</td><td>2,100</td><td>0,185</td><td>2,285</td><td>0,343</td><td>1,942</td><td>2,400</td><td><strong>1,942</strong></td><td>0,458</td></tr>
+<tr><td>An 3</td><td>2,100</td><td>0,000</td><td>2,100</td><td>0,315</td><td>1,785</td><td>2,600</td><td><strong>1,785</strong></td><td>0,815</td></tr>
+<tr><td>An 4</td><td>2,100</td><td>0,000</td><td>2,100</td><td>0,000</td><td>2,100</td><td>1,800</td><td><strong>1,800</strong></td><td>0,000</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>8,400</strong></td><td>—</td><td>—</td><td><strong>0,973</strong></td><td>—</td><td><strong>8,400</strong></td><td><strong>7,127</strong></td><td><strong>1,273</strong></td></tr>
+</tbody></table>
+
+<div class="kpis">
+<div class="kpi"><div class="kpi__value">84,85 %</div><div class="kpi__label">Taux d'exécution</div></div>
+<div class="kpi"><div class="kpi__value green">7,127 G$</div><div class="kpi__label">Décaissé</div></div>
+<div class="kpi"><div class="kpi__value yellow">0,973 G$</div><div class="kpi__label">Réserve libérée</div></div>
+<div class="kpi"><div class="kpi__value">0,300 G$</div><div class="kpi__label">Reliquat final</div></div>
+</div>
+
+<h2>Détail des calculs</h2>
+<h3>Année 1</h3>
+<ul>
+<li>Assiette : 2,100 + 0,000 = 2,100 G$</li>
+<li>Réserve exigée : 0,15 × 2,100 = 0,315 G$</li>
+<li>Plafond net : 2,100 − 0,315 = 1,785 G$</li>
+<li>Décaissé : min(1,600 ; 1,785) = <strong>1,600 G$</strong></li>
+<li>Report sortant : 0,185 G$</li>
+</ul>
+
+<h3>Année 2</h3>
+<ul>
+<li>Assiette : 2,100 + 0,185 = 2,285 G$</li>
+<li>Réserve exigée : 0,15 × 2,285 = 0,343 G$</li>
+<li>Plafond net : 1,942 G$</li>
+<li>Décaissé : min(2,400 ; 1,942) = <strong>1,942 G$</strong></li>
+<li>Suspension : 0,458 G$</li>
+</ul>
+
+<h3>Année 3</h3>
+<ul>
+<li>Assiette : 2,100 G$</li>
+<li>Réserve exigée : 0,315 G$</li>
+<li>Plafond net : 1,785 G$</li>
+<li>Décaissé : min(2,600 ; 1,785) = <strong>1,785 G$</strong></li>
+<li>Suspension : 0,815 G$</li>
+</ul>
+
+<h3>Année 4 (libération)</h3>
+<ul>
+<li>Assiette : 2,100 G$</li>
+<li>Réserve exigée : 0 (dernière année)</li>
+<li>Plafond net : 2,100 G$</li>
+<li>Décaissé : min(1,800 ; 2,100) = <strong>1,800 G$</strong></li>
+<li>Report sortant : 0,300 G$ (reliquat final)</li>
+</ul>
+
+<h2>Lecture de l'exécution</h2>
+<ul>
+<li><strong>An 1</strong> : exécution pleine (1,600 G$).</li>
+<li><strong>An 2</strong> : suspension partielle de 0,458 G$ (plafond net insuffisant).</li>
+<li><strong>An 3</strong> : suspension de 0,815 G$ (plafond net insuffisant).</li>
+<li><strong>An 4</strong> : libération de la réserve, exécution pleine, reliquat de 0,300 G$.</li>
+</ul>
+
+<div class="alert info"><h4>Interprétation stratégique</h4><p>Le FQBC ne peut pas dépenser 8,40 G$ en 4 ans. Il en dépense <strong>7,127 G$</strong>. La différence (1,273 G$) comprend :</p><ul><li><strong>0,973 G$</strong> de réserve préventive non consommée, libérée à l'exercice 4</li><li><strong>0,300 G$</strong> de reliquat final, reversé au Fonds consolidé pour désendettement</li></ul></div>
+
+<h2>Convention d'arrondi</h2>
+<div class="alert"><h4>Deux modes possibles</h4><p><strong>Mode documentaire (retenu)</strong> : réserve arrondie à 0,001 G$ avant calcul du plafond. Résultat : 7,127 G$ décaissé.</p><p><strong>Mode normatif exact</strong> : calcul sans arrondi intermédiaire. Résultat légèrement différent.</p><p>Le mode documentaire permet la reproduction exacte des chiffres publiés.</p></div>
+</main>
+<footer class="footer"><p><strong>Dossier Maître PMDQ — Version 2.6.4</strong></p><p>Documentairement clos. Arithmétiquement propre. Techniquement arbitré. Non adopté.</p></footer>
+</body></html>

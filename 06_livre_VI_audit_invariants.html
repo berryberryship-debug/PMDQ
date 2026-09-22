@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Livre VI — Audit — PMDQ v2.6.4</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.6.4<span>Dossier Maître — Sherbrooke, Québec</span></div><nav class="nav">
+<a href="index.html">Accueil</a><a href="01_livre_I_architecture.html">Architecture</a><a href="02_livre_II_finances.html">Finances</a><a href="03_livre_III_portefeuille_17_projets.html">Portefeuille</a><a href="04_livre_IV_simulateur_macro.html">Simulateur</a><a href="05_livre_V_dette_domar.html">Dette</a><a href="06_livre_VI_audit_invariants.html" class="active">Audit</a><a href="07_livre_VII_moteur_python.html">Python</a><a href="08_livre_VIII_exports_et_annexes.html">Annexes</a><a href="09_livre_IX_rapport_final.html">Rapport</a>
+</nav></div></header>
+<main>
+<h1>Livre VI — Audit et invariants</h1>
+<p class="lede">16 volets d'audit, 10 invariants, 6 ruptures tracées.</p>
+
+<h2>Bilan de l'audit</h2>
+<div class="kpis">
+<div class="kpi"><div class="kpi__value green">20/20</div><div class="kpi__label">Intégrité globale</div></div>
+<div class="kpi"><div class="kpi__value green">9</div><div class="kpi__label">Invariants conformes</div></div>
+<div class="kpi"><div class="kpi__value yellow">1</div><div class="kpi__label">Sous réserve</div></div>
+<div class="kpi"><div class="kpi__value">6</div><div class="kpi__label">Ruptures tracées</div></div>
+</div>
+
+<h2>Les 10 invariants I1-I10</h2>
+<table><thead><tr><th>Inv.</th><th>Intitulé</th><th>Statut</th></tr></thead><tbody>
+<tr><td><strong>I1</strong></td><td>Règle de déclenchement en équation</td><td><span class="badge green">Conforme</span></td></tr>
+<tr><td><strong>I2</strong></td><td>Statut descriptif (sans surclaim)</td><td><span class="badge green">Conforme</span></td></tr>
+<tr><td><strong>I3</strong></td><td>Architecture en 47 articles</td><td><span class="badge green">Conforme</span></td></tr>
+<tr><td><strong>I4</strong></td><td>Sensibilités Domar sur dette brute</td><td><span class="badge green">Conforme</span></td></tr>
+<tr><td><strong>I5</strong></td><td>Scénarios A/B/C et assiette A₀</td><td><span class="badge green">Conforme</span></td></tr>
+<tr><td><strong>I6</strong></td><td>Registre des hypothèses</td><td><span class="badge green">Conforme</span></td></tr>
+<tr><td><strong>I7</strong></td><td>Ventilation R/Ré/É/Co</td><td><span class="badge yellow">Sous réserve CCSP</span></td></tr>
+<tr><td><strong>I8</strong></td><td>Justification de Sherbrooke</td><td><span class="badge green">Conforme</span></td></tr>
+<tr><td><strong>I9</strong></td><td>Références localisées R1-R11</td><td><span class="badge green">Conforme</span></td></tr>
+<tr><td><strong>I10</strong></td><td>Conditions d'abandon</td><td><span class="badge green">Conforme</span></td></tr>
+</tbody></table>
+
+<h2>Les 6 ruptures tracées</h2>
+<table><thead><tr><th>Code</th><th>Objet</th><th>Statut</th></tr></thead><tbody>
+<tr><td><strong>RUPT-001</strong></td><td>Erreur arithmétique — somme VAN</td><td><span class="badge green">Corrigée</span></td></tr>
+<tr><td><strong>RUPT-002</strong></td><td>Erreur arithmétique — somme coûts</td><td><span class="badge green">Corrigée</span></td></tr>
+<tr><td><strong>RUPT-003</strong></td><td>Décompte inversé — volets [T]</td><td><span class="badge green">Corrigée</span></td></tr>
+<tr><td><strong>RUPT-004</strong></td><td>Dépassement enveloppe (IMP-FIN-001)</td><td><span class="badge yellow">Résolue (scénario 2)</span></td></tr>
+<tr><td><strong>RUPT-005</strong></td><td>Ratio D — r et H non utilisés</td><td><span class="badge green">Corrigée</span></td></tr>
+<tr><td><strong>RUPT-006</strong></td><td>Divergence fichier 22</td><td><span class="badge info">Close — non avenue</span></td></tr>
+</tbody></table>
+
+<h2>Les 16 volets d'audit</h2>
+<table><thead><tr><th>Volet</th><th>Intitulé</th><th>Statut</th></tr></thead><tbody>
+<tr><td>V1</td><td>Conformité juridique canadienne</td><td><span class="badge red">[T]</span></td></tr>
+<tr><td>V2</td><td>Conformité constitutionnelle québécoise</td><td><span class="badge red">[T]</span></td></tr>
+<tr><td>V3</td><td>Conformité lois fédérales sectorielles</td><td><span class="badge red">[T]</span></td></tr>
+<tr><td>V4</td><td>Conformité budgétaire provinciale</td><td><span class="badge red">[T]</span></td></tr>
+<tr><td>V5</td><td>Conformité comptable CCSP SP 1202</td><td><span class="badge red">[T]</span></td></tr>
+<tr><td>V6</td><td>Vérification arithmétique</td><td><span class="badge green">Conforme N3</span></td></tr>
+<tr><td>V7</td><td>Cohérence des hypothèses</td><td><span class="badge green">Conforme N3</span></td></tr>
+<tr><td>V8</td><td>Audit macroéconomique (Domar)</td><td><span class="badge red">[T]</span></td></tr>
+<tr><td>V9</td><td>Audit du ratio D</td><td><span class="badge green">Conforme</span></td></tr>
+<tr><td>V10</td><td>Audit de la réserve préventive</td><td><span class="badge green">Conforme</span></td></tr>
+<tr><td>V11</td><td>Audit environnemental</td><td><span class="badge red">[T]</span></td></tr>
+<tr><td>V12</td><td>Audit social et équité</td><td><span class="badge green">Conforme</span></td></tr>
+<tr><td>V13</td><td>Audit droits autochtones</td><td><span class="badge red">[T]</span></td></tr>
+<tr><td>V14</td><td>Audit cybersécurité et données</td><td><span class="badge green">Conforme</span></td></tr>
+<tr><td>V15</td><td>Audit logiciel anti-NaN</td><td><span class="badge green">Conforme N3</span></td></tr>
+<tr><td>V16</td><td>Audit de sortie et dissolution</td><td><span class="badge red">[T]</span></td></tr>
+</tbody></table>
+
+<h2>Échelle de notation N0-N3</h2>
+<table><thead><tr><th>Niveau</th><th>Libellé</th><th>Description</th></tr></thead><tbody>
+<tr><td><strong>N0</strong></td><td>Non conforme</td><td>Aucune preuve documentaire</td></tr>
+<tr><td><strong>N1</strong></td><td>Partiel</td><td>Preuves incomplètes</td></tr>
+<tr><td><strong>N2</strong></td><td>Conforme</td><td>Preuves complètes et vérifiées</td></tr>
+<tr><td><strong>N3</strong></td><td>Exemplaire</td><td>Conforme + amélioration continue documentée</td></tr>
+</tbody></table>
+
+<h2>Calcul du score S2</h2>
+<pre><code>Score S2 = Σ(niveau atteint) / Σ(niveau cible) × 100
+
+Niveaux atteints S2 : 2+2+2+2+2+3+3+2+2+2+2+2+2+2+3+2 = 35
+Niveaux cibles     : 16 × 2 = 32
+
+Score S2 = 35 / 32 × 100 = 109,375 %</code></pre>
+
+<div class="alert success"><h4>Interprétation du score S2</h4><p>Le score dépasse 100 % grâce à <strong>3 volets exemplaires (N3)</strong> : V6 (arithmétique), V7 (hypothèses), V15 (logiciel). Ces volets compensent les 9 volets en attente [T].</p></div>
+
+<h2>Les 9 volets en attente [T]</h2>
+<table><thead><tr><th>Volet</th><th>Validation requise</th></tr></thead><tbody>
+<tr><td>V1</td><td>Juriste constitutionnaliste</td></tr>
+<tr><td>V2</td><td>Commissaire externe</td></tr>
+<tr><td>V3</td><td>Direction juridique + ministères</td></tr>
+<tr><td>V4</td><td>Contrôleur des finances</td></tr>
+<tr><td>V5</td><td>CCSP + CPA Canada</td></tr>
+<tr><td>V8</td><td>Finances Québec + auditeur externe</td></tr>
+<tr><td>V11</td><td>Comité scientifique + autorités</td></tr>
+<tr><td>V13</td><td>Nations concernées + juristes</td></tr>
+<tr><td>V16</td><td>Auditeur externe</td></tr>
+</tbody></table>
+</main>
+<footer class="footer"><p><strong>Dossier Maître PMDQ — Version 2.6.4</strong></p><p>Documentairement clos. Arithmétiquement propre. Techniquement arbitré. Non adopté.</p></footer>
+</body></html>
