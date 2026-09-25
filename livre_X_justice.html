@@ -1,147 +1,408 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PMDQ v2.7.5 — Livre X : Justice</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.7; /* Interligne 1.7 requis */
-            color: #222;
-            background-color: #f7f9fc; /* Fond sobre */
-            margin: 0;
-            padding: 0;
-        }
-        /* Navigation avec overflow propre sur mobile */
-        .nav-container {
-            background-color: #1a3a6b;
-            overflow-x: auto;
-            white-space: nowrap;
-            padding: 10px;
-            -webkit-overflow-scrolling: touch;
-        }
-        .nav-container a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 15px;
-            display: inline-block;
-            font-size: 14px;
-        }
-        .nav-container a.active {
-            background-color: #c9a227;
-            color: #1a3a6b;
-            font-weight: bold;
-            border-radius: 4px;
-        }
-        .content {
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 30px;
-            background-color: #fff;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-radius: 4px;
-        }
-        .bandeau {
-            text-align: center;
-            border-bottom: 3px solid #1a3a6b;
-            padding-bottom: 15px;
-            margin-bottom: 30px;
-        }
-        .bandeau h1 {
-            color: #1a3a6b;
-            font-size: 26px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin: 0 0 10px 0;
-        }
-        .bandeau p {
-            font-style: italic;
-            color: #555;
-            font-size: 16px;
-            margin: 0;
-        }
-        .note-sensible {
-            background-color: #fff3cd;
-            border-left: 5px solid #ffc107;
-            padding: 15px;
-            margin-bottom: 30px;
-            font-size: 14.5px;
-            color: #664d03;
-        }
-        h2 {
-            color: #1a3a6b;
-            margin-top: 40px;
-            font-size: 22px;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 8px;
-            background-color: #f8fafc;
-            padding: 10px;
-            border-left: 5px solid #1a3a6b;
-        }
-        p.empty-text {
-            color: #888;
-            font-style: italic;
-            background: #f1f5f9;
-            padding: 15px;
-            border-radius: 4px;
-            text-align: center;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PMDQ — Livre X : Justice et agentivité</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; font-size: 15px;
+         line-height: 1.65; color: #1a1a1a; background: #f7f5f0;
+         margin: 0; padding: 0; }
+  header.top { background: #f7f5f0; padding: 30px 20px 20px;
+               border-bottom: 1px solid #d8d2c4; display: flex;
+               align-items: center; gap: 16px; }
+  header.top .logo { font-size: 32px; color: #1a3a6b; }
+  header.top h1 { margin: 0; font-size: 20px; color: #1a3a6b;
+                  letter-spacing: 1px; }
+  header.top .sub { display: block; font-size: 11px; color: #12294d;
+                    letter-spacing: 2px; margin-top: 4px; }
+  .banner { background: linear-gradient(180deg, #1a3a6b 0%, #12294d 100%);
+            color: #fff; padding: 20px 24px; }
+  .banner .version { font-size: 22px; font-weight: bold; margin-bottom: 4px; }
+  .banner .location { font-size: 13px; color: #c9a227; letter-spacing: 1px; }
+  nav { background: #12294d; padding: 10px 20px; display: flex;
+        flex-wrap: wrap; gap: 8px; }
+  nav a { color: #fff; text-decoration: none; padding: 6px 12px;
+          border-radius: 4px; font-size: 13px; font-family: Helvetica, Arial, sans-serif; }
+  nav a:hover { background: #1a3a6b; }
+  nav a.active { background: #fdf6e3; color: #1a3a6b; font-weight: bold; }
+  main { max-width: 860px; margin: 0 auto; padding: 40px 24px 80px; }
+  h1.page-title { color: #1a3a6b; font-size: 32px; letter-spacing: 2px;
+                  text-align: center; margin: 20px 0 10px; }
+  .page-sub { text-align: center; font-style: italic; color: #12294d;
+              margin-bottom: 40px; font-size: 17px; }
+  hr.gold { border: none; border-top: 2px solid #1a3a6b; margin: 30px 0; }
+  h2 { color: #1a3a6b; font-size: 22px; margin-top: 40px;
+       border-bottom: 1px solid #d8d2c4; padding-bottom: 8px; }
+  h3 { color: #12294d; font-size: 17px; margin-top: 28px; }
+  h4 { color: #1a3a6b; font-size: 15px; margin-top: 20px; }
+  table { border-collapse: collapse; width: 100%; margin: 20px 0;
+          font-size: 13.5px; }
+  th, td { border: 1px solid #d8d2c4; padding: 10px 12px;
+           text-align: left; vertical-align: top; }
+  th { background: #f0ece0; color: #1a3a6b; font-weight: bold; }
+  blockquote { border-left: 4px solid #c9a227; margin: 20px 0;
+               padding: 12px 20px; background: #fdf6e3; font-style: italic; }
+  .alert { border-left: 5px solid #c9a227; background: #fdf6e3;
+           padding: 16px 20px; margin: 20px 0; border-radius: 4px; }
+  .alert h4 { margin-top: 0; color: #7a5a00; }
+  .alert.info { border-left-color: #1a3a6b; background: #eef2f8; }
+  .alert.info h4 { color: #1a3a6b; }
+  .alert.warn { border-left-color: #b7472a; background: #fbeeea; }
+  .alert.warn h4 { color: #b7472a; }
+  ul, ol { padding-left: 24px; }
+  li { margin: 6px 0; }
+  code { font-family: 'Courier New', monospace; background: #eee9dd;
+         padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+  .checklist { list-style: none; padding-left: 0; }
+  .checklist li { padding-left: 28px; position: relative; }
+  .checklist li::before { content: "☐"; position: absolute; left: 0;
+                          color: #1a3a6b; font-size: 16px; }
+  footer { background: #12294d; color: #ccc; padding: 24px;
+           text-align: center; font-size: 12px;
+           font-family: Helvetica, Arial, sans-serif; letter-spacing: 1px; }
+  footer .version-final { color: #c9a227; margin-bottom: 6px; }
+  .note-epistemique { font-size: 12px; color: #666; font-style: italic;
+                      margin-top: 30px; padding-top: 16px;
+                      border-top: 1px solid #d8d2c4; }
+</style>
 </head>
 <body>
 
-<!-- Navigation (15 items, Justice actif après CDLI) -->
-<div class="nav-container">
-    <a href="index.html">Accueil</a>
-    <a href="01_livre_I_architecture.html">Architecture</a>
-    <a href="#">Finances</a>
-    <a href="#">Portefeuille</a>
-    <a href="#">Simulateur</a>
-    <a href="#">Dette</a>
-    <a href="#">Audit</a>
-    <a href="#">Python</a>
-    <a href="#">Annexes</a>
-    <a href="#">Rapport</a>
-    <a href="#">Synthèse</a>
-    <a href="#">Lettre</a>
-    <a href="#">Décisions</a>
-    <a href="#">CDLI</a>
-    <a href="#" class="active">Justice</a>
+<header class="top">
+  <span class="logo">⚜</span>
+  <h1>PMDQ
+    <span class="sub">PARTI DE LA MOUVANCE DÉMOCRATIQUE DU QUÉBEC</span>
+  </h1>
+</header>
+
+<div class="banner">
+  <div class="version">PMDQ v2.7.5 — Livre X</div>
+  <div class="location">Dossier Maître — Sherbrooke, Québec</div>
 </div>
 
-<div class="content">
-    <!-- Bandeau v2.7.5 -->
-    <div class="bandeau">
-        <h1>LIVRE X : JUSTICE</h1>
-        <p>Dossier Maître PMDQ — Version 2.7.5</p>
-    </div>
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="01_livre_I_architecture.html">Architecture</a>
+  <a href="02_livre_II_finances.html">Finances</a>
+  <a href="03_livre_III_portefeuille_17_projets.html">Portefeuille</a>
+  <a href="04_livre_IV_simulateur_macro.html">Simulateur</a>
+  <a href="05_livre_V_dette_domar.html">Dette</a>
+  <a href="06_livre_VI_audit_invariants.html">Audit</a>
+  <a href="07_livre_VII_moteur_python.html">Python</a>
+  <a href="08_livre_VIII_exports_et_annexes.html">Annexes</a>
+  <a href="09_livre_IX_rapport_final.html">Rapport</a>
+  <a href="#">Synthèse</a>
+  <a href="#">Lettre</a>
+  <a href="#">Décisions</a>
+  <a href="CDLI.html">CDLI</a>
+  <a href="livre_X_justice.html" class="active">Justice</a>
+</nav>
 
-    <!-- Note matière sensible -->
-    <div class="note-sensible">
-        <strong>⚠️ Note de lecture (Matière sensible) :</strong> Le présent document aborde des questions juridiques, pénales et constitutionnelles complexes. Les hypothèses avancées relèvent de la prospective institutionnelle et requièrent l'arbitrage d'autorités compétentes.
-    </div>
+<main>
 
-    <!-- Les 6 sections prêtes à remplir -->
-    <h2>1. Position du problème</h2>
-    <p class="empty-text">[Contenu à intégrer]</p>
+<h1 class="page-title">LIVRE X : JUSTICE ET AGENTIVITÉ</h1>
+<p class="page-sub">Modélisation de l'agentivité, IA et Gouvernance OCAP®</p>
 
-    <h2>2. Justice pénale (Principes / Limites)</h2>
-    <p class="empty-text">[Contenu à intégrer]</p>
-
-    <h2>3. Droits autochtones (Cadre CDLI / Jurisprudence / Pluralisme)</h2>
-    <p class="empty-text">[Contenu à intégrer]</p>
-
-    <h2>4. Articulation Livre X / CDLI</h2>
-    <p class="empty-text">[Contenu à intégrer]</p>
-
-    <h2>5. Sources</h2>
-    <p class="empty-text">[Contenu à intégrer]</p>
-
-    <h2>6. Chantiers ouverts</h2>
-    <p class="empty-text">[Contenu à intégrer]</p>
+<div class="alert warn">
+  <h4>⚠ Note de lecture (Matière sensible)</h4>
+  <p>Le présent document aborde des questions juridiques, pénales et constitutionnelles
+  complexes. Les hypothèses avancées relèvent de la <strong>prospective institutionnelle</strong>
+  et requièrent l'arbitrage d'autorités compétentes.</p>
 </div>
+
+<div class="alert info">
+  <h4>Statut épistémique : Inaction décisionnelle absolue</h4>
+  <p>Cadre normatif interdisant formellement l'usage coercitif de la modélisation multiscalaire.
+  Aucun indicateur (<code>N_T</code>) ou algorithme ne peut fonder une décision sur l'imputabilité,
+  la peine ou la détention (conformité Charte art. 7, 9, 11h, 12, 15 et jurisprudence
+  <em>Ewert</em>, <em>Gladue</em>, <em>Ipeelee</em>).</p>
+</div>
+
+<hr class="gold">
+
+<h2>1. Position du problème</h2>
+
+<p>La modélisation computationnelle de l'agentivité humaine, appliquée au champ pénal,
+soulève trois tensions irréductibles :</p>
+<ul>
+  <li><strong>Ontologique</strong> — Peut-on quantifier une capacité morale ?</li>
+  <li><strong>Juridique</strong> — Une telle quantification est-elle compatible avec les
+  garanties de la <em>Charte canadienne des droits et libertés</em> ?</li>
+  <li><strong>Épistémologique</strong> — Les instruments actuariels existants (LS/CMI,
+  Static-99R, VRAG) ont-ils fait la preuve de leur validité transculturelle ?</li>
+</ul>
+
+<p>Le présent Livre X ne propose pas d'outil opérationnel. Il établit un
+<strong>cadre d'interdiction</strong>, un <strong>protocole de recherche encadrée</strong>
+et une <strong>critique interne</strong> de son propre dispositif.</p>
+
+<hr class="gold">
+
+<h2>2. Dispositif légal et clause de sauvegarde constitutionnelle</h2>
+
+<h3>Article 1 — Interdiction d'évaluation algorithmique et actuarielle directe</h3>
+<p>Il est formellement interdit à toute autorité judiciaire, administrative, correctionnelle
+ou policière d'utiliser, directement ou indirectement, un indice computationnel, un score
+de néguentropie (<code>N_T</code>) ou toute mesure dérivée de l'agentivité multiscalaire pour :</p>
+<ol>
+  <li>Déterminer la culpabilité, l'imputabilité ou la responsabilité pénale d'un individu ;</li>
+  <li>Fixer la sévérité, la durée ou le lieu d'exécution d'une peine privative ou restrictive de liberté ;</li>
+  <li>Décider de l'admissibilité ou de l'octroi d'une libération conditionnelle, d'une semi-liberté ou d'une libération d'office ;</li>
+  <li>Établir une classification médico-légale, criminologique ou un profilage permanent.</li>
+</ol>
+
+<h3>Article 2 — Portée générale sur les instruments actuariels</h3>
+<p>L'interdiction et les obligations de contrôle prévues au présent chapitre s'appliquent à tout
+outil d'évaluation actuarielle, existant ou émergent, prétendant quantifier le risque de récidive
+ou classer les justiciables (notamment LS/CMI, Static-99R, VRAG et leurs dérivés).</p>
+<p>Tout instrument doit faire la preuve documentée de son absence de biais algorithmique,
+de sa transparence méthodologique et de sa stricte conformité aux droits garantis par les chartes.</p>
+
+<h3>Article 3 — Conformité jurisprudentielle (<em>Ewert</em>, <em>Gladue</em>, <em>Ipeelee</em>)</h3>
+<p><strong>Validité transculturelle (<em>Ewert c. Canada</em>, 2018 CSC 30) :</strong> tout outil ou
+modèle psychométrique/comportemental doit satisfaire aux exigences d'<em>Ewert</em>. L'application
+d'un instrument non validé empiriquement auprès de populations cibles spécifiques — notamment les
+personnes autochtones et les minorités racisées — constitue une atteinte illégale aux principes
+de justice fondamentale (art. 7 de la <em>Charte canadienne des droits et libertés</em>).</p>
+<p><strong>Contextualisation historique et sociale (<em>R. c. Gladue</em>, [1999] 1 R.C.S. 688 ;
+<em>R. c. Ipeelee</em>, 2012 CSC 13) :</strong> l'évaluation de la trajectoire d'un justiciable doit
+obligatoirement intégrer l'impact systémique du colonialisme, des traumatismes intergénérationnels,
+de la discrimination et des privations matérielles. Toute quantification abstraite prétendant isoler
+un déficit temporel individuel sans intégrer ces facteurs systémiques est nulle et inadmissible
+devant les tribunaux.</p>
+
+<h3>Article 4 — Test de proportionnalité et limites constitutionnelles</h3>
+<p><strong>Atteintes prohibées :</strong> sont réputées inconstitutionnelles :</p>
+<ul>
+  <li>La détention préventive ou la prolongation de peine fondée sur un score prédictif bas (art. 7 et 9 de la <em>Charte</em>) ;</li>
+  <li>Le refus de mesures de réinsertion fondé sur une catégorisation mathématique réitérée (art. 11(h) de la <em>Charte</em>) ;</li>
+  <li>L'imposition de protocoles de modification neurobiologique ou cognitivo-comportementale forcée sous prétexte de « restaurer l'agentivité » (art. 7 et 12 de la <em>Charte</em>).</li>
+</ul>
+<p><strong>Examen sous l'article 1 (<em>R. c. Oakes</em>, [1986] 1 R.C.S. 103) :</strong> toute tentative
+de restriction des droits garantis par le présent dispositif doit démontrer :</p>
+<ol>
+  <li>Un objectif urgent, réel et substantiel ;</li>
+  <li>Un lien rationnel démontré empiriquement entre l'outil et l'objectif ;</li>
+  <li>Une atteinte minimale absolue aux droits fondamentaux ;</li>
+  <li>Une proportionnalité stricte entre les effets préjudiciables et l'objectif visé.</li>
+</ol>
+
+<hr class="gold">
+
+<h2>3. Protocole de recherche longitudinale prospective</h2>
+
+<div class="alert">
+  <strong>Statut :</strong> <code>[P/T — Recherche fondamentale encadrée]</code>
+</div>
+
+<h3>3.1 Objectifs scientifiques</h3>
+<ul>
+  <li>Étudier la corrélation dynamique entre la coordination des échelles temporelles
+  (immédiate <code>T_μs</code>, quotidienne <code>T_j</code>, biographique <code>T_d</code>)
+  et les processus de désistance du crime ;</li>
+  <li>Remplacer la logique punitive par une compréhension systémique des facteurs favorisant
+  la réinsertion sociale.</li>
+</ul>
+
+<h3>3.2 Méthodologie et taille de la cohorte</h3>
+<ul>
+  <li><strong>Échantillonnage :</strong> suivi d'une cohorte diversifiée de n = 500 à 1 000
+  volontaires (population générale et personnes judiciarisées) sur un horizon de 10 ans ;</li>
+  <li><strong>Indicateurs :</strong> évaluation multidimensionnelle non invasive (capacité de
+  projection narrative, cohérence des choix intertemporels, résistance aux biais d'impulsivité
+  dans des contextes neutres) ;</li>
+  <li><strong>Falsifiabilité statistique :</strong> vérifier formellement si la modélisation
+  multiscalaire apporte une valeur explicative et prédictive supérieure à celle des modèles
+  criminologiques standard, sans générer de biais discriminatoires.</li>
+</ul>
+
+<h3>3.3 Cadre éthique et gouvernance stricte</h3>
+<ul>
+  <li><strong>Comité d'éthique souverain :</strong> gestion par un comité paritaire indépendant
+  comprenant des chercheurs universitaires, des représentants des personnes judiciarisées,
+  des juristes constitutionnalistes et des délégués désignés par les nations autochtones ;</li>
+  <li><strong>Sanctuarisation des données :</strong> interdiction légale et technique absolue
+  d'accès aux bases de données nominatives ou pseudonymisées par le Service correctionnel,
+  la police, le ministère public ou les tribunaux ;</li>
+  <li><strong>Transparence et ouverture :</strong> obligation légale de publier l'intégralité
+  des données agrégées, des codes sources et des résultats, y compris en cas de réfutation
+  des hypothèses de départ (résultats nuls ou négatifs) ;</li>
+  <li><strong>Financement public exclusif :</strong> exclusion totale de tout financement
+  émanant d'entreprises de sécurité privée, d'éditeurs de logiciels carcéraux ou d'acteurs
+  de l'industrie militaire/sécuritaire.</li>
+</ul>
+
+<hr class="gold">
+
+<h2>4. Application des Principes OCAP® (Gouvernance Autochtone)</h2>
+
+<p>L'inclusion consultative ne suffit pas. Le protocole exige une <strong>autorité autochtone
+décisionnelle</strong> avec un pouvoir réel de suspension, de retrait et de destruction des données.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dimension OCAP</th>
+      <th>Application à l'Agentivité et à l'IA</th>
+      <th>Clause contractuelle exigée</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Propriété</strong></td>
+      <td>Les données ne peuvent devenir des modèles propriétaires ou commerciaux.</td>
+      <td>La Nation conserve les droits sur les données, métadonnées et dérivés analytiques.</td>
+    </tr>
+    <tr>
+      <td><strong>Contrôle</strong></td>
+      <td>L'autorité autochtone intervient sur les méthodes, analyses et publications.</td>
+      <td>Procédure de veto, d'audit continu et de retrait institutionnel obligatoire.</td>
+    </tr>
+    <tr>
+      <td><strong>Accès</strong></td>
+      <td>Interdiction de transmission automatique aux tribunaux, police ou entreprises IA.</td>
+      <td>Matrice d'accès stricte par rôle ; interdiction absolue du partage secondaire.</td>
+    </tr>
+    <tr>
+      <td><strong>Possession</strong></td>
+      <td>L'hébergement échappe au contrôle exclusif des universités ou fournisseurs IA.</td>
+      <td>Chiffrement sous gestion autochtone des clés et destruction vérifiable.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="gold">
+
+<h2>5. Garde-fous technologiques et limites de l'IA</h2>
+
+<ul>
+  <li><strong>Anti-réification et rejet du déterminisme :</strong> la difficulté à se projeter
+  à long terme découle de la précarité et du trauma structurel, non d'une tare individuelle
+  justifiant l'enfermement ;</li>
+  <li><strong>Sécurité des modèles génératifs :</strong> interdiction stricte d'utiliser les
+  données autochtones dans des LLM ou des plateformes IA dont l'entraînement secondaire n'est
+  pas auditable ;</li>
+  <li><strong>Protection contre le biais historique :</strong> refus d'imposer une vision
+  occidentale linéaire du temps et blocage des algorithmes qui reproduisent les effets de la
+  surveillance systémique (biais d'échantillonnage).</li>
+</ul>
+
+<h3>Règle d'or normative</h3>
+<blockquote>
+  Aucun indicateur, score, modèle ou inférence dérivé de l'intégration temporelle ou de l'IA
+  ne peut être utilisé, directement ou indirectement, pour déterminer, influencer ou justifier
+  une décision pénale, correctionnelle, policière ou civile défavorable. Ces travaux relèvent
+  exclusivement de la recherche fondamentale sur la désistance, sous le contrôle absolu des
+  communautés concernées.
+</blockquote>
+
+<hr class="gold">
+
+<h2>6. Critique épistémologique et limites internes du cadre</h2>
+
+<h3>6.1 La réification mathématique</h3>
+<p>Attribuer une valeur scalaire ou vectorielle <code>N_T</code> à un individu vivant constitue
+un glissement ontologique : une modélisation dynamique abstraite est confondue avec une propriété
+biologique ou morale mesurable.</p>
+
+<h3>6.2 Le piège du déterminisme topologique</h3>
+<p>Substituer au déterminisme génétique ou neurobiologique un déterminisme topologique/systémique
+ne résout pas la question de l'autonomie morale. Le risque persiste d'enfermer le justiciable dans
+un statut de « système défaillant » non modifiable.</p>
+
+<h3>6.3 Le risque d'individualisation du social (causalité structurelle)</h3>
+<p>La projection temporelle à long terme (<code>T_d</code>) n'est possible que si le contexte
+matériel (stabilité économique, logement, sécurité physique) est garanti. Diagnostiquer un
+« effondrement de <code>N_T</code> » chez une personne précarisée ou traumatisée revient à
+requalifier une faillite des institutions et des politiques publiques en un prétendu déficit
+individuel.</p>
+
+<h3>6.4 Le respect de la diversité épistémologique</h3>
+<p>La conception linéaire et hiérarchisée des échelles temporelles
+(<code>T_μs → T_j → T_d</code>) est propre à certains paradigmes occidentaux et industriels.
+Elle ne saurait être imposée comme norme universelle d'évaluation de la santé mentale ou de
+l'imputabilité morale sans violer le pluralisme culturel et juridique.</p>
+
+<hr class="gold">
+
+<h2>7. Sources et références</h2>
+
+<h3>7.1 Législatives</h3>
+<ul>
+  <li><em>Code criminel</em>, art. 718-718.2 (principes de détermination de la peine) ;</li>
+  <li><em>Charte canadienne des droits et libertés</em>, art. 11 (garanties juridiques), 15 (égalité) ;</li>
+  <li><em>Loi constitutionnelle de 1982</em>, art. 35 (droits ancestraux) ;</li>
+  <li><em>Loi C-15</em> — Loi sur la Déclaration des Nations Unies sur les droits des peuples autochtones.</li>
+</ul>
+
+<h3>7.2 Jurisprudence</h3>
+<ul>
+  <li><em>R. c. Gladue</em>, [1999] 1 R.C.S. 688 ;</li>
+  <li><em>R. c. Ipeelee</em>, 2012 CSC 13 ;</li>
+  <li><em>R. c. Jordan</em>, 2016 CSC 27 ;</li>
+  <li><em>Nation Tsilhqot'in c. Colombie-Britannique</em>, 2014 CSC 44 ;</li>
+  <li><em>Ewert c. Canada</em>, 2018 CSC 30.</li>
+</ul>
+
+<h3>7.3 Calendrier jurisprudentiel autochtone</h3>
+<table>
+  <thead>
+    <tr><th>Arrêt</th><th>Année</th><th>Apport</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><em>Calder</em></td><td>1973</td><td>Reconnaissance des droits ancestraux</td></tr>
+    <tr><td><em>Sparrow</em></td><td>1990</td><td>Test de justification</td></tr>
+    <tr><td><em>Delgamuukw</em></td><td>1997</td><td>Titre ancestral</td></tr>
+    <tr><td><em>Tsilhqot'in</em></td><td>2014</td><td>Déclaration de titre</td></tr>
+    <tr><td><em>Restoule</em></td><td>2023-2024</td><td>Anishinaabe — interprétation des traités</td></tr>
+  </tbody>
+</table>
+
+<h3>7.4 Cadre CDLI</h3>
+<ul>
+  <li>DNUDPA (2007) ;</li>
+  <li>Plan d'action C-15 (2023-2028) ;</li>
+  <li>Lien interne → <a href="CDLI.html">onglet CDLI v2.7.4</a>.</li>
+</ul>
+
+<h3>7.5 Données</h3>
+<ul>
+  <li><em>Juristat</em> — Statistique Canada ;</li>
+  <li>Bureau de l'enquêteur correctionnel ;</li>
+  <li>Commission de vérité et réconciliation — Appels à l'action 25 à 42.</li>
+</ul>
+
+<hr class="gold">
+
+<h2>8. Chantiers ouverts</h2>
+
+<ul class="checklist">
+  <li>Intégration des données <em>Juristat</em> 2024-2025 ;</li>
+  <li>Fiche détaillée sur l'arrêt <em>Restoule</em> (Anishinaabe) ;</li>
+  <li>Comparaison des cercles de justice Yukon / Nunavut / Québec ;</li>
+  <li>Suivi post-2023 des délais <em>Jordan</em> ;</li>
+  <li>Ancres bidirectionnelles CDLI ↔ Livre X ;</li>
+  <li>Relecture finale et scellement v2.7.6.</li>
+</ul>
+
+<div class="alert">
+  <strong>Statut v2.7.5 —</strong> Contenu structuré, en révision interne, onglet silencieux actif.
+</div>
+
+<p class="note-epistemique">
+Document prospectif — Non adopté, non opérationnel, non opposable.
+Statut épistémique : <code>[T]</code>. Aucun usage judiciaire, correctionnel ou policier autorisé.
+</p>
+
+</main>
+
+<footer>
+  <div class="version-final">PMDQ v2.7.5 — Livre X : Justice et agentivité</div>
+  <div>Sherbrooke, Québec — 25 septembre 2026</div>
+  <div style="margin-top:8px;">LANGUE DE FOI : FRANÇAIS</div>
+</footer>
 
 </body>
 </html>
-
