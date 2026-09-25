@@ -1,34 +1,47 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>CDLI — PMDQ v2.7.1</title><link rel="stylesheet" href="style.css"></head><body>
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>CDLI — PMDQ v2.7.2</title><link rel="stylesheet" href="style.css"></head><body>
 <div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
-<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.1<span>CDLI — Proposition [T]</span></div><nav class="nav">
-<a href="index.html">Accueil</a><a href="01_livre_I_architecture.html">Architecture</a><a href="02_livre_II_finances.html">Finances</a><a href="03_livre_III_portefeuille_17_projets.html">Portefeuille</a><a href="04_livre_IV_simulateur_macro.html">Simulateur</a><a href="05_livre_V_dette_domar.html">Dette</a><a href="06_livre_VI_audit_invariants.html">Audit</a><a href="07_livre_VII_moteur_python.html">Python</a><a href="08_livre_VIII_exports_et_annexes.html">Annexes</a><a href="09_livre_IX_rapport_final.html">Rapport</a><a href="note-synthese.html">Synthèse</a><a href="lettre.html">Lettre</a><a href="fiche-D1-D5.html">Décisions</a><a href="cdli.html">CDLI</a><a href="cdli.html" class="active">CDLI</a>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.2<span>CDLI — Architecture fiscale expérimentale</span></div><nav class="nav">
+<a href="index.html">Accueil</a><a href="01_livre_I_architecture.html">Architecture</a><a href="02_livre_II_finances.html">Finances</a><a href="03_livre_III_portefeuille_17_projets.html">Portefeuille</a><a href="04_livre_IV_simulateur_macro.html">Simulateur</a><a href="05_livre_V_dette_domar.html">Dette</a><a href="06_livre_VI_audit_invariants.html">Audit</a><a href="07_livre_VII_moteur_python.html">Python</a><a href="08_livre_VIII_exports_et_annexes.html">Annexes</a><a href="09_livre_IX_rapport_final.html">Rapport</a><a href="note-synthese.html">Synthèse</a><a href="lettre.html">Lettre</a><a href="fiche-D1-D5.html">Décisions</a><a href="cdli.html" class="active">CDLI</a>
 </nav></div></header>
 <main>
 
 <h1>CDLI — Compte de Dividende Libre d'Impôt</h1>
-<p class="lede">Mesure fiscale recalibrée — PMDQ v2.7.1</p>
+<p class="lede">Architecture fiscale expérimentale formalisée — PMDQ v2.7.2</p>
 
-<div class="alert"><h4>Statut : PROPOSITION [T]</h4><p>Ce document est une proposition exploratoire. Il ne constitue pas une recommandation officielle du PMDQ. Il exige un avis externe sur la constitutionnalité (compétence fiscale provinciale) et l'articulation avec le RDTOH fédéral avant toute intégration au dossier principal.</p></div>
+<div class="alert"><h4>Statut : PROPOSITION [T]</h4><p>Ce document décrit une <strong>architecture fiscale expérimentale</strong>. Il ne constitue pas une recommandation officielle du PMDQ. Il exige un avis constitutionnel spécialisé, une coordination avec l'ARC et une formalisation mathématique complète des mécanismes de pertes, de liquidité et de valorisation avant toute intégration au dossier principal.</p></div>
 
 <h2>1. Objet</h2>
-<p>Remplacer l'imposition différée du gain en capital par une imposition annuelle du revenu réputé, avec un crédit équivalent (CDLI) permettant un retrait futur libre d'impôt.</p>
-<p><strong>Finalité</strong> : neutralité fiscale entre actifs liquides et illiquides, élimination du lock-in effect, suppression de la double imposition des dividendes.</p>
+<p>Substituer, pour les actifs visés, une <strong>taxation annuelle d'un rendement réputé</strong> à la taxation principalement fondée sur la réalisation du gain en capital, avec un crédit reportable (CDLI) permettant une distribution admissible ultérieure sans nouvel impôt.</p>
+<p><strong>Objectif</strong> <span class="badge info">[P]</span> : réduire l'asymétrie fiscale entre actifs liquides et illiquides, sous réserve de mécanismes de liquidité, de report ou de paiement différé. La neutralité fiscale est un <strong>objectif poursuivi</strong>, non une propriété acquise du mécanisme.</p>
 
 <h2>2. Assiette imposable</h2>
 <p><strong>Revenu réputé annuel</strong> = Assiette × Taux ARC</p>
 <p><strong>Assiette</strong> = (JVM cotés + Coût non cotés) − Safe harbour − 250 000 $</p>
 
-<table><thead><tr><th>Composante</th><th>Définition</th></tr></thead><tbody>
-<tr><td><strong>JVM cotés</strong></td><td>Juste valeur marchande des titres cotés</td></tr>
-<tr><td><strong>Coût non cotés</strong></td><td>Coût historique des actifs non cotés (immeubles, PME privée, art, etc.)</td></tr>
-<tr><td><strong>Safe harbour</strong></td><td>Réserve de base non imposable (à fixer par règlement)</td></tr>
-<tr><td><strong>250 000 $</strong></td><td>Seuil personnel consolidé</td></tr>
-<tr><td><strong>Taux ARC</strong></td><td>Taux annuel de rendement réputé (proposé : 4 %)</td></tr>
+<table><thead><tr><th>Composante</th><th>Définition</th><th>Limite identifiée</th></tr></thead><tbody>
+<tr><td><strong>JVM cotés</strong></td><td>Juste valeur marchande des titres cotés</td><td>—</td></tr>
+<tr><td><strong>Coût non cotés</strong></td><td>Coût historique des actifs non cotés (immeubles, PME privée, art, etc.)</td><td>Asymétrie avec la JVM : deux actifs de valeur économique égale peuvent être traités différemment</td></tr>
+<tr><td><strong>Safe harbour</strong></td><td>Réserve de base non imposable (à fixer par règlement)</td><td>—</td></tr>
+<tr><td><strong>250 000 $</strong></td><td>Seuil personnel consolidé</td><td>—</td></tr>
+<tr><td><strong>Taux ARC</strong></td><td>Taux annuel de rendement réputé (proposé : 4 %)</td><td>Paramètre politique et économique, indépendant du rendement réel</td></tr>
 </tbody></table>
 
 <p><strong>Consolidation groupe lié</strong> : seuil de 250 000 $ consolidé selon art. 256 (anti-coquilles).</p>
 
-<h2>3. Taux d'imposition</h2>
+<h2>3. Le rendement réputé n'est pas un rendement réel</h2>
+<div class="alert"><p>Le mécanisme taxe un <strong>rendement présumé</strong> de 4 %, indépendamment du rendement effectif des actifs. En cas de rendement négatif, l'obligation fiscale subsiste tant qu'une architecture de compensation n'est pas définie.</p></div>
+
+<table><thead><tr><th>Rendement réel</th><th>Revenu réputé CDLI</th></tr></thead><tbody>
+<tr><td>−20 %</td><td>+4 %</td></tr>
+<tr><td>−5 %</td><td>+4 %</td></tr>
+<tr><td>0 %</td><td>+4 %</td></tr>
+<tr><td>+2 %</td><td>+4 %</td></tr>
+<tr><td>+10 %</td><td>+4 %</td></tr>
+</tbody></table>
+
+<p><strong>Conséquence</strong> : ce n'est pas une simple modification du régime de gain en capital. C'est une <strong>taxe sur rendement présumé</strong>. Cette caractéristique est structurante et doit être reconnue comme telle.</p>
+
+<h2>4. Taux d'imposition</h2>
 <div class="alert info"><p><strong>Correction critique n° 1</strong> : imposition au taux marginal du contribuable, pas au taux fixe.</p></div>
 
 <table><thead><tr><th>Revenu réputé</th><th>Taux</th><th>Impôt</th></tr></thead><tbody>
@@ -38,25 +51,21 @@
 
 <p><strong>Motif</strong> : un taux fixe de 15 % constituerait un cadeau fiscal aux hauts revenus, contredisant le principe de progressivité.</p>
 
-<h2>4. Mécanisme du CDLI</h2>
+<h2>5. Nature du CDLI</h2>
 <div class="alert info"><p><strong>Correction critique n° 2</strong> : le CDLI est crédité du montant brut, pas du montant net d'impôt payé.</p></div>
+
+<p><strong>Nature juridique</strong> <span class="badge red">[T]</span> : le CDLI est un <strong>compte fiscal personnel de prépaiement et de crédit reportable</strong>. Sa fonction de crédit reportable est <strong>conceptuellement comparable</strong> à certains mécanismes de comptes fiscaux corporatifs, sans constituer un équivalent du RDTOH fédéral. Le RDTOH fédéral (NERDTOH/ERDTOH) est un mécanisme corporatif dont les règles d'utilisation diffèrent sensiblement.</p>
 
 <table><thead><tr><th>Étape</th><th>Montant</th></tr></thead><tbody>
 <tr><td>Revenu réputé</td><td>36 000 $</td></tr>
 <tr><td>Impôt payé (taux marginal)</td><td>19 191,60 $</td></tr>
 <tr><td><strong>Crédit au CDLI</strong></td><td><strong>36 000 $</strong></td></tr>
-<tr><td><strong>Retrait futur</strong></td><td><strong>0 $ d'impôt</strong></td></tr>
+<tr><td><strong>Distribution admissible ultérieure</strong></td><td><strong>0 $ d'impôt</strong></td></tr>
 </tbody></table>
 
-<p><strong>Nature du CDLI</strong> : compte de suivi (analogue au RDTOH fédéral). Le solde sert à établir le montant du dividende futur libre d'impôt.</p>
-<p><strong>Déclaration obligatoire</strong> : chaque contribuable concerné produit un état annuel du CDLI avec le solde courant.</p>
+<p><strong>Lecture économique</strong> : le CDLI ne rembourse pas l'impôt payé. Il <strong>transforme l'impôt payé en droit fiscal futur</strong>. Le taux effectif d'acquisition du droit est de 53,31 % (19 191,60 / 36 000).</p>
 
-<h2>5. Non-résidents</h2>
-<ul>
-<li>Taux applicable : 19 % (taux de retenue)</li>
-<li>Crédit remboursable accordé au titre de l'impôt réputé déjà payé au Québec</li>
-<li>Convention fiscale Canada-France et autres conventions applicables</li>
-</ul>
+<p><strong>Déclaration obligatoire</strong> : chaque contribuable concerné produit un état annuel du CDLI avec le solde courant.</p>
 
 <h2>6. Exemple chiffré</h2>
 <p><strong>Hypothèses</strong></p>
@@ -76,54 +85,79 @@
 <tr><td>12</td><td>19 191,60 $</td><td>+36 000 $</td><td><strong>432 000 $</strong></td></tr>
 </tbody></table>
 
-<p>Au retrait de 432 000 $ en dividende : <strong>0 $ d'impôt</strong>.</p>
+<p>Au retrait de 432 000 $ en <strong>distribution admissible CDLI</strong> : <strong>0 $ d'impôt</strong>.</p>
 
 <h2>7. Comparaison avec le régime actuel</h2>
-<table><thead><tr><th>Élément</th><th>IMRTD / RDTOH (fédéral)</th><th>CDLI (PMDQ)</th></tr></thead><tbody>
+<table><thead><tr><th>Élément</th><th>Régime fédéral actuel</th><th>CDLI (PMDQ)</th></tr></thead><tbody>
 <tr><td>Imposition à la société</td><td>~50,2 %</td><td>—</td></tr>
-<tr><td>Remboursement au dividende</td><td>38,33 %</td><td>—</td></tr>
-<tr><td>Intégration</td><td>Imparfaite</td><td>Neutralité totale</td></tr>
-<tr><td>Grind DPE</td><td>À 50 000 $</td><td>Supprimé</td></tr>
-<tr><td>Lock-in effect</td><td>Présent</td><td>Éliminé</td></tr>
-<tr><td>Complexité administrative</td><td>Élevée</td><td>Modérée</td></tr>
+<tr><td>Remboursement au dividende</td><td>Déterminé selon les soldes NERDTOH / ERDTOH et le type de dividende — pas un taux unique</td><td>—</td></tr>
+<tr><td>Intégration</td><td>Imparfaite</td><td>Neutralité poursuivie, non démontrée</td></tr>
+<tr><td>Grind DPE</td><td>À 50 000 $</td><td>Supprimé (à valider)</td></tr>
+<tr><td>Lock-in effect</td><td>Présent</td><td>Réduction poursuivie</td></tr>
+<tr><td>Taux d'inclusion du gain en capital</td><td>50 % (proposition fédérale d'augmentation non retenue en 2026)</td><td>—</td></tr>
+<tr><td>Complexité administrative</td><td>Élevée</td><td>À évaluer</td></tr>
 </tbody></table>
 
-<h2>8. Clause anti-évitement</h2>
+<h2>8. Les trois invariants à formaliser</h2>
+
+<h3>I-CDLI-01 — Non-double taxation</h3>
+<p>Un même flux fiscal ne peut produire deux fois un avantage ou une charge CDLI sans règle explicite. Toute superposition (revenu réputé + gain réalisé) doit être traitée par règle écrite.</p>
+
+<h3>I-CDLI-02 — Symétrie gains / pertes</h3>
+<p>Le système doit spécifier mathématiquement ce qui arrive lorsque le rendement réel diverge du rendement réputé. Quatre architectures possibles :</p>
 <ul>
-<li>Consolidation groupe lié : seuil 250 000 $ selon art. 256</li>
-<li>Safe harbour révisable annuellement</li>
-<li>Réévaluation triennale des actifs non cotés (par évaluateur agréé)</li>
-<li>Obligation de déclaration pour tout contribuable dont l'assiette dépasse 0 $</li>
+<li><strong>A</strong> — Rendement forfaitaire indépendant des pertes (simple, non neutre)</li>
+<li><strong>B</strong> — Rendement réputé avec compte de pertes reportables</li>
+<li><strong>C</strong> — Rendement réputé seulement si la valeur dépasse une référence ajustée</li>
+<li><strong>D</strong> — Mécanisme hybride avec compensation plafonnée</li>
 </ul>
+<p><strong>Aucun choix n'a été fait.</strong> Le document ne peut pas prétendre à une neutralité fiscale tant que ce choix n'est pas fixé.</p>
 
-<h2>9. Statut épistémique</h2>
-<table><thead><tr><th>Élément</th><th>Statut</th></tr></thead><tbody>
-<tr><td>Concept CDLI</td><td><span class="badge info">[P]</span> Proposé</td></tr>
-<tr><td>Taux marginal 53,31 %</td><td><span class="badge green">[C]</span> Calculé</td></tr>
-<tr><td>Crédit du brut</td><td><span class="badge yellow">[P/T]</span> Proposé, à valider</td></tr>
-<tr><td>Constitutionnalité (compétence provinciale)</td><td><span class="badge red">[T]</span> À valider</td></tr>
-<tr><td>Articulation avec RDTOH fédéral</td><td><span class="badge red">[T]</span> À valider</td></tr>
-<tr><td>Safe harbour et taux ARC</td><td><span class="badge yellow">[P/T]</span> À paramétrer</td></tr>
-</tbody></table>
+<h3>I-CDLI-03 — Liquidité</h3>
+<p>Une obligation CDLI née d'un actif non liquide doit disposer d'une règle explicite de paiement différé, de réalisation ou de conversion. Sans cette règle, l'obligation fiscale peut être incompatible avec la capacité de paiement du contribuable.</p>
 
-<p><strong>Avis externes requis</strong></p>
-<ul>
-<li>Constitutionnaliste fiscaliste (compétence art. 92 LC 1867)</li>
-<li>Fiscaliste fédéral (coordination avec ARC)</li>
-<li>Fiscaliste international (conventions)</li>
-</ul>
-
-<h2>10. Ce qui reste ouvert</h2>
+<h2>9. Ce qui reste ouvert</h2>
 <ol>
-<li>Où prend l'argent un contribuable avec actifs non liquides et aucun revenu ?</li>
-<li>Pertes : traitement des années déficitaires (crédit reportable ?)</li>
-<li>Valorisation des actifs non cotés : méthode exacte</li>
-<li>Interaction avec l'impôt fédéral sur le revenu réputé (art. 91(3) LC 1867)</li>
+<li>Compétence constitutionnelle précise : taxation directe provinciale d'un rendement réputé sur actifs personnels</li>
+<li>Coordination avec le régime fédéral (art. 91(3) LC 1867)</li>
+<li>Choix d'architecture pour les pertes (I-CDLI-02)</li>
+<li>Règle de liquidité pour actifs non liquides (I-CDLI-03)</li>
+<li>Méthode de valorisation des actifs non cotés</li>
+<li>Interaction avec le RDTOH fédéral (distinction NERDTOH / ERDTOH)</li>
+<li>Traitement des non-résidents (conventions fiscales)</li>
 </ol>
+
+<h2>10. Statut épistémique</h2>
+<table><thead><tr><th>Élément</th><th>Statut</th></tr></thead><tbody>
+<tr><td>Concept général d'architecture</td><td><span class="badge info">[P]</span> Proposé, cohérent</td></tr>
+<tr><td>Calcul 900 000 × 4 %</td><td><span class="badge green">[C]</span> Correct</td></tr>
+<tr><td>36 000 × 53,31 %</td><td><span class="badge green">[C]</span> Correct</td></tr>
+<tr><td>Crédit du brut (36 000 $)</td><td><span class="badge yellow">[P/T]</span> Choix de conception</td></tr>
+<tr><td>Distribution ultérieure à 0 %</td><td><span class="badge yellow">[P/T]</span> Doit être défini législativement</td></tr>
+<tr><td>Compétence Québec</td><td><span class="badge red">[T]</span> Avis constitutionnel requis</td></tr>
+<tr><td>Coordination fédérale</td><td><span class="badge red">[T]</span> Majeure</td></tr>
+<tr><td>RDTOH — distinction NERDTOH/ERDTOH</td><td><span class="badge red">[T]</span> Nécessaire</td></tr>
+<tr><td>Actifs non cotés — valorisation</td><td><span class="badge red">[T]</span> Méthodologie à construire</td></tr>
+<tr><td>Pertes</td><td><span class="badge red">[T]</span> Mécanisme manquant</td></tr>
+<tr><td>Liquidité</td><td><span class="badge red">[T]</span> Mécanisme manquant</td></tr>
+<tr><td>Taux 4 %</td><td><span class="badge yellow">[P/T]</span> Paramètre politique et économique</td></tr>
+<tr><td>Neutralité fiscale</td><td><span class="badge info">[P]</span> Objectif, non propriété démontrée</td></tr>
+<tr><td>Terminologie « distribution admissible CDLI »</td><td><span class="badge green">[C]</span> Corrigée</td></tr>
+<tr><td>Non-résidents</td><td><span class="badge red">[T]</span> Modèle à construire</td></tr>
+</tbody></table>
+
+<h2>11. Avis externes requis</h2>
+<ul>
+<li><strong>Constitutionnaliste fiscaliste</strong> — compétence provinciale (art. 92(2) LC 1867) pour un impôt direct sur rendement réputé</li>
+<li><strong>Fiscaliste fédéral</strong> — coordination avec l'ARC, distinction RDTOH, taux d'inclusion du gain en capital</li>
+<li><strong>Fiscaliste international</strong> — conventions fiscales (non-résidents)</li>
+<li><strong>Économiste fiscal</strong> — modélisation des quatre architectures de pertes</li>
+<li><strong>Actuaire</strong> — mécanisme de liquidité pour actifs non liquides</li>
+</ul>
 
 <p style="text-align:center;margin-top:32px"><a href="javascript:window.print()" style="display:inline-block;padding:12px 24px;background:#0f2540;color:#fff;border-radius:6px;text-decoration:none;font-weight:600">Imprimer / Enregistrer en PDF</a></p>
 
-<p style="color:#5a6675;font-size:14px;text-align:center;margin-top:24px"><strong>Version</strong> : v2.7.1-PROPOSITION-T<br><strong>Date</strong> : 24 septembre 2026</p>
+<p style="color:#5a6675;font-size:14px;text-align:center;margin-top:24px"><strong>Version</strong> : v2.7.2-PROPOSITION-T<br><strong>Date</strong> : 24 septembre 2026</p>
 
 </main>
 <footer class="footer"><p><strong>PMDQ — Parti de la Mouvance Démocratique du Québec</strong></p><p>https://berryberryship-debug.github.io/PMDQ/</p></footer>
