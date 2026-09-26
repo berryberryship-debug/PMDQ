@@ -11,7 +11,7 @@ PAGES_PUBLIQUES = [
     "05_livre_V_dette_domar.html", "06_livre_VI_audit_invariants.html",
     "07_livre_VII_moteur_python.html", "08_livre_VIII_exports_et_annexes.html",
     "09_livre_IX_rapport_final.html", "cdli.html", "livre_X_justice.html",
-    "fiche-D1-D5.html", "fiche-D3.html", "fiche-D1.html", "fiche-D2.html", "fiche-D5.html", "registre-propositions.html", "annexe_fiscal_passif.html", "corridor-narp.html", "annexe-ocap.html", "annexe-ocap-ia.html", "coalition-scientifique-technologique.html", "annexe-agentivite-trajectoire.html", "gold-card.html", "references.html", "changelog.html", "demande-clarification-domar.html", "reforme-education-impact.html", "moteurs.html",  "demande-clarification-domar.html", "annexe_fiscal_passif.html", "lettre.html", "note-synthese.html", "style.css",
+    "fiche-D1-D5.html", "fiche-D3.html", "fiche-D1.html", "fiche-D2.html", "fiche-D5.html", "registre-propositions.html", "annexe_fiscal_passif.html", "corridor-narp.html", "annexe-ocap.html", "annexe-ocap-ia.html", "coalition-scientifique-technologique.html", "annexe-agentivite-trajectoire.html", "gold-card.html", "references.html", "changelog.html", "demande-clarification-domar.html", "reforme-education-impact.html", "moteurs.html", "marge-fiscale-tvq.html", "taxe-luxe.html",  "demande-clarification-domar.html", "annexe_fiscal_passif.html", "lettre.html", "note-synthese.html", "style.css",
 ]
 
 PAGES_SILENCIEUSES = [
