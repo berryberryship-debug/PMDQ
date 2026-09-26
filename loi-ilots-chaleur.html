@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loi des Îlots de Chaleur et Forêt Nourricière</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h2>14. Loi des Îlots de Chaleur et Forêt Nourricière</h2>
+        <p><em>L'asymétrie thermique en milieu urbain est une taxe thermodynamique imposée aux quartiers minéralisés. La carte des îlots de chaleur superpose presque parfaitement celle de la vulnérabilité socio-économique : moins de capital entraîne plus d'asphalte, moins d'évapotranspiration et une charge thermique résidentielle accrue.</em></p>
+        <p><em>Pour inverser cette entropie spatiale, la plantation d'une canopée productive ne relève pas de l'esthétique, mais de l'ingénierie biologique et de la sécurité alimentaire.</em></p>
+
+        <h3>1. Le diagnostic thermodynamique et socio-spatial</h3>
+        <p>Dans les quartiers denses, l'accumulation du rayonnement infrarouge par les surfaces imperméables génère des pics thermiques dépassant de 5 °C à 12 °C ceux des zones périphériques. Sans système de climatisation centralisée, les résidents subissent directement cette charge. La solution exige le déploiement d'une infrastructure vivante capable d'opérer une réfrigération active tout en produisant un rendement tangible (comestible ou médicinal) pour ancrer la valeur de l'arbre dans la communauté.</p>
+
+        <h3>2. Le moteur biologique : La canopée nourricière et médicinale</h3>
+        <p>Le choix des essences est critique. Un verger classique (pommiers standards, poiriers) exige des intrants chimiques et une taille experte, incompatibles avec l'autonomie d'un espace public. Le modèle requiert des espèces indigènes ou naturalisées d'une robustesse absolue face au sel de déglaçage, à la compaction du sol et à la sécheresse urbaine.</p>
+        <p>Il est important de préciser biologiquement le statut du Tilleul : bien qu'il ne produise pas de "fruits" charnus au sens agronomique, il est un pilier de la forêt nourricière urbaine grâce à ses propriétés médicinales et mellifères de haute valeur.</p>
+
+        <table class="tableau-simulation">
+            <thead>
+                <tr>
+                    <th>Essence</th>
+                    <th>Fonction Thermodynamique</th>
+                    <th>Rendement Productif</th>
+                    <th>Tolérance Urbaine</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Tilleul d'Amérique (Tilia americana)</strong></td>
+                    <td>Réfrigération massive : Couronne dense à grand déploiement bloquant 90 % du rayonnement solaire direct. Pompe jusqu'à 400L d'eau/jour.</td>
+                    <td>Médicinal et mellifère : Récolte des fleurs et bractées en début d'été pour infusions (propriétés sédatives et antispasmodiques).</td>
+                    <td>Tolère la sécheresse, le compactage et la pollution. Racines profondes ne soulevant pas les trottoirs si la fosse est adéquate.</td>
+                </tr>
+                <tr>
+                    <td><strong>Amélanchier (Amelanchier laevis / canadensis)</strong></td>
+                    <td>Ombrage de sous-étage : Arbre de petit à moyen déploiement, idéal sous les fils électriques ou en bordure rapprochée.</td>
+                    <td>Fruitier : Produit des baies (saskatoons) riches en antioxydants, comestibles crues ou transformées, sans exigence de traitement chimique.</td>
+                    <td>Indigène, résiste au sel de voirie, au froid extrême et aux sols pauvres.</td>
+                </tr>
+                <tr>
+                    <td><strong>Pommetier décoratif / comestible (Malus baccata / cultivars robustes)</strong></td>
+                    <td>Ombrage intermédiaire : Densité foliaire moyenne, excellente couverture au-dessus des trottoirs.</td>
+                    <td>Fruitier : Pommettes utilisables pour la transformation (gelées, pectine).</td>
+                    <td>Sélectionner des cultivars résistants à la tavelure et au feu bactérien pour garantir la survie sans fongicide.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>L'Amélanchier illustre parfaitement le concept : une résilience biologique totale couplée à une production alimentaire directe.</p>
+
+        <h3>3. Modèle d'implémentation : Les Communs d'Ostrom</h3>
+        <p>L'échec classique des projets de verdissement public provient d'une gouvernance centralisée : la ville plante, la ville oublie d'arroser, l'arbre meurt. Pour que la biomasse atteigne la maturité requise pour l'évapotranspiration, l'implémentation doit s'appuyer sur les principes de gouvernance des biens communs d'Elinor Ostrom.</p>
+        <ul>
+            <li><strong>Délégation de l'usufruit :</strong> La municipalité cède légalement le droit de récolte exclusif aux comités de citoyens locaux ou aux organismes communautaires du quartier. La valeur du rendement (bractées de tilleul, baies d'amélanchier) justifie l'effort d'entretien.</li>
+            <li><strong>Architecture des fosses :</strong> Application stricte de la norme des 15 mètres cubes de sol non compacté par arbre (via tranchées continues ou cellules structurelles) détaillée précédemment. Sans ce volume, la production de fruits avorte par stress hydrique.</li>
+            <li><strong>Boucle de rétroaction communautaire :</strong> Les corvées de récolte estivales agissent comme des événements de surveillance de l'infrastructure. L'arbre cesse d'être perçu comme du mobilier urbain imposé par la ville pour devenir un actif productif appartenant au quartier.</li>
+        </ul>
+        <p>Ce protocole convertit la lutte contre les ICU en un projet d'autonomie alimentaire et d'appropriation de l'espace public, générant une autopoïèse sociale et écologique.</p>
+
+        <h3>4. Modélisation et Simulation</h3>
+        <p>Le script Python suivant modélise la valeur thermodynamique et la production biologique d'un bloc d'arbres sur une période de maturation de 10 ans.</p>
+        
+        <pre><code class="language-python">
+import numpy as np
+import pandas as pd
+
+def simuler_foret_nourriciere_urbaine(
+    annees=10,
+    n_tilleuls=10,
+    n_amelanchiers=10,
+    prix_kwh=0.10,
+    pct_efficacite_batiment=0.15,
+    jours_chaleur=100
+):
+    """
+    Simule la valeur thermodynamique et la production biologique d'un bloc d'arbres
+    sur une période de maturation (0 à 100% de maturitée sur N ans).
+    """
+    # Vecteur des années
+    ans = np.arange(1, annees + 1)
+    
+    # Sigmoïde de maturation (croissance biologique lente au début, rapide, puis plateau)
+    taux_maturation = 1 / (1 + np.exp(-0.8 * (ans - 5)))
+    
+    # -------------------------------------------------------------------------
+    # 1. PARAMÈTRES PHYSIQUES ET ÉCONOMIQUES (Maturité à 100%)
+    # -------------------------------------------------------------------------
+    delta_H_v = 2.45
+    cop_climatiseur = 3.0
+    
+    evap_tilleul_max = 400.0
+    rendement_tilleul_max = 1.5
+    prix_tilleul_kg = 120.0
+    
+    evap_amelanchier_max = 100.0
+    rendement_amelanchier_max = 8.0
+    prix_amelanchier_kg = 15.0
+    
+    # -------------------------------------------------------------------------
+    # 2. CALCULS VECTORIELS DYNAMIQUES (Sur N ans)
+    # -------------------------------------------------------------------------
+    evap_totale_tilleuls = n_tilleuls * (evap_tilleul_max * jours_chaleur) * taux_maturation
+    evap_totale_amelanchiers = n_amelanchiers * (evap_amelanchier_max * jours_chaleur) * taux_maturation
+    
+    kwh_evites_tilleuls = (evap_totale_tilleuls * delta_H_v) / (3.6 * cop_climatiseur)
+    kwh_evites_amelanchiers = (evap_totale_amelanchiers * delta_H_v) / (3.6 * cop_climatiseur)
+    
+    valeur_clim_tilleuls = kwh_evites_tilleuls * pct_efficacite_batiment * prix_kwh
+    valeur_clim_amelanchiers = kwh_evites_amelanchiers * pct_efficacite_batiment * prix_kwh
+    valeur_clim_totale = valeur_clim_tilleuls + valeur_clim_amelanchiers
+    
+    recolte_tilleuls_kg = n_tilleuls * rendement_tilleul_max * taux_maturation
+    recolte_amelanchiers_kg = n_amelanchiers * rendement_amelanchier_max * taux_maturation
+    
+    valeur_usufruit_tilleuls = recolte_tilleuls_kg * prix_tilleul_kg
+    valeur_usufruit_amelanchiers = recolte_amelanchiers_kg * prix_amelanchier_kg
+    valeur_usufruit_totale = valeur_usufruit_tilleuls + valeur_usufruit_amelanchiers
+    
+    # -------------------------------------------------------------------------
+    # 3. CONSTRUCTIONS DE LA MATRICE PANDAS
+    # -------------------------------------------------------------------------
+    df = pd.DataFrame({
+        'Année': ans,
+        'Maturation (%)': np.round(taux_maturation * 100, 1),
+        'Fleurs Tilleul (kg)': np.round(recolte_tilleuls_kg, 2),
+        'Baies Amélanchier (kg)': np.round(recolte_amelanchiers_kg, 2),
+        'Valeur Usufruit ($)': np.round(valeur_usufruit_totale, 2),
+        'kWh Électriques Évités': np.round(kwh_evites_tilleuls + kwh_evites_amelanchiers, 0),
+        'Valeur Climatisation ($)': np.round(valeur_clim_totale, 2),
+        'Valeur Totale Annuelle ($)': np.round(valeur_usufruit_totale + valeur_clim_totale, 2)
+    })
+    
+    df['Valeur Cumulée ($)'] = np.round(df['Valeur Totale Annuelle ($)'].cumsum(), 2)
+    
+    return df
+
+if __name__ == "__main__":
+    resultats = simuler_foret_nourriciere_urbaine(
+        annees=10,
+        n_tilleuls=10,
+        n_amelanchiers=10,
+        prix_kwh=0.10,
+        pct_efficacite_batiment=0.15,
+        jours_chaleur=100
+    )
+    
+    print(resultats.to_string(index=False))
+        </code></pre>
+    </main>
+</body>
+</html>
