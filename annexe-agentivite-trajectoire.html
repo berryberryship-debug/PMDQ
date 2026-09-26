@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Annexe — Agentivité de trajectoire — PMDQ v2.7.5</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.5<span>Agentivité de trajectoire</span></div><nav class="nav"><a href="index.html">Accueil</a><a href="livre_X_justice.html">Justice</a><a href="annexe-ocap.html">OCAP</a><a href="annexe-ocap-ia.html">OCAP-IA</a><a href="annexe-agentivite-trajectoire.html" class="active">Trajectoire</a></nav></div></header>
+<main>
+
+<h1>Annexe — Agentivité de trajectoire</h1>
+<p class="lede">Hypothèse théorique [P] — Modélisation de l'agentivité comme propriété de trajectoire</p>
+
+<div class="alert warn">
+<h4>⚠ Mise en garde épistémique</h4>
+<p>Cette annexe propose une <strong>hypothèse théorique [P]</strong>, non un résultat mesuré [M], ni un calcul validé [C]. Aucun indicateur présenté ici ne peut servir de score individuel opérationnel. L'usage décisionnel (pénal, correctionnel, policier, administratif) est <strong>strictement interdit</strong>, conformément au <a href="livre_X_justice.html">Livre X</a> et aux annexes <a href="annexe-ocap.html">OCAP</a> et <a href="annexe-ocap-ia.html">OCAP-IA</a>.</p>
+</div>
+
+<h2>1. Point de départ conceptuel</h2>
+
+<blockquote>
+<p>Le libre arbitre n'est pas un événement — c'est une <strong>propriété de trajectoire</strong>.</p>
+</blockquote>
+
+<p>Chercher « le moment où je choisis » à <code>t₀</code> serait déjà une mauvaise représentation du phénomène. L'agentivité apparaît dans la <strong>géométrie de la trajectoire</strong> :</p>
+
+<pre><code>Γ = { S_{t-n}, ..., S_{t-1}, S_t, S_{t+1}, ..., S_{t+n} }</code></pre>
+
+<p>et non dans un point isolé <code>A(t₀)</code>.</p>
+
+<h2>2. Triple causalité</h2>
+
+<p>Le déterminisme classique écrit :</p>
+<pre><code>S_{t+1} = F(S_t)</code></pre>
+
+<p>La présente hypothèse ajoute :</p>
+<pre><code>S_t = F(S_{t-1}, H_t)</code></pre>
+
+<p>où <code>H_t</code> représente l'<strong>histoire intégrée du système</strong> : mémoire, apprentissage, anticipation, engagements, modèles du futur, environnement construit.</p>
+
+<p>Trois régimes se distinguent :</p>
+
+<table>
+<thead><tr><th>Régime</th><th>Définition</th><th>Statut</th></tr></thead>
+<tbody>
+<tr><td><strong>Causalité subie</strong></td><td>Le système est déterminé par son environnement immédiat, sans mémoire active</td><td>Modèle standard</td></tr>
+<tr><td><strong>Causalité intégrée</strong></td><td>Le système agit en fonction d'une mémoire accumulée et de ses propres engagements passés</td><td>[P] — hypothèse</td></tr>
+<tr><td><strong>Causalité auto-modifiée</strong></td><td>Le système modifie sa propre architecture causale (règles, modèles, priorités)</td><td>[P] — hypothèse</td></tr>
+</tbody>
+</table>
+
+<p>Le système ne choisit pas hors de la causalité. Il peut agir en fonction d'une causalité qu'il a lui-même <strong>progressivement architecturée</strong>.</p>
+
+<h2>3. Distributions temporelles du sujet</h2>
+
+<p>Au lieu d'un Moi unique <code>M(t)</code>, on considère une famille de projections temporelles :</p>
+
+<pre><code>M_τ(t), avec τ ∈ {10⁻³ s, 1 s, 1 h, 1 j, 1 an, 10 ans}</code></pre>
+
+<p>Chaque échelle est une <strong>projection</strong> du sujet, non une entité séparée :</p>
+
+<ul>
+<li>Le « Moi de la milliseconde » n'est pas faux — il est <strong>incomplet</strong>.</li>
+<li>Le « Moi de la décennie » n'est pas une entité séparée — il constitue une <strong>contrainte temporelle incorporée</strong> dans l'état présent.</li>
+</ul>
+
+<blockquote>
+<p>Le sujet n'est pas ponctuel. Il est <strong>distribué</strong> sur ses propres horizons temporels.</p>
+</blockquote>
+
+<h2>4. Fonction de cohérence</h2>
+
+<p>L'agentivité est définie comme la <strong>capacité du système à maintenir une cohérence entre ces projections</strong> :</p>
+
+<pre><code>A(t) = C[ M_τ1(t), M_τ2(t), ..., M_τn(t) ]</code></pre>
+
+<h3>4.1 Propriétés requises de C</h3>
+
+<table>
+<thead><tr><th>Propriété</th><th>Formulation</th><th>Justification</th></tr></thead>
+<tbody>
+<tr><td><strong>Symétrie</strong></td><td><code>C[..., M_τi, ..., M_τj, ...] = C[..., M_τj, ..., M_τi, ...]</code></td><td>Aucune échelle n'est privilégiée a priori</td></tr>
+<tr><td><strong>Monotonie partielle</strong></td><td><code>∂C/∂d(M_τi, M_τj) &lt; 0</code></td><td>Une divergence sur une échelle réduit la cohérence</td></tr>
+<tr><td><strong>Normalisation</strong></td><td><code>A(t) ∈ [0, 1]</code></td><td>Comparabilité inter-sujets et inter-temps</td></tr>
+</tbody>
+</table>
+
+<h3>4.2 Forme candidate</h3>
+
+<p>Pondération par variance inverse :</p>
+
+<pre><code>A(t) = 1 / (1 + Σ_i Σ_j w_i w_j · d(M_τi(t), M_τj(t)))</code></pre>
+
+<p>Où :</p>
+<ul>
+<li><code>w_i</code> = poids de l'échelle i (somme = 1)</li>
+<li><code>d</code> = distance inter-échelles (écart-type, divergence KL, ou distance de Wasserstein)</li>
+</ul>
+
+<p><strong>Comportement</strong> :</p>
+<ul>
+<li>Si toutes les échelles coïncident : <code>A(t) = 1</code></li>
+<li>Si une échelle diverge fortement : <code>A(t) → 0</code></li>
+<li>Symétrie respectée par construction</li>
+</ul>
+
+<h2>5. La formulation comme somme pondérée</h2>
+
+<div class="alert">
+<p><strong>Correction importante :</strong> l'écriture <code>M = ∫ M_τ dτ</code> est une <strong>métaphore</strong>, pas une mesure. Les échelles τ sont <strong>discrètes</strong>, non continues. La formulation correcte est :</p>
+<pre><code>M = Σ w_τ · M_τ</code></pre>
+<p>avec Σ w_τ = 1. Sans cette précision, la formule reste une image, pas un objet testable.</p>
+</div>
+
+<h2>6. Les quatre limites épistémiques</h2>
+
+<div class="alert warn">
+<h4>Ces limites sont contraignantes, pas décoratives</h4>
+
+<p><strong>1. Anti-réification</strong> — <code>A(t)</code> est un <strong>indicateur exploratoire</strong>, jamais une propriété stable du sujet. Attribuer une valeur scalaire à un individu vivant constitue un glissement ontologique.</p>
+
+<p><strong>2. Non-individualisation du social</strong> — une faible cohérence inter-échelles peut résulter de la <strong>précarité matérielle</strong>, du trauma structurel ou de l'exclusion institutionnelle. Elle ne doit pas être interprétée comme un déficit interne.</p>
+
+<p><strong>3. Falsifiabilité</strong> — <code>A(t)</code> doit être réfutable : si sur trois cohortes distinctes il n'apporte aucune valeur explicative ou prédictive supérieure aux modèles existants, l'hypothèse est écartée.</p>
+
+<p><strong>4. Conformité OCAP</strong> — toute application à des populations autochtones exige une autorité décisionnelle, pas une consultation. Voir <a href="annexe-ocap.html">Annexe OCAP</a> et <a href="annexe-ocap-ia.html">Annexe OCAP-IA</a>.</p>
+</div>
+
+<h2>7. Ce qui reste à préciser pour rendre A(t) testable</h2>
+
+<table>
+<thead><tr><th>Élément</th><th>Statut</th><th>Autorité</th></tr></thead>
+<tbody>
+<tr><td>Définition opérationnelle de <code>M_τ</code> par échelle</td><td>[P]</td><td>Comité scientifique</td></tr>
+<tr><td>Choix de la distance <code>d</code></td><td>[T]</td><td>Comité scientifique</td></tr>
+<tr><td>Calibration des poids <code>w_i</code></td><td>[P]</td><td>Comité scientifique</td></tr>
+<tr><td>Protocole inter-évaluateurs</td><td>[T]</td><td>Comité d'éthique</td></tr>
+<tr><td>Population témoin</td><td>[T]</td><td>Comité d'éthique</td></tr>
+<tr><td>Test de non-biais discriminatoire</td><td>[T]</td><td>Comité d'équité</td></tr>
+<tr><td>Audit OCAP préalable si populations autochtones</td><td>[T]</td><td>Autorité autochtone compétente</td></tr>
+</tbody>
+</table>
+
+<h2>8. Portée du concept — ce que ça change</h2>
+
+<table>
+<thead><tr><th>Avant</th><th>Après (hypothèse)</th></tr></thead>
+<tbody>
+<tr><td>Rechercher le moment du choix</td><td>Observer la cohérence de la trajectoire</td></tr>
+<tr><td>Libre arbitre comme événement</td><td>Agentivité comme propriété distribuée</td></tr>
+<tr><td>Déterminisme vs libre arbitre</td><td>Trois régimes de causalité</td></tr>
+<tr><td>Moi ponctuel</td><td>Moi distribué sur ses horizons</td></tr>
+<tr><td>Mesurer une propriété stable</td><td>Évaluer une cohérence inter-échelles</td></tr>
+</tbody>
+</table>
+
+<h2>9. Rattachement au PMDQ</h2>
+
+<table>
+<thead><tr><th>Élément</th><th>Référence</th></tr></thead>
+<tbody>
+<tr><td>Livre X §3 (protocole de recherche)</td><td><a href="livre_X_justice.html">Justice et agentivité</a></td></tr>
+<tr><td>Annexe OCAP</td><td><a href="annexe-ocap.html">Gouvernance autochtone des données</a></td></tr>
+<tr><td>Annexe OCAP-IA</td><td><a href="annexe-ocap-ia.html">Agents autonomes et workflows</a></td></tr>
+<tr><td>Hypothèses liées (Livre VIII)</td><td>À documenter comme hypothèses spéculatives [P]</td></tr>
+<tr><td>Statut global</td><td>[P] — proposition théorique, non opérationnelle</td></tr>
+</tbody>
+</table>
+
+<div class="alert success">
+<p><strong>Formulation synthétique de l'hypothèse :</strong> l'agentivité d'un sujet peut être partiellement caractérisée par la <strong>cohérence inter-échelles</strong> de ses projections temporelles. Cette cohérence est un <strong>indicateur exploratoire</strong>, jamais une mesure de responsabilité, de dangerosité ou de valeur morale.</p>
+</div>
+
+<hr>
+<p><em>Annexe théorique — Non adoptée, non opérationnelle. Aucun usage décisionnel autorisé. Nécessite validation scientifique et conformité OCAP.</em></p>
+</main>
+<footer class="footer"><p>PMDQ v2.7.5 — Annexe Agentivité de trajectoire — Sherbrooke, Québec — 26 septembre 2026</p></footer>
+</body></html>
