@@ -43,3 +43,8 @@ Version : PMDQ v2.7.1 — 22 septembre 2026.
 Niveaux atteints : 2+2+2+2+2+3+3+2+2+2+2+2+2+2+3+2 = 35
 Niveaux cibles : 16 × 2 = 32
 Score : 35 / 32 × 100 = 109,375 %
+---
+### Note de référence : Étalonnage macroéconomique international (OCDE)
+
+Selon le classement de Visual Capitalist fondé sur des données de l’OCDE, le Canada figure au 6e rang des pays comparés pour la dette brute des administrations publiques par habitant, ajustée en PPA. Ce repère fournit un élément de comparaison internationale; il ne démontre pas, à lui seul, la pertinence d’un mécanisme budgétaire particulier.
+
