@@ -231,6 +231,72 @@
 </table>
 
 
+
+<h3>7.7 Note comptable — distinction cash / revenu</h3>
+
+<div class="alert warn">
+<h4>⚠ Point critique de comptabilité</h4>
+<p>Les montants encaissés d'avance (J0) ne constituent <strong>pas</strong> du revenu comptable au jour 1. Selon la norme applicable (CCSP SP 1202), une partie est comptabilisée comme <strong>produit constaté d'avance</strong> (passif), puis reconnue comme revenu au fur et à mesure de la prestation (examens réalisés).</p>
+<p>Le <strong>gain sur impayés évités</strong> est une <strong>économie modélisée</strong> — il ne s'agit pas d'une recette encaissée supplémentaire.</p>
+</div>
+
+<h3>7.8 Ventilation comptable des trois scénarios</h3>
+
+<p>Hypothèse de reconnaissance : <strong>70 % du cash est reconnu comme revenu en année 1</strong>, le reste en produit constaté d'avance.</p>
+
+<table>
+<thead>
+<tr><th>Élément comptable</th><th>Pessimiste</th><th>Central</th><th>Optimiste</th></tr>
+</thead>
+<tbody>
+<tr><td>Cash encaissé (J0)</td><td>7,50 M$</td><td>15,00 M$</td><td>21,25 M$</td></tr>
+<tr><td>Revenu reconnu an 1</td><td>5,25 M$</td><td>10,50 M$</td><td>14,88 M$</td></tr>
+<tr><td>Produit constaté d'avance (passif)</td><td>2,25 M$</td><td>4,50 M$</td><td>6,38 M$</td></tr>
+<tr><td>Gain impayés évités (économie)</td><td>0,60 M$</td><td>1,50 M$</td><td>2,55 M$</td></tr>
+<tr><td><strong>Revenu économique sécurisé</strong></td><td><strong>5,85 M$</strong></td><td><strong>12,00 M$</strong></td><td><strong>17,43 M$</strong></td></tr>
+</tbody>
+</table>
+
+<div class="alert">
+<p><strong>Correction par rapport au calcul initial :</strong> le revenu économique sécurisé en scénario central est de <strong>12,00 M$</strong> (et non 16,50 M$), parce que :</p>
+<ul>
+<li>15,00 M$ de cash encaissé → seulement <strong>10,50 M$ reconnus</strong> en an 1 ;</li>
+<li>4,50 M$ restent en produit constaté d'avance (passif, à reconnaître en N+1) ;</li>
+<li>1,50 M$ de gain impayés sont une <strong>économie</strong>, non une recette.</li>
+</ul>
+</div>
+
+<h3>7.9 Moteur computationnel</h3>
+
+<p>Le calcul est reproductible via le script <a href="https://github.com/berryberryship-debug/PMDQ/blob/main/gold-card-engine.py">gold-card-engine.py</a> (Python 3, dataclasses, aucune dépendance externe).</p>
+
+<pre><code># Exemple d'exécution
+$ python3 gold-card-engine.py
+Prix unitaire / examen : 1,250 $
+
+=== Scénario Central (10 grappes) ===
+Cartes vendues          : 3,000
+Examens inclus          : 12,000
+Cash encaissé (J0)      : 15,000,000 $
+Revenu reconnu an 1     : 10,500,000 $
+Produit constaté avance :  4,500,000 $
+Gain impayés évités     :  1,500,000 $
+Revenu éco. sécurisé    : 12,000,000 $</code></pre>
+
+<h3>7.10 Enveloppe marketing (à documenter)</h3>
+
+<div class="alert">
+<p><strong>À verrouiller dans la documentation :</strong> l'enveloppe marketing n'est pas encore chiffrée. Quatre indicateurs minimum devront être suivis :</p>
+<ul>
+<li><strong>Budget prévu</strong> (par exercice) ;</li>
+<li><strong>Dépense réelle</strong> (auditable) ;</li>
+<li><strong>Coût par carte acquise</strong> ;</li>
+<li><strong>Coût par examen acquis</strong>.</li>
+</ul>
+<p>Sans ces indicateurs, l'impact économique net ne peut pas être audité après déploiement.</p>
+</div>
+
+
 <h2>7. Rattachement PMDQ</h2>
 
 <table>
