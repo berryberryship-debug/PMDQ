@@ -149,6 +149,82 @@
 
 <p><strong>Restitution et souveraineté des artefacts</strong> — Les modèles fine-tunés, index vectoriels et synthèses générées doivent être transférés sous forme de <strong>livrables exclusifs</strong> à la communauté à la fermeture du projet, suivis de la purge certifiée des instances de calcul temporaires.</p>
 
+
+<h2>7. Contrôles techniques à ajouter</h2>
+
+<ul>
+<li><strong>Interdiction par défaut de l'apprentissage continu</strong> sur les données, prompts, contextes, embeddings ou sorties de la Nation.</li>
+<li><strong>Détection des tentatives de contournement</strong> des règles d'accès (reformulation de prompts, appels d'outils, chaînes d'agents).</li>
+<li><strong>Limitation des capacités d'action</strong> : séparation entre lecture, écriture, suppression, exportation et publication.</li>
+<li><strong>Authentification forte et comptes nominatifs</strong> pour opérateurs, administrateurs et membres des comités autorisés.</li>
+<li><strong>Double validation</strong> pour exports, changements de modèle, modifications de politiques et suppressions.</li>
+<li><strong>Surveillance des comportements anormaux</strong> : volumes inhabituels, extraction massive, répétition de prompts, accès hors finalité.</li>
+<li><strong>Journalisation inviolable mais minimisée</strong>, pour que les logs ne deviennent pas une source d'exposition.</li>
+<li><strong>Tests périodiques de red teaming</strong> : extraction, inférence collective, empoisonnement, contournements d'autorisation.</li>
+<li><strong>Plan de continuité souverain</strong> : fonctionnement hors ligne, restauration indépendante, migration vers autre fournisseur.</li>
+<li><strong>Procédure de sortie contractuelle et technique</strong> : restitution, révocation des clés, destruction vérifiable, certificat de purge.</li>
+</ul>
+
+<h2>8. Classification des actions d'un agent</h2>
+
+<table>
+<thead><tr><th>Niveau</th><th>Exemples</th><th>Contrôle requis</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>A — Faible risque</strong></td>
+<td>Recherche dans données publiques autorisées, génération de brouillons internes</td>
+<td>Automatisation avec journalisation</td>
+</tr>
+<tr>
+<td><strong>B — Risque modéré</strong></td>
+<td>Synthèse de données sensibles, création d'index ou de rapports internes</td>
+<td>Approbation d'un responsable désigné et revue périodique</td>
+</tr>
+<tr>
+<td><strong>C — Risque élevé</strong></td>
+<td>Inférence concernant un groupe, publication, transfert externe, modification d'une base</td>
+<td>Autorisation explicite, traçabilité complète et possibilité de révocation</td>
+</tr>
+<tr>
+<td><strong>D — Interdit</strong></td>
+<td>Réentraînement non autorisé, export vers un tiers, profilage culturel, décision automatisée affectant les droits d'une communauté</td>
+<td>Blocage technique permanent, sauf décision formelle de gouvernance</td>
+</tr>
+</tbody>
+</table>
+
+<h2>9. Exigences minimales de conformité</h2>
+
+<p>Un workflow d'agent est considéré conforme seulement s'il permet de démontrer :</p>
+
+<ol>
+<li><strong>La provenance</strong> de chaque donnée et de chaque dérivé.</li>
+<li><strong>La finalité autorisée</strong> de chaque traitement.</li>
+<li><strong>L'identité de l'autorité</strong> ayant approuvé l'usage.</li>
+<li><strong>La localisation et la juridiction</strong> de chaque copie.</li>
+<li><strong>Les fournisseurs et sous-traitants</strong> ayant accès aux flux.</li>
+<li><strong>La possibilité d'interrompre l'agent</strong> indépendamment du fournisseur.</li>
+<li><strong>La capacité de retirer ou de désactiver l'accès</strong> à une donnée.</li>
+<li><strong>La gestion des dérivés</strong> : embeddings, caches, modèles, index, rapports, sauvegardes.</li>
+<li><strong>La preuve d'absence d'entraînement tiers</strong> sur les données protégées.</li>
+<li><strong>La restitution ou la destruction vérifiable</strong> à la fin du projet.</li>
+</ol>
+
+<h2>10. Reformulation de la conclusion</h2>
+
+<div class="alert info">
+<p>La conformité OCAP® d'un système d'IA autonome ne devrait pas être évaluée uniquement selon le lieu d'hébergement ou le niveau de chiffrement. Elle doit être appréciée comme une combinaison de <strong>gouvernance communautaire, contrôle juridique, maîtrise opérationnelle, sécurité technique, traçabilité et capacité de révocation</strong>.</p>
+</div>
+
+<p>Un système peut donc être hébergé dans un cloud externe tout en demeurant admissible <strong>si</strong> la Nation conserve effectivement le contrôle des clés, des politiques d'accès, des finalités de traitement, des journaux, des modèles dérivés et des mécanismes d'arrêt.</p>
+
+<p>À l'inverse, une infrastructure locale <strong>ne garantit pas à elle seule</strong> la conformité si les autorités communautaires ne disposent pas d'un pouvoir réel sur les données, les modèles et les décisions de l'agent.</p>
+
+<div class="alert success">
+<p><strong>Critère final :</strong> la décision devrait reposer sur une <strong>évaluation communautaire documentée</strong>, renouvelée lors de chaque changement important de modèle, de fournisseur, de finalité ou d'architecture.</p>
+</div>
+
+
 <h2>6. Rattachement au PMDQ</h2>
 
 <table>
