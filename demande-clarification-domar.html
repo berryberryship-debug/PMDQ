@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Demande de clarification — Modélisation Domar pluriannuelle</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.5 + Livre X<span>Demande de clarification — Domar pluriannuel</span></div><nav class="nav"><a href="index.html">Accueil</a><a href="05_livre_V_dette_domar.html">Livre V</a><a href="references.html">Références</a><a href="changelog.html">Changelog</a><a href="demande-clarification-domar.html" class="active">Clarification</a></nav></div></header>
+<main>
+
+<h1>Demande de clarification — Modélisation Domar pluriannuelle</h1>
+<p class="lede">Statut <span class="badge yellow">[T]</span> — À valider, non intégré au Livre V</p>
+
+<div class="alert warn">
+<p><strong>Objet :</strong> le document soumis présente trois trajectoires à 25 ans (favorable, central, défavorable) avec un effort budgétaire fixe de 5,02 G$/an. La <strong>définition du terme d'ajustement</strong> et la <strong>méthode de calcul</strong> des trajectoires ne sont pas documentées.</p>
+<p>En conséquence, ces projections demeurent marquées <strong>[P]</strong> (proposées) et non <strong>[C]</strong> (calculées). Elles ne peuvent pas être intégrées au Livre II §3 tant que la reproductibilité n'est pas établie.</p>
+</div>
+
+<h2>1. Contexte</h2>
+
+<p>Le Livre II §3 (fichier 04) établit les sensibilités Domar sur la dette brute :</p>
+
+<table>
+<thead><tr><th>Scénario</th><th>i</th><th>g</th><th>i − g</th><th>s* (% PIB)</th><th>s* (G$/an)</th></tr></thead>
+<tbody>
+<tr><td>Favorable</td><td>4,00 %</td><td>3,20 %</td><td>+0,80 %</td><td>0,328 %</td><td><strong>2,11</strong></td></tr>
+<tr><td>Central</td><td>4,60 %</td><td>2,71 %</td><td>+1,89 %</td><td>0,778 %</td><td><strong>5,02</strong></td></tr>
+<tr><td>Défavorable</td><td>5,50 %</td><td>1,80 %</td><td>+3,70 %</td><td>1,537 %</td><td><strong>9,91</strong></td></tr>
+</tbody>
+</table>
+
+<p><strong>PIB dérivé :</strong> 272,644 G$ / 0,423 = <strong>644,55 G$</strong></p>
+
+<p>Ces trois valeurs (2,11 / 5,02 / 9,91 G$/an) figurent dans l'empreinte de contrôle (fichier 22 §4) et sont reproduites par le validateur arithmétique — <strong>20/20 conforme</strong>.</p>
+
+<h2>2. Ce qui est proposé en plus</h2>
+
+<p>Le document soumis ajoute une <strong>projection dynamique sur 25 ans</strong> avec un effort budgétaire fixe de 5,02 G$/an (niveau central) appliqué dans les trois scénarios :</p>
+
+<table>
+<thead><tr><th>Scénario</th><th>Effort</th><th>Trajectoire 25 ans</th></tr></thead>
+<tbody>
+<tr><td>Favorable</td><td>5,02 G$/an</td><td>dette → <strong>25,3 %</strong> (−17 points)</td></tr>
+<tr><td>Central</td><td>5,02 G$/an</td><td>dette → <strong>42,3 %</strong> (stable)</td></tr>
+<tr><td>Défavorable</td><td>5,02 G$/an</td><td>dette → <strong>83,5 %</strong> (+41 points)</td></tr>
+</tbody>
+</table>
+
+<p><strong>Équation dynamique utilisée :</strong></p>
+
+<pre><code>d_t = ((1 + i_t) / (1 + g_t)) × d_{t-1} − s_t + a_t</code></pre>
+
+<h2>3. Question 1 — Définition du terme d'ajustement <code>a_t</code></h2>
+
+<div class="alert">
+<p>Le terme <code>a_t</code> n'est pas défini dans le document. Sans cette définition, l'équation n'est pas reproductible.</p>
+</div>
+
+<p>Prière de préciser :</p>
+
+<table>
+<thead><tr><th>Élément</th><th>À documenter</th></tr></thead>
+<tbody>
+<tr><td><strong>Nature</strong></td><td>Ajustement stock-flux (comptabilité patrimoniale) ? Autres recettes/dépenses non primaires ? Écarts de change ? Autre ?</td></tr>
+<tr><td><strong>Valeur numérique</strong></td><td>Pour chacune des trois trajectoires (favorable, central, défavorable)</td></tr>
+<tr><td><strong>Source</strong></td><td>Modèle interne, référence externe, hypothèse <code>[P]</code> ?</td></tr>
+<tr><td><strong>Statut épistémique</strong></td><td><code>[M]</code> mesuré, <code>[C]</code> calculé, <code>[P]</code> proposé, <code>[T]</code> à valider ?</td></tr>
+</tbody>
+</table>
+
+<h2>4. Question 2 — Méthode de calcul des trajectoires</h2>
+
+<div class="alert">
+<p>Les trois trajectoires (25,3 % / 42,3 % / 83,5 %) ne sont pas reproductibles en l'état. La méthode de calcul doit être précisée.</p>
+</div>
+
+<p>Prière de préciser pour chaque scénario :</p>
+
+<table>
+<thead><tr><th>Élément</th><th>À documenter</th></tr></thead>
+<tbody>
+<tr><td><strong>Taux d'actualisation</strong></td><td>i et g constants ou variables sur 25 ans ?</td></tr>
+<tr><td><strong>Traitement du PIB</strong></td><td>Croissance composée annuelle ? PIB nominal fixe ? PIB réel ?</td></tr>
+<tr><td><strong>Traitement des intérêts</strong></td><td>Calculés sur dette moyenne, dette fin de période, dette début de période ?</td></tr>
+<tr><td><strong>Périodicité</strong></td><td>Annuelle, trimestrielle ?</td></tr>
+<tr><td><strong>Valeurs intermédiaires</strong></td><td>Au moins une année-témoin (ex. An 5) pour vérifier la reproductibilité</td></tr>
+<tr><td><strong>Code / feuille de calcul</strong></td><td>Disponible pour reproduction ?</td></tr>
+</tbody>
+</table>
+
+<h2>5. Conséquence sur le dossier</h2>
+
+<table>
+<thead><tr><th>Élément</th><th>Statut actuel</th><th>Condition de changement</th></tr></thead>
+<tbody>
+<tr><td>Sensibilités Domar (2,11 / 5,02 / 9,91 G$/an)</td><td><span class="badge green">[C] — Calculé</span></td><td>—</td></tr>
+<tr><td>PIB implicite (644,55 G$)</td><td><span class="badge green">[C] — Calculé</span></td><td>—</td></tr>
+<tr><td>Trajectoires 25 ans</td><td><span class="badge yellow">[P] — Proposé</span></td><td>Reproductibilité établie + validation externe</td></tr>
+<tr><td>Terme <code>a_t</code></td><td><span class="badge red">Non défini</span></td><td>Documentation obligatoire</td></tr>
+</tbody>
+</table>
+
+<h2>6. Règle de reproductibilité du dossier</h2>
+
+<div class="alert info">
+<p>Le dossier PMDQ applique la règle suivante : toute valeur marquée <code>[C]</code> (calculée) doit être <strong>reproductible à partir des paramètres déclarés</strong>. Une projection dont la méthode n'est pas documentée reste marquée <code>[P]</code> (proposée) et ne peut pas être intégrée à l'empreinte de contrôle.</p>
+</div>
+
+<h2>7. Références internes</h2>
+
+<table>
+<thead><tr><th>Élément</th><th>Emplacement</th></tr></thead>
+<tbody>
+<tr><td>Sensibilités Domar</td><td><a href="05_livre_V_dette_domar.html">Livre V — Dette publique et modèle de Domar</a></td></tr>
+<tr><td>Encadré normatif 6</td><td>Livre II §2 (fichier 04)</td></tr>
+<tr><td>Empreinte de contrôle</td><td>Fichier 22 §4 — valeurs scellées</td></tr>
+<tr><td>Hypothèses H5 à H10</td><td>Livre VIII (fichier 11)</td></tr>
+<tr><td>Référence R5 (Domar 1944)</td><td><a href="references.html">Corpus citationnel</a></td></tr>
+</tbody>
+</table>
+
+<div class="alert">
+<p><strong>Statut de ce document :</strong> <code>[T]</code> — À valider. Il ne modifie aucun livre, aucun invariant, aucune empreinte. Il documente une demande de clarification pour rendre reproductibles les trajectoires proposées.</p>
+</div>
+
+<hr>
+<p><em>Demande de clarification — Non adoptée, non opérationnelle. Sherbrooke, Québec — 26 septembre 2026.</em></p>
+</main>
+<footer class="footer"><p>PMDQ v2.7.5 + Livre X — Demande de clarification Domar — 26 septembre 2026</p></footer>
+</body></html>
