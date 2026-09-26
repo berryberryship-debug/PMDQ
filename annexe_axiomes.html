@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Annexe connexe — Matrice opérationnelle Axiômes BaseLabs</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
+<header class="site-header"><div class="site-header__inner"><div class="brand">Annexe connexe<span>Axiômes BaseLabs — Matrice opérationnelle</span></div></div></header>
+<main>
+<h1>Annexe connexe — Matrice opérationnelle Axiômes BaseLabs</h1>
+<p class="lede">Document technique connexe — Accès direct uniquement</p>
+<div class="alert">
+<p><strong>Statut :</strong> <span class="badge info">HORS DOSSIER</span> — Ce document est une annexe externe au PMDQ. Il n'apparaît pas dans l'index principal et n'engage pas le dossier scellé.</p>
+</div>
+<h2>1. Périmètre et hypothèses fondamentales (T = 0)</h2>
+<p>Cette annexe décrit le formalisme de l'infrastructure logicielle et opérationnelle <em>BaseLabs</em>. Contrairement au modèle macroéconomique global du PMDQ (qui intègre le passif historique du secteur public québécois), ce sous-système est initialisé en circuit fermé local à passif net nul (<code>L_0 = 0</code>).</p>
+<ul>
+<li><strong>Cadre tri-polaire</strong> : régulation des flux d'échanges entre l'État, les partenaires privés et les agents d'exécution.</li>
+<li><strong>Condition d'adhésion administrative</strong> : alignement sur le registre d'état pour minimiser les coûts de transaction contractuels.</li>
+<li><strong>Calibrage sur l'incompressible</strong> : allocation prioritaire des ressources aux besoins d'infrastructure critiques.</li>
+<li><strong>Filtrage stochastique</strong> : isolation des modules de calcul face au bruit externe non modélisé.</li>
+</ul>
+<h2>2. Dynamique de croissance et d'accumulation (Domar)</h2>
+<p>Dans le périmètre fermé de la matrice, l'expansion de la capacité est gouvernée par la relation canonique de Harrod-Domar :</p>
+<pre><code>g = s · σ</code></pre>
+<p>Où :</p>
+<ul>
+<li><strong>g</strong> = ΔY / Y est le taux de croissance de la capacité de traitement/production ;</li>
+<li><strong>s</strong> est le taux d'épargne / réinvestissement productif ;</li>
+<li><strong>σ</strong> est l'efficacité marginale du capital infrastructurel.</li>
+</ul>
+<p>Sous l'hypothèse d'absence d'émission de dette propre au sein de ce module (<code>L_0 = 0</code>), le ratio d'endettement interne reste invariant :</p>
+<pre><code>d/dt (L_module / Y) = 0</code></pre>
+<div class="alert">
+<p><strong>Note méthodologique :</strong> ce résultat ne s'applique pas au bilan consolidé de l'État québécois, traité dans les Livres I à V. Le PMDQ retient une dette brute de <strong>272,644 G$</strong> (42,3 % du PIB) au 31 mars 2026.</p>
+</div>
+<h2>3. Répertoire des vecteurs opérationnels</h2>
+<p>L'instanciation de la matrice produit quatre axes de livrables :</p>
+<table>
+<thead><tr><th>Vecteur</th><th>Contenu</th></tr></thead>
+<tbody>
+<tr><td><strong>ÉTUDES</strong></td><td>Audits macroéconomiques, documentations phénoménologiques et analyses technico-économiques.</td></tr>
+<tr><td><strong>CODES</strong></td><td>Implémentation algorithmique des modèles (Python, C++, formalisations dynamiques).</td></tr>
+<tr><td><strong>RISQUES</strong></td><td>Cartographie des asymétries d'information et identification des points de rupture systémique.</td></tr>
+<tr><td><strong>AMPLEUR</strong></td><td>Délimitation formelle des bornes d'intervention pour prévenir tout étalement non soutenable (<code>sup(Ω) &lt; ∞</code>).</td></tr>
+</tbody>
+</table>
+<h2>4. Spécifications techniques d'intégration</h2>
+<pre><code>Fichier         : annexe_axiomes.html
+Routage         : Silencieux (aucun lien sur la page d'accueil / index.html)
+Conflit évité   : Préservation de l'intégrité du Livre VI (API Pydantic &amp; 17 projets types)</code></pre>
+<hr>
+<p><em>Document technique connexe — hors dossier scellé PMDQ. Non adopté, non opérationnel.</em></p>
+</main>
+<footer class="footer"><p>Axiômes BaseLabs — Annexe connexe — Sherbrooke, Québec — 25 septembre 2026</p></footer>
+</body>
+</html>
