@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Changelog — PMDQ v2.7.5</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.5 + Livre X<span>Changelog public</span></div><nav class="nav"><a href="index.html">Accueil</a><a href="references.html">Références</a><a href="changelog.html" class="active">Changelog</a></nav></div></header>
+<main>
+
+<h1>Changelog public</h1>
+<p class="lede">Historique des versions et des corrections du Dossier Maître PMDQ</p>
+
+<div class="alert info">
+<p><strong>Version actuelle :</strong> <span class="badge green">2.7.5 + Livre X</span> — 26 septembre 2026</p>
+<p>Cette page documente toutes les modifications depuis la version initialement diffusée (v2.7.1). Elle sert aux lecteurs qui auraient reçu une version antérieure et qui constatent un écart.</p>
+</div>
+
+<h2>Ruptures et corrections documentées (RUPT)</h2>
+
+<table>
+<thead><tr><th>ID</th><th>Champ corrigé</th><th>Valeur initiale</th><th>Valeur corrigée</th><th>Nature</th><th>Statut</th></tr></thead>
+<tbody>
+<tr><td><strong>RUPT-001</strong></td><td>Ratio D moyen (16 conformes)</td><td>1,3962</td><td><strong>1,4048</strong></td><td>Coquille — libellé non respecté</td><td><span class="badge green">Corrigée</span></td></tr>
+<tr><td><strong>RUPT-002</strong></td><td>Somme VAN portefeuille</td><td>16,85 G$</td><td><strong>17,23 G$</strong></td><td>Totaux erronés vs tableau source</td><td><span class="badge green">Corrigée</span></td></tr>
+<tr><td><strong>RUPT-003</strong></td><td>Somme coûts portefeuille</td><td>8,02 G$</td><td><strong>12,09 G$</strong></td><td>Totaux erronés vs tableau source</td><td><span class="badge green">Corrigée</span></td></tr>
+<tr><td><strong>RUPT-004</strong></td><td>Enveloppe vs coût portefeuille</td><td>—</td><td>3,69 G$ d'écart</td><td>Dépassement art. 20 documenté</td><td><span class="badge yellow">Scénario 2 retenu</span></td></tr>
+<tr><td><strong>RUPT-005</strong></td><td>Décompte volets d'audit</td><td>9 conformes / 7 sous réserve</td><td><strong>7 conformes / 9 sous réserve</strong></td><td>Inversion de décompte</td><td><span class="badge green">Corrigée</span></td></tr>
+<tr><td><strong>RUPT-006</strong></td><td>Version 2.6.7 fantôme</td><td>—</td><td>—</td><td>Coquille pour 2.6.5</td><td><span class="badge green">Non avenue</span></td></tr>
+</tbody>
+</table>
+
+<h2>Ajouts depuis la v2.7.1</h2>
+
+<table>
+<thead><tr><th>Élément</th><th>Contenu</th><th>Statut</th></tr></thead>
+<tbody>
+<tr><td><strong>Livre X</strong></td><td>Justice, agentivité et droits fondamentaux</td><td><span class="badge green">Ajouté</span></td></tr>
+<tr><td><strong>Annexe OCAP</strong></td><td>Gouvernance autochtone des données</td><td><span class="badge green">Ajouté</span></td></tr>
+<tr><td><strong>Annexe OCAP-IA</strong></td><td>Agents autonomes et workflows computationnels</td><td><span class="badge green">Ajouté</span></td></tr>
+<tr><td><strong>Annexe Agentivité de trajectoire</strong></td><td>Hypothèse théorique [P]</td><td><span class="badge green">Ajouté</span></td></tr>
+<tr><td><strong>Corridor NARP</strong></td><td>Analyse de faisabilité (santé, capacité résiduelle)</td><td><span class="badge green">Ajouté</span></td></tr>
+<tr><td><strong>Gold Card</strong></td><td>Variante prépayée + moteur comptable</td><td><span class="badge green">Ajouté</span></td></tr>
+<tr><td><strong>Coalition scientifique-technologique</strong></td><td>Infrastructures, matériaux, transport</td><td><span class="badge green">Ajouté</span></td></tr>
+<tr><td><strong>Références R1-R31</strong></td><td>Corpus unifié (R12-R31 ajoutées)</td><td><span class="badge green">Ajouté</span></td></tr>
+<tr><td><strong>Fiches D1, D2, D3, D5</strong></td><td>Pages détaillées par décision</td><td><span class="badge green">Ajouté</span></td></tr>
+<tr><td><strong>Registre propositions</strong></td><td>PROP-001 à PROP-009</td><td><span class="badge green">Ajouté</span></td></tr>
+<tr><td><strong>Moteur d'audit</strong></td><td>pmdq_audit.py — 33/33</td><td><span class="badge green">Ajouté</span></td></tr>
+</tbody>
+</table>
+
+<h2>Changements structurels</h2>
+
+<table>
+<thead><tr><th>Élément</th><th>v2.7.1</th><th>v2.7.5</th></tr></thead>
+<tbody>
+<tr><td>Livres</td><td>9</td><td><strong>10</strong></td></tr>
+<tr><td>Fichiers scellés</td><td>24</td><td>25</td></tr>
+<tr><td>Pages publiées</td><td>15</td><td><strong>33</strong></td></tr>
+<tr><td>Références</td><td>R1-R11</td><td><strong>R1-R31</strong></td></tr>
+<tr><td>Décisions listées</td><td>4</td><td><strong>5 (dont 1 résolue)</strong></td></tr>
+<tr><td>Titre header</td><td>v2.7.1 + Livre IX</td><td><strong>v2.7.5 + Livre X</strong></td></tr>
+</tbody>
+</table>
+
+<h2>Chiffres-clés modifiés</h2>
+
+<table>
+<thead><tr><th>Indicateur</th><th>v2.7.1</th><th>v2.7.5</th><th>Motif</th></tr></thead>
+<tbody>
+<tr><td>Décaissé total</td><td>8,100 G$</td><td><strong>7,127 G$</strong></td><td>Réserve préventive appliquée</td></tr>
+<tr><td>Taux d'exécution</td><td>96,43 %</td><td><strong>84,85 %</strong></td><td>Réserve préventive appliquée</td></tr>
+<tr><td>Ratio D moyen (16)</td><td>1,3962</td><td><strong>1,4048</strong></td><td>RUPT-001</td></tr>
+<tr><td>Somme VAN</td><td>16,85 G$</td><td><strong>17,23 G$</strong></td><td>RUPT-002</td></tr>
+<tr><td>Somme coûts</td><td>8,02 G$</td><td><strong>12,09 G$</strong></td><td>RUPT-003</td></tr>
+<tr><td>Volets conformes</td><td>9/16</td><td><strong>7/16</strong></td><td>RUPT-005</td></tr>
+</tbody>
+</table>
+
+<div class="alert warn">
+<p><strong>Pourquoi ces écarts ?</strong> La v2.7.1 appliquait la réserve préventive de manière partielle et contenait trois coquilles arithmétiques. La v2.7.5 applique la réserve intégralement (encadré 5, art. 13) et corrige les trois coquilles. Les écarts sont documentés dans RUPT-001 à RUPT-006 — traçables et reproductibles.</p>
+</div>
+
+<h2>Historique complet des versions</h2>
+
+<table>
+<thead><tr><th>Version</th><th>Date</th><th>Apport principal</th></tr></thead>
+<tbody>
+<tr><td>2.5.7</td><td>20 sept. 2026</td><td>Consolidation initiale, architecture éducative</td></tr>
+<tr><td>2.5.8</td><td>20 sept. 2026</td><td>6 encadrés normatifs + 47 articles</td></tr>
+<tr><td>2.5.9</td><td>20 sept. 2026</td><td>17 projets + 16 volets + NARP = 1,5948</td></tr>
+<tr><td>2.6.0</td><td>20 sept. 2026</td><td>Note impact + tableau bord + bilingue FR/EN</td></tr>
+<tr><td>2.6.1</td><td>20 sept. 2026</td><td>Manuel opérationnel + RACI + communication</td></tr>
+<tr><td>2.6.2</td><td>20 sept. 2026</td><td>Risques + contingence + reddition AN</td></tr>
+<tr><td>2.6.3</td><td>20 sept. 2026</td><td>PRC/MACSP + 23 fichiers scellés</td></tr>
+<tr><td>2.6.4</td><td>20 sept. 2026</td><td>Erratum — RUPT-001 à 003 corrigées</td></tr>
+<tr><td>2.6.5</td><td>20 sept. 2026</td><td>Arbitrage dépassement (scénarios 2/3A/3B)</td></tr>
+<tr><td>2.7.0</td><td>20 sept. 2026</td><td>Scellement sous réserve — KPI-09 corrigé</td></tr>
+<tr><td>2.7.1</td><td>20 sept. 2026</td><td>Livre VII consolidé (éducation)</td></tr>
+<tr><td><strong>2.7.5</strong></td><td>26 sept. 2026</td><td><strong>Livre X, OCAP, NARP, Gold Card, Coalition, Références</strong></td></tr>
+</tbody>
+</table>
+
+<h2>Réserve juridique</h2>
+
+<div class="alert">
+<p>Ce dossier demeure <strong>non adopté</strong>, <strong>non opérationnel</strong> et <strong>non opposable</strong>. Les corrections documentées dans cette page sont des corrections internes au dossier prospectif, pas des décisions d'autorité.</p>
+</div>
+
+<hr>
+<p><em>Changelog public — Version 2.7.5 — Sherbrooke, Québec — 26 septembre 2026</em></p>
+</main>
+<footer class="footer"><p>PMDQ v2.7.5 + Livre X — Changelog — 26 septembre 2026</p></footer>
+</body></html>
