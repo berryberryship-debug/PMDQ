@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Annexe OCAP-IA — Agents autonomes et gouvernance autochtone — PMDQ v2.7.5</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.5<span>Annexe OCAP-IA — Agents autonomes</span></div><nav class="nav"><a href="index.html">Accueil</a><a href="livre_X_justice.html">Justice</a><a href="annexe-ocap.html">OCAP</a><a href="annexe-ocap-ia.html" class="active">OCAP-IA</a></nav></div></header>
+<main>
+
+<h1>Annexe OCAP-IA — Agents autonomes et workflows computationnels</h1>
+<p class="lede">Audit d'application des principes OCAP® aux systèmes d'intelligence artificielle autonomes</p>
+
+<div class="alert info">
+<p><strong>Statut :</strong> <span class="badge info">ANNEXE TECHNIQUE</span> — Complément à <a href="annexe-ocap.html">l'annexe OCAP</a>. Audit d'ingénierie logicielle appliqué aux workflows d'agents IA.</p>
+</div>
+
+<h2>1. Rupture de cadre</h2>
+
+<p>L'intégration des systèmes d'intelligence artificielle autonome et des workflows d'agents intelligents crée une <strong>rupture majeure</strong> avec les cadres classiques de gestion des données. Appliqués à ce contexte, les principes OCAP® exigent une révision fondamentale des mécanismes d'ingénierie logicielle, d'entraînement des modèles et d'hébergement.</p>
+
+<h2>2. Audit OCAP® par principe</h2>
+
+<h3>2.1 Propriété vs modélisation vectorielle</h3>
+<p>La propriété collective s'étend aux données brutes, métadonnées, ainsi qu'à toutes leurs <strong>représentations dérivées</strong> :</p>
+<ul>
+<li>Embeddings vectoriels ;</li>
+<li>Poids synaptiques fine-tunés ;</li>
+<li>Représentations d'état (state representations).</li>
+</ul>
+<p>L'intégration non autorisée de savoirs ou de trajectoires communautaires dans un modèle paramétrique constitue une <strong>appropriation de propriété intellectuelle et culturelle</strong>.</p>
+
+<h3>2.2 Contrôle vs autonomie des agents</h3>
+<p>Le contrôle exige que les autorités autochtones conservent un <strong>droit de veto décisionnel continu et révocable</strong> sur :</p>
+<ul>
+<li>Les objectifs ;</li>
+<li>Les fonctions de récompense (reward functions) ;</li>
+<li>Les boucles de rétroaction des agents IA.</li>
+</ul>
+<p>Un agent exécutant des tâches autonomes de collecte, de synthèse ou d'inférence sans supervision communautaire directe enfreint ce principe.</p>
+
+<h3>2.3 Accès vs pipeline RAG et APIs</h3>
+<p>L'accès doit être régi par une <strong>matrice stricte</strong> fondée sur les rôles, les finalités et la sensibilité culturelle. Les pipelines de génération augmentée par récupération (<em>RAG</em>) et les appels d'API tiers exposent les données à :</p>
+<ul>
+<li>Des fuites de contexte ;</li>
+<li>De l'inférence secondaire ;</li>
+<li>Un partage non consenti avec des fournisseurs d'infrastructures.</li>
+</ul>
+
+<h3>2.4 Possession vs souveraineté du cloud</h3>
+<p>La possession physique ou cryptographique exige que les <strong>bases de données vectorielles</strong>, les <strong>journaux d'exécution</strong> (logs) et les <strong>instances d'agents</strong> résident sur des infrastructures gérées par ou sous mandat exprès de la Nation. Le stockage sur des serveurs cloud publics non chiffrés à la source est prohibé.</p>
+
+<h2>3. Grille de conformité OCAP® pour agents IA</h2>
+
+<table>
+<thead><tr><th>Domaine</th><th>Critère OCAP</th><th>Statut</th><th>Failles identifiées</th><th>Risque</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Collecte &amp; Intégration</strong></td>
+<td>Consentement collectif préalable et libre sur l'utilisation des données pour le pré-entraînement ou le RAG.</td>
+<td><span class="badge red">Non conforme</span></td>
+<td>Aspiration automatisée (scraping), ingestion non filtrée dans les bases vectorielles, absence de consentement pour les dérivés paramétriques.</td>
+<td><span class="badge red">Critique</span></td>
+</tr>
+<tr>
+<td><strong>Souveraineté du stockage</strong></td>
+<td>Conservation des copies maîtresses et des index sous contrôle d'infrastructure autochtone.</td>
+<td><span class="badge yellow">Partiel</span></td>
+<td>Dépendance aux fournisseurs cloud commerciaux (AWS, Azure, GCP), stockage des embeddings sur clusters tiers sans chiffrement contrôlé.</td>
+<td><span class="badge red">Élevé</span></td>
+</tr>
+<tr>
+<td><strong>Contrôle communautaire</strong></td>
+<td>Pouvoir de veto décisionnel sur les algorithmes, ajustement des biais, droit d'arrêt (kill switch).</td>
+<td><span class="badge red">Non conforme</span></td>
+<td>Opacité des modèles « boîte noire », réification algorithmique, incapacité de désentraîner (unlearning) un modèle cible.</td>
+<td><span class="badge red">Critique</span></td>
+</tr>
+<tr>
+<td><strong>Droits d'accès &amp; Flux</strong></td>
+<td>Isolation stricte des accès, interdiction de réentraînement tiers, masquage d'inférence.</td>
+<td><span class="badge red">Non conforme</span></td>
+<td>Fuite de données via fenêtres de contexte, journalisation par les API d'IA commerciales, réidentification indirecte de sous-groupes.</td>
+<td><span class="badge red">Élevé</span></td>
+</tr>
+<tr>
+<td><strong>Gouvernance des dérivés</strong></td>
+<td>Propriété collective reconnue sur modèles fins, poids, agents dérivés et publications.</td>
+<td><span class="badge red">Non conforme</span></td>
+<td>Captation de la valeur intellectuelle par les développeurs de plateformes, licences propriétaires appliquées aux modèles entraînés.</td>
+<td><span class="badge red">Élevé</span></td>
+</tr>
+</tbody>
+</table>
+
+<h2>4. Failles systémiques des workflows d'agents IA</h2>
+
+<h3>4.1 Incapacité au désapprentissage sélectif</h3>
+<p>Lorsqu'une communauté exerce son droit de retrait ou de révocation d'accès, les architectures actuelles de LLM <strong>ne permettent pas d'extraire facilement la connaissance apprise</strong> sans recalculer l'intégralité du modèle (<em>machine unlearning</em>).</p>
+
+<h3>4.2 Réification et inférence collective non consentie</h3>
+<p>Les agents d'analyse probabiliste peuvent générer des profils ou corrélations stigmatisantes sur des communautés à partir de données agrégées ou anonymisées, <strong>contournant le consentement individuel</strong>.</p>
+
+<h3>4.3 Capture par les tiers technologiques</h3>
+<p>L'utilisation d'agents hébergés sur des plateformes propriétaires (SaaS) transfère implicitement la <strong>possession technique des flux de raisonnement</strong> et des historiques de prompt aux éditeurs logiciels.</p>
+
+<h2>5. Stratégies de remédiation</h2>
+
+<h3>5.1 Architecture d'isolation cryptographique et hébergement local</h3>
+
+<p><strong>Gestion souveraine des clés (KMS Autochtone)</strong></p>
+<ul>
+<li>Données au repos et bases vectorielles chiffrées avec des clés détenues exclusivement par l'autorité de gouvernance autochtone.</li>
+<li>L'agent IA n'accède au contexte déchiffré qu'en mémoire vive temporaire au sein d'un environnement d'exécution sécurisé (TEE).</li>
+</ul>
+
+<p><strong>Déploiement On-Premise ou Edge</strong></p>
+<ul>
+<li>Exécution des modèles d'agents (LLM open-source quantifiés) sur des serveurs sous contrôle direct.</li>
+<li>Environnements conteneurisés strictement isolés d'Internet (air-gapped ou réseau privé).</li>
+</ul>
+
+<h3>5.2 Contrôle d'exécution des agents (Human-in-the-Loop)</h3>
+
+<p><strong>Passerelle de validation décisionnelle</strong></p>
+<ul>
+<li>Middleware d'interception entre la planification de l'agent et son exécution.</li>
+<li>Toute action modifiant une base de connaissances ou générant une inférence publique nécessite la <strong>signature numérique</strong> d'un représentant du comité d'éthique autochtone.</li>
+</ul>
+
+<p><strong>Interdiction du réentraînement par défaut</strong></p>
+<ul>
+<li>Rejet contractuel et technique de toute clause permettant aux fournisseurs de LLM d'utiliser les requêtes, contextes ou embeddings pour l'entraînement de modèles fondationnels futurs.</li>
+</ul>
+
+<h3>5.3 Cadre normatif d'audit des workflows</h3>
+
+<pre><code>[Données brutes / Récits]
+       │
+       ▼
+[Filtrage OCAP & Anonymisation contextuelle]
+       │
+       ▼
+[Chiffrement KMS sous contrôle Autochtone]
+       │
+       ▼
+[Base vectorielle locale (Chiffrée)] ◄─── [Passerelle d'accès / Registre d'audit immutable]
+       │
+       ▼
+[Agent IA en environnement TEE local] ───► [Validation décisionnelle communautaire] ───► [Résultat scientifique]</code></pre>
+
+<p><strong>Transparence et traçabilité</strong> — Consignation de chaque appel d'agent, prompt et réponse dans un registre d'audit <strong>immuable</strong> et vérifiable par les autorités communautaires.</p>
+
+<p><strong>Restitution et souveraineté des artefacts</strong> — Les modèles fine-tunés, index vectoriels et synthèses générées doivent être transférés sous forme de <strong>livrables exclusifs</strong> à la communauté à la fermeture du projet, suivis de la purge certifiée des instances de calcul temporaires.</p>
+
+<h2>6. Rattachement au PMDQ</h2>
+
+<table>
+<thead><tr><th>Élément</th><th>Référence</th></tr></thead>
+<tbody>
+<tr><td>Livre X</td><td>Justice, agentivité et droits fondamentaux</td></tr>
+<tr><td>Annexe OCAP</td><td><a href="annexe-ocap.html">Gouvernance autochtone des données</a></td></tr>
+<tr><td>Livre V, volet V14</td><td>Cybersécurité</td></tr>
+<tr><td>Livre VI</td><td>Pydantic + API de validation</td></tr>
+<tr><td>Invariants concernés</td><td>INV-07 (ventilation), INV-10 (conditions d'abandon)</td></tr>
+</tbody>
+</table>
+
+<h2>7. Note de rigueur</h2>
+
+<div class="alert">
+<p>Ce document décrit des <strong>exigences techniques et des recommandations d'ingénierie</strong> pour la conformité OCAP dans les workflows IA. Il ne constitue pas :</p>
+<ul>
+<li>une norme juridique opposable ;</li>
+<li>une spécification technique validée par les autorités autochtones ;</li>
+<li>une garantie d'absence de risque d'inférence collective.</li>
+</ul>
+<p>La mise en œuvre effective nécessite une <strong>négociation contractuelle</strong> avec chaque autorité autochtone compétente, ainsi qu'une validation par des experts en sécurité informatique et en gouvernance des données.</p>
+</div>
+
+<hr>
+<p><em>Annexe technique — Non adoptée, non opérationnelle. Complément au Livre X. Nécessite validation par les autorités autochtones concernées et par des experts techniques en sécurité des systèmes d'IA.</em></p>
+</main>
+<footer class="footer"><p>PMDQ v2.7.5 — Annexe OCAP-IA — Sherbrooke, Québec — 26 septembre 2026</p></footer>
+</body></html>
