@@ -16,6 +16,8 @@ PAGES_PUBLIQUES = [
 
 PAGES_SILENCIEUSES = [
     # "annexe_livres_I_a_IV.html",  # pas encore poussee
+    "annexe_axiomes.html",
+    "annexe_axiomes.html",
 ]
 
 def check_url(path):
