@@ -1,0 +1,14 @@
+annee,stock_primaire,stock_secondaire,flux_univ_cumule,commentaire
+0,682000,460000,0,État initial
+1,700947,452331,0,Transition (1/6)
+2,719883,444668,0,Transition (2/6)
+3,738831,437000,0,Transition (3/6)
+4,757778,429331,0,Transition (4/6)
+5,776714,421668,9000,Transition (5/6)
+6,795662,414000,18000,Transition (6/6)
+7,795662,423200,45000,Consolidation
+8,795662,404800,45000,Consolidation
+9,795662,386400,45000,Consolidation
+10,795662,368000,45000,Consolidation
+11,795662,368000,45000,Plein régime
+12,795662,368000,45000,Plein régime

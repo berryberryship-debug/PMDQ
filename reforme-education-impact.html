@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Impact réforme éducation — PMDQ v2.7.5</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.5 + Livre X<span>Impact réforme éducation</span></div><nav class="nav"><a href="index.html">Accueil</a><a href="01_livre_I_architecture.html">Architecture</a><a href="02_livre_II_finances.html">Finances</a><a href="10_livre_VII_transition_educative.html">Livre VII</a><a href="references.html">Références</a><a href="changelog.html">Changelog</a><a href="reforme-education-impact.html" class="active">Réforme éduc.</a></nav></div></header>
+<main>
+
+<h1>Impact de la réforme éducative</h1>
+<p class="lede">Simulation démographique et analyse des compromis possibles</p>
+
+<div class="alert info">
+<p><strong>Statut :</strong> <span class="badge info">ANALYSE [P/T]</span> — Complément au <a href="10_livre_VII_transition_educative.html">Livre VII</a>. Modèle de simulation démographique pour la transition primaire 6→7 ans et secondaire 5→4 ans.</p>
+</div>
+
+<div class="alert success">
+<h4>Résumé exécutif</h4>
+<p>La réforme ne change <strong>pas</strong> le nombre total d'élèves dans le système à plein régime. Elle <strong>redistribue</strong> les effectifs et crée un <strong>pic transitoire de +16,6 %</strong> au primaire pendant 6 ans. Trois options de compromis sont identifiées pour absorber ce pic.</p>
+</div>
+
+<h2>1. Chiffres-clés</h2>
+
+<table>
+<thead><tr><th>Indicateur</th><th>Avant</th><th>Après (plein régime)</th><th>Variation</th></tr></thead>
+<tbody>
+<tr><td>Cohorte primaire annuelle</td><td>113 666</td><td>97 428</td><td><strong>−16 238</strong> (−14 %)</td></tr>
+<tr><td>Cohorte secondaire annuelle</td><td>92 000</td><td>115 000</td><td><strong>+23 000</strong> (+25 %)</td></tr>
+<tr><td>Stock primaire total</td><td>682 000</td><td>682 000</td><td>0 (stable)</td></tr>
+<tr><td>Stock secondaire total</td><td>460 000</td><td>460 000</td><td>0 (stable)</td></tr>
+<tr><td>Flux annuel vers université</td><td>0</td><td>+45 000</td><td><strong>+45 000 étudiants/an</strong></td></tr>
+</tbody>
+</table>
+
+<h2>2. Le pic transitoire</h2>
+
+<div class="alert warn">
+<p><strong>Point critique :</strong> pendant la transition (An 1 à An 6), le primaire doit absorber <strong>7 cohortes simultanées</strong> au lieu de 6. Cela crée un pic de <strong>+113 662 élèves</strong>, soit <strong>+16,6 %</strong> de capacité requise.</p>
+</div>
+
+<h3>Simulation sur 12 ans</h3>
+
+<table>
+<thead><tr><th>Année</th><th>Stock primaire</th><th>Stock secondaire</th><th>Flux université</th><th>Phase</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>682 000</td><td>460 000</td><td>0</td><td>État initial</td></tr>
+<tr><td>1</td><td>700 947</td><td>460 000</td><td>0</td><td>Transition (1/6)</td></tr>
+<tr><td>2</td><td>719 883</td><td>460 000</td><td>0</td><td>Transition (2/6)</td></tr>
+<tr><td>3</td><td>738 831</td><td>460 000</td><td>0</td><td>Transition (3/6)</td></tr>
+<tr><td>4</td><td>757 778</td><td>460 000</td><td>0</td><td>Transition (4/6)</td></tr>
+<tr><td>5</td><td>776 714</td><td>460 000</td><td>7 500</td><td>Transition (5/6)</td></tr>
+<tr><td><strong>6</strong></td><td><strong>795 662</strong></td><td>460 000</td><td>15 000</td><td><strong>PIC (6/6)</strong></td></tr>
+<tr><td>7</td><td>767 246</td><td>442 750</td><td>45 000</td><td>Détransition (1/4)</td></tr>
+<tr><td>8</td><td>738 831</td><td>425 500</td><td>45 000</td><td>Détransition (2/4)</td></tr>
+<tr><td>9</td><td>710 415</td><td>408 250</td><td>45 000</td><td>Détransition (3/4)</td></tr>
+<tr><td>10</td><td>682 000</td><td>391 000</td><td>45 000</td><td>Détransition (4/4)</td></tr>
+<tr><td>11-12</td><td>682 000</td><td>460 000</td><td>45 000</td><td>Plein régime</td></tr>
+</tbody>
+</table>
+
+<p><strong>Lecture :</strong></p>
+<ul>
+<li><strong>An 1-6</strong> : montée progressive vers le pic primaire (7 cohortes simultanées)</li>
+<li><strong>An 6</strong> : pic absolu (+113 662 élèves)</li>
+<li><strong>An 7-10</strong> : détransition progressive (retour vers 6 cohortes)</li>
+<li><strong>An 11+</strong> : plein régime stabilisé</li>
+</ul>
+
+<h2>3. Effets démographiques</h2>
+
+<table>
+<thead><tr><th>Effet</th><th>Direction</th><th>Ampleur</th></tr></thead>
+<tbody>
+<tr><td>Âge moyen au primaire</td><td>↑</td><td>Plus d'élèves de 12-13 ans</td></tr>
+<tr><td>Âge moyen au secondaire</td><td>↓</td><td>Moins d'élèves de 16-17 ans</td></tr>
+<tr><td>Flux vers l'université</td><td>↑</td><td>+45 000 étudiants/an à plein régime</td></tr>
+<tr><td>Pression sur les résidences universitaires</td><td>↑</td><td>À anticiper</td></tr>
+<tr><td>Décalage d'entrée sur le marché du travail</td><td>Stable</td><td>11 ans avant université — inchangé</td></tr>
+</tbody>
+</table>
+
+<h2>4. Trois options de compromis</h2>
+
+<h3>Option A — Étalement sur 7 ans (par région)</h3>
+<table>
+<thead><tr><th>Élément</th><th>Valeur</th></tr></thead>
+<tbody>
+<tr><td>Principe</td><td>Ajouter la 7e année par groupes de régions (ex. 3 régions/an)</td></tr>
+<tr><td>Pic primaire résultant</td><td>Réduit de 16,6 % à environ <strong>5-6 %</strong></td></tr>
+<tr><td>Coût</td><td>Administratif uniquement</td></tr>
+<tr><td>Délai complet</td><td>7 ans au lieu de 6</td></tr>
+<tr><td>Risque politique</td><td>Inégalités régionales temporaires</td></tr>
+</tbody>
+</table>
+
+<h3>Option B — Bâtiments modulaires temporaires</h3>
+<table>
+<thead><tr><th>Élément</th><th>Valeur</th></tr></thead>
+<tbody>
+<tr><td>Principe</td><td>Ajouter 16 % de capacité démontable</td></tr>
+<tr><td>Volume requis</td><td>~113 000 places temporaires</td></tr>
+<tr><td>Coût estimé</td><td>~200 à 400 M$ sur 6 ans</td></tr>
+<tr><td>Délai complet</td><td>6 ans (réforme nominale)</td></tr>
+<tr><td>Risque politique</td><td>« Classes préfabriquées » — sensibilité médiatique</td></tr>
+</tbody>
+</table>
+
+<h3>Option C — Classes multi-niveaux</h3>
+<table>
+<thead><tr><th>Élément</th><th>Valeur</th></tr></thead>
+<tbody>
+<tr><td>Principe</td><td>Absorber le pic par regroupement pédagogique</td></tr>
+<tr><td>Volume requis</td><td>Aucun (réorganisation interne)</td></tr>
+<tr><td>Coût</td><td>Formation enseignante (~30 M$)</td></tr>
+<tr><td>Délai complet</td><td>6 ans</td></tr>
+<tr><td>Risque politique</td><td>Débat pédagogique (efficacité des classes mixtes)</td></tr>
+</tbody>
+</table>
+
+<h2>5. Matrice de sensibilité</h2>
+
+<table>
+<thead><tr><th>Option</th><th>Pic résiduel</th><th>Coût</th><th>Délai</th><th>Risque politique</th></tr></thead>
+<tbody>
+<tr><td>Statut quo (aucune mesure)</td><td>+16,6 %</td><td>0</td><td>6 ans</td><td><span class="badge red">Élevé</span></td></tr>
+<tr><td>A — Étalement</td><td>+5-6 %</td><td>Faible</td><td>7 ans</td><td><span class="badge yellow">Moyen</span></td></tr>
+<tr><td>B — Modulaires</td><td>0 %</td><td>200-400 M$</td><td>6 ans</td><td><span class="badge yellow">Moyen</span></td></tr>
+<tr><td>C — Multi-niveaux</td><td>0 %</td><td>30 M$</td><td>6 ans</td><td><span class="badge green">Faible-moyen</span></td></tr>
+<tr><td>A + B combinés</td><td>0 %</td><td>150-300 M$</td><td>7 ans</td><td><span class="badge green">Faible</span></td></tr>
+</tbody>
+</table>
+
+<h2>6. Points ouverts [T]</h2>
+
+<table>
+<thead><tr><th>Question</th><th>Statut</th></tr></thead>
+<tbody>
+<tr><td>Répartition régionale exacte du pic</td><td>[T] — données MEQ nécessaires</td></tr>
+<tr><td>Coût réel des bâtiments modulaires au Québec</td><td>[T] — à documenter</td></tr>
+<tr><td>Capacité d'accueil universitaire additionnelle (+45 000)</td><td>[T] — à valider avec universités</td></tr>
+<tr><td>Impact sur le transport scolaire</td><td>[T] — à modéliser</td></tr>
+<tr><td>Coût de formation multi-niveaux</td><td>[T] — à préciser</td></tr>
+</tbody>
+</table>
+
+<h2>7. Rattachement au dossier</h2>
+
+<table>
+<thead><tr><th>Élément</th><th>Référence</th></tr></thead>
+<tbody>
+<tr><td>Livre VII — Transition éducative</td><td><a href="10_livre_VII_transition_educative.html">Source programmatique</a></td></tr>
+<tr><td>Livre II — Cadre financier</td><td><a href="02_livre_II_finances.html">Poste 7e primaire 0,60 G$</a></td></tr>
+<tr><td>Hypothèses HYP-15 à HYP-18</td><td>Livre VIII (fichier 11)</td></tr>
+<tr><td>Condition d'abandon CAB-05</td><td>Absence d'accord syndical après 12 mois</td></tr>
+<tr><td>Moteur de simulation</td><td><code>reforme-education-demo.sh</code> (Bash)</td></tr>
+</tbody>
+</table>
+
+<div class="alert">
+<p><strong>Note de rigueur :</strong> cette analyse est une <strong>proposition [P/T]</strong>. Elle repose sur des effectifs totaux constants et une transition linéaire. Elle ne modifie ni le Livre VII, ni le Livre II, ni l'empreinte de contrôle. Elle devra être validée par le MEQ et les autorités concernées.</p>
+</div>
+
+<hr>
+<p><em>Analyse d'impact — Non adoptée, non opérationnelle. Sherbrooke, Québec — 26 septembre 2026.</em></p>
+</main>
+<footer class="footer"><p>PMDQ v2.7.5 + Livre X — Impact réforme éducation — 26 septembre 2026</p></footer>
+</body></html>

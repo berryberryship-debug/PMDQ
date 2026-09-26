@@ -1,0 +1,14 @@
+annee,stock_primaire,stock_secondaire,flux_univ_cumule,phase
+0,682000,460000,0,État initial
+1,700947,460000,0,Transition (1/6)
+2,719883,460000,0,Transition (2/6)
+3,738831,460000,0,Transition (3/6)
+4,757778,460000,0,Transition (4/6)
+5,776714,460000,7500,Transition (5/6)
+6,795662,460000,15000,Transition (6/6)
+7,767246,442750,45000,Détransition (1/4)
+8,738831,425500,45000,Détransition (2/4)
+9,710415,408250,45000,Détransition (3/4)
+10,682000,391000,45000,Détransition (4/4)
+11,682000,460000,45000,Plein régime
+12,682000,460000,45000,Plein régime
