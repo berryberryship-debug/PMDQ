@@ -1,82 +1,117 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Moteurs de calcul — PMDQ v2.7.5</title><link rel="stylesheet" href="style.css"></head><body>
-<div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
-<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.5 + Livre X<span>Moteurs de calcul</span></div><nav class="nav"><a href="index.html">Accueil</a><a href="07_livre_VII_moteur_python.html">Python</a><a href="references.html">Références</a><a href="changelog.html">Changelog</a><a href="moteurs.html" class="active">Moteurs</a></nav></div></header>
-<main>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Moteurs de calcul — PMDQ v2.7.5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="logo-banner">
+    <div class="logo-banner__inner">
+      <div class="logo-banner__lys">⚜</div>
+      <div class="logo-banner__text">
+        <div class="logo-banner__name">PMDQ</div>
+        <div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div>
+      </div>
+    </div>
+  </div>
 
-<h1>Moteurs de calcul</h1>
-<p class="lede">Scripts reproductibles du dossier PMDQ</p>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="brand">PMDQ v2.7.5 + Livre X<span>Moteurs de calcul</span></div>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="07_livre_VII_moteur_python.html">Python</a>
+        <a href="references.html">Références</a>
+        <a href="changelog.html">Changelog</a>
+        <a href="moteurs.html" class="active">Moteurs</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="alert info">
-<p><strong>Statut :</strong> <span class="badge info">INFRASTRUCTURE</span> — Quatre moteurs vérifient les agrégats, simulent les réformes et valident la cohérence du dossier. Tous sont exécutables localement (Python 3 ou Bash).</p>
-</div>
+  <main>
+    <h1>Moteurs de calcul</h1>
+    <p class="lede">Scripts reproductibles du dossier PMDQ.</p>
 
-<h2>Vue d'ensemble</h2>
+    <div class="alert info">
+      <p><strong>Statut :</strong> <span class="badge info">INFRASTRUCTURE</span> — Quatre moteurs vérifient les agrégats, simulent les réformes et valident la cohérence du dossier. Tous sont exécutables localement (Python 3 ou Bash).</p>
+    </div>
 
-<table>
-<thead><tr><th>Moteur</th><th>Langage</th><th>Rôle</th><th>Sortie</th></tr></thead>
-<tbody>
-<tr>
-<td><strong>Validation Ratio D</strong></td>
-<td>Python (Pydantic)</td>
-<td>Vérifie que chaque projet respecte D &gt; 1,30</td>
-<td>Rejet / Acceptation</td>
-</tr>
-<tr>
-<td><strong>Audit robustesse</strong></td>
-<td>Python</td>
-<td>Vérifie que les 36 pages répondent HTTP 200</td>
-<td>CSV de verdicts</td>
-</tr>
-<tr>
-<td><strong>Comptable Gold Card</strong></td>
-<td>Python</td>
-<td>Distingue cash encaissé / revenu reconnu / produit constaté d'avance</td>
-<td>CSV des scénarios</td>
-</tr>
-<tr>
-<td><strong>Simulation réforme éducation</strong></td>
-<td>Bash</td>
-<td>Modélise le pic transitoire primaire +16,6 %</td>
-<td>CSV 12 ans</td>
-</tr>
-</tbody>
-</table>
+    <h2>Vue d'ensemble</h2>
 
-<h2>1. Validation Ratio D</h2>
+    <table>
+      <caption>Résumé des moteurs de calcul du dossier PMDQ</caption>
+      <thead>
+        <tr>
+          <th scope="col">Moteur</th>
+          <th scope="col">Langage</th>
+          <th scope="col">Rôle</th>
+          <th scope="col">Sortie</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Validation Ratio D</strong></td>
+          <td>Python (Pydantic)</td>
+          <td>Vérifie que chaque projet respecte D &gt; 1,30.</td>
+          <td>Rejet / Acceptation</td>
+        </tr>
+        <tr>
+          <td><strong>Audit robustesse</strong></td>
+          <td>Python</td>
+          <td>Vérifie que les 36 pages répondent HTTP 200.</td>
+          <td>CSV de verdicts</td>
+        </tr>
+        <tr>
+          <td><strong>Comptable Gold Card</strong></td>
+          <td>Python</td>
+          <td>Distingue cash encaissé, revenu reconnu et produit constaté d'avance.</td>
+          <td>CSV des scénarios</td>
+        </tr>
+        <tr>
+          <td><strong>Simulation réforme éducation</strong></td>
+          <td>Bash</td>
+          <td>Modélise le pic transitoire primaire +16,6 %.</td>
+          <td>CSV 12 ans</td>
+        </tr>
+      </tbody>
+    </table>
 
-<p><strong>Emplacement :</strong> <a href="07_livre_VII_moteur_python.html">Livre VII — Moteur Python</a></p>
-<p><strong>Langage :</strong> Python 3 + Pydantic (strict, anti-NaN/anti-infini)</p>
-<p><strong>Rôle :</strong> modélise chaque projet et vérifie que le ratio D = valeur créée nette / coût total est strictement supérieur à 1,30.</p>
+    <h2>1. Validation Ratio D</h2>
 
-<pre><code># Exemple — RESEAU-NARP-001
+    <p><strong>Emplacement :</strong> <a href="07_livre_VII_moteur_python.html">Livre VII — Moteur Python</a></p>
+    <p><strong>Langage :</strong> Python 3 + Pydantic (strict, anti-NaN/anti-infini)</p>
+    <p><strong>Rôle :</strong> modélise chaque projet et vérifie que le ratio D = valeur créée nette / coût total est strictement supérieur à 1,30.</p>
+
+    <pre><code># Exemple — RESEAU-NARP-001
 valeur_creee_nette : 1 850 000 000 $
 cout_cycle_vie     :   980 000 000 $
 cout_risque        :   180 000 000 $
 cout_total         : 1 160 000 000 $
 
-ratio D = 1 850 / 1 160 = 1,5948  >  1,30  ⇒  CONFORME</code></pre>
+ratio D = 1 850 / 1 160 = 1,5948  &gt;  1,30  ⇒  CONFORME</code></pre>
 
-<h2>2. Audit robustesse</h2>
+    <h2>2. Audit robustesse</h2>
 
-<p><strong>Emplacement :</strong> <code>pmdq_audit.py</code> (racine du dépôt)</p>
-<p><strong>Langage :</strong> Python 3</p>
-<p><strong>Rôle :</strong> vérifie que les 36 pages publiées répondent en HTTP 200.</p>
+    <p><strong>Emplacement :</strong> <code>pmdq_audit.py</code> (racine du dépôt)</p>
+    <p><strong>Langage :</strong> Python 3</p>
+    <p><strong>Rôle :</strong> vérifie que les 36 pages publiées répondent en HTTP 200.</p>
 
-<pre><code>$ python3 pmdq_audit.py
+    <pre><code>$ python3 pmdq_audit.py
 
 === PMDQ — audit de robustesse ===
 Total testé   : 36
 Publiées OK   : 36
 Dépôt intégralement cohérent.</code></pre>
 
-<h2>3. Comptable Gold Card</h2>
+    <h2>3. Comptable Gold Card</h2>
 
-<p><strong>Emplacement :</strong> <code>gold-card-engine.py</code> (racine du dépôt)</p>
-<p><strong>Langage :</strong> Python 3 (dataclasses, aucune dépendance externe)</p>
-<p><strong>Rôle :</strong> distingue — sur trois scénarios (pessimiste, central, optimiste) — le cash encaissé, le revenu reconnu en année 1, le produit constaté d'avance et le gain sur impayés.</p>
+    <p><strong>Emplacement :</strong> <code>gold-card-engine.py</code> (racine du dépôt)</p>
+    <p><strong>Langage :</strong> Python 3 (dataclasses, aucune dépendance externe)</p>
+    <p><strong>Rôle :</strong> distingue — sur trois scénarios (pessimiste, central, optimiste) — le cash encaissé, le revenu reconnu en année 1, le produit constaté d'avance et le gain sur impayés.</p>
 
-<pre><code>$ python3 gold-card-engine.py
+    <pre><code>$ python3 gold-card-engine.py
 
 === Scénario Central (10 grappes) ===
 Cartes vendues          : 3,000
@@ -86,15 +121,15 @@ Produit constaté avance :  4,500,000 $
 Gain impayés évités     :  1,500,000 $
 Revenu éco. sécurisé    : 12,000,000 $</code></pre>
 
-<p><strong>Détail complet :</strong> <a href="gold-card.html">Fiche Gold Card</a></p>
+    <p><strong>Détail complet :</strong> <a href="gold-card.html">Fiche Gold Card</a></p>
 
-<h2>4. Simulation réforme éducation</h2>
+    <h2>4. Simulation réforme éducation</h2>
 
-<p><strong>Emplacement :</strong> <code>reforme-education-demo.sh</code> (racine du dépôt)</p>
-<p><strong>Langage :</strong> Bash (compatible Termux)</p>
-<p><strong>Rôle :</strong> modélise le pic transitoire de +16,6 % au primaire pendant 6 ans, puis la détransition sur 4 ans.</p>
+    <p><strong>Emplacement :</strong> <code>reforme-education-demo.sh</code> (racine du dépôt)</p>
+    <p><strong>Langage :</strong> Bash (compatible Termux)</p>
+    <p><strong>Rôle :</strong> modélise le pic transitoire de +16,6 % au primaire pendant 6 ans, puis la détransition sur 4 ans.</p>
 
-<pre><code>$ ./reforme-education-demo.sh
+    <pre><code>$ ./reforme-education-demo.sh
 
 === RÉFORME ÉDUCATION — SIMULATION DÉMOGRAPHIQUE v4 ===
 [Pic transitoire primaire] 682000 → 795662  (+113662 élèves, +16.6%)
@@ -106,38 +141,78 @@ Revenu éco. sécurisé    : 12,000,000 $</code></pre>
   10         682000         391000          45000  Détransition (4/4)
   12         682000         460000          45000  Plein régime</code></pre>
 
-<p><strong>Analyse complète :</strong> <a href="reforme-education-impact.html">Impact réforme éducation</a></p>
+    <p><strong>Analyse complète :</strong> <a href="reforme-education-impact.html">Impact réforme éducation</a></p>
 
-<h2>Comment exécuter localement</h2>
+    <h2>Comment exécuter localement</h2>
 
-<table>
-<thead><tr><th>Moteur</th><th>Commande</th></tr></thead>
-<tbody>
-<tr><td>Audit robustesse</td><td><code>python3 pmdq_audit.py</code></td></tr>
-<tr><td>Gold Card</td><td><code>python3 gold-card-engine.py</code></td></tr>
-<tr><td>Réforme éducation</td><td><code>./reforme-education-demo.sh</code></td></tr>
-<tr><td>Validation Ratio D</td><td><code>python3 -c "from livre_VI import ModeleRatioD"</code></td></tr>
-</tbody>
-</table>
+    <table>
+      <caption>Commandes de lancement des moteurs</caption>
+      <thead>
+        <tr>
+          <th scope="col">Moteur</th>
+          <th scope="col">Commande</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Audit robustesse</td>
+          <td><code>python3 pmdq_audit.py</code></td>
+        </tr>
+        <tr>
+          <td>Gold Card</td>
+          <td><code>python3 gold-card-engine.py</code></td>
+        </tr>
+        <tr>
+          <td>Réforme éducation</td>
+          <td><code>./reforme-education-demo.sh</code></td>
+        </tr>
+        <tr>
+          <td>Validation Ratio D</td>
+          <td><code>python3 -c "from livre_VI import ModeleRatioD"</code></td>
+        </tr>
+      </tbody>
+    </table>
 
-<h2>Dépendances</h2>
+    <h2>Dépendances</h2>
 
-<table>
-<thead><tr><th>Moteur</th><th>Dépendances</th></tr></thead>
-<tbody>
-<tr><td>Audit robustesse</td><td>Aucune (bibliothèque standard)</td></tr>
-<tr><td>Gold Card</td><td>Aucune (bibliothèque standard)</td></tr>
-<tr><td>Réforme éducation</td><td>Aucune (<code>awk</code> et <code>bc</code>, préinstallés)</td></tr>
-<tr><td>Validation Ratio D</td><td>Pydantic 2.x</td></tr>
-</tbody>
-</table>
+    <table>
+      <caption>Dépendances minimales par moteur</caption>
+      <thead>
+        <tr>
+          <th scope="col">Moteur</th>
+          <th scope="col">Dépendances</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Audit robustesse</td>
+          <td>Aucune, bibliothèque standard.</td>
+        </tr>
+        <tr>
+          <td>Gold Card</td>
+          <td>Aucune, bibliothèque standard.</td>
+        </tr>
+        <tr>
+          <td>Réforme éducation</td>
+          <td>Aucune, <code>awk</code> et <code>bc</code> préinstallés.</td>
+        </tr>
+        <tr>
+          <td>Validation Ratio D</td>
+          <td>Pydantic 2.x.</td>
+        </tr>
+      </tbody>
+    </table>
 
-<div class="alert success">
-<p><strong>Principe :</strong> tout agrégat publié dans le dossier doit être <strong>reproductible</strong> à partir des paramètres déclarés. Les quatre moteurs en sont la garantie.</p>
-</div>
+    <div class="alert success">
+      <p><strong>Principe :</strong> tout agrégat publié dans le dossier doit être reproductible à partir des paramètres déclarés. Les quatre moteurs en sont la garantie.</p>
+    </div>
 
-<hr>
-<p><em>Infrastructure — Sherbrooke, Québec — 26 septembre 2026.</em></p>
-</main>
-<footer class="footer"><p>PMDQ v2.7.5 + Livre X — Moteurs de calcul — 26 septembre 2026</p></footer>
-</body></html>
+    <hr>
+    <p><em>Infrastructure — Sherbrooke, Québec — 26 septembre 2026.</em></p>
+  </main>
+
+  <footer class="footer">
+    <p>PMDQ v2.7.5 + Livre X — Moteurs de calcul — 26 septembre 2026</p>
+  </footer>
+</body>
+</html>
