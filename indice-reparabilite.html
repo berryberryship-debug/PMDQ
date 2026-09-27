@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Indice de Réparabilité Québécois (IRQ) — PMDQ v2.7.5</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.5<span>Indice de Réparabilité Québécois (IRQ)</span></div></div></header>
+<main>
+
+<h1>Indice de Réparabilité Québécois (IRQ)</h1>
+<p class="lede">Moteur de transduction pour l'évaluation objective de la réparabilité — Version 2.7.5</p>
+
+<h2>1. Principe</h2>
+<p>L'IRQ est un outil de mesure qui transforme des caractéristiques physiques et juridiques d'un produit en un <strong>score unique sur 10</strong>. Il sert de base objective pour :</p>
+<ul>
+<li>Classer les produits importés en <strong>grade 1 ou 2</strong> (page <a href="importations-grade12.html">Importations</a>).</li>
+<li>Appliquer la surtaxe prévue par le modèle <a href="module-eco-circ.html">MOD-ECO-CIRC-2025</a>.</li>
+<li>Vérifier la conformité à la <a href="obsolescence-programmee.html">Loi 29</a>.</li>
+</ul>
+
+<p><strong>Base normative :</strong> EN 45554 (indice de réparabilité européen) et ISO 59000 (économie circulaire).</p>
+
+<h2>2. Les 5 critères (20 points chacun)</h2>
+<table class="tableau-simulation">
+<thead>
+<tr><th>Critère</th><th>Description</th><th>Score max</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>1. Outillage</strong></td><td>Standard (20), propriétaire (5), destructif (0)</td><td>20</td></tr>
+<tr><td><strong>2. Documentation</strong></td><td>Accès gratuit et illimité (10 ans) : 20, sinon 0</td><td>20</td></tr>
+<tr><td><strong>3. Disponibilité spatio-temporelle</strong></td><td>Pièces garanties ≥ 7 ans et livrées ≤ 3 jours : 20. Intermédiaire : 10. Insuffisant : 5</td><td>20</td></tr>
+<tr><td><strong>4. Ratio économique</strong></td><td>Pièce ≤ 15 % du prix neuf : 20. Perte proportionnelle entre 15 % et 30 %. ≥ 30 % : 0</td><td>20</td></tr>
+<tr><td><strong>5. Intégrité logicielle</strong></td><td>Aucun DRM matériel (appariement, sérialisation) : 20, sinon 0</td><td>20</td></tr>
+<tr><td><strong>Total</strong></td><td>Indice final sur 10 (total / 10)</td><td><strong>100</strong></td></tr>
+</tbody>
+</table>
+
+<h3>2.1 Seuils de conformité</h3>
+<table class="tableau-simulation">
+<thead>
+<tr><th>Indice IRQ</th><th>Statut</th><th>Conséquence</th></tr>
+</thead>
+<tbody>
+<tr><td>≥ 7,5 / 10</td><td><strong>CONFORME</strong></td><td>Admissible au label de durabilité (MOD-ECO-CIRC-2025).</td></tr>
+<tr><td>&lt; 7,5 / 10</td><td><strong>REJETÉ</strong></td><td>Soumis à la surtaxe grade 1/2 prévue par le modèle.</td></tr>
+</tbody>
+</table>
+
+<h2>3. Implémentation Python</h2>
+<p>Le moteur est implémenté en Python, avec une dataclass <code>Produit</code> et une classe <code>EvaluateurMOD_ECO_CIRC</code>.</p>
+
+<pre><code class="language-python">
+import json
+from dataclasses import dataclass, field
+from typing import Dict
+
+@dataclass
+class Produit:
+    nom: str
+    fabricant: str
+    # 'standard', 'proprietaire', ou 'destructif'
+    type_outillage: str
+    # Vrai si accès gratuit et illimité (10 ans)
+    doc_ouverte: bool
+    annees_garantie_pieces: float
+    delai_livraison_jours: int
+    # Ratio du coût de la pièce la plus chère sur le prix neuf
+    ratio_prix_piece: float
+    # Vrai si aucune sérialisation/DRM matériel n'entrave le remplacement
+    sans_drm_materiel: bool
+
+class EvaluateurMOD_ECO_CIRC:
+    """
+    Moteur de transduction pour l'Indice de Réparabilité Québécois (IRQ).
+    Base normative : EN 45554 / ISO 59000.
+    """
+    def __init__(self):
+        self.scores_max = 20.0
+
+    def evaluer(self, produit: Produit) -> Dict[str, any]:
+        scores = {}
+
+        if produit.type_outillage == 'standard':
+            scores['outillage'] = 20.0
+        elif produit.type_outillage == 'proprietaire':
+            scores['outillage'] = 5.0
+        else:
+            scores['outillage'] = 0.0
+
+        scores['documentation'] = 20.0 if produit.doc_ouverte else 0.0
+
+        if produit.annees_garantie_pieces >= 7 and produit.delai_livraison_jours <= 3:
+            scores['disponibilite'] = 20.0
+        elif produit.annees_garantie_pieces < 2 or produit.delai_livraison_jours > 14:
+            scores['disponibilite'] = 5.0
+        else:
+            scores['disponibilite'] = 10.0
+
+        if produit.ratio_prix_piece <= 0.15:
+            scores['economie'] = 20.0
+        elif produit.ratio_prix_piece >= 0.30:
+            scores['economie'] = 0.0
+        else:
+            ratio_depassement = (produit.ratio_prix_piece - 0.15) / 0.15
+            scores['economie'] = round(20.0 - (ratio_depassement * 20.0), 1)
+
+        scores['integrite_logicielle'] = 20.0 if produit.sans_drm_materiel else 0.0
+
+        total_100 = sum(scores.values())
+        indice_10 = round(total_100 / 10.0, 1)
+
+        return {
+            "produit": produit.nom,
+            "fabricant": produit.fabricant,
+            "details_points": scores,
+            "score_total_100": total_100,
+            "indice_reparabilite_10": indice_10,
+            "statut_approvisionnement": "CONFORME" if indice_10 >= 7.5 else "REJETÉ"
+        }
+</code></pre>
+
+<h2>4. Exemples d'évaluation</h2>
+
+<h3>4.1 Laptop modulaire (OpenTech)</h3>
+<table class="tableau-simulation">
+<thead><tr><th>Critère</th><th>Valeur</th><th>Score</th></tr></thead>
+<tbody>
+<tr><td>Outillage</td><td>Standard</td><td>20</td></tr>
+<tr><td>Documentation</td><td>Ouverte</td><td>20</td></tr>
+<tr><td>Disponibilité</td><td>10 ans, 2 jours</td><td>20</td></tr>
+<tr><td>Ratio économique</td><td>12 %</td><td>20</td></tr>
+<tr><td>Intégrité logicielle</td><td>Sans DRM</td><td>20</td></tr>
+<tr><td><strong>Total</strong></td><td></td><td><strong>100 → IRQ 10/10</strong></td></tr>
+<tr><td><strong>Statut</strong></td><td></td><td><strong>CONFORME</strong></td></tr>
+</tbody>
+</table>
+
+<h3>4.2 Tablette scellée (MegaCorp)</h3>
+<table class="tableau-simulation">
+<thead><tr><th>Critère</th><th>Valeur</th><th>Score</th></tr></thead>
+<tbody>
+<tr><td>Outillage</td><td>Destructif</td><td>0</td></tr>
+<tr><td>Documentation</td><td>Fermée</td><td>0</td></tr>
+<tr><td>Disponibilité</td><td>3 ans, 21 jours</td><td>10</td></tr>
+<tr><td>Ratio économique</td><td>35 %</td><td>0</td></tr>
+<tr><td>Intégrité logicielle</td><td>Composants appariés</td><td>0</td></tr>
+<tr><td><strong>Total</strong></td><td></td><td><strong>10 → IRQ 1/10</strong></td></tr>
+<tr><td><strong>Statut</strong></td><td></td><td><strong>REJETÉ</strong></td></tr>
+</tbody>
+</table>
+
+<h2>5. Rattachement PMDQ</h2>
+<table class="tableau-simulation">
+<thead><tr><th>Élément</th><th>Référence</th></tr></thead>
+<tbody>
+<tr><td>MOD-ECO-CIRC-2025</td><td>Autofinancement de la durabilité</td></tr>
+<tr><td>Loi 29</td><td>Obsolescence programmée, réparabilité</td></tr>
+<tr><td>Importations grade 1/2</td><td>Critères de gradation et surtaxes</td></tr>
+<tr><td>Livre X</td><td>Politiques industrielles et transition</td></tr>
+</tbody>
+</table>
+
+<p><a href="module-eco-circ.html">← Retour au module ECO-CIRC</a></p>
+<p><a href="obsolescence-programmee.html">← Voir l'obsolescence programmée</a></p>
+<p><a href="importations-grade12.html">← Voir les importations grade 1/2</a></p>
+<p><a href="index.html">← Retour à l'accueil</a></p>
+
+</main>
+<footer class="footer"><p>PMDQ v2.7.5 — Indice de Réparabilité Québécois (IRQ) — Sherbrooke, Québec — 27 septembre 2026</p><p>Langue de foi : français</p></footer>
+</body>
+</html>
