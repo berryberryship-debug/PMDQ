@@ -44,6 +44,7 @@ PAGES_PUBLIQUES = [
     "loi-ilots-chaleur.html",
     "foret-urbaine.html",
     "33_decret_NARP.html",
+    "module-eco-circ.html",
     "lettre.html",
     "note-synthese.html",
     "style.css",
