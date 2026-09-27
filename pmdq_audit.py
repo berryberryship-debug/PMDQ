@@ -62,6 +62,7 @@ PAGES_PUBLIQUES = [
     "strategie-alliances.html",
     "comparaison-partis.html",
     "depassements-couts.html",
+    "classe-moyenne.html",
 ]
 
 PAGES_SILENCIEUSES = [
