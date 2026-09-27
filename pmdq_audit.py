@@ -49,6 +49,17 @@ PAGES_PUBLIQUES = [
     "lettre.html",
     "note-synthese.html",
     "campagne-financement.html",
+    "annexe_axiomes.html",
+    "annexe_livres_I_a_IV.html",
+    "bloc_dashboard.html",
+    "encart_section14.html",
+    "importations-grade12.html",
+    "logo.html",
+    "narp-gold-card.html",
+    "obsolescence-programmee.html",
+    "plantation-arbres.html",
+    "section_corrigee.html",
+    "strategie-alliances.html",
 ]
 
 PAGES_SILENCIEUSES = [
