@@ -42,12 +42,13 @@ PAGES_PUBLIQUES = [
     "marge-fiscale-tvq.html",
     "taxe-luxe.html",
     "loi-ilots-chaleur.html",
+    "annexe-ilots-chaleur.html",
     "foret-urbaine.html",
     "33_decret_NARP.html",
     "module-eco-circ.html",
     "lettre.html",
     "note-synthese.html",
-    "style.css",
+    "campagne-financement.html",
 ]
 
 PAGES_SILENCIEUSES = [
