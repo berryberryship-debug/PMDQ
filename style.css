@@ -28,3 +28,67 @@ pre{background:var(--navy);color:#e2e8f0;padding:18px;border-radius:var(--radius
 .logo-banner__name{font-size:32px;font-weight:900;color:#1a3a6b;letter-spacing:2px;line-height:1}
 .logo-banner__sub{font-size:13px;font-weight:600;color:#1a3a6b;text-transform:uppercase;letter-spacing:1px;margin-top:4px}
 @media (max-width:640px){.logo-banner__lys{font-size:36px}.logo-banner__name{font-size:24px}.logo-banner__sub{font-size:11px}}
+
+/* Index général alphabétique */
+.index-nav-lettres {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1.5rem 0 2rem 0;
+    padding: 0.75rem 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.index-nav-lettres a {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    margin: 0.15rem;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    color: #1a3a5c;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.index-nav-lettres a:hover {
+    background-color: #1a3a5c;
+    color: #ffffff;
+}
+
+h3[id^="lettre-"] {
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    border-bottom: 2px solid #1a3a5c;
+    padding-bottom: 0.3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+h2#index-general {
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #1a3a5c;
+}
+
+/* Les listes de l'index */
+h3[id^="lettre-"] + ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+h3[id^="lettre-"] + ul li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+h3[id^="lettre-"] + ul li a {
+    color: #1a3a5c;
+    text-decoration: none;
+}
+
+h3[id^="lettre-"] + ul li a:hover {
+    text-decoration: underline;
+    color: #2e7d32;
+}
