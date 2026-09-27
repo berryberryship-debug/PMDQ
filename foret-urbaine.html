@@ -5,10 +5,16 @@
 <main>
 <h1>Forêt urbaine — Simulateur</h1>
 <p class="lede">Résorption des îlots de chaleur par plantation d'arbres fruitiers et mellifères</p>
+
 <div class="alert info"><p><strong>Statut :</strong> <span class="badge info">P/T</span> — Modèle indicatif. Paramètres à valider par agronomes.</p></div>
-<h2>1. Objet</h2>
-<p>Simuler la valeur économique d'une forêt urbaine (tilleuls + amélanchiers) sur 10 ans.</p>
-<h2>2. Résultats</h2>
+
+<div class="alert success"><h4>Résumé exécutif</h4><p>Un bloc de 10 tilleuls + 10 amélanchiers dissipe jusqu'à <strong>5 000 L d'eau par jour</strong> en canicule par évapotranspiration. Sur 10 ans, la valeur cumulée dépasse <strong>25 000 $</strong> (usufruit + kWh évités).</p></div>
+
+<h2>1. Réalité physique — La canopée comme climatiseur passif</h2>
+<p>Un tilleul mature dissipe jusqu'à <strong>400 litres d'eau par jour</strong> en canicule par évapotranspiration. À l'échelle d'un bloc de 10 tilleuls + 10 amélanchiers, cela représente un transfert thermique massif qui abaisse la température ambiante locale de <strong>2 à 8 °C</strong> dans les zones minéralisées.</p>
+<p>Cette dissipation thermique est corrélée dans le script aux <strong>kWh électriques évités</strong> (réduction de la charge de climatisation mécanique des bâtiments voisins).</p>
+
+<h2>2. Résultats du simulateur (10 tilleuls + 10 amélanchiers, 10 ans)</h2>
 <table>
 <thead><tr><th>Année</th><th>Maturation (%)</th><th>Fleurs tilleul (kg)</th><th>Baies amélanchier (kg)</th><th>Valeur usufruit ($)</th><th>kWh évités</th><th>Valeur clim. ($)</th><th>Total annuel ($)</th><th>Cumulé ($)</th></tr></thead>
 <tbody>
@@ -24,16 +30,71 @@
 <tr><td>10</td><td>98,2</td><td>14,73</td><td>78,56</td><td>2 946,04</td><td>111 386</td><td>1 670,79</td><td>4 616,83</td><td>25 773,08</td></tr>
 </tbody>
 </table>
+
 <h2>3. Lecture</h2>
 <ul>
-<li>Valeur cumulée sur 10 ans : plus de <strong>25 000 $</strong> par forêt urbaine type.</li>
-<li>Les kWh évités croissent avec la maturation.</li>
+<li>Valeur cumulée sur 10 ans : plus de <strong>25 000 $</strong> par bloc (10 tilleuls + 10 amélanchiers).</li>
+<li>Les kWh évités croissent avec la maturation (climatisation mécanique évitée).</li>
 <li>Usufruit (fruits + miel) + économies énergétiques.</li>
 </ul>
-<h2>4. Code source</h2>
-<pre><code>$ python foret_urbaine.py</code></pre>
-<p><a href="foret_urbaine.py">Télécharger le code source</a></p>
-<h2>5. Rattachement</h2>
+
+<h2>4. Pont avec la politique sociale</h2>
+<p>En ciblant prioritairement les quartiers est et les îlots de chaleur urbains (ICU), cette infrastructure biologique se transforme en <strong>bouclier sanitaire</strong> contre la surmortalité estivale.</p>
+<p>C'est cet argument de santé publique et de résilience climatique qui justifie que les Villes défraient <strong>50 % des coûts opérationnels (OPEX)</strong> dans le cadre d'un partenariat public-communautaire.</p>
+
+<h2>5. Code source</h2>
+<p>Le simulateur est exécutable localement (Python 3 + numpy + pandas) :</p>
+<pre><code>def simuler_foret_nourriciere_urbaine(
+    annees=10,
+    n_tilleuls=10,
+    n_amelanchiers=10,
+    prix_kwh=0.10,
+    pct_efficacite_batiment=0.15,
+    jours_chaleur=100
+):
+    ans = np.arange(1, annees + 1)
+    taux_maturation = 1 / (1 + np.exp(-0.8 * (ans - 5)))
+
+    delta_H_v = 2.45
+    cop_climatiseur = 3.0
+
+    evap_tilleul_max = 400.0
+    rendement_tilleul_max = 1.5
+    prix_tilleul_kg = 120.0
+
+    evap_amelanchier_max = 100.0
+    rendement_amelanchier_max = 8.0
+    prix_amelanchier_kg = 15.0
+
+    evap_totale_tilleuls = n_tilleuls * (evap_tilleul_max * jours_chaleur) * taux_maturation
+    evap_totale_amelanchiers = n_amelanchiers * (evap_amelanchier_max * jours_chaleur) * taux_maturation
+
+    kwh_evites_tilleuls = (evap_totale_tilleuls * delta_H_v) / (3.6 * cop_climatiseur)
+    kwh_evites_amelanchiers = (evap_totale_amelanchiers * delta_H_v) / (3.6 * cop_climatiseur)
+
+    valeur_clim_totale = (kwh_evites_tilleuls + kwh_evites_amelanchiers) * pct_efficacite_batiment * prix_kwh
+
+    recolte_tilleuls_kg = n_tilleuls * rendement_tilleul_max * taux_maturation
+    recolte_amelanchiers_kg = n_amelanchiers * rendement_amelanchier_max * taux_maturation
+
+    valeur_usufruit_totale = (recolte_tilleuls_kg * prix_tilleul_kg
+                              + recolte_amelanchiers_kg * prix_amelanchier_kg)
+
+    df = pd.DataFrame({
+        'Année': ans,
+        'Maturation (%)': np.round(taux_maturation * 100, 1),
+        'Fleurs Tilleul (kg)': np.round(recolte_tilleuls_kg, 2),
+        'Baies Amélanchier (kg)': np.round(recolte_amelanchiers_kg, 2),
+        'Valeur Usufruit ($)': np.round(valeur_usufruit_totale, 2),
+        'kWh Électriques Évités': np.round(kwh_evites_tilleuls + kwh_evites_amelanchiers, 0),
+        'Valeur Climatisation ($)': np.round(valeur_clim_totale, 2),
+        'Valeur Totale Annuelle ($)': np.round(valeur_usufruit_totale + valeur_clim_totale, 2)
+    })
+    df['Valeur Cumulée ($)'] = np.round(df['Valeur Totale Annuelle ($)'].cumsum(), 2)
+    return df</code></pre>
+<p><a href="foret_urbaine.py">Télécharger le code source complet</a></p>
+
+<h2>6. Rattachement</h2>
 <table>
 <thead><tr><th>Élément</th><th>Référence</th></tr></thead>
 <tbody>
@@ -42,7 +103,9 @@
 <tr><td>Coalition sci-tech</td><td><a href="coalition-scientifique-technologique.html">Matériaux frais</a></td></tr>
 </tbody>
 </table>
-<div class="alert"><p><strong>Note :</strong> modèle indicatif [P/T].</p></div>
+
+<div class="alert"><p><strong>Note :</strong> modèle indicatif [P/T]. Les paramètres agronomiques et les prix doivent être validés.</p></div>
+
 <hr>
 <p><em>Simulateur — Sherbrooke, Québec — 26 septembre 2026.</em></p>
 </main>
