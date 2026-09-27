@@ -1,136 +1,110 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Module MOD-ECO-CIRC-2025 — PMDQ v2.7.5</title><link rel="stylesheet" href="style.css"></head><body>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MOD-ECO-CIRC-2025 — Autofinancement de la durabilité — PMDQ v2.7.5</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 <div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
-<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.5 + Livre X<span>MOD-ECO-CIRC-2025</span></div><nav class="nav"><a href="index.html">Accueil</a><a href="loi-ilots-chaleur.html">Îlots chaleur</a><a href="module-eco-circ.html" class="active">Éco-circ</a></nav></div></header>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.5<span>MOD-ECO-CIRC-2025 — Autofinancement de la durabilité</span></div></div></header>
 <main>
-<h1>MOD-ECO-CIRC-2025 — Modèle d'autofinancement de la durabilité</h1>
-<p class="lede">Financement de la transition vers des produits durables par contribution différenciée et labellisation</p>
 
-<div class="alert info"><p><strong>Statut :</strong> <span class="badge info">P/T</span> — Module exploratoire. Ne constitue pas un mécanisme prêt à appliquer. Validation juridique, technique et financière requise.</p></div>
+<h1>MOD-ECO-CIRC-2025 — Autofinancement de la durabilité</h1>
+<p class="lede">Modèle computationnel d'autofinancement et de valorisation de la durabilité — Version 2.7.5</p>
 
-<div class="alert success"><h4>Résumé exécutif</h4><p>Un module combinant <strong>contribution sur produits non réparables</strong> et <strong>labellisation des produits durables</strong>. CAPEX initial : <strong>6 M$</strong>. Scénario central : <strong>69,4 M$ de revenus cumulés sur 5 ans</strong>, enveloppe marketing 22,2 M$. <strong>Trois scénarios</strong> de conformité : 50 % / 70 % / 85 %. Contrainte constitutionnelle majeure : compétence fédérale sur les tarifs douaniers (ASFC, CARM, ACEUM).</p></div>
+<h2>1. Principe</h2>
+<p>Le moteur repose sur une boucle d'autofinancement vertueuse (<em>Tax & Dividend / Feebate model</em>) : les pénalités et surtaxes prélevées sur les produits non durables financent directement la promotion des pratiques vertueuses, la notoriété du label régional et l'amortissement des infrastructures logicielles.</p>
 
-<h2>1. Objet</h2>
-<p>Financer la transition vers des produits plus durables en combinant deux leviers :</p>
+<h2>2. Variables et équations</h2>
+<table class="tableau-simulation">
+<thead><tr><th>Variable</th><th>Symbole</th><th>Rôle</th></tr></thead>
+<tbody>
+<tr><td>Volume de biens importés ciblés</td><td>V_import</td><td>Unités transitant par les corridors douaniers / an</td></tr>
+<tr><td>Taux de biens non conformes</td><td>α_obsol</td><td>Proportion d'appareils assujettis à la surtaxe</td></tr>
+<tr><td>Surtaxe unitaire moyenne</td><td>S_unit</td><td>Montant perçu par appareil non réparable ($/unité)</td></tr>
+<tr><td>Pénalités administratives</td><td>P_amendes</td><td>Recettes issues des sanctions réglementaires (Loi 29)</td></tr>
+<tr><td>Revenus de labellisation</td><td>R_label</td><td>Frais payés par les fabricants de produits réparables</td></tr>
+<tr><td>Coût d'infrastructure fixe initial</td><td>C_infra</td><td>Coût de développement de la plateforme</td></tr>
+<tr><td>Durée d'amortissement</td><td>T</td><td>Période cible d'amortissement (3 ou 5 ans)</td></tr>
+<tr><td>Ratio d'allocation marketing</td><td>γ_mktg</td><td>Pourcentage des recettes réinvesti dans la communication</td></tr>
+</tbody>
+</table>
+
+<p><strong>Recettes totales annuelles :</strong><br>
+R_total = (V_import × α_obsol × S_unit) + P_amendes + R_label</p>
+<p><strong>Amortissement annuel :</strong><br>
+A_infra = C_infra / T</p>
+<p><strong>Enveloppe marketing nette :</strong><br>
+E_mktg = γ_mktg × (R_total − A_infra)</p>
+
+<h2>3. Simulation indicative (corridor Québec-Ontario-NY)</h2>
 <ul>
-<li>Une <strong>contribution</strong> appliquée aux produits qui ne répondent pas à des critères techniques de réparabilité et de durabilité ;</li>
-<li>Un <strong>dispositif de labellisation</strong> destiné à valoriser les produits qui les respectent.</li>
+<li>V_import = 20 000 000 unités/an</li>
+<li>α_obsol = 15 %</li>
+<li>S_unit = 4,50 $</li>
+<li>P_amendes = 2 500 000 $</li>
+<li>R_label = 1 500 000 $</li>
+<li>C_infra = 6 000 000 $ amortis sur 3 ans (A_infra = 2 000 000 $/an)</li>
+<li>γ_mktg = 35 %</li>
 </ul>
-<p>Objectif : faire évoluer progressivement les choix des fabricants et des consommateurs, tout en soutenant les activités locales de réparation et de réemploi.</p>
+<p><strong>Revenu des surtaxes :</strong> 20 000 000 × 0,15 × 4,50 = 13 500 000 $</p>
+<p><strong>R_total =</strong> 13 500 000 + 2 500 000 + 1 500 000 = 17 500 000 $</p>
+<p><strong>Solde net après amortissement :</strong> 17 500 000 − 2 000 000 = 15 500 000 $</p>
+<p><strong>Enveloppe marketing :</strong> 15 500 000 × 0,35 = 5 425 000 $/an</p>
 
-<h2>2. Indice de réparabilité et durabilité</h2>
-<p>La mesure s'appuie sur des critères <strong>objectifs, vérifiables et applicables sans égard à l'origine du produit</strong>.</p>
-<table>
-<thead><tr><th>Critère</th><th>Description</th></tr></thead>
+<h2>4. Ventilation de l'enveloppe</h2>
+<table class="tableau-simulation">
+<thead><tr><th>Poste</th><th>Part</th><th>Montant</th></tr></thead>
 <tbody>
-<tr><td><strong>Disponibilité des pièces</strong></td><td>Pièces de rechange accessibles et documentées</td></tr>
-<tr><td><strong>Facilité de réparation</strong></td><td>Démontage sans outils propriétaires, modules séparables</td></tr>
-<tr><td><strong>Durée de vie attendue</strong></td><td>Estimation objective, tests standardisés</td></tr>
-<tr><td><strong>Accès à la documentation</strong></td><td>Manuels techniques publics et à jour</td></tr>
-</tbody>
-</table>
-<p><strong>Statut :</strong> les seuils associés aux grades et leur méthode de vérification restent <strong>à définir et à valider</strong> [T].</p>
-
-<h2>3. Contrainte constitutionnelle — compétence fédérale</h2>
-<div class="alert warn">
-<p><strong>Point critique :</strong> une surtaxe à la frontière touche au <strong>commerce international</strong> et aux <strong>tarifs douaniers</strong> — compétences fédérales.</p>
-<ul>
-<li>Validation juridique approfondie requise</li>
-<li>Possibilité d'entente fédérale-provinciale ou délégation appropriée</li>
-<li>Modalités de perception à préciser (ASFC, CARM, Revenu Québec)</li>
-<li>Conformité ACEUM obligatoire — traitement non discriminatoire quant à l'origine</li>
-</ul>
-</div>
-
-<h2>4. Modèle économique</h2>
-<table>
-<thead><tr><th>Élément</th><th>Valeur</th></tr></thead>
-<tbody>
-<tr><td>CAPEX initial</td><td><strong>6 M$</strong></td></tr>
-<tr><td>Amortissement central</td><td>3 ans</td></tr>
-<tr><td>Revenus cumulés 5 ans (central)</td><td><strong>69,4 M$</strong></td></tr>
-<tr><td>Enveloppe marketing</td><td>22,2 M$</td></tr>
-<tr><td>Source d'amorçage</td><td>Avance remboursable FQBC ou financement fédéral [T]</td></tr>
+<tr><td>Campagnes grand public (droit à réparer)</td><td>40 %</td><td>2,17 M$</td></tr>
+<tr><td>Promotion & annuaire certifié des réparateurs</td><td>25 %</td><td>1,36 M$</td></tr>
+<tr><td>Déploiement transfrontalier du Label</td><td>20 %</td><td>1,08 M$</td></tr>
+<tr><td>Relations publiques, plaidoyer ACEUM, veille</td><td>15 %</td><td>0,81 M$</td></tr>
 </tbody>
 </table>
 
-<h2>5. Trois scénarios</h2>
-<table>
-<thead><tr><th>Scénario</th><th>Taux de conformité</th><th>Revenus</th><th>Amortissement CAPEX</th></tr></thead>
-<tbody>
-<tr><td><strong>Optimiste</strong></td><td>85 %</td><td>Supérieurs aux prévisions</td><td>3 ans</td></tr>
-<tr><td><strong>Central</strong></td><td>70 %</td><td>69,4 M$ cumulés sur 5 ans</td><td>3 ans</td></tr>
-<tr><td><strong>Pessimiste</strong></td><td>50 %</td><td>Inférieurs aux prévisions</td><td>Étalement possible à 5 ans</td></tr>
-</tbody>
-</table>
+<h2>5. Ajustement dynamique</h2>
+<p>À mesure que les fabricants s'adaptent, α_obsol diminue. La baisse des surtaxes est compensée par la hausse des adhésions au label (R_label), assurant la pérennité du budget sans fonds publics récurrents.</p>
 
-<div class="alert">
-<p><strong>Point d'incertitude :</strong> certains fabricants à faible marge pourraient préférer <strong>acquitter la contribution</strong> plutôt que modifier leurs produits. Ce comportement affecterait directement la trajectoire de conformité.</p>
-</div>
+<h2>6. Fiche d'enregistrement</h2>
+<pre><code>Fiche_Module:
+  id: "MOD-ECO-CIRC-2025"
+  titre: "Modèle computationnel d'autofinancement et de valorisation de la durabilité"
+  livre_rattachement: "Livre X — Politiques industrielles, commerce et transition"
+  statut: "[P] — Proposition structurée (validation juridique requise [T])"
+  cadre_juridique_pivot:
+    quebec: "Loi 29 (sanctions jusqu'à 5 % du CA mondial)"
+    federal: "Nécessite entente fédérale-provinciale (art. 91 LC 1867) ou délégation ASFC"
+    international: "ACEUM Chapitre 24 (Exceptions environnementales) — mesure non-discriminatoire par origine"
+    plateforme_douaniere: "CARM (CBSA/ASFC) pour perception; Revenu Québec pour redevances provinciales"
+  standard_technique:
+    critere_principal: "Indice de réparabilité objectif (à définir)"
+    seuils_grade:
+      grade_1: "Non réparable, pièces indisponibles, durée de vie < 2 ans"
+      grade_2: "Réparabilité partielle, pièces rares, durée de vie < 5 ans"
+    non_discrimination: "Critère objectif, applicable à toute origine"
+  source_amorcage: "Avance remboursable FQBC ou subvention fédérale (programme à identifier)"
+  indicateurs_cles_5ans:
+    capex_initial: 6.00 M$ (amorti sur 3 ans)
+    revenus_cumules_5ans: 69.40 M$ (scénario central)
+    enveloppe_marketing_5ans: 22.20 M$
+    taux_non_conformite_cible: "15,0 % → 4,0 % (central)"
+  scenarios:
+    optimiste: "Conformité 85 %, revenus +20 %"
+    central: "Conformité 70 %, revenus +5 %"
+    pessimiste: "Conformité 50 %, revenus -15 % — amortissement à 5 ans"
+  alliances_a_mobiliser:
+    - "Organisations environnementales (Équiterre, Fondation David Suzuki)"
+    - "Associations de consommateurs (Option consommateurs)"
+    - "Syndicats (FTQ, CSN) — enjeux de réparation locale"
+    - "Municipalités (UMQ) — relais territoriaux"
+    - "Chercheurs (Polytechnique, ÉTS) — validation technique de l'indice"</code></pre>
 
-<h2>6. Sources d'amorçage</h2>
-<table>
-<thead><tr><th>Source</th><th>Statut</th></tr></thead>
-<tbody>
-<tr><td>Avance remboursable FQBC</td><td>[P/T] — à confirmer</td></tr>
-<tr><td>Financement fédéral à identifier</td><td>[T]</td></tr>
-<tr><td>Financement mixte public-privé</td><td>[P/T]</td></tr>
-</tbody>
-</table>
+<p><a href="loi-ilots-chaleur.html">← Retour à l'annexe Îlots de chaleur</a></p>
 
-<h2>7. Déploiement progressif</h2>
-<table>
-<thead><tr><th>Étape</th><th>Contenu</th></tr></thead>
-<tbody>
-<tr><td>1</td><td>Définir et tester l'indice</td></tr>
-<tr><td>2</td><td>Consulter les fabricants et les consommateurs</td></tr>
-<tr><td>3</td><td>Valider le cadre juridique</td></tr>
-<tr><td>4</td><td>Lancer une période pilote</td></tr>
-<tr><td>5</td><td>Étendre le mécanisme après évaluation</td></tr>
-</tbody>
-</table>
-
-<h2>8. Parties prenantes</h2>
-<ul>
-<li>Organismes environnementaux</li>
-<li>Associations de consommateurs</li>
-<li>Syndicats</li>
-<li>Municipalités</li>
-<li>Établissements de recherche</li>
-</ul>
-<p>Contribution : conception des critères, validation scientifique, évaluation des retombées locales.</p>
-
-<h2>9. Points ouverts <code>[T]</code></h2>
-<table>
-<thead><tr><th>Élément</th><th>Autorité</th></tr></thead>
-<tbody>
-<tr><td>Validation constitutionnelle (compétence fédérale)</td><td>Direction juridique QC + Ottawa</td></tr>
-<tr><td>Conformité ACEUM</td><td>Affaires mondiales Canada</td></tr>
-<tr><td>Modalités de perception (ASFC / CARM / RQ)</td><td>ASFC + Revenu Québec</td></tr>
-<tr><td>Définition des seuils de grade</td><td>Comité technique indépendant</td></tr>
-<tr><td>Méthode de vérification</td><td>Organisme de normalisation</td></tr>
-<tr><td>Financement d'amorçage</td><td>FQBC + Finances Canada</td></tr>
-<tr><td>Hypothèses de conformité par segment</td><td>Analyse de marché</td></tr>
-<tr><td>Coûts d'administration</td><td>Revenu Québec</td></tr>
-</tbody>
-</table>
-
-<h2>10. Rattachement au dossier</h2>
-<table>
-<thead><tr><th>Élément</th><th>Référence</th></tr></thead>
-<tbody>
-<tr><td>Loi îlots de chaleur</td><td><a href="loi-ilots-chaleur.html">Obsolescence programmée</a></td></tr>
-<tr><td>Couloir transfrontalier</td><td><a href="couloir-transfrontalier.html">Section 13 — Article 4</a></td></tr>
-<tr><td>Livre I axe 4</td><td><a href="01_livre_I_architecture.html">Contrats publics, cycle de vie</a></td></tr>
-<tr><td>Coalition sci-tech</td><td><a href="coalition-scientifique-technologique.html">Matériaux durables</a></td></tr>
-<tr><td>Références R32</td><td><a href="references.html">Loi 29 (2023) — précédent UdeS</a></td></tr>
-</tbody>
-</table>
-
-<div class="alert"><p><strong>Note de rigueur :</strong> ce module présente une piste de financement et d'incitation en faveur de la durabilité, mais <strong>ne constitue pas encore un mécanisme prêt à être appliqué</strong>. Sa solidité dépendra de la validation juridique, de critères techniques mesurables, d'un financement d'amorçage confirmé et d'une analyse transparente des scénarios financiers.</p></div>
-
-<hr>
-<p><em>Module exploratoire — Non adopté, non opérationnel. Sherbrooke, Québec — 26 septembre 2026.</em></p>
 </main>
-<footer class="footer"><p>PMDQ v2.7.5 — MOD-ECO-CIRC-2025 — 26 septembre 2026</p></footer>
-</body></html>
+<footer class="footer"><p>PMDQ v2.7.5 — MOD-ECO-CIRC-2025 — Sherbrooke, Québec — 26 septembre 2026</p><p>Langue de foi : français</p></footer>
+</body>
+</html>
