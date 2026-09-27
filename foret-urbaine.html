@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Forêt urbaine — Simulateur — PMDQ v2.7.5</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.5 + Livre X<span>Forêt urbaine</span></div><nav class="nav"><a href="index.html">Accueil</a><a href="loi-ilots-chaleur.html">Îlots chaleur</a><a href="foret-urbaine.html" class="active">Forêt urbaine</a></nav></div></header>
+<main>
+<h1>Forêt urbaine — Simulateur</h1>
+<p class="lede">Résorption des îlots de chaleur par plantation d'arbres fruitiers et mellifères</p>
+<div class="alert info"><p><strong>Statut :</strong> <span class="badge info">P/T</span> — Modèle indicatif. Paramètres à valider par agronomes.</p></div>
+<h2>1. Objet</h2>
+<p>Simuler la valeur économique d'une forêt urbaine (tilleuls + amélanchiers) sur 10 ans.</p>
+<h2>2. Résultats</h2>
+<table>
+<thead><tr><th>Année</th><th>Maturation (%)</th><th>Fleurs tilleul (kg)</th><th>Baies amélanchier (kg)</th><th>Valeur usufruit ($)</th><th>kWh évités</th><th>Valeur clim. ($)</th><th>Total annuel ($)</th><th>Cumulé ($)</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>3,9</td><td>0,59</td><td>3,13</td><td>117,50</td><td>4 442</td><td>66,64</td><td>184,13</td><td>184,13</td></tr>
+<tr><td>2</td><td>8,3</td><td>1,25</td><td>6,65</td><td>249,52</td><td>9 434</td><td>141,51</td><td>391,03</td><td>575,16</td></tr>
+<tr><td>3</td><td>16,8</td><td>2,52</td><td>13,44</td><td>503,94</td><td>19 053</td><td>285,80</td><td>789,75</td><td>1 364,91</td></tr>
+<tr><td>4</td><td>31,0</td><td>4,65</td><td>24,80</td><td>930,08</td><td>35 165</td><td>527,47</td><td>1 457,55</td><td>2 822,46</td></tr>
+<tr><td>5</td><td>50,0</td><td>7,50</td><td>40,00</td><td>1 500,00</td><td>56 713</td><td>850,69</td><td>2 350,69</td><td>5 173,15</td></tr>
+<tr><td>6</td><td>69,0</td><td>10,35</td><td>55,20</td><td>2 069,92</td><td>78 261</td><td>1 173,91</td><td>3 243,84</td><td>8 416,99</td></tr>
+<tr><td>7</td><td>83,2</td><td>12,48</td><td>66,56</td><td>2 496,06</td><td>94 372</td><td>1 415,59</td><td>3 911,64</td><td>12 328,63</td></tr>
+<tr><td>8</td><td>91,7</td><td>13,75</td><td>73,35</td><td>2 750,48</td><td>103 992</td><td>1 559,88</td><td>4 310,36</td><td>16 638,99</td></tr>
+<tr><td>9</td><td>96,1</td><td>14,41</td><td>76,87</td><td>2 882,50</td><td>108 984</td><td>1 634,75</td><td>4 517,26</td><td>21 156,25</td></tr>
+<tr><td>10</td><td>98,2</td><td>14,73</td><td>78,56</td><td>2 946,04</td><td>111 386</td><td>1 670,79</td><td>4 616,83</td><td>25 773,08</td></tr>
+</tbody>
+</table>
+<h2>3. Lecture</h2>
+<ul>
+<li>Valeur cumulée sur 10 ans : plus de <strong>25 000 $</strong> par forêt urbaine type.</li>
+<li>Les kWh évités croissent avec la maturation.</li>
+<li>Usufruit (fruits + miel) + économies énergétiques.</li>
+</ul>
+<h2>4. Code source</h2>
+<pre><code>$ python foret_urbaine.py</code></pre>
+<p><a href="foret_urbaine.py">Télécharger le code source</a></p>
+<h2>5. Rattachement</h2>
+<table>
+<thead><tr><th>Élément</th><th>Référence</th></tr></thead>
+<tbody>
+<tr><td>Loi îlots de chaleur</td><td><a href="loi-ilots-chaleur.html">Avant-projet</a></td></tr>
+<tr><td>Livre I axe 5</td><td><a href="01_livre_I_architecture.html">Villes résilientes</a></td></tr>
+<tr><td>Coalition sci-tech</td><td><a href="coalition-scientifique-technologique.html">Matériaux frais</a></td></tr>
+</tbody>
+</table>
+<div class="alert"><p><strong>Note :</strong> modèle indicatif [P/T].</p></div>
+<hr>
+<p><em>Simulateur — Sherbrooke, Québec — 26 septembre 2026.</em></p>
+</main>
+<footer class="footer"><p>PMDQ v2.7.5 — Forêt urbaine — 26 septembre 2026</p></footer>
+</body></html>
