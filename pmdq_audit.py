@@ -60,6 +60,8 @@ PAGES_PUBLIQUES = [
     "plantation-arbres.html",
     "section_corrigee.html",
     "strategie-alliances.html",
+    "comparaison-partis.html",
+    "depassements-couts.html",
 ]
 
 PAGES_SILENCIEUSES = [
