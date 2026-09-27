@@ -92,3 +92,36 @@ h3[id^="lettre-"] + ul li a:hover {
     text-decoration: underline;
     color: #2e7d32;
 }
+
+/* Slogan Voir clair */
+h2.slogan {
+    font-size: 2.4rem;
+    color: #1a3a5c;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 2.5rem 0 0.5rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid #2e7d32;
+    display: inline-block;
+    width: 100%;
+}
+
+p.slogan-sous-titre {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #2e7d32;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+h3 + p.lede {
+    margin-top: 0.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+    color: #1a3a5c;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
