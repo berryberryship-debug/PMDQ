@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Méthodologie — PMDQ v2.7.5</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.5<span>Méthodologie</span></div></div></header>
+<main>
+
+<h1>Méthodologie</h1>
+<p class="lede">Comment les chiffres, audits et simulations sont calculés — Version 2.7.5</p>
+
+<h2>1. Sources</h2>
+<ul>
+<li><strong>Statistiques officielles</strong> : Institut de la statistique du Québec (ISQ), Ministère de l'Éducation, Ministère de la Santé.</li>
+<li><strong>Données environnementales</strong> : INSPQ (îlots de chaleur), Environnement Canada.</li>
+<li><strong>Cadre légal</strong> : Loi 29 (obsolescence), Loi 25 (données), DGEQ (financement), ACEUM (commerce).</li>
+<li><strong>Recherche</strong> : Polytechnique, ÉTS, Université Laval.</li>
+</ul>
+
+<h2>2. Audits</h2>
+<p>Le dossier maître est vérifié par un script (<code>pmdq_audit.py</code>) qui teste chaque page publiée. Les indicateurs sont :</p>
+<ul>
+<li><strong>Audit intégrité</strong> : 20/20 — cohérence des liens et des données.</li>
+<li><strong>Audit robustesse</strong> : 40/40 — vérification des invariants et des calculs.</li>
+<li><strong>Total testé</strong> : 60 pages (57 publiées + 3 silencieuses).</li>
+</ul>
+
+<h2>3. Simulations</h2>
+<p>Les simulations sont réalisées en Python avec <code>numpy</code> et <code>pandas</code>. Par exemple :</p>
+<ul>
+<li><strong>Forêt nourricière urbaine</strong> : évapotranspiration, kWh évités, valeur usufruit.</li>
+<li><strong>MOD-ECO-CIRC-2025</strong> : autofinancement de la durabilité par surtaxes et labellisation.</li>
+</ul>
+
+<h2>4. Limites</h2>
+<ul>
+<li>Les chiffres sont des <strong>ordres de grandeur</strong>, pas des prévisions.</li>
+<li>Les simulations ne remplacent pas une étude d'impact détaillée.</li>
+<li>Le dossier est <strong>non adopté, non opérationnel et non opposable</strong>.</li>
+</ul>
+
+<h2>5. Vérifiabilité</h2>
+<p>Tout est public : le code source, les scripts, les données et les versions. Le dépôt est consultable sur GitHub.</p>
+
+<p><a href="index.html">← Retour à l'accueil</a></p>
+
+</main>
+<footer class="footer"><p>PMDQ v2.7.5 — Méthodologie — Sherbrooke, Québec — 27 septembre 2026</p><p>Langue de foi : français</p></footer>
+</body>
+</html>

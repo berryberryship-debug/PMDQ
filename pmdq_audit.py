@@ -63,6 +63,11 @@ PAGES_PUBLIQUES = [
     "comparaison-partis.html",
     "depassements-couts.html",
     "classe-moyenne.html",
+    "dossiers.html",
+    "livres.html",
+    "lois.html",
+    "methodologie.html",
+    "politique.html",
 ]
 
 PAGES_SILENCIEUSES = [
