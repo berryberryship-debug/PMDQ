@@ -68,6 +68,7 @@ PAGES_PUBLIQUES = [
     "lois.html",
     "methodologie.html",
     "politique.html",
+    "rapport-frontalier.html",
 ]
 
 PAGES_SILENCIEUSES = [
