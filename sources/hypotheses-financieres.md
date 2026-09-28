@@ -67,3 +67,73 @@ Ce document recense les hypothèses utilisées dans les modèles financiers du P
 - `03_livre_III_portefeuille_17_projets.html` — Portefeuille
 
 Dernière mise à jour : 28 septembre 2026.
+
+---
+
+## 8. Écart historique — Trajectoires Domar (25 ans)
+
+### 8.1 Définition de l'effort
+
+Le moteur `moteur_domar.py` calcule l'effort primaire stabilisant selon :
+
+    s* = [(i - g) / (1 + g)] × d
+
+où :
+- `i` = taux d'intérêt effectif
+- `g` = taux de croissance **nominal** (et non réel)
+- `d` = ratio dette brute / PIB
+
+### 8.2 Valeurs d'effort confirmées
+
+| Scénario | i | g | i - g | s* (% PIB) | Effort (G$/an) |
+|---|---|---|---|---|---|
+| Favorable | 4,00 % | 3,20 % | +0,80 % | 0,328 % | 2,11 |
+| Central | 4,60 % | 2,71 % | +1,89 % | 0,778 % | 5,02 |
+| Défavorable | 5,50 % | 1,80 % | +3,70 % | 1,537 % | 9,91 |
+
+Ces trois valeurs sont reproduites à l'identique par le Livre V et par le moteur.
+
+### 8.3 Méthode de calcul des trajectoires
+
+Le moteur applique une **simulation discrète annuelle** :
+
+    d_t = [(1 + i) / (1 + g)] × d_{t-1} − s_t
+    s_t = effort_G / PIB_t
+    PIB_t = PIB_0 × (1 + g)^t
+
+L'effort est **constant en dollars** (5,02 G$/an), mais sa **fraction du PIB décroît** chaque année.
+
+### 8.4 Résultats actuels (cohérents avec le moteur)
+
+| Année | Favorable | Central | Défavorable |
+|---|---|---|---|
+| 0 | 42,3 % | 42,3 % | 42,3 % |
+| 5 | 40,4 % | 42,6 % | 46,6 % |
+| 10 | 38,9 % | 43,4 % | 52,1 % |
+| 15 | 37,8 % | 44,7 % | 58,9 % |
+| 20 | 37,0 % | 46,5 % | 67,4 % |
+| 25 | **36,6 %** | **48,7 %** | **77,8 %** |
+
+### 8.5 Ancienne méthode — écart non résolu
+
+Une version antérieure du Livre V affichait :
+
+| Année | Favorable | Central | Défavorable |
+|---|---|---|---|
+| 25 | **25,3 %** | **42,3 %** | **83,5 %** |
+
+**Constat :** aucune formule actuellement identifiée ne reproduit exactement ces trois valeurs à partir des paramètres du moteur. L'écart peut provenir :
+- d'une définition différente de l'effort (constant en % du PIB vs constant en G$),
+- d'une hypothèse de `g` différente (réel vs nominal),
+- d'un traitement spécifique des ajustements stock-flux (`a_t`),
+- d'une erreur de calcul non documentée.
+
+**Statut : [T] — Validation CPA requise.**
+
+### 8.6 Action prise
+
+Le Livre V a été harmonisé avec le moteur (36,6 / 48,7 / 77,8 %).
+Les valeurs historiques (25,3 / 42,3 / 83,5 %) sont conservées dans cette note pour traçabilité.
+Toute correction future doit s'appuyer sur une validation comptable indépendante.
+
+Dernière mise à jour : 28 septembre 2026.

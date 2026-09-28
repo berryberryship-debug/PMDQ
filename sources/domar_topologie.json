@@ -1,0 +1,43 @@
+{
+  "date_calcul": "2026-09-28",
+  "parametres": {
+    "d": {
+      "valeur": 0.423,
+      "statut": "[C]"
+    },
+    "PIB_2026": {
+      "valeur": 644.55,
+      "statut": "[C]"
+    },
+    "note": "g = croissance NOMINALE (pas réelle). g réel 2026 = 1,1 % [M]."
+  },
+  "scenarios": [
+    {
+      "nom": "Favorable",
+      "i": 0.04,
+      "g": 0.032,
+      "i_minus_g": 0.8,
+      "s_star_pct": 0.328,
+      "effort_G$": 2.11,
+      "d_final_25ans": 36.6
+    },
+    {
+      "nom": "Central",
+      "i": 0.046,
+      "g": 0.0271,
+      "i_minus_g": 1.89,
+      "s_star_pct": 0.778,
+      "effort_G$": 5.02,
+      "d_final_25ans": 48.7
+    },
+    {
+      "nom": "Défavorable",
+      "i": 0.055,
+      "g": 0.018,
+      "i_minus_g": 3.7,
+      "s_star_pct": 1.537,
+      "effort_G$": 9.91,
+      "d_final_25ans": 77.8
+    }
+  ]
+}

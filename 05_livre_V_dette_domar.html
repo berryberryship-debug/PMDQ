@@ -41,11 +41,11 @@ Où :
 
 <table><thead><tr><th>Année</th><th>Favorable</th><th>Central</th><th>Défavorable</th></tr></thead><tbody>
 <tr><td>0</td><td>42,3 %</td><td>42,3 %</td><td>42,3 %</td></tr>
-<tr><td>5</td><td>38,9 %</td><td>42,3 %</td><td>46,8 %</td></tr>
-<tr><td>10</td><td>35,5 %</td><td>42,3 %</td><td>52,6 %</td></tr>
-<tr><td>15</td><td>32,1 %</td><td>42,3 %</td><td>60,2 %</td></tr>
-<tr><td>20</td><td>28,7 %</td><td>42,3 %</td><td>70,1 %</td></tr>
-<tr><td>25</td><td><strong>25,3 %</strong></td><td><strong>42,3 %</strong></td><td><strong>83,5 %</strong></td></tr>
+<tr><td>5</td><td>40,4 %</td><td>42,6 %</td><td>46,6 %</td></tr>
+<tr><td>10</td><td>38,9 %</td><td>43,4 %</td><td>52,1 %</td></tr>
+<tr><td>15</td><td>37,8 %</td><td>44,7 %</td><td>58,9 %</td></tr>
+<tr><td>20</td><td>37,0 %</td><td>46,5 %</td><td>67,4 %</td></tr>
+<tr><td>25</td><td><strong>36,6 %</strong></td><td><strong>48,7 %</strong></td><td><strong>77,8 %</strong></td></tr>
 </tbody></table>
 
 <div class="kpis">
@@ -55,7 +55,7 @@ Où :
 <div class="kpi"><div class="kpi__value">25 ans</div><div class="kpi__label">Horizon</div></div>
 </div>
 
-<div class="alert"><h4>Lecture stratégique</h4><p>Avec le <strong>même effort</strong> de 5,02 G$/an :</p><ul><li>En conditions favorables → la dette passe de 42,3 % à <strong>25,3 %</strong> du PIB en 25 ans.</li><li>En conditions centrales → la dette reste à <strong>42,3 %</strong> (stabilisation parfaite).</li><li>En conditions défavorables → la dette explose à <strong>83,5 %</strong> du PIB.</li></ul><p>Conclusion : 5,02 G$/an suffit en conditions centrales, devient insuffisant si les conditions se dégradent. Cela justifie de viser un effort <strong>supérieur</strong> au minimum central pour couvrir le risque.</p></div>
+<div class="alert"><h4>Lecture stratégique</h4><p>Avec le <strong>même effort</strong> de 5,02 G$/an :</p><ul><li>En conditions favorables → la dette passe de 42,3 % à <strong>36,6 %</strong> du PIB en 25 ans.</li><li>En conditions centrales → la dette monte légèrement à <strong>48,7 %</strong> (l'effort est insuffisant pour stabiliser).</li><li>En conditions défavorables → la dette explose à <strong>77,8 %</strong> du PIB.</li></ul><p>Conclusion : 5,02 G$/an est insuffisant pour stabiliser la dette dans le scénario central. Cela justifie de viser un effort <strong>supérieur</strong> au minimum calculé.</p><p class="disclaimer"><strong>Note méthodologique :</strong> les trajectoires publiées dans une version antérieure (25,3 % / 42,3 % / 83,5 %) ne sont pas reproductibles à partir de la définition actuelle de l'effort constant et des paramètres du moteur. L'écart historique est documenté comme [T] dans <code>sources/hypotheses-financieres.md</code>, sous réserve de validation comptable indépendante.</p></div>
 
 <h2>Équation dynamique de la dette</h2>
 <pre><code>d_t = [(1 + i_t) / (1 + g_t)] × d_{t-1} − s_t + a_t
