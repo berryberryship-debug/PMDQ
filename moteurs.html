@@ -75,6 +75,36 @@
           <td>Modélise le pic transitoire primaire +16,6 %.</td>
           <td>CSV 12 ans</td>
         </tr>
+        <tr>
+            <td><strong>Domar SFC</strong></td>
+            <td>Python + SciPy</td>
+            <td>Dette, effort primaire stabilisant</td>
+            <td>sources/domar_topologie.json</td>
+        </tr>
+        <tr>
+            <td><strong>Étanchéité budgétaire</strong></td>
+            <td>Python + NetworkX</td>
+            <td>Taxonomie R / Ré / É / Co</td>
+            <td>sources/etancheite_budgetaire.json</td>
+        </tr>
+        <tr>
+            <td><strong>Rendement D</strong></td>
+            <td>Python + NumPy</td>
+            <td>VAN, seuil 1,30, exclusion Co</td>
+            <td>sources/rendement_topologie.json</td>
+        </tr>
+        <tr>
+            <td><strong>Provisionnement</strong></td>
+            <td>Python + NumPy</td>
+            <td>Chain-Ladder, Mack, Bootstrap</td>
+            <td>sources/provisionnement_topologie.json</td>
+        </tr>
+        <tr>
+            <td><strong>Véhicule urbain</strong></td>
+            <td>Python</td>
+            <td>Requalification 2 régimes</td>
+            <td>sources/vehicule_topologie.json</td>
+        </tr>
       </tbody>
     </table>
 
@@ -212,6 +242,34 @@ Réserve 15   : alimentée à 100 % par les revenus Co</code></pre>
 </table>
 <p><strong>Fichier :</strong> <code>moteur_provisionnement.py</code> — <strong>Sortie :</strong> <code>sources/provisionnement_topologie.json</code></p>
 <p class="disclaimer"><strong>Note :</strong> le triangle de développement est un exemple indicatif [P]. Les réserves réelles dépendront des données historiques du FQBC une fois en opération.</p>
+
+<h2>9. Véhicule urbain léger — Requalification budgétaire</h2>
+<p>Modélise le programme pilote de véhicules urbains 2 places (25 M$ sur 5 ans) avec <strong>requalification en deux régimes</strong>.</p>
+<table class="tableau-simulation">
+<thead><tr><th>Régime</th><th>Montant</th><th>Critère</th><th>Statut</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Régime 1 — R&amp;D et capacités</strong><br>(phases 1 à 4)</td>
+<td>22,5 M$</td>
+<td>Création d'actifs immatériels + capacités documentées</td>
+<td>[T] — Investissement en capacités</td>
+</tr>
+<tr>
+<td><strong>Régime 2 — Pilote industriel</strong><br>(phase 5)</td>
+<td>2,5 M$</td>
+<td>Ratio D &gt; 1,30 sur horizon 10 ans</td>
+<td><strong>[P] — D = 2,337</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Calcul du Régime 2 :</strong></p>
+<ul>
+<li>Économies (10 ans) : 1,62 M$</li>
+<li>Part robotique : 2,00 M$</li>
+<li>Part PI : 2,22 M$</li>
+<li><strong>Valeur créée : 5,84 M$</strong> / Coût 2,5 M$ = <strong>D = 2,337</strong></li>
+</ul>
+<p><strong>Fichier :</strong> <code>moteur_vehicule.py</code> — <strong>Sortie :</strong> <code>sources/vehicule_topologie.json</code></p>
 
 <h2>Comment exécuter localement</h2>
 
