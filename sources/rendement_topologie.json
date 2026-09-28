@@ -1,0 +1,35 @@
+{
+  "date_calcul": "2026-09-28",
+  "taux_actualisation_social": 0.035,
+  "seuil_D": 1.3,
+  "projets": [
+    {
+      "nom": "Plantation d'arbres — 20 quartiers",
+      "statut": "CONFORME",
+      "categorie": "É",
+      "C0_G$": 2.28,
+      "van_G$": 1.629,
+      "D": 1.714,
+      "seuil": 1.3,
+      "conforme": true
+    },
+    {
+      "nom": "MOD-ECO-CIRC-2025",
+      "statut": "CONFORME",
+      "categorie": "É",
+      "C0_G$": 6.0,
+      "van_G$": 9.213,
+      "D": 2.535,
+      "seuil": 1.3,
+      "conforme": true
+    },
+    {
+      "nom": "Mobilité urbaine — prototype",
+      "statut": "EXCLU",
+      "raison": "Catégorie Co — non admissible (Article 14)",
+      "van": null,
+      "D": null,
+      "conforme": false
+    }
+  ]
+}

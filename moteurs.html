@@ -172,6 +172,24 @@ Revenu éco. sécurisé    : 12,000,000 $</code></pre>
 <p><strong>Fichier :</strong> <code>moteur_etancheite.py</code> — <strong>Sortie :</strong> <code>sources/etancheite_budgetaire.json</code></p>
 <p><strong>Statut :</strong> [C] — Test de robustesse validé (détection d'arête interdite Co → Décaissements).</p>
 
+
+<h2>7. Rendement collectif D et cycle de vie</h2>
+<p>Vérifie le seuil <strong>D &gt; 1,30</strong> (Article 18) et applique le taux d'actualisation social (Article 19). Exclusion stricte des revenus conditionnels (Co) selon l'Article 14.</p>
+<pre><code>VAN = -C0 + Σ (CF_t / (1 + r)^t)
+D   = Valeur créée nette / Coût total
+Seuil : D > 1,30</code></pre>
+<table class="tableau-simulation">
+<thead><tr><th>Projet</th><th>Cat.</th><th>VAN (G$)</th><th>D</th><th>Statut</th></tr></thead>
+<tbody>
+<tr><td>Plantation d'arbres — 20 quartiers</td><td>É</td><td>1,63</td><td>1,71</td><td>✅ CONFORME</td></tr>
+<tr><td>MOD-ECO-CIRC-2025</td><td>É</td><td>9,21</td><td>2,54</td><td>✅ CONFORME</td></tr>
+<tr><td>Mobilité urbaine — prototype</td><td>Co</td><td>—</td><td>—</td><td>EXCLU</td></tr>
+</tbody>
+</table>
+<p><strong>Taux d'actualisation social :</strong> 3,5 % [T] — hypothèse centrale documentée (Livre V).</p>
+<p><strong>Fichier :</strong> <code>moteur_rendement.py</code> — <strong>Sortie :</strong> <code>sources/rendement_topologie.json</code></p>
+<p class="disclaimer"><strong>Note :</strong> les valeurs C0 et flux_annuels sont des estimations [P] indicatives. Elles devront être validées par une étude d'impact avant tout engagement.</p>
+
 <h2>Comment exécuter localement</h2>
 
     <table>
