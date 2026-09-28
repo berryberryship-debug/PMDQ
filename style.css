@@ -135,3 +135,46 @@ p.note-bas-de-page {
     margin: 2rem 0 1rem 0;
     font-style: italic;
 }
+
+/* Menu de navigation — grille responsive */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav a.active {
+    background-color: #ffffff;
+    color: #1a3a5c;
+    font-weight: 600;
+}
+
+/* Version mobile : espacement réduit */
+@media (max-width: 600px) {
+    .nav {
+        gap: 0.3rem 0.6rem;
+        padding: 0.8rem 0.4rem;
+    }
+    .nav a {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
