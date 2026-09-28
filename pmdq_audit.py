@@ -70,6 +70,7 @@ PAGES_PUBLIQUES = [
     "politique.html",
     "rapport-frontalier.html",
     "indice-reparabilite.html",
+    "articles-legislatifs.html",
 ]
 
 PAGES_SILENCIEUSES = [
