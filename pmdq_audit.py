@@ -71,6 +71,7 @@ PAGES_PUBLIQUES = [
     "rapport-frontalier.html",
     "indice-reparabilite.html",
     "articles-legislatifs.html",
+    "immigration-cohesion.html",
 ]
 
 PAGES_SILENCIEUSES = [
