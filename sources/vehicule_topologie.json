@@ -1,0 +1,106 @@
+{
+  "date": "2026-09-28",
+  "enveloppe": {
+    "total_calcule_M$": 25.0,
+    "total_attendu_M$": 25.0,
+    "ok": true
+  },
+  "annuite": {
+    "principal_M$": 25.0,
+    "taux": 0.04,
+    "duree_ans": 5,
+    "annuite_M$_an": 5.616,
+    "total_rembourse_M$": 28.078,
+    "interets_cumules_M$": 3.078
+  },
+  "ratio_D": {
+    "valeur_creee_M$": 11.21,
+    "cout_total_M$": 25.0,
+    "ratio_D": 0.448,
+    "seuil": 1.3,
+    "conforme": false
+  },
+  "impact_domar": {
+    "dette_ajoutee_G$": 0.025,
+    "PIB_Quebec_G$": 644.55,
+    "impact_pct_PIB": 0.00388,
+    "statut": "[C] marginal"
+  },
+  "etancheite": {
+    "categories_utilisees": [
+      "Co",
+      "E",
+      "R",
+      "Re"
+    ],
+    "co_present": true,
+    "note": "Les categories Co sont exclues de l'assiette executoire."
+  },
+  "phases": {
+    "Phase 1 - Ingenierie & Design chassis/securite": {
+      "categorie": "R",
+      "traitement": "R&D / Charges courantes",
+      "total_M$": 6.5,
+      "etalement_M$": [
+        2.0,
+        2.0,
+        1.5,
+        0.5,
+        0.5
+      ]
+    },
+    "Phase 2 - Logiciel embarque & Telemetrie": {
+      "categorie": "Re",
+      "traitement": "Actif incorporel (CCSP 3410)",
+      "total_M$": 4.5,
+      "etalement_M$": [
+        1.5,
+        1.5,
+        1.0,
+        0.3,
+        0.2
+      ]
+    },
+    "Phase 3 - Cellule robotisee modulaire pilote": {
+      "categorie": "E",
+      "traitement": "Immobilisation corporelle (CCSP 3150)",
+      "total_M$": 8.0,
+      "etalement_M$": [
+        0.0,
+        2.0,
+        3.5,
+        1.5,
+        1.0
+      ]
+    },
+    "Phase 4 - Bancs d'essais, Homologation & Crash tests": {
+      "categorie": "R",
+      "traitement": "Depenses d'exploitation",
+      "total_M$": 3.5,
+      "etalement_M$": [
+        0.5,
+        0.5,
+        1.5,
+        0.5,
+        0.5
+      ]
+    },
+    "Phase 5 - Fabrication lot pilote (60 unites)": {
+      "categorie": "Co",
+      "traitement": "Stocks / Flotte publique pilote",
+      "total_M$": 2.5,
+      "etalement_M$": [
+        0.0,
+        0.0,
+        0.5,
+        1.2,
+        0.8
+      ]
+    }
+  },
+  "benefices": {
+    "Economies d'exploitation (60 unites x 5 ans)": 0.81,
+    "Valeur residuelle des actifs robotiques": 6.4,
+    "Valeur des actifs de PI (logiciels + brevets)": 4.0
+  }
+}
