@@ -76,6 +76,7 @@ PAGES_PUBLIQUES = [
     "mobilite-urbaine.html",
     "analyse-externe.html",
     "coalition-pmdq.html",
+    "pnspsts.html",
 ]
 
 PAGES_SILENCIEUSES = [
