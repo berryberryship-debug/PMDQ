@@ -179,23 +179,42 @@ p.note-bas-de-page {
     }
 }
 
-/* Menu à deux niveaux — sous-menus déroulants */
+
+/* Menu à deux niveaux — <details>/<summary> */
 .menu-groupe {
-    position: relative;
     display: inline-block;
+    position: relative;
 }
 
-.menu-groupe > a {
+.menu-groupe > summary {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    color: #ffffff;
     cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    list-style: none;
+    user-select: none;
+}
+
+.menu-groupe > summary::-webkit-details-marker {
+    display: none;
+}
+
+.menu-groupe > summary:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menu-groupe[open] > summary {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .sous-menu {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #1a3a5c;
-    min-width: 200px;
+    min-width: 220px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     border-radius: 4px;
     padding: 0.4rem 0;
@@ -209,28 +228,26 @@ p.note-bas-de-page {
     text-decoration: none;
     font-size: 0.85rem;
     white-space: nowrap;
-    border-radius: 0;
 }
 
 .sous-menu a:hover {
     background-color: #2e7d32;
 }
 
-.menu-groupe:hover .sous-menu,
-.menu-groupe:focus-within .sous-menu {
-    display: block;
-}
-
-/* Mobile : sous-menus en flux normal */
+/* Mobile : sous-menu en flux (accordéon vertical) */
 @media (max-width: 600px) {
+    .menu-groupe {
+        width: 100%;
+        text-align: center;
+    }
     .sous-menu {
         position: static;
         box-shadow: none;
         background-color: rgba(0,0,0,0.2);
-        display: block;
         min-width: auto;
+        width: 100%;
     }
-    .menu-groupe > a {
-        font-weight: 600;
+    .menu-groupe > summary {
+        width: 100%;
     }
 }
