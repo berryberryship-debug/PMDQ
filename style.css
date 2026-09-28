@@ -234,13 +234,13 @@ p.note-bas-de-page {
     background-color: #2e7d32;
 }
 
-/* Mobile : sous-menu en flux (accordéon vertical) */
+/* Mobile : sous-menu en flux SEULEMENT quand ouvert */
 @media (max-width: 600px) {
     .menu-groupe {
         width: 100%;
         text-align: center;
     }
-    .sous-menu {
+    .menu-groupe[open] .sous-menu {
         position: static;
         box-shadow: none;
         background-color: rgba(0,0,0,0.2);
