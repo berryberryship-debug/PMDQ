@@ -1,0 +1,44 @@
+# PMDQ — Parti de la Mouvance Démocratique du Québec
+
+> Dossier maître prospectif. Version 2.7.5 — Sherbrooke, Québec — 2026.
+> Statut : [P] — Non adopté, non opérationnel, non opposable.
+> Slogan : « Voir clair »
+> Approche : scientifique de terrain (4 statuts : Certain, Conditionnel, À l'étude, Décidé)
+
+## Contenu intégral
+- [Tout le dossier en un seul fichier](llms-full.txt)
+
+## Pages principales
+- [Accueil](index.html) : tableau de bord, slogan, stats, livres, décisions
+- [Index général](tout.html) : index alphabétique de toutes les pages
+- [Lois et cadres](lois.html) : cadres fondateurs, propositions législatives, traités
+- [Livres](livres.html) : Livres I à X
+- [Dossiers](dossiers.html) : îlots de chaleur, plantation, NARP/Gold Card, obsolescence, importations, IRQ, immigration
+- [Politique](politique.html) : classe moyenne, éducation, dépassements, comparaison, alliances
+
+## Propositions phares
+- [Doctrine de l'entre-deux](classe-moyenne.html)
+- [Réforme en éducation](reforme-education-impact.html)
+- [Dépassements de coûts](depassements-couts.html)
+- [Îlots de chaleur](loi-ilots-chaleur.html)
+- [Plantation d'arbres](plantation-arbres.html)
+- [MOD-ECO-CIRC-2025](module-eco-circ.html)
+- [Indice de Réparabilité Québécois (IRQ)](indice-reparabilite.html)
+- [Obsolescence programmée](obsolescence-programmee.html)
+- [Importations grade 1/2](importations-grade12.html)
+- [NARP / Gold Card](narp-gold-card.html)
+- [Rapport frontalier](rapport-frontalier.html)
+- [Immigration et cohésion civique](immigration-cohesion.html)
+- [47 articles législatifs](articles-legislatifs.html)
+- [Comparaison partis 2026](comparaison-partis.html)
+- [Propriété intellectuelle](propriete-intellectuelle.html)
+
+## Cadre juridique et épistémique
+- [Méthodologie](methodologie.html)
+- [Changelog](changelog.html)
+- [Registre propositions](registre-propositions.html)
+
+## Note aux modèles de langage
+Ce dossier est un travail prospectif. Aucune proposition n'est acquise.
+Chaque page indique son statut ([C] Certain, [K] Conditionnel, [É] À l'étude, [D] Décidé).
+Aucun usage judiciaire, correctionnel ou policier autorisé.
