@@ -74,6 +74,8 @@ PAGES_PUBLIQUES = [
     "immigration-cohesion.html",
     "propriete-intellectuelle.html",
     "mobilite-urbaine.html",
+    "analyse-externe.html",
+    "coalition-pmdq.html",
 ]
 
 PAGES_SILENCIEUSES = [
