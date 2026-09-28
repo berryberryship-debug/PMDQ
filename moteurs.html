@@ -143,7 +143,36 @@ Revenu éco. sécurisé    : 12,000,000 $</code></pre>
 
     <p><strong>Analyse complète :</strong> <a href="reforme-education-impact.html">Impact réforme éducation</a></p>
 
-    <h2>Comment exécuter localement</h2>
+    
+<h2>5. Solveur Domar (SFC)</h2>
+<p>Modélise la dynamique d'endettement et calcule l'effort primaire stabilisant selon l'équation de Domar :</p>
+<pre><code>s* = [(i - g) / (1 + g)] × d</code></pre>
+<table class="tableau-simulation">
+<thead><tr><th>Scénario</th><th>i</th><th>g</th><th>i - g</th><th>s* (% PIB)</th><th>Effort (G$/an)</th></tr></thead>
+<tbody>
+<tr><td>Favorable</td><td>4,00 %</td><td>3,20 %</td><td>+0,80 %</td><td>0,328 %</td><td>2,11</td></tr>
+<tr><td>Central</td><td>4,60 %</td><td>2,71 %</td><td>+1,89 %</td><td>0,778 %</td><td>5,02</td></tr>
+<tr><td>Défavorable</td><td>5,50 %</td><td>1,80 %</td><td>+3,70 %</td><td>1,537 %</td><td>9,91</td></tr>
+</tbody>
+</table>
+<p><strong>Fichier :</strong> <code>moteur_domar.py</code> — <strong>Sortie :</strong> <code>sources/domar_topologie.json</code></p>
+<p><strong>Statut :</strong> [C] — Cohérent avec le Livre V. Note méthodologique : <a href="sources/hypotheses-financieres.md">section 8</a>.</p>
+
+<h2>6. Étanchéité budgétaire (graphe orienté)</h2>
+<p>Vérifie la séparation stricte des catégories R, Ré, É et Co par analyse de graphe.</p>
+<table class="tableau-simulation">
+<thead><tr><th>Catégorie</th><th>Statut</th><th>Destination</th></tr></thead>
+<tbody>
+<tr><td><strong>R</strong> (ressources garanties)</td><td>Admissible</td><td>Décaissements</td></tr>
+<tr><td><strong>Ré</strong> (report automatique)</td><td>Admissible</td><td>Décaissements</td></tr>
+<tr><td><strong>É</strong> (économies)</td><td>Admissible</td><td>Décaissements</td></tr>
+<tr><td><strong>Co</strong> (revenus conditionnels)</td><td><strong>Exclu</strong></td><td>Réserve de contingence</td></tr>
+</tbody>
+</table>
+<p><strong>Fichier :</strong> <code>moteur_etancheite.py</code> — <strong>Sortie :</strong> <code>sources/etancheite_budgetaire.json</code></p>
+<p><strong>Statut :</strong> [C] — Test de robustesse validé (détection d'arête interdite Co → Décaissements).</p>
+
+<h2>Comment exécuter localement</h2>
 
     <table>
       <caption>Commandes de lancement des moteurs</caption>
