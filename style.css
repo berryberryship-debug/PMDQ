@@ -178,3 +178,59 @@ p.note-bas-de-page {
         padding: 0.3rem 0.6rem;
     }
 }
+
+/* Menu à deux niveaux — sous-menus déroulants */
+.menu-groupe {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-groupe > a {
+    cursor: pointer;
+}
+
+.sous-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a3a5c;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    padding: 0.4rem 0;
+    z-index: 100;
+}
+
+.sous-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    border-radius: 0;
+}
+
+.sous-menu a:hover {
+    background-color: #2e7d32;
+}
+
+.menu-groupe:hover .sous-menu,
+.menu-groupe:focus-within .sous-menu {
+    display: block;
+}
+
+/* Mobile : sous-menus en flux normal */
+@media (max-width: 600px) {
+    .sous-menu {
+        position: static;
+        box-shadow: none;
+        background-color: rgba(0,0,0,0.2);
+        display: block;
+        min-width: auto;
+    }
+    .menu-groupe > a {
+        font-weight: 600;
+    }
+}
