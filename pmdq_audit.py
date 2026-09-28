@@ -72,6 +72,7 @@ PAGES_PUBLIQUES = [
     "indice-reparabilite.html",
     "articles-legislatifs.html",
     "immigration-cohesion.html",
+    "propriete-intellectuelle.html",
 ]
 
 PAGES_SILENCIEUSES = [
