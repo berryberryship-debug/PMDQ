@@ -190,6 +190,29 @@ Seuil : D > 1,30</code></pre>
 <p><strong>Fichier :</strong> <code>moteur_rendement.py</code> — <strong>Sortie :</strong> <code>sources/rendement_topologie.json</code></p>
 <p class="disclaimer"><strong>Note :</strong> les valeurs C0 et flux_annuels sont des estimations [P] indicatives. Elles devront être validées par une étude d'impact avant tout engagement.</p>
 
+
+<h2>8. Provisionnement actuariel (Chain-Ladder / Mack / Bootstrap)</h2>
+<p>Calcule les réserves de précaution (Article 13) et de contingence (Article 15) par méthode actuarielle.</p>
+<pre><code>Chain-Ladder : f_j = Σ C_{i,j+1} / Σ C_{i,j}
+Mack         : erreur-type σ
+Bootstrap    : rééchantillonnage non-paramétrique (n=10 000)
+Réserve 13   : R_t = 0,15 × max(0, Plafond - Ressources)
+Réserve 15   : alimentée à 100 % par les revenus Co</code></pre>
+<table class="tableau-simulation">
+<thead><tr><th>Indicateur</th><th>Valeur</th><th>Statut</th></tr></thead>
+<tbody>
+<tr><td>Réserve totale (Chain-Ladder)</td><td>2,049 G$</td><td>[C]</td></tr>
+<tr><td>Erreur-type de Mack</td><td>0,455 G$</td><td>[C]</td></tr>
+<tr><td>Réserve médiane (bootstrap)</td><td>1,975 G$</td><td>[C]</td></tr>
+<tr><td>IC 95 % bas</td><td>0,334 G$</td><td>[C]</td></tr>
+<tr><td>IC 95 % haut</td><td>4,255 G$</td><td>[C]</td></tr>
+<tr><td><strong>Réserve de précaution (Art. 13)</strong></td><td><strong>0,104 G$</strong></td><td><strong>[C]</strong></td></tr>
+<tr><td><strong>Réserve de contingence (Art. 15)</strong></td><td><strong>0,69 G$</strong></td><td><strong>[C]</strong></td></tr>
+</tbody>
+</table>
+<p><strong>Fichier :</strong> <code>moteur_provisionnement.py</code> — <strong>Sortie :</strong> <code>sources/provisionnement_topologie.json</code></p>
+<p class="disclaimer"><strong>Note :</strong> le triangle de développement est un exemple indicatif [P]. Les réserves réelles dépendront des données historiques du FQBC une fois en opération.</p>
+
 <h2>Comment exécuter localement</h2>
 
     <table>
