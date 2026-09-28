@@ -1,0 +1,88 @@
+# PMDQ — Autoriser explicitement les crawlers IA
+# Dernière mise à jour : 2026-09-27
+
+# ===========================================
+# OpenAI (ChatGPT)
+# ===========================================
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# ===========================================
+# Anthropic (Claude)
+# ===========================================
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# ===========================================
+# Google (Gemini, AI Overviews, Vertex AI)
+# ===========================================
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Gemini-Deep-Research
+Allow: /
+
+User-agent: Google-Agent
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# ===========================================
+# Perplexity
+# ===========================================
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ===========================================
+# Autres crawlers IA majeurs
+# ===========================================
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# ===========================================
+# Règle par défaut : tout autoriser
+# ===========================================
+User-agent: *
+Allow: /
+
+# ===========================================
+# Sitemap
+# ===========================================
+Sitemap: https://berryberryship-debug.github.io/PMDQ/sitemap.xml
