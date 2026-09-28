@@ -73,6 +73,7 @@ PAGES_PUBLIQUES = [
     "articles-legislatifs.html",
     "immigration-cohesion.html",
     "propriete-intellectuelle.html",
+    "mobilite-urbaine.html",
 ]
 
 PAGES_SILENCIEUSES = [
