@@ -57,6 +57,17 @@ if [ "$STRICT" = "1" ] && [ "$code_etat" != "0" ]; then
 fi
 
 echo
+echo "=== 2b. Tests unitaires ==="
+if python3 tests_moteurs.py > .tests_moteurs.log 2>&1; then
+    ok_tests=$(grep -c "^  OK " .tests_moteurs.log || echo 0)
+    echo "  OK : $ok_tests tests passes."
+else
+    echo "  ECHEC des tests unitaires :"
+    grep -A2 "ECHEC\|ERREUR" .tests_moteurs.log | head -20
+    exit 1
+fi
+
+echo
 echo "=== 3. Verification des moteurs ==="
 moteurs=(
     "moteur_variables.py:"

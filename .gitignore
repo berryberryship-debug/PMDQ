@@ -1,3 +1,4 @@
 .precommit_socle.log
 __pycache__/
 *.pyc
+.tests_moteurs.log
