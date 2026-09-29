@@ -343,7 +343,8 @@ def collecter(verbose=True):
             continue
 
         # Parser le CSV
-        lecteur = csv.DictReader(io.StringIO(res["contenu"]))
+        contenu_sans_bom = res["contenu"].lstrip("\ufeff")
+        lecteur = csv.DictReader(io.StringIO(contenu_sans_bom))
         lignes = list(lecteur)
         if not lignes:
             resultats.append({

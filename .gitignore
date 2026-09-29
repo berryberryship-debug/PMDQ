@@ -1,1 +1,3 @@
 .precommit_socle.log
+__pycache__/
+*.pyc

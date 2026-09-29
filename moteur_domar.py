@@ -99,7 +99,7 @@ def charger_references_officielles():
         return {}
 
 
-def afficher_references(cache):
+def afficher_references(cache, d_utilisee):
     """Affiche les references officielles disponibles et les ecarts."""
     if not cache:
         return
@@ -116,12 +116,12 @@ def afficher_references(cache):
 
         # Comparer avec la valeur utilisee
         if d_off is not None:
-            ecart = abs(D_INITIALE * 100 - d_off)
+            ecart = abs(d_utilisee * 100 - d_off)
             if ecart > 0.5:
-                print(f"  Code utilise                 : {D_INITIALE*100} %")
+                print(f"  Code utilise                 : {d_utilisee*100:.1f} %")
                 print(f"  ECART                        : {ecart:.1f} points")
             else:
-                print(f"  Code utilise                 : {D_INITIALE*100} % (coherent)")
+                print(f"  Code utilise                 : {d_utilisee*100:.1f} % (coherent)")
 
 
 def appliquer_references_officielles(cache):
@@ -182,7 +182,7 @@ def main():
             "effort_G$": round(effort_g, 2),
         })
 
-    afficher_references(cache)
+    afficher_references(cache, D_utilisee)
 
     # --- Test de trajectoire sur 25 ans avec effort central fixe ---
     print()
