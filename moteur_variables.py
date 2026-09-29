@@ -1,6 +1,6 @@
 """
 moteur_variables.py
-Surveillance des variables sensibles — PMDQ v2.7.5
+Surveillance des variables sensibles — PMDQ v2.7.7
 
 Principe :
 - les titres sont compares apres normalisation Unicode ;
@@ -154,7 +154,11 @@ def analyser_registre():
 
         ecart = (today - date_maj).days
 
-        if ecart > frequence:
+        # A REVOIR : le registre a ete modifie apres la date declaree,
+        # donc possiblement sans mettre a jour la date de la section.
+        if date_explicit is not None and fallback > date_explicit:
+            statut = "A REVOIR"
+        elif ecart > frequence:
             statut = "EN RETARD"
         else:
             statut = "A JOUR"
@@ -178,7 +182,7 @@ def analyser_registre():
 def afficher_rapport(rapport):
     print()
     print("=" * 90)
-    print("  MOTEUR VARIABLES SENSIBLES - PMDQ v2.7.5")
+    print("  MOTEUR VARIABLES SENSIBLES - PMDQ v2.7.7")
     print("=" * 90)
     print(f"  Date d'analyse      : {rapport['date_analyse']}")
     print(f"  mtime du registre   : {rapport['date_fichier']}")
@@ -212,9 +216,12 @@ def afficher_rapport(rapport):
     print("  Detail des sources de date :")
 
     for s in rapport["sections"]:
+        source = s['source_date']
+        if s['date_maj']:
+            source = f"{source} ({s['date_maj']})"
         print(
             f"    - {s['section']:<39}: "
-            f"{s['source_date']}"
+            f"{source}"
         )
 
     print()
