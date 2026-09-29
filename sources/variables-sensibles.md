@@ -79,3 +79,14 @@ Il doit être mis à jour à chaque nouveau budget, élection, ou changement lé
 - Budget du Québec 2027 : toutes les variables macro
 - Élections 2026 : variables budgétaires et légales
 - Chaque projet : variables de projet
+
+## 7. Variables de contexte (mensuel)
+
+**Dernière mise à jour** : 2026-09-29
+
+| Variable | Valeur actuelle | Source | Utilisée dans |
+|---|---|---|---|
+| Prix essence ordinaire (Québec) | à saisir manuellement | Régie de l'énergie du Québec | contexte macro, dossier véhicule |
+| Indice boursier S&P/TSX | à saisir manuellement | Bourse de Toronto | contexte macro |
+
+**Note** : ces variables ne sont pas collectées automatiquement. Les séries StatCan correspondantes sont soit inactives (prix essence, série 735059 arrêtée), soit d'accès non fiable (bourse, HTTP 406). Mise à jour mensuelle manuelle recommandée.

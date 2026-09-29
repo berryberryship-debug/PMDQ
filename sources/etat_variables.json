@@ -49,13 +49,21 @@
       "source_date": "date explicite",
       "jours_depuis_maj": 0,
       "statut": "A JOUR"
+    },
+    {
+      "section": "7. Variables de contexte",
+      "frequence_jours": 30,
+      "date_maj": "2026-09-29",
+      "source_date": "date explicite",
+      "jours_depuis_maj": 0,
+      "statut": "A JOUR"
     }
   ],
   "schema_version": "1.0",
   "registre": "sources/variables-sensibles.md",
   "resume": {
-    "total": 6,
-    "a_jour": 6,
+    "total": 7,
+    "a_jour": 7,
     "en_retard": 0,
     "a_revoir": 0,
     "section_absente": 0
