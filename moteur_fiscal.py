@@ -1,5 +1,5 @@
 """
-moteur_fiscal.py - Moteur fiscal PMDQ v2.8 (Module 7)
+moteur_fiscal.py - Moteur fiscal PMDQ v2.7.7 (Module 7)
 
 Modele comportemental scenaristique calibre sur un point observe.
 
@@ -25,6 +25,8 @@ Usage :
     python3 moteur_fiscal.py --json resultat.json
     python3 moteur_fiscal.py --courbe
 """
+import os
+import sys
 import json
 import argparse
 from datetime import date
@@ -147,7 +149,7 @@ def courbe_laffer(t_min=0.0, t_max=0.80, n_points=161):
 def afficher_rapport(resultat):
     print()
     print("=" * 65)
-    print("  MOTEUR FISCAL — PMDQ v2.8 (Module 7)")
+    print("  MOTEUR FISCAL — PMDQ v2.7.7 (Module 7)")
     print("=" * 65)
     print()
     print("  --- Point de calibration (Quebec 2023) ---")
@@ -219,11 +221,13 @@ def verifier_variables():
             print(f"  - {s['section']:<40} {s['statut']:<16} ({j_txt})")
     print("!" * 72)
     print()
+    if os.environ.get("PMDQ_BLOQUANT"):
+        sys.exit(2)
 
 def main():
     verifier_variables()
     parser = argparse.ArgumentParser(
-        description="Moteur fiscal PMDQ v2.8 — calibre sur Quebec 2023"
+        description="Moteur fiscal PMDQ v2.7.7 — calibre sur Quebec 2023"
     )
     parser.add_argument(
         "--taux", type=float, default=0.15,

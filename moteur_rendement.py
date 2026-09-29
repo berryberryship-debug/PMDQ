@@ -1,6 +1,6 @@
 """
 moteur_rendement.py — Rendement collectif D et cycle de vie
-PMDQ v2.7.5 — Module 3
+PMDQ v2.7.7 — Module 3
 
 Vérifie le seuil D > 1,30 (Article 18) et applique le taux
 d'actualisation social (Article 19).
@@ -17,6 +17,8 @@ Taxonomie (Article 14) :
     Co       → EXCLU (réserve de contingence seulement)
 """
 import numpy as np
+import os
+import sys
 import json
 from datetime import date
 from pathlib import Path
@@ -134,11 +136,13 @@ def verifier_variables():
             print(f"  - {s['section']:<40} {s['statut']:<16} ({j_txt})")
     print("!" * 72)
     print()
+    if os.environ.get("PMDQ_BLOQUANT"):
+        sys.exit(2)
 
 def main():
     verifier_variables()
     print("=" * 72)
-    print("MOTEUR DE RENDEMENT D — PMDQ v2.7.5")
+    print("MOTEUR DE RENDEMENT D — PMDQ v2.7.7")
     print("=" * 72)
     print(f"Taux d'actualisation social : {TAUX_ACTUALISATION_SOCIAL*100:.1f} % [T]")
     print(f"Seuil D (Article 18)        : {SEUIL_D} [M]")

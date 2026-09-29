@@ -1,6 +1,6 @@
 """
 moteur_etancheite.py — Topologie et traçabilité budgétaire
-PMDQ v2.7.5 — Module 4
+PMDQ v2.7.7 — Module 4
 
 Vérifie l'étanchéité budgétaire par analyse de graphe orienté.
 
@@ -16,6 +16,8 @@ Violations détectables :
     - Double comptage entre ministères (FIN-002)
 """
 import networkx as nx
+import os
+import sys
 import json
 from datetime import date
 from pathlib import Path
@@ -136,11 +138,13 @@ def verifier_variables():
             print(f"  - {s['section']:<40} {s['statut']:<16} ({j_txt})")
     print("!" * 72)
     print()
+    if os.environ.get("PMDQ_BLOQUANT"):
+        sys.exit(2)
 
 def main():
     verifier_variables()
     print("=" * 72)
-    print("MOTEUR D'ÉTANCHÉITÉ BUDGÉTAIRE — PMDQ v2.7.5")
+    print("MOTEUR D'ÉTANCHÉITÉ BUDGÉTAIRE — PMDQ v2.7.7")
     print("=" * 72)
     print()
 

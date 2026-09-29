@@ -1,6 +1,6 @@
 """
 moteur_domar.py — Solveur SFC / Domar
-PMDQ v2.7.5 — Module 2 (version corrigée, cohérente avec le Livre V)
+PMDQ v2.7.7 — Module 2 (version corrigée, cohérente avec le Livre V)
 
 Modélise la dynamique d'endettement :
     s* = [(i - g) / (1 + g)] × d
@@ -17,6 +17,8 @@ Références :
 """
 import numpy as np
 from scipy.integrate import solve_ivp
+import os
+import sys
 import json
 from pathlib import Path
 from datetime import date
@@ -81,11 +83,13 @@ def verifier_variables():
             print(f"  - {s['section']:<40} {s['statut']:<16} ({j_txt})")
     print("!" * 72)
     print()
+    if os.environ.get("PMDQ_BLOQUANT"):
+        sys.exit(2)
 
 def main():
     verifier_variables()
     print("=" * 72)
-    print("MOTEUR DOMAR — PMDQ v2.7.5 (cohérent avec le Livre V)")
+    print("MOTEUR DOMAR — PMDQ v2.7.7 (cohérent avec le Livre V)")
     print("=" * 72)
     print(f"d (dette brute / PIB) : {D_INITIALE*100:.1f} % [C]")
     print(f"PIB implicite 2026    : {PIB_2026:.2f} G$ [C]")

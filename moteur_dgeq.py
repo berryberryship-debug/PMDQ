@@ -1,6 +1,6 @@
 """
 moteur_dgeq.py - Moteur de conformite DGEQ (Module 8)
-PMDQ v2.7.5
+PMDQ v2.7.7
 
 Valide les contributions politiques selon la Loi sur les elections
 et les referendums du Quebec (DGEQ).
@@ -17,6 +17,8 @@ Usage :
     python3 moteur_dgeq.py --fichier contributions.csv
     python3 moteur_dgeq.py --interactif
 """
+import os
+import sys
 import json
 import csv
 from datetime import date
@@ -139,7 +141,7 @@ def demo():
 
     print()
     print("=" * 65)
-    print("  MOTEUR DE CONFORMITE DGEQ — PMDQ v2.7.5")
+    print("  MOTEUR DE CONFORMITE DGEQ — PMDQ v2.7.7")
     print("=" * 65)
     print()
 
@@ -209,12 +211,14 @@ def verifier_variables():
             print(f"  - {s['section']:<40} {s['statut']:<16} ({j_txt})")
     print("!" * 72)
     print()
+    if os.environ.get("PMDQ_BLOQUANT"):
+        sys.exit(2)
 
 def main():
     verifier_variables()
     import argparse
     parser = argparse.ArgumentParser(
-        description="Moteur de conformite DGEQ — PMDQ v2.7.5"
+        description="Moteur de conformite DGEQ — PMDQ v2.7.7"
     )
     parser.add_argument("--demo", action="store_true", help="Lancer la demo")
     parser.add_argument("--fichier", type=str, default=None,

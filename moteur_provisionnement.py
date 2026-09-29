@@ -1,6 +1,6 @@
 """
 moteur_provisionnement.py — Provisionnement actuariel (numpy pur)
-PMDQ v2.7.5 — Module 1
+PMDQ v2.7.7 — Module 1
 
 Vérifie les réserves prévues par les Articles 13 et 15.
 
@@ -12,6 +12,8 @@ Méthodes implémentées :
     - Réserve de contingence (Article 15) : alimentée par les revenus Co
 """
 import numpy as np
+import os
+import sys
 import json
 from datetime import date
 from pathlib import Path
@@ -127,11 +129,13 @@ def verifier_variables():
             print(f"  - {s['section']:<40} {s['statut']:<16} ({j_txt})")
     print("!" * 72)
     print()
+    if os.environ.get("PMDQ_BLOQUANT"):
+        sys.exit(2)
 
 def main():
     verifier_variables()
     print("=" * 72)
-    print("MOTEUR DE PROVISIONNEMENT ACTUARIEL — PMDQ v2.7.5")
+    print("MOTEUR DE PROVISIONNEMENT ACTUARIEL — PMDQ v2.7.7")
     print("=" * 72)
     print(f"Taux de précaution (Article 13) : {TAUX_PRECAUTION*100:.1f} %")
     print(f"Seuil de confiance bootstrap    : {100*(1-ALPHA_BOOTSTRAP):.0f} %")

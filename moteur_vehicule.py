@@ -1,9 +1,11 @@
 """
 moteur_vehicule.py — Programme pilote de véhicules urbains légers
-PMDQ v2.7.5 — Module 5
+PMDQ v2.7.7 — Module 5
 
 Applique la méthodologie PMDQ au projet de véhicules 2 places.
 """
+import os
+import sys
 import json
 from datetime import date
 from pathlib import Path
@@ -135,7 +137,7 @@ def generer_rapport():
 def afficher_rapport():
     rapport = generer_rapport()
     print("=" * 70)
-    print("  MOTEUR VEHICULE — PMDQ v2.7.5 — Module 5")
+    print("  MOTEUR VEHICULE — PMDQ v2.7.7 — Module 5")
     print("=" * 70)
     print()
 
@@ -335,6 +337,8 @@ def verifier_variables():
             print(f"  - {s['section']:<40} {s['statut']:<16} ({j_txt})")
     print("!" * 72)
     print()
+    if os.environ.get("PMDQ_BLOQUANT"):
+        sys.exit(2)
 
 if __name__ == "__main__":
     verifier_variables()
