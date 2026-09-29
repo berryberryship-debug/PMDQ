@@ -1,0 +1,83 @@
+{
+  "version": "v2.7.22",
+  "genere_le": "2026-09-29",
+  "derniere_maj_depot": "2026-09-29T18:15:56.355990",
+  "navigation": {
+    "Le projet": [
+      "Accueil",
+      "Livre blanc",
+      "Méthodologie"
+    ],
+    "Les documents": [
+      "Livres",
+      "Lois",
+      "Dossiers"
+    ],
+    "Les moteurs": [
+      "Moteurs",
+      "PI"
+    ],
+    "Suivi": [
+      "Changelog"
+    ]
+  },
+  "dossier_vedette": {
+    "fichier": "investissement/vehicule_biplace/commun.md",
+    "titre": "commun",
+    "date": "2026-09-29T15:58:39.959993"
+  },
+  "dossiers_recents": [
+    {
+      "fichier": "investissement/vehicule_biplace/commun.md",
+      "titre": "commun",
+      "date": "2026-09-29T15:58:39.959993"
+    },
+    {
+      "fichier": "investissement/vehicule_biplace/C_milieu_ferme.md",
+      "titre": "C milieu ferme",
+      "date": "2026-09-29T15:58:10.763993"
+    },
+    {
+      "fichier": "investissement/vehicule_biplace/B_voiture_50.md",
+      "titre": "B voiture 50",
+      "date": "2026-09-29T15:58:00.963993"
+    },
+    {
+      "fichier": "investissement/vehicule_biplace/A_vbv_40.md",
+      "titre": "A vbv 40",
+      "date": "2026-09-29T15:57:45.247993"
+    },
+    {
+      "fichier": "CDLI/Livre-II-CDLI-v2.7.1-PROPOSITION-T.md",
+      "titre": "Livre II CDLI v2.7.1 PROPOSITION T",
+      "date": "2026-09-25T17:17:11.357999"
+    }
+  ],
+  "nb_fichiers_publics": 19,
+  "whitelist": {
+    "livres": [
+      "sources/03_LIVRE-I.md",
+      "sources/04_LIVRE-II.md",
+      "sources/05_LIVRE-III-A.md",
+      "sources/06_LIVRE-III-B.md",
+      "sources/07_LIVRE-IV.md",
+      "sources/08_LIVRE-V.md",
+      "sources/09_LIVRE-VI.md",
+      "sources/10_LIVRE-VII.md",
+      "sources/11_LIVRE-VIII.md",
+      "sources/23_LIVRE-IX.md"
+    ],
+    "annexes": [
+      "sources/12_ANNEXE-A.md",
+      "sources/13_ANNEXE-B.md",
+      "sources/14_ANNEXE-C.md",
+      "sources/15_ANNEXE-D.md",
+      "sources/16_ANNEXE-E.md",
+      "sources/17_ANNEXE-F.md",
+      "sources/18_ANNEXE-G.md"
+    ],
+    "livre_blanc": "livre_blanc.md",
+    "methodologie": "SOCLE.md",
+    "changelog": "CHANGELOG.md"
+  }
+}

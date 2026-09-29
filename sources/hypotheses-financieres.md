@@ -176,3 +176,74 @@ Dernière mise à jour : 28 septembre 2026.
     python3 moteur_fiscal.py --courbe --taux 0.18
     python3 moteur_fiscal.py --taux 0.20 --json resultat.json
 
+
+---
+
+## Module 5 — Véhicule urbain léger : hypothèses du moteur
+
+**Moteur associé** : `moteur_vehicule.py`
+**Chiffrage technique** : `verifier_projet.py`
+**Dernière mise à jour** : 2026-09-29
+
+### Deux régimes distincts
+
+Le projet est évalué selon deux régimes budgétaires distincts :
+
+| Régime | Phases | Montant | Critère | Statut |
+|---|---|---|---|---|
+| **Régime 1 — R&D et capacités** | 1 à 4 | 22,5 M$ | Création d'actifs immatériels + capacités documentées | [T] |
+| **Régime 2 — Pilote industriel** | 5 | 2,5 M$ | Ratio D > 1,30 sur horizon 10 ans | [P] D = 2,337 |
+
+Le seuil D > 1,30 s'applique aux projets d'infrastructure et d'industrialisation. Une phase de R&D pré-industrielle est jugée différemment : création d'actifs immatériels, capacités techniques, effets structurants.
+
+### Régime 1 — R&D et capacités (22,5 M$)
+
+**Statut** : [T] — Investissement en capacités industrielles
+**Critère** : création d'actifs immatériels + capacités documentées
+**Décomposition** : à documenter — le montant est codé en dur dans `moteur_vehicule.py:249` sans ventilation visible.
+
+### Régime 2 — Pilote industriel (2,5 M$)
+
+**Statut** : [P] — Décision d'industrialisation
+**Critère** : ratio D > 1,30 sur 10 ans
+
+**Calcul détaillé :**
+
+| Élément | Valeur | Formule dans le code |
+|---|---|---|
+| Économies d'exploitation (10 ans) | 1,62 M$ | `0,81 × 2` |
+| Part robotique (quote-part) | 2,00 M$ | `(2,5 / 8,0) × 6,40` |
+| Part PI (quote-part) | 2,22 M$ | `(2,5 / 4,5) × 4,00` |
+| **Valeur créée totale** | **5,84 M$** | Somme |
+| Coût total (phase 5) | 2,50 M$ | — |
+| **Ratio D** | **2,337** | `5,84 / 2,50` |
+| Seuil requis | 1,30 | Méthodologie |
+| **Conforme** | ✅ | `2,337 > 1,30` |
+
+### Hypothèses à documenter
+
+Les constantes suivantes sont utilisées dans le calcul mais **n'ont pas de source documentée** :
+
+| Constante | Valeur | Signification présumée | Source à établir |
+|---|---|---|---|
+| Économies / 5 ans | 0,81 M$ | Économies d'exploitation par période de 5 ans | ? |
+| Valeur actifs robotiques | 6,40 M$ | Valeur résiduelle totale des robots | ? |
+| Investissement robots total | 8,0 M$ | Base de calcul de la quote-part (2,5 / 8,0) | ? |
+| Valeur PI totale | 4,00 M$ | Valeur totale de la propriété intellectuelle | ? |
+| Investissement PI total | 4,5 M$ | Base de calcul de la quote-part (2,5 / 4,5) | ? |
+
+**Action requise** : ajouter des commentaires dans `moteur_vehicule.py` justifiant ces cinq constantes, ou les remplacer par une lecture depuis `sources/cache_economique.json`.
+
+### Articulation avec le chiffrage technique
+
+Le chiffrage du prototype unique (480 k – 1 215 k$, voir `verifier_projet.py`) est une **étape distincte** du Régime 1.
+
+| Élément | Prototype unique | Régime 1 (R&D) |
+|---|---|---|
+| Objet | Un véhicule fonctionnel | Actifs immatériels, capacités industrielles |
+| Coût | 480 k – 1 215 k$ | 22,5 M$ |
+| Horizon | Cycle unique | Programme pluriannuel |
+| Inclus | Ingénierie, prototypage, essais | Industrialisation, PI, robotisation, formation |
+
+Le prototype est une **condition préalable** au Régime 1 — il permet de valider la faisabilité technique avant l'engagement industriel.
+

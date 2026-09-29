@@ -260,6 +260,63 @@ REGIMES = {
 }
 
 
+# =====================================================================
+# CONSTANTES DU MODULE 5 — VÉHICULE URBAIN LÉGER
+# =====================================================================
+# Natures distinguées :
+#   [EMP]  Valeur empirique — mesurée ou issue d'une source documentée
+#   [MÉTH] Seuil méthodologique — paramètre de la grille d'évaluation
+#   [SCÉN] Paramètre scénaristique — hypothèse de travail assumée
+# =====================================================================
+
+# Constante 1 — economies_10ans (base 0,81 M$ sur 5 ans)
+# Valeur    : 0,81 M$
+# Unité     : millions CAD par période de 5 ans
+# Statut    : [SCÉN] paramètre scénaristique
+# Justification : économies d'exploitation attendues sur un pilote
+#                 industriel de 5 ans, doublées pour couvrir un
+#                 horizon de 10 ans. À valider par étude dédiée.
+
+# Constante 2 — valeur actifs robotiques (6,40 M$)
+# Valeur    : 6,40 M$
+# Unité     : millions CAD
+# Statut    : [SCÉN] paramètre scénaristique
+# Justification : valeur résiduelle estimée d'un parc robotique
+#                 industriel. Aucune source externe documentée.
+
+# Constante 3 — investissement robots total (8,0 M$)
+# Valeur    : 8,0 M$
+# Unité     : millions CAD
+# Statut    : [SCÉN] paramètre scénaristique
+# Justification : investissement total présumé en robots pour le
+#                 projet. Sert de dénominateur à la quote-part
+#                 (2,5 / 8,0). Aucune source externe documentée.
+
+# Constante 4 — valeur PI totale (4,00 M$)
+# Valeur    : 4,00 M$
+# Unité     : millions CAD
+# Statut    : [SCÉN] paramètre scénaristique
+# Justification : valeur estimée du portefeuille de propriété
+#                 intellectuelle associé au projet. Aucune source.
+
+# Constante 5 — investissement PI total (4,5 M$)
+# Valeur    : 4,5 M$
+# Unité     : millions CAD
+# Statut    : [SCÉN] paramètre scénaristique
+# Justification : investissement total présumé en PI. Sert de
+#                 dénominateur à la quote-part (2,5 / 4,5).
+#                 Aucune source externe documentée.
+
+# NOTE D'AUDIT
+# Ces cinq constantes sont utilisées dans le calcul du ratio D = 2,337.
+# Elles sont toutes classées [SCÉN] : ce sont des hypothèses de travail
+# non adossées à une source externe. Le ratio D qui en résulte doit
+# donc être présenté comme [P] prospectif dans toute communication
+# publique. Toute demande de validation externe (économiste, bailleur,
+# comité) devra porter en priorité sur ces cinq valeurs.
+# =====================================================================
+
+
 def calculer_D_pilote_10ans():
     """Ratio D du pilote sur 10 ans (au lieu de 5)."""
     # Benefices sur 10 ans

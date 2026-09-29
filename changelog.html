@@ -17,6 +17,8 @@
 <table>
 <thead><tr><th>ID</th><th>Champ corrigé</th><th>Valeur initiale</th><th>Valeur corrigée</th><th>Nature</th><th>Statut</th></tr></thead>
 <tbody>
+
+
 <tr><td><strong>RUPT-001</strong></td><td>Ratio D moyen (16 conformes)</td><td>1,3962</td><td><strong>1,4048</strong></td><td>Coquille — libellé non respecté</td><td><span class="badge green">Corrigée</span></td></tr>
 <tr><td><strong>RUPT-002</strong></td><td>Somme VAN portefeuille</td><td>16,85 G$</td><td><strong>17,23 G$</strong></td><td>Totaux erronés vs tableau source</td><td><span class="badge green">Corrigée</span></td></tr>
 <tr><td><strong>RUPT-003</strong></td><td>Somme coûts portefeuille</td><td>8,02 G$</td><td><strong>12,09 G$</strong></td><td>Totaux erronés vs tableau source</td><td><span class="badge green">Corrigée</span></td></tr>
@@ -95,6 +97,24 @@
 <tr><td>2.7.1</td><td>20 sept. 2026</td><td>Livre VII consolidé (éducation)</td></tr>
 <tr><td><strong>2.7.5</strong></td><td>26 sept. 2026</td><td><strong>Livre X, OCAP, NARP, Gold Card, Coalition, Références, TVQ, Taxe luxe, Réforme éducation, Moteurs, Clarification Domar, Îlots de chaleur, Plantation, ECO-CIRC, Obsolescence, Importations, Alliances, Campagne, Dépassements de coûts, Éducation, Doctrine de l'entre-deux, Classe moyenne</strong></td></tr>
 <tr><td><strong>2.7.6</strong></td><td>28 sept. 2026</td><td><strong>Immigration, IRQ, Rapport frontalier, Classe moyenne, Dépassements (13 sections), Propriété intellectuelle, Analyse externe, Coalition, Mobilité urbaine (PROP-012), PNSPTS (PROP-013) — ligne d'écoute 24/7 + collecte anonymisée, 4 moteurs (Domar, Étanchéité, Rendement D, Provisionnement), registres comptables, note méthodologique, <strong>Module 5 — Véhicule urbain léger</strong> (requalification 2 régimes : R&D 22,5 M$ [T], pilote industriel 2,5 M$ D = 2,337 [P])</strong></td></tr>
+<tr>
+  <td><strong>2.7.22</strong></td>
+  <td>29 sept. 2026</td>
+  <td>
+    <strong>Consolidation technique et éditoriale</strong>
+    <ul>
+      <li><strong>Synchronisation du registre des variables sensibles</strong> — ratio dette/PIB (44,6 %), inflation observée (3,03 %), dette brute (262,871 G$), taux de change (1,4188), taux directeur (2,25 %), taux d'intérêt effectif (3,96 %).</li>
+      <li><strong>Moteur de vérification des variables</strong> — <code>moteur_variables.py</code>.</li>
+      <li><strong>Automatisation de la synchronisation</strong> — <code>synchroniser_registre.py</code>.</li>
+      <li><strong>Synchronisation plateforme</strong> — <code>sync_plateforme.py</code>.</li>
+      <li><strong>Règle éditoriale</strong> — <code>REGLE-EDITORIALE.md</code> : marqueurs [P]/[T]/[C]/[M].</li>
+      <li><strong>Réserve juridique étendue</strong> — 54 pages HTML.</li>
+      <li><strong>Marquage des montants</strong> — tous les M$ portent un marqueur.</li>
+      <li><strong>Module 5 — Véhicule urbain léger</strong> — deux régimes (R&amp;D 22,5 M$ [T], pilote 2,5 M$ D = 2,337 [P]).</li>
+    </ul>
+  </td>
+</tr>
+
 </tbody>
 </table>
 

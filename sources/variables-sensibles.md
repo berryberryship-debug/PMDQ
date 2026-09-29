@@ -11,10 +11,13 @@ Il doit être mis à jour à chaque nouveau budget, élection, ou changement lé
 | Variable | Valeur actuelle | Source | Utilisée dans |
 |---|---|---|---|
 | Croissance PIB (g) | 1,1 % [M] | Finances Québec | moteur_domar.py |
-| Taux d'intérêt effectif (r) | [T] à déterminer | Finances Québec | moteur_domar.py |
-| Inflation | ~2 % | ISQ | Tous |
-| Taux de change CAD/USD | Variable | Banque du Canada | NARP, importations |
-| Ratio dette/PIB | 42,3 % [C] | Finances Québec | moteur_domar.py |
+| Taux d'intérêt effectif (r) |   3.96 % | Finances Québec | moteur_domar.py |
+| Inflation observée (IPC 12 mois) |   3.03 % | Statistique Canada | Tous |
+| Cible d'inflation BdC | 2,0 % [C] | Banque du Canada | moteur_domar.py |
+| Taux de change CAD/USD |   1.4188 | Banque du Canada | NARP, importations |
+| Taux directeur |  2.25 % | Banque du Canada | moteur_domar.py |
+| Ratio dette/PIB |   44.6 % | Finances Québec | moteur_domar.py |
+| Dette brute (G$) |   262.871 G$ | Finances Québec (2024-2025) | moteur_domar.py |
 
 ## 2. Variables fiscales (annuel)
 

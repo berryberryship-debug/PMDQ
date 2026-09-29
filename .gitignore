@@ -2,3 +2,14 @@
 __pycache__/
 *.pyc
 .tests_moteurs.log
+
+# Sauvegardes locales (ne pas committer)
+*.bak
+*.html.bak
+*.py.bak
+*.json.bak
+*.md.bak
+
+# Fichiers versionnés de travail
+*.v2.*
+*.v2.7.*

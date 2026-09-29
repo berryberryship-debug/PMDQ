@@ -74,5 +74,35 @@
     "source": "Comptes publics Quebec vol.1 (donneesquebec.ca)",
     "unite": "G$",
     "recupere_le": "2026-09-29"
+  },
+  "macro_quebec": {
+    "pib_quebec": {
+      "valeur_g$": 644.55,
+      "annee": "2025",
+      "source": "ISQ / Finances Québec",
+      "unite": "G$",
+      "recupere_le": "2026-09-29"
+    },
+    "revenu_imposable_agrege": {
+      "valeur_g$": 372.26,
+      "annee": "2025",
+      "source": "Revenu Québec",
+      "unite": "G$",
+      "recupere_le": "2026-09-29"
+    },
+    "impot_a_payer": {
+      "valeur_g$": 40.79,
+      "annee": "2025",
+      "source": "Revenu Québec",
+      "unite": "G$",
+      "recupere_le": "2026-09-29"
+    }
+  },
+  "seuils_methodologiques": {
+    "ratio_D_min_industrialisation": 1.3,
+    "ratio_D_min_infrastructure": 1.5,
+    "marge_securite_standard": 1.2,
+    "horizon_projection_ans": 25,
+    "frequence_mise_a_jour_jours": 30
   }
 }
