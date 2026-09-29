@@ -22,6 +22,20 @@
   },
   "_meta": {
     "derniere_mise_a_jour": "2026-09-29",
-    "nb_sources": 3
+    "nb_sources": 4
+  },
+  "ipc_canada": {
+    "valeur": 169.8,
+    "date_observation": "2026-08-01",
+    "source": "Statistique Canada (18-10-0004-01)",
+    "unite": "indice (2002=100)",
+    "recupere_le": "2026-09-29"
+  },
+  "taux_inflation_annuel": {
+    "valeur": 3.03,
+    "date_observation": "2026-08-01",
+    "source": "Statistique Canada (IPC 12 mois)",
+    "unite": "%",
+    "recupere_le": "2026-09-29"
   }
 }
