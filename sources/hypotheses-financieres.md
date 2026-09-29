@@ -137,3 +137,42 @@ Les valeurs historiques (25,3 / 42,3 / 83,5 %) sont conservées dans cette note 
 Toute correction future doit s'appuyer sur une validation comptable indépendante.
 
 Dernière mise à jour : 28 septembre 2026.
+
+---
+
+
+---
+
+## 9. Moteur fiscal — Calibration et limites
+
+### 9.1 Point de calibration (Québec, 2023)
+
+| Paramètre | Valeur | Définition | Statut |
+|---|---|---|---|
+| A0_G | 372,261 G$ | Revenu imposable agrégé des particuliers | [M] |
+| R_OBS | 40,790 G$ | Impôt à payer observé | [M] |
+| T_REF | 10,96 % | Taux effectif agrégé (R_OBS / A0_G) | [C] |
+| EPSILON | 0,40 | Paramètre de contraction de l'assiette | [P] scénaristique |
+| POWER | 1,5 | Exposant de la fonction de contraction | [P] scénaristique |
+
+### 9.2 Résultats de la courbe
+
+| Taux | Recettes | Écart vs 2023 |
+|---|---|---|
+| 10,96 % (2023) | 40,79 G$ | — |
+| 18,00 % (optimal) | 53,196 G$ | +12,406 G$ |
+| 20,00 % | 52,126 G$ | +11,336 G$ |
+| 25,00 % | 39,057 G$ | −1,733 G$ |
+
+### 9.3 Avertissements
+
+- **EPSILON = 0,40 est scénaristique**, pas économétrique. Il ne provient pas d'une estimation du comportement fiscal des contribuables québécois.
+- Le **taux optimal (18 %)** est un **taux effectif agrégé**, pas un taux marginal. L'atteindre impliquerait de hausser les tranches marginales bien au-delà.
+- Le modèle concerne **les particuliers seulement**. Les entreprises ont leur propre régime.
+- **Ne pas présenter** ce résultat comme une estimation empirique du taux optimal québécois.
+
+### 9.4 Usage du moteur
+
+    python3 moteur_fiscal.py --courbe --taux 0.18
+    python3 moteur_fiscal.py --taux 0.20 --json resultat.json
+
