@@ -105,6 +105,26 @@ officielles au lieu des constantes du code.
 L'ecart est toujours affiche, meme en mode normal. L'humain garde le
 choix.
 
+## Sources non raccordées au cache
+
+Certaines données du dossier ne proviennent pas du cache économique, mais
+de constructions internes (scénarios du Livre II, hypothèses du dossier) :
+
+| Donnée | Origine | Raison |
+|---|---|---|
+| Enveloppe FQBC (8,40 G$) | Livre II, scénario B | Enveloppe spécifique, pas un agrégat officiel |
+| Flux R + É + Co | Livre II, scénario B | Construit à partir des hypothèses du scénario |
+| Anomalies FIN-001, FIN-002 | Déclarations du dossier | Signalements internes |
+| Prix essence Québec | Observation manuelle | Série StatCan arrêtée (735059) |
+| Indice boursier S&P/TSX | Observation manuelle | Accès API non fiable |
+
+Ces valeurs sont conservées telles quelles. Elles ne sont pas comparées
+au cache et ne déclenchent pas d'alerte d'écart.
+
+### Séries StatCan arrêtées
+
+- **735059** (Prix de détail essence, Québec) : série non publiée depuis 2025-09. Le tableau 18-10-0001 n'est plus alimenté, même si sa date de fin officielle affiche 2026-08-01. Remplacement : saisie manuelle mensuelle via `observer.py`.
+
 ## Frequences de mise a jour du registre
 
 | Section                          | Frequence  |
