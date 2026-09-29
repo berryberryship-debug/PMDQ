@@ -1,19 +1,5 @@
 #!/usr/bin/env python3
-"""
-moteur_nomenclature.py — Analyse du catalogue de composants
-PMDQ v2.7.21
-
-Lit un catalogue (nomenclature_*.py) et calcule :
-    - cout total prototype
-    - ventilation par sous-systeme
-    - part quebecoise globale (ponderee par la valeur)
-    - cout unitaire en serie (volume cible)
-    - prix de vente suggere (marge)
-
-Usage :
-    python3 moteur_nomenclature.py
-    python3 moteur_nomenclature.py --catalogue investissement/vehicule_biplace/nomenclature_C.py
-"""
+"""moteur_nomenclature.py — Analyse catalogue composants vehicule"""
 
 import argparse
 import importlib.util
@@ -21,12 +7,10 @@ import os
 import sys
 from pathlib import Path
 
-
 CATALOGUE_DEFAUT = "investissement/vehicule_biplace/nomenclature_C.py"
 
 
 def charger_catalogue(chemin):
-    """Charge un fichier Python comme module."""
     spec = importlib.util.spec_from_file_location("catalogue", chemin)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -46,7 +30,6 @@ def analyser(catalogue):
         sous_total = c["quantite"] * c["prix_unitaire"]
         total += sous_total
         part_qc_valeur += sous_total * c["part_qc_pct"] / 100
-
         ss = c["sous_systeme"]
         if ss not in par_sous_systeme:
             par_sous_systeme[ss] = {"total": 0, "part_qc": 0, "nb": 0}
@@ -56,17 +39,13 @@ def analyser(catalogue):
 
     part_qc_pct = (part_qc_valeur / total * 100) if total else 0
 
-    # En serie, on considere une baisse de 15 % sur les composants
-    # (volume, negociation) et une baisse de 30 % sur l'assemblee
-    facteur_composants = 0.85
-    facteur_assemblage = 0.70
     cout_serie = 0
     for c in composants:
         sous_total = c["quantite"] * c["prix_unitaire"]
-        if c["sous_systeme"] in ("Assemblage",):
-            cout_serie += sous_total * facteur_assemblage
+        if c["sous_systeme"] == "Assemblage":
+            cout_serie += sous_total * 0.70
         else:
-            cout_serie += sous_total * facteur_composants
+            cout_serie += sous_total * 0.85
 
     prix_vente = cout_serie * (1 + marge / 100)
 
@@ -106,8 +85,7 @@ def afficher(r):
     print("  Ventilation par sous-systeme :")
     print(f"    {'Sous-systeme':<20} {'Cout ($)':>12} {'Part QC ($)':>12} {'Nb':>4}")
     print("    " + "-" * 52)
-    for ss, data in sorted(r["par_sous_systeme"].items(),
-                            key=lambda x: -x[1]["total"]):
+    for ss, data in sorted(r["par_sous_systeme"].items(), key=lambda x: -x[1]["total"]):
         print(f"    {ss:<20} {data['total']:>12,.2f} {data['part_qc']:>12,.2f} {data['nb']:>4}")
     print()
     print("=" * 78)
@@ -115,7 +93,7 @@ def afficher(r):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Analyse nomenclature vehicule")
+    parser = argparse.ArgumentParser()
     parser.add_argument("--catalogue", type=str, default=CATALOGUE_DEFAUT)
     args = parser.parse_args()
 
@@ -128,11 +106,9 @@ def main():
     resultat = analyser(catalogue)
     afficher(resultat)
 
-    # Mode bloquant : echoue si part quebecoise < 30 %
-    if os.environ.get("PMDQ_BLOQUANT"):
-        if resultat["part_qc_pct"] < 30:
-            print(f"ATTENTION : part quebecoise faible ({resultat['part_qc_pct']} %).")
-            sys.exit(2)
+    if os.environ.get("PMDQ_BLOQUANT") and resultat["part_qc_pct"] < 30:
+        print(f"ATTENTION : part quebecoise faible ({resultat['part_qc_pct']} %).")
+        sys.exit(2)
 
 
 if __name__ == "__main__":
