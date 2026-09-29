@@ -1,14 +1,25 @@
 #!/bin/bash
 # make_socle.sh — Regenere etat_variables.json et verifie les moteurs.
+# Usage :
+#   ./make_socle.sh            mode normal
+#   ./make_socle.sh --strict   echoue aussi si une section est en probleme
 set -u
 cd "$(dirname "$0")"
+
+STRICT=0
+for arg in "$@"; do
+    case "$arg" in
+        --strict) STRICT=1 ;;
+        *) echo "Argument inconnu : $arg"; exit 1 ;;
+    esac
+done
 
 echo "=== 1. Regeneration de l'etat des variables ==="
 python3 ecrire_etat.py || { echo "ECHEC ecrire_etat.py"; exit 1; }
 
 echo
 echo "=== 2. Resume de l'etat ==="
-python3 - <<'PY'
+python3 - <<'PY2'
 import json
 etat = json.loads(open("sources/etat_variables.json", encoding="utf-8").read())
 r = etat["resume"]
@@ -17,7 +28,23 @@ print(f"  A jour    : {r['a_jour']}")
 print(f"  En retard : {r['en_retard']}")
 print(f"  A revoir  : {r['a_revoir']}")
 print(f"  Absentes  : {r['section_absente']}")
-PY
+PY2
+
+code_etat=$(
+python3 - <<'PY2'
+import json, sys
+etat = json.loads(open("sources/etat_variables.json", encoding="utf-8").read())
+r = etat["resume"]
+sys.exit(0 if (r['en_retard'] + r['a_revoir'] + r['section_absente']) == 0 else 3)
+PY2
+echo $?
+)
+
+if [ "$STRICT" = "1" ] && [ "$code_etat" != "0" ]; then
+    echo
+    echo "  STRICT : des sections demandent une mise a jour."
+    exit 3
+fi
 
 echo
 echo "=== 3. Verification des moteurs ==="
@@ -49,4 +76,31 @@ done
 
 echo
 echo "  Bilan : $ok OK, $ko ECHEC"
-exit $ko
+
+if [ "$ko" -gt 0 ]; then
+    exit 1
+fi
+
+echo "  Resultat : SOCLE OK"
+
+# --- Journal horodate ---
+{
+    echo "$(date '+%Y-%m-%d %H:%M') — SOCLE v2.7.7"
+    python3 - <<'PYJ'
+import json
+etat = json.loads(open("sources/etat_variables.json", encoding="utf-8").read())
+r = etat["resume"]
+print(f"  Variables : {r['a_jour']}/{r['total']} A JOUR")
+if r['en_retard'] or r['a_revoir'] or r['section_absente']:
+    print(f"            {r['en_retard']} retard, {r['a_revoir']} a revoir, {r['section_absente']} absente(s)")
+PYJ
+    echo "  Moteurs   : 8/8 OK"
+    if command -v git >/dev/null 2>&1 && [ -d .git ]; then
+        commit=$(git rev-parse --short HEAD 2>/dev/null || echo "n/a")
+        echo "  Commit    : $commit"
+    fi
+    echo
+} >> etat_socle.txt
+
+echo "  Journal : etat_socle.txt"
+exit 0

@@ -11,6 +11,8 @@ Principe :
 - une section absente est distincte d'une date absente.
 """
 
+import os
+import sys
 import argparse
 import json
 import re
@@ -239,6 +241,15 @@ if __name__ == "__main__":
         print(rapport["erreur"])
     else:
         afficher_rapport(rapport)
+
+        # Mode bloquant : sortie code 2 si une section est en probleme
+        if os.environ.get("PMDQ_BLOQUANT"):
+            _ko = sum(
+                1 for s in rapport["sections"]
+                if s["statut"] in ("EN RETARD", "A REVOIR", "SECTION ABSENTE")
+            )
+            if _ko:
+                sys.exit(2)
 
         if args.json:
             with open(args.json, "w", encoding="utf-8") as f:
