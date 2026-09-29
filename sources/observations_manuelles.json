@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "description": "Observations manuelles pour variables non collectables automatiquement",
+  "observations": {
+    "prix_essence_quebec": [
+      {
+        "date": "2026-09-29",
+        "valeur": 1.93,
+        "unite": "$/L",
+        "ville": "Sherbrooke",
+        "source": "observation directe"
+      },
+      {
+        "date": "2026-09-29",
+        "valeur": 1.92,
+        "unite": "$/L",
+        "source": "observation directe",
+        "ville": "Magog"
+      }
+    ],
+    "indice_tsx": []
+  }
+}

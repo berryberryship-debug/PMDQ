@@ -86,7 +86,7 @@ Il doit être mis à jour à chaque nouveau budget, élection, ou changement lé
 
 | Variable | Valeur actuelle | Source | Utilisée dans |
 |---|---|---|---|
-| Prix essence ordinaire (Québec) | à saisir manuellement | Régie de l'énergie du Québec | contexte macro, dossier véhicule |
+| Prix essence ordinaire (Québec) | 1,93 $/L (Sherbrooke, 2026-09-29) | Observation directe | contexte macro, dossier véhicule |
 | Indice boursier S&P/TSX | à saisir manuellement | Bourse de Toronto | contexte macro |
 
 **Note** : ces variables ne sont pas collectées automatiquement. Les séries StatCan correspondantes sont soit inactives (prix essence, série 735059 arrêtée), soit d'accès non fiable (bourse, HTTP 406). Mise à jour mensuelle manuelle recommandée.
