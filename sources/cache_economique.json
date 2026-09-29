@@ -22,7 +22,7 @@
   },
   "_meta": {
     "derniere_mise_a_jour": "2026-09-29",
-    "nb_sources": 4
+    "nb_sources": 5
   },
   "ipc_canada": {
     "valeur": 169.8,
@@ -36,6 +36,16 @@
     "date_observation": "2026-08-01",
     "source": "Statistique Canada (IPC 12 mois)",
     "unite": "%",
+    "recupere_le": "2026-09-29"
+  },
+  "dette_brute_quebec": {
+    "valeur": 44.6,
+    "valeur_g$": 262.871,
+    "ratio_pib_pct": 44.6,
+    "annee": "",
+    "date_observation": "",
+    "source": "Finances Quebec (via donneesquebec.ca)",
+    "unite": "G$",
     "recupere_le": "2026-09-29"
   }
 }

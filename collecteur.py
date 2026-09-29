@@ -16,6 +16,8 @@ Usage :
 """
 
 import argparse
+import csv
+import io
 import json
 import sys
 import urllib.error
@@ -58,6 +60,21 @@ SOURCES_STATCAN = {
         "unite": "indice (2002=100)",
         "source": "Statistique Canada (18-10-0004-01)",
         "latest_n": 1,
+    },
+}
+
+# --- Sources Donnees Quebec (CKAN, CSV) ---
+CKAN_BASE = "https://www.donneesquebec.ca/recherche/api/3/action"
+
+SOURCES_CKAN = {
+    "dette_brute_quebec": {
+        "nom": "Dette brute du Quebec",
+        "dataset_id": "dette-du-gouvernement-du-quebec",
+        "colonne_annee": "Annee",
+        "colonne_valeur": "Dette_directe_con_$",
+        "colonne_ratio": "Dette_directe_con_%",
+        "unite": "G$",
+        "source": "Finances Quebec (via donneesquebec.ca)",
     },
 }
 
@@ -138,6 +155,82 @@ def recuperer_statcan(vector_id, latest_n=1, timeout=20):
             "date_observation": points[-1].get("refPer"),
             "points": points,
         }, None
+
+
+
+def _nettoyer_nombre(s):
+    """Convertit '262,871,000,000' en float. Gere formats canadiens."""
+    if s is None:
+        return None
+    s = str(s).strip()
+    # Normaliser les tirets longs et espaces
+    s = s.replace("\u2013", "-").replace("\u2014", "-")
+    s = s.replace("\xa0", "").replace(" ", "")
+    # Format quebec : virgules = milliers, point = decimal
+    # Ex: "262,871,000,000" -> 262871000000
+    # Ex: "44,6" -> 44.6
+    if "," in s and "." in s:
+        # Les deux presents : la derniere est le decimal
+        if s.rfind(",") > s.rfind("."):
+            s = s.replace(".", "").replace(",", ".")
+        else:
+            s = s.replace(",", "")
+    elif "," in s:
+        # Seulement des virgules. Si c'est un montant a 3 chiffres apres
+        # chaque virgule, c'est un separateur de milliers.
+        parts = s.split(",")
+        if all(len(p) == 3 for p in parts[1:]) and len(parts) > 1:
+            s = s.replace(",", "")
+        else:
+            s = s.replace(",", ".")
+    s = s.replace("$", "").replace("%", "").strip()
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
+
+def recuperer_ckan(dataset_id, timeout=30):
+    """Recupere la derniere ressource CSV d'un dataset CKAN."""
+    url = f"{CKAN_BASE}/package_show?id={dataset_id}"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "PMDQ/1.0"})
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            data = json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        return None, f"HTTP {e.code}"
+    except urllib.error.URLError as e:
+        return None, f"Reseau : {e.reason}"
+    except (OSError, ValueError) as e:
+        return None, f"Lecture : {e}"
+
+    resources = data.get("result", {}).get("resources", [])
+    if not resources:
+        return None, "Aucune ressource"
+
+    # Prendre la derniere ressource CSV
+    csvs = [r for r in resources if (r.get("format") or "").upper() == "CSV"]
+    if not csvs:
+        return None, "Aucune ressource CSV"
+
+    derniere = csvs[-1]
+    url_csv = derniere.get("url")
+    if not url_csv:
+        return None, "URL CSV manquante"
+
+    try:
+        req2 = urllib.request.Request(url_csv, headers={"User-Agent": "PMDQ/1.0"})
+        with urllib.request.urlopen(req2, timeout=timeout) as r2:
+            contenu = r2.read().decode("utf-8", errors="replace")
+    except urllib.error.HTTPError as e:
+        return None, f"HTTP CSV {e.code}"
+    except urllib.error.URLError as e:
+        return None, f"Reseau CSV : {e.reason}"
+    except OSError as e:
+        return None, f"Lecture CSV : {e}"
+
+    return {"nom": derniere.get("name", "?"), "url": url_csv, "contenu": contenu}, None
+
 
 
 def charger_cache():
@@ -232,7 +325,79 @@ def collecter(verbose=True):
         if verbose:
             print(f"  OK     {info['nom']:<38} {val['valeur']} ({val['date_observation']})")
 
-    # --- 3. Valeurs derivees ---
+    # --- 3. Donnees Quebec (CKAN) ---
+    if verbose:
+        print()
+        print("  --- Donnees Quebec (CKAN) ---")
+    for cle, info in SOURCES_CKAN.items():
+        res, err = recuperer_ckan(info["dataset_id"])
+
+        if res is None:
+            ancien = cache.get(cle, {})
+            resultats.append({
+                "cle": cle, "nom": info["nom"], "statut": "ECHEC",
+                "detail": err, "valeur_cache": ancien.get("valeur"),
+            })
+            if verbose:
+                print(f"  ECHEC  {info['nom']:<38} {err}")
+            continue
+
+        # Parser le CSV
+        lecteur = csv.DictReader(io.StringIO(res["contenu"]))
+        lignes = list(lecteur)
+        if not lignes:
+            resultats.append({
+                "cle": cle, "nom": info["nom"], "statut": "ECHEC",
+                "detail": "CSV vide",
+            })
+            if verbose:
+                print(f"  ECHEC  {info['nom']:<38} CSV vide")
+            continue
+
+        # La premiere ligne est la plus recente
+        ligne = lignes[0]
+        col_v = info["colonne_valeur"]
+        col_r = info.get("colonne_ratio")
+        col_a = info.get("colonne_annee")
+
+        val_brute = _nettoyer_nombre(ligne.get(col_v))
+        val_ratio = _nettoyer_nombre(ligne.get(col_r)) if col_r else None
+        annee = ligne.get(col_a, "").strip() if col_a else ""
+
+        if val_brute is None and val_ratio is None:
+            resultats.append({
+                "cle": cle, "nom": info["nom"], "statut": "ECHEC",
+                "detail": f"Colonnes vides ({col_v}, {col_r})",
+            })
+            if verbose:
+                print(f"  ECHEC  {info['nom']:<38} Colonnes vides")
+            continue
+
+        # Stocker dans le cache
+        cache[cle] = {
+            "valeur": val_ratio if val_ratio is not None else val_brute,
+            "valeur_g$": round(val_brute / 1e9, 3) if val_brute is not None else None,
+            "ratio_pib_pct": val_ratio,
+            "annee": annee,
+            "date_observation": annee,
+            "source": info["source"],
+            "unite": info["unite"],
+            "recupere_le": str(date.today()),
+        }
+        resultats.append({
+            "cle": cle, "nom": info["nom"], "statut": "OK",
+            "valeur": cache[cle]["valeur"],
+            "date_observation": annee,
+        })
+        if verbose:
+            det = f"{annee}"
+            if val_ratio is not None:
+                det += f" {val_ratio} %"
+            if val_brute is not None:
+                det += f" ({round(val_brute / 1e9, 1)} G$)"
+            print(f"  OK     {info['nom']:<38} {det}")
+
+    # --- 4. Valeurs derivees ---
     if verbose:
         print()
         print("  --- Valeurs derivees ---")
@@ -268,7 +433,7 @@ def collecter(verbose=True):
 
     cache["_meta"] = {
         "derniere_mise_a_jour": str(date.today()),
-        "nb_sources": len(SOURCES_VALET) + len(SOURCES_STATCAN),
+        "nb_sources": len(SOURCES_VALET) + len(SOURCES_STATCAN) + len(SOURCES_CKAN),
     }
     sauver_cache(cache)
     return resultats
