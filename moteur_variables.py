@@ -1,0 +1,245 @@
+"""
+moteur_variables.py
+Surveillance des variables sensibles — PMDQ v2.7.5
+
+Principe :
+- les titres sont compares apres normalisation Unicode ;
+- chaque section peut avoir sa propre date explicite :
+      Derniere MAJ: 2026-09-29
+- si aucune date explicite n'est presente, le mtime du registre
+  est utilise comme secours et signale comme tel ;
+- une section absente est distincte d'une date absente.
+"""
+
+import argparse
+import json
+import re
+import unicodedata
+from datetime import date, datetime
+from pathlib import Path
+
+
+REGISTRE = Path("sources/variables-sensibles.md")
+
+
+FREQUENCES = {
+    "1. Variables macroeconomiques": 90,
+    "2. Variables fiscales": 365,
+    "3. Variables budgetaires": 365,
+    "4. Variables de marche": 30,
+    "5. Variables legales": 365,
+    "6. Variables de projet": 180,
+}
+
+
+def normaliser(texte):
+    """Supprime les accents et uniformise la casse."""
+    texte = unicodedata.normalize("NFKD", texte)
+    texte = "".join(
+        c for c in texte
+        if not unicodedata.combining(c)
+    )
+    return " ".join(texte.lower().split())
+
+
+def date_mtime():
+    """Retourne la date de modification du registre."""
+    timestamp = REGISTRE.stat().st_mtime
+    return datetime.fromtimestamp(timestamp).date()
+
+
+def extraire_date(bloc):
+    """
+    Cherche une date explicite dans une section.
+
+    Formats acceptes :
+      Derniere MAJ: 2026-09-29
+      Dernière MAJ : 2026-09-29
+      MAJ: 2026-09-29
+      MAJ : 2026-09-29
+    """
+    motif = re.compile(
+        r"(?:derni[eè]re\s+mise\s+[aà]\s+jour"
+        r"|derni[eè]re\s+maj"
+        r"|maj)"
+        r"\*{0,2}\s*:?\s*\*{0,2}\s*(\d{4}-\d{2}-\d{2})",
+        re.IGNORECASE,
+    )
+
+    match = motif.search(bloc)
+
+    if not match:
+        return None
+
+    try:
+        return date.fromisoformat(match.group(1))
+    except ValueError:
+        return None
+
+
+def extraire_sections(contenu):
+    """
+    Extrait les sections Markdown commencant par :
+        ## 1. ...
+        ## 2. ...
+    """
+    motif = re.compile(
+        r"(?m)^##\s+(\d+\.\s+[^\n]+)(.*?)(?=^##\s+|\Z)",
+        re.DOTALL,
+    )
+
+    sections = {}
+
+    for match in motif.finditer(contenu):
+        titre_original = match.group(1).strip()
+        bloc = match.group(2)
+
+        sections[normaliser(titre_original)] = {
+            "titre_original": titre_original,
+            "bloc": bloc,
+        }
+
+    return sections
+
+
+def analyser_registre():
+    """Analyse toutes les sections attendues."""
+    if not REGISTRE.exists():
+        return {
+            "erreur": f"Registre introuvable : {REGISTRE}"
+        }
+
+    contenu = REGISTRE.read_text(encoding="utf-8")
+    sections_detectees = extraire_sections(contenu)
+
+    today = date.today()
+    fallback = date_mtime()
+
+    resultat = []
+
+    for titre, frequence in FREQUENCES.items():
+        cle = normaliser(titre)
+
+        # Correspondance par prefixe normalise :
+        # le registre peut ajouter un qualificatif apres le titre,
+        # ex. "(trimestriel)", "(annuel)", "(continu)".
+        cle_trouvee = next(
+            (
+                k for k in sections_detectees
+                if k == cle or k.startswith(cle + " ")
+            ),
+            None
+        )
+
+        if cle_trouvee is None:
+            resultat.append({
+                "section": titre,
+                "frequence_jours": frequence,
+                "date_maj": None,
+                "source_date": "Section absente",
+                "jours_depuis_maj": None,
+                "statut": "SECTION ABSENTE",
+            })
+            continue
+
+        bloc = sections_detectees[cle_trouvee]
+        date_explicit = extraire_date(bloc["bloc"])
+
+        if date_explicit is not None:
+            date_maj = date_explicit
+            source = "date explicite"
+        else:
+            date_maj = fallback
+            source = "mtime (date explicite absente)"
+
+        ecart = (today - date_maj).days
+
+        if ecart > frequence:
+            statut = "EN RETARD"
+        else:
+            statut = "A JOUR"
+
+        resultat.append({
+            "section": titre,
+            "frequence_jours": frequence,
+            "date_maj": str(date_maj),
+            "source_date": source,
+            "jours_depuis_maj": ecart,
+            "statut": statut,
+        })
+
+    return {
+        "date_analyse": str(today),
+        "date_fichier": str(fallback),
+        "sections": resultat,
+    }
+
+
+def afficher_rapport(rapport):
+    print()
+    print("=" * 90)
+    print("  MOTEUR VARIABLES SENSIBLES - PMDQ v2.7.5")
+    print("=" * 90)
+    print(f"  Date d'analyse      : {rapport['date_analyse']}")
+    print(f"  mtime du registre   : {rapport['date_fichier']}")
+    print()
+    print(
+        f"  {'Section':<43}"
+        f" {'MAJ':>12}"
+        f" {'Ecart':>7}"
+        f" {'Freq':>6}"
+        f" {'Statut':>18}"
+    )
+    print("  " + "-" * 88)
+
+    for s in rapport["sections"]:
+        maj = s["date_maj"] if s["date_maj"] else "-"
+        ecart = (
+            f"{s['jours_depuis_maj']} j"
+            if s["jours_depuis_maj"] is not None
+            else "-"
+        )
+
+        print(
+            f"  {s['section']:<43}"
+            f" {maj:>12}"
+            f" {ecart:>7}"
+            f" {s['frequence_jours']:>5} j"
+            f" {s['statut']:>18}"
+        )
+
+    print()
+    print("  Detail des sources de date :")
+
+    for s in rapport["sections"]:
+        print(
+            f"    - {s['section']:<39}: "
+            f"{s['source_date']}"
+        )
+
+    print()
+    print("=" * 90)
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--json", type=str, default=None)
+    args = parser.parse_args()
+
+    rapport = analyser_registre()
+
+    if "erreur" in rapport:
+        print(rapport["erreur"])
+    else:
+        afficher_rapport(rapport)
+
+        if args.json:
+            with open(args.json, "w", encoding="utf-8") as f:
+                json.dump(
+                    rapport,
+                    f,
+                    indent=2,
+                    ensure_ascii=False
+                )
+
+            print(f"Rapport sauvegarde : {args.json}")
