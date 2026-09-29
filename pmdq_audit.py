@@ -77,6 +77,7 @@ PAGES_PUBLIQUES = [
     "analyse-externe.html",
     "coalition-pmdq.html",
     "pnspsts.html",
+    "technopolitique.html",
 ]
 
 PAGES_SILENCIEUSES = [
