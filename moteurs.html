@@ -271,6 +271,24 @@ Réserve 15   : alimentée à 100 % par les revenus Co</code></pre>
 </ul>
 <p><strong>Fichier :</strong> <code>moteur_vehicule.py</code> — <strong>Sortie :</strong> <code>sources/vehicule_topologie.json</code></p>
 
+
+<h2>10. Monte-Carlo — Analyse des dépassements</h2>
+<p>Simule 10 000 scénarios par problème de dépassement de coût. Distingue automatiquement les <strong>causes superficielles</strong> (taxables) des <strong>causes profondes</strong> (exonérées).</p>
+<table class="tableau-simulation">
+<thead><tr><th>Type</th><th>Cause</th><th>Traitement</th></tr></thead>
+<tbody>
+<tr><td><strong>Superficielle</strong></td><td>Température, transport, prix, erreur de planification</td><td>Malus 50 % appliqué</td></tr>
+<tr><td><strong>Profonde</strong></td><td>Tremblement de terre, guerre, pandémie, découverte archéologique</td><td>Aucune taxation</td></tr>
+</tbody>
+</table>
+<p><strong>Résultats du cas démo :</strong></p>
+<ul>
+<li>Cause superficielle (température) → malus médian 7,07 M$, IC 95 % [4,09 ; 10,19]</li>
+<li>Cause profonde (tremblement de terre) → malus médian 0 M$, IC 95 % [0 ; 2,3]</li>
+</ul>
+<p><strong>Fichier :</strong> <code>monte_carlo.py</code> — <strong>Usage :</strong> <code>python3 monte_carlo.py</code> (interactif) ou <code>--demo</code></p>
+<p class="disclaimer"><strong>Note :</strong> le malus s'applique au <strong>surcoût imputable</strong> (dépassement - marge prévue), pas au contrat entier. Une firme qui a correctement provisionné n'est pas pénalisée.</p>
+
 <h2>Comment exécuter localement</h2>
 
     <table>
