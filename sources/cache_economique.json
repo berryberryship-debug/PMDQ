@@ -47,5 +47,14 @@
     "source": "Finances Quebec (via donneesquebec.ca)",
     "unite": "G$",
     "recupere_le": "2026-09-29"
+  },
+  "impot_particuliers_quebec": {
+    "valeur": 44.7,
+    "valeur_g$": 44.7,
+    "annee": "2024-2025",
+    "date_observation": "2024-2025",
+    "source": "Finances Quebec (revenus, via donneesquebec.ca)",
+    "unite": "G$",
+    "recupere_le": "2026-09-29"
   }
 }
