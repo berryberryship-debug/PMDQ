@@ -14,6 +14,7 @@ Méthodes implémentées :
 import numpy as np
 import json
 from datetime import date
+from pathlib import Path
 
 # --- Paramètres ---
 TAUX_PRECAUTION = 0.15            # [M] Article 13
@@ -97,7 +98,38 @@ def reserve_precaution(plafond, ressources_prevues):
     """Article 13 : Réserve_t = 0,15 × max(0, Plafond - Ressources)."""
     return TAUX_PRECAUTION * max(0, plafond - ressources_prevues)
 
+def verifier_variables():
+    """Avertit si une section du registre est en retard ou a revoir."""
+    p = Path("sources/etat_variables.json")
+    if not p.exists():
+        print("Avertissement : sources/etat_variables.json absent.")
+        print("Lancer : python3 ecrire_etat.py")
+        return
+    try:
+        etat = json.loads(p.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as e:
+        print(f"Avertissement : lecture etat_variables.json impossible ({e}).")
+        return
+    r = etat.get("resume", {})
+    retard = r.get("en_retard", 0)
+    revoir = r.get("a_revoir", 0)
+    absente = r.get("section_absente", 0)
+    if not (retard or revoir or absente):
+        return
+    print()
+    print("!" * 72)
+    print("  ATTENTION : variables sensibles a mettre a jour")
+    print("!" * 72)
+    for s in etat.get("sections", []):
+        if s.get("statut") in ("EN RETARD", "A REVOIR", "SECTION ABSENTE"):
+            j = s.get("jours_depuis_maj")
+            j_txt = f"{j} j" if isinstance(j, int) else "-"
+            print(f"  - {s['section']:<40} {s['statut']:<16} ({j_txt})")
+    print("!" * 72)
+    print()
+
 def main():
+    verifier_variables()
     print("=" * 72)
     print("MOTEUR DE PROVISIONNEMENT ACTUARIEL — PMDQ v2.7.5")
     print("=" * 72)
