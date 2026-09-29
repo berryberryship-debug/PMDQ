@@ -111,6 +111,12 @@
             <td>Analyse des dépassements, classification des causes</td>
             <td>sources/monte_carlo_topologie.json</td>
         </tr>
+        <tr>
+            <td><strong>Conformité DGEQ</strong></td>
+            <td>Python</td>
+            <td>Validation des contributions politiques</td>
+            <td>sources/dgeq_verdicts.json</td>
+        </tr>
       </tbody>
     </table>
 
@@ -316,6 +322,28 @@ Réserve 15   : alimentée à 100 % par les revenus Co</code></pre>
 </ul>
 <p><strong>Fichier :</strong> <code>moteur_fiscal.py</code> — <strong>Usage :</strong> <code>python3 moteur_fiscal.py --courbe --taux 0.18</code></p>
 <p class="disclaimer"><strong>Avertissement :</strong> EPSILON = 0,40 est un paramètre scénaristique. Le taux optimal (18 %) n'est pas un taux marginal. Le modèle concerne les particuliers seulement. Ne pas présenter ce résultat comme une estimation économétrique du Québec.</p>
+
+<h2>12. Conformité DGEQ — Validation des contributions</h2>
+<p>Valide les contributions politiques selon la <em>Loi sur les élections et les référendums du Québec</em> (DGEQ).</p>
+<table class="tableau-simulation">
+<thead><tr><th>Règle</th><th>Paramètre</th><th>Traitement</th></tr></thead>
+<tbody>
+<tr><td><strong>Plafond annuel</strong></td><td>100 $ / électeur</td><td>Rejet si dépassement</td></tr>
+<tr><td><strong>Plafond électoral</strong></td><td>200 $ l'année d'une élection</td><td>Rejet si dépassement</td></tr>
+<tr><td><strong>Mode de paiement</strong></td><td>&gt; 50 $ : chèque ou carte</td><td>Rejet si comptant</td></tr>
+<tr><td><strong>Transmission</strong></td><td>&gt; 100 $</td><td>Obligation DGEQ</td></tr>
+<tr><td><strong>Personnes morales</strong></td><td>Interdites</td><td>Rejet immédiat</td></tr>
+</tbody>
+</table>
+<p><strong>Fichier :</strong> <code>moteur_dgeq.py</code> — <strong>Usage :</strong> <code>python3 moteur_dgeq.py --demo</code></p>
+<p><strong>Résultats du cas démo :</strong></p>
+<ul>
+<li>50 $ chèque → VALIDE</li>
+<li>150 $ comptant → REJETÉ (comptant + plafond)</li>
+<li>500 $ corporation → REJETÉ (personne morale + plafond)</li>
+<li>80 $ + cumul 60 $ → REJETÉ (cumul 140 $)</li>
+</ul>
+<p class="disclaimer"><strong>Note :</strong> le moteur applique les règles publiques du DGEQ. Les seuils (100 $ / 200 $ / 50 $) sont ceux en vigueur en 2026. Toute mise à jour législative doit être répercutée dans le code.</p>
 
 <h2>Comment exécuter localement</h2>
 
