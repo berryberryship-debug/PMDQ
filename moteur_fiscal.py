@@ -249,6 +249,35 @@ def afficher_references_fiscales():
         print(f"  Ecart brut                        : {ecart:.2f} G$")
         print(f"  Note : les annees different (2023 code, {annee} officiel).")
 
+def afficher_projection_fiscale():
+    """Affiche une projection basee sur le cache officiel (Option A)."""
+    p = Path("sources/cache_economique.json")
+    if not p.exists():
+        return
+    try:
+        cache = json.loads(p.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return
+    impot = cache.get("impot_particuliers_quebec", {})
+    val_off = impot.get("valeur_g$")
+    annee = impot.get("annee", "?")
+    src = impot.get("source", "?")
+    if val_off is None:
+        return
+    t_ref_cal = R_OBS / A0_G * 100
+    t_ref_proj = val_off / A0_G * 100
+    ecart = t_ref_proj - t_ref_cal
+    print()
+    print(f"  --- Projection {annee} (cache officiel) ---")
+    print(f"  Source                          : {src}")
+    print(f"  Base de calibration             : 2023 (A0_G = {A0_G} G$)")
+    print(f"  Impot officiel ({annee})       : {val_off} G$")
+    print(f"  T_REF calibre 2023              : {t_ref_cal:.2f} %")
+    print(f"  T_REF projete (A0_G constant)   : {t_ref_proj:.2f} %")
+    print(f"  Ecart de taux                   : {ecart:+.2f} points")
+    print(f"  Note : projection indicative.")
+    print(f"         Le T_REF reel de {annee} exigerait le A0_G de {annee}.")
+
 def main():
     verifier_variables()
     parser = argparse.ArgumentParser(
@@ -298,6 +327,7 @@ def main():
             json.dump(rapport, f, indent=2, ensure_ascii=False)
         print(f"Rapport sauvegarde : {args.json}")
     afficher_references_fiscales()
+    afficher_projection_fiscale()
 
 
 if __name__ == "__main__":
