@@ -1,0 +1,27 @@
+{
+  "taux_change_usd_cad": {
+    "valeur": 1.4188,
+    "date_observation": "2026-09-29",
+    "source": "Banque du Canada",
+    "unite": "CAD par USD",
+    "recupere_le": "2026-09-29"
+  },
+  "taux_directeur": {
+    "valeur": 2.25,
+    "date_observation": "2026-09-28",
+    "source": "Banque du Canada",
+    "unite": "%",
+    "recupere_le": "2026-09-29"
+  },
+  "taux_obligations_10ans": {
+    "valeur": 3.96,
+    "date_observation": "2026-09-28",
+    "source": "Banque du Canada",
+    "unite": "%",
+    "recupere_le": "2026-09-29"
+  },
+  "_meta": {
+    "derniere_mise_a_jour": "2026-09-29",
+    "nb_sources": 3
+  }
+}
