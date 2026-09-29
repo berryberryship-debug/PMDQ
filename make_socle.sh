@@ -57,6 +57,7 @@ moteurs=(
     "moteur_provisionnement.py:"
     "moteur_rendement.py:"
     "moteur_vehicule.py:"
+    "moteur_coherence.py:"
 )
 
 ok=0
@@ -94,7 +95,7 @@ print(f"  Variables : {r['a_jour']}/{r['total']} A JOUR")
 if r['en_retard'] or r['a_revoir'] or r['section_absente']:
     print(f"            {r['en_retard']} retard, {r['a_revoir']} a revoir, {r['section_absente']} absente(s)")
 PYJ
-    echo "  Moteurs   : 8/8 OK"
+    echo "  Moteurs   : 9/9 OK"
     if command -v git >/dev/null 2>&1 && [ -d .git ]; then
         commit=$(git rev-parse --short HEAD 2>/dev/null || echo "n/a")
         echo "  Commit    : $commit"
