@@ -22,7 +22,7 @@
   },
   "_meta": {
     "derniere_mise_a_jour": "2026-09-29",
-    "nb_sources": 6
+    "nb_sources": 8
   },
   "ipc_canada": {
     "valeur": 169.8,
@@ -54,6 +54,24 @@
     "annee": "2024-2025",
     "date_observation": "2024-2025",
     "source": "Finances Quebec (revenus, via donneesquebec.ca)",
+    "unite": "G$",
+    "recupere_le": "2026-09-29"
+  },
+  "depenses_totales_quebec": {
+    "valeur": 161.26,
+    "valeur_g$": 161.26,
+    "annee": "2024-2025",
+    "date_observation": "2024-2025",
+    "source": "Comptes publics Quebec vol.1 (donneesquebec.ca)",
+    "unite": "G$",
+    "recupere_le": "2026-09-29"
+  },
+  "revenus_totaux_quebec": {
+    "valeur": 156.09,
+    "valeur_g$": 156.09,
+    "annee": "2024-2025",
+    "date_observation": "2024-2025",
+    "source": "Comptes publics Quebec vol.1 (donneesquebec.ca)",
     "unite": "G$",
     "recupere_le": "2026-09-29"
   }
