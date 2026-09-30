@@ -161,6 +161,42 @@
 </tbody>
 </table>
 
+
+<h2>Méthode — Formule du ratio D</h2>
+
+<p>Le ratio D du pilote industriel est calculé à partir de cinq constantes. Voici la formule complète et les valeurs utilisées.</p>
+
+<h3>Formule</h3>
+
+<pre><code>economies_10ans = 0,81 x 2         = 1,62 M$    (économies d'exploitation sur 10 ans)
+part_robotique  = (2,5 / 8,0) x 6,40 = 2,00 M$   (quote-part du pilote sur la valeur robotique)
+part_PI         = (2,5 / 4,5) x 4,00 = 2,22 M$   (quote-part du pilote sur la valeur PI)
+                                   -------
+valeur_creee                       = 5,84 M$
+
+cout_total (phase 5)               = 2,50 M$
+
+D = 5,84 / 2,50                    = 2,337</code></pre>
+
+<h3>Les 5 constantes</h3>
+
+<table class="tableau-simulation">
+<thead><tr><th>Constante</th><th>Valeur</th><th>Rôle</th></tr></thead>
+<tbody>
+<tr><td>Économies d'exploitation (5 ans)</td><td>0,81 M$</td><td>Doublées pour 10 ans</td></tr>
+<tr><td>Investissement robots total</td><td>8,0 M$</td><td>Dénominateur quote-part robotique</td></tr>
+<tr><td>Valeur actifs robotiques</td><td>6,40 M$</td><td>Numérateur quote-part robotique</td></tr>
+<tr><td>Investissement PI total</td><td>4,5 M$</td><td>Dénominateur quote-part PI</td></tr>
+<tr><td>Valeur PI totale</td><td>4,00 M$</td><td>Numérateur quote-part PI</td></tr>
+</tbody>
+</table>
+
+<h3>Statut des constantes</h3>
+
+<p>Les 5 constantes sont actuellement <strong>[SCÉN]</strong> — hypothèses scénaristiques non sourcées par une source externe documentée. Le ratio D = 2,337 qui en résulte doit donc être présenté comme <strong>[P] prospectif</strong> dans toute communication publique.</p>
+
+<p>Documentation complète et conditions d'arrêt : <code>sources/vehicule-constantes.md</code>.</p>
+
 <h3>Calcul du Regime 2 (pilote industriel)</h3>
 <table class="tableau-simulation">
 <thead><tr><th>Element</th><th>Valeur</th></tr></thead>
