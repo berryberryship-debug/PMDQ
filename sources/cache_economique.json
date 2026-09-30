@@ -4,24 +4,24 @@
     "date_observation": "2026-09-29",
     "source": "Banque du Canada",
     "unite": "CAD par USD",
-    "recupere_le": "2026-09-29"
+    "recupere_le": "2026-09-30"
   },
   "taux_directeur": {
     "valeur": 2.25,
     "date_observation": "2026-09-28",
     "source": "Banque du Canada",
     "unite": "%",
-    "recupere_le": "2026-09-29"
+    "recupere_le": "2026-09-30"
   },
   "taux_obligations_10ans": {
     "valeur": 3.96,
     "date_observation": "2026-09-28",
     "source": "Banque du Canada",
     "unite": "%",
-    "recupere_le": "2026-09-29"
+    "recupere_le": "2026-09-30"
   },
   "_meta": {
-    "derniere_mise_a_jour": "2026-09-29",
+    "derniere_mise_a_jour": "2026-09-30",
     "nb_sources": 8
   },
   "ipc_canada": {
@@ -29,14 +29,14 @@
     "date_observation": "2026-08-01",
     "source": "Statistique Canada (18-10-0004-01)",
     "unite": "indice (2002=100)",
-    "recupere_le": "2026-09-29"
+    "recupere_le": "2026-09-30"
   },
   "taux_inflation_annuel": {
     "valeur": 3.03,
     "date_observation": "2026-08-01",
     "source": "Statistique Canada (IPC 12 mois)",
     "unite": "%",
-    "recupere_le": "2026-09-29"
+    "recupere_le": "2026-09-30"
   },
   "dette_brute_quebec": {
     "valeur": 44.6,
@@ -46,7 +46,7 @@
     "date_observation": "2024-2025",
     "source": "Finances Quebec (via donneesquebec.ca)",
     "unite": "G$",
-    "recupere_le": "2026-09-29"
+    "recupere_le": "2026-09-30"
   },
   "impot_particuliers_quebec": {
     "valeur": 44.7,
@@ -55,7 +55,7 @@
     "date_observation": "2024-2025",
     "source": "Finances Quebec (revenus, via donneesquebec.ca)",
     "unite": "G$",
-    "recupere_le": "2026-09-29"
+    "recupere_le": "2026-09-30"
   },
   "depenses_totales_quebec": {
     "valeur": 161.26,
@@ -64,7 +64,7 @@
     "date_observation": "2024-2025",
     "source": "Comptes publics Quebec vol.1 (donneesquebec.ca)",
     "unite": "G$",
-    "recupere_le": "2026-09-29"
+    "recupere_le": "2026-09-30"
   },
   "revenus_totaux_quebec": {
     "valeur": 156.09,
@@ -73,7 +73,7 @@
     "date_observation": "2024-2025",
     "source": "Comptes publics Quebec vol.1 (donneesquebec.ca)",
     "unite": "G$",
-    "recupere_le": "2026-09-29"
+    "recupere_le": "2026-09-30"
   },
   "macro_quebec": {
     "pib_quebec": {
