@@ -417,7 +417,22 @@ Réserve 15   : alimentée à 100 % par les revenus Co</code></pre>
 
     <hr>
     <p><em>Infrastructure — Sherbrooke, Québec — 26 septembre 2026.</em></p>
-  </main>
+  
+<h2>13. Audit de publication — Détection Cialdini et traçabilité</h2>
+
+<p><strong>Emplacement :</strong> <code>moteur_audit_publication.py</code>, <code>audit_rules.py</code></p>
+
+<p><strong>Langage :</strong> Python 3 + Pydantic</p>
+
+<p><strong>Rôle :</strong> Analyse les textes publiés par la plateforme. Détecte les sept leviers de persuasion de Cialdini (réciprocité, rareté, autorité, cohérence, sympathie, preuve sociale, unité), vérifie que chaque affirmation factuelle ou économique porte une source vérifiable, et signale les risques de conformité DGEQ (appel à l'action sans autorisation, mention de dépense de tiers).</p>
+
+<p><strong>Sorties :</strong> chaque affirmation reçoit un statut — <code>CONFORME</code>, <code>RÉVISION</code> ou <code>BLOCAGE</code>. Le statut global (<code>OK</code>, <code>A_REVISER</code>, <code>BLOQUE</code>) détermine si le texte peut être publié.</p>
+
+<p><strong>Registre :</strong> chaque audit est archivé dans <code>audit_registry.jsonl</code> avec une empreinte SHA-256 du texte et du rapport, permettant une vérification postérieure.</p>
+
+<p><strong>Principe :</strong> aucune donnée factuelle n'est publiée sans source URL ou institutionnelle. Le moteur ne suggère pas de reformulation, il bloque la publication tant que la condition n'est pas remplie.</p>
+
+</main>
 
   <footer class="footer">
     <p>PMDQ v2.7.22 + Livre X — Moteurs de calcul — 26 septembre 2026</p>
