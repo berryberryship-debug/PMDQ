@@ -16,3 +16,4 @@ __pycache__/
 *.bak_*
 *.bak2
 *.backup
+audit_registry.jsonl
