@@ -13,3 +13,6 @@ __pycache__/
 # Fichiers versionnés de travail
 *.v2.*
 *.v2.7.*
+*.bak_*
+*.bak2
+*.backup
