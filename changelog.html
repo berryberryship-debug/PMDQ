@@ -133,6 +133,49 @@
 </tbody>
 </table>
 
+<h2>Transition v2.7.5 → v2.7.22 → v2.7.23</h2>
+
+<p>Deux paliers techniques séparent la version 2.7.5 (26 septembre)
+de la version 2.7.23 actuelle (30 septembre). Voici ce qui a changé.</p>
+
+<h3>v2.7.5 → v2.7.22 (29 septembre)</h3>
+
+<table>
+<thead><tr><th>Élément</th><th>Avant (v2.7.5)</th><th>Après (v2.7.22)</th></tr></thead>
+<tbody>
+<tr><td>Moteurs de calcul</td><td>8</td><td><strong>11</strong></td></tr>
+<tr><td>Pages HTML</td><td>33</td><td><strong>73</strong></td></tr>
+<tr><td>Fichiers totaux</td><td>—</td><td><strong>191</strong></td></tr>
+<tr><td>Audit intégrité</td><td>—</td><td><strong>20/20</strong></td></tr>
+<tr><td>Audit robustesse</td><td>36/36</td><td><strong>76/76</strong></td></tr>
+<tr><td>Dette / PIB utilisée</td><td>42,3 %</td><td><strong>44,6 %</strong></td></tr>
+<tr><td>Effort Domar central</td><td>5,02 G$/an</td><td><strong>5,29 G$/an</strong></td></tr>
+<tr><td>Version header</td><td>v2.7.5 + Livre X</td><td><strong>v2.7.22 + Livre X</strong></td></tr>
+</tbody>
+</table>
+
+<h3>v2.7.22 → v2.7.23 (30 septembre)</h3>
+
+<table>
+<thead><tr><th>Élément</th><th>v2.7.22</th><th>v2.7.23</th></tr></thead>
+<tbody>
+<tr><td>Extracteur Banque du Canada</td><td>—</td><td><strong>Ajouté</strong> (boc_extractor.py)</td></tr>
+<tr><td>Couche marché unifiée</td><td>—</td><td><strong>Ajoutée</strong> (market_data.py)</td></tr>
+<tr><td>Vérification taux BoC</td><td>—</td><td><strong>Intégrée</strong> dans moteur_domar.py</td></tr>
+<tr><td>Nav harmonisée</td><td>10 variantes</td><td><strong>1 variante</strong> sur 71 pages</td></tr>
+<tr><td>Cadre idéologique</td><td>—</td><td><strong>Ajouté</strong> (74e page)</td></tr>
+<tr><td>Plan opérationnel</td><td>—</td><td><strong>Ajouté</strong></td></tr>
+<tr><td>Constantes moteur D documentées</td><td>—</td><td><strong>5 constantes [SCÉN]</strong></td></tr>
+<tr><td>Changelog public</td><td>v2.7.22</td><td><strong>v2.7.23</strong></td></tr>
+</tbody>
+</table>
+
+<p><em>Note : les transitions documentées ici concernent le socle technique
+et l'infrastructure. Les livres de contenu (I à X) suivent leur propre
+cycle de version (v2.7.1), indépendant du socle.</em></p>
+
+
+
 <div class="alert warn">
 <p><strong>Pourquoi ces écarts ?</strong> La v2.7.1 appliquait la réserve préventive de manière partielle et contenait trois coquilles arithmétiques. La v2.7.5 applique la réserve intégralement (encadré 5, art. 13) et corrige les trois coquilles. Les écarts sont documentés dans RUPT-001 à RUPT-006 — traçables et reproductibles.</p>
 </div>
