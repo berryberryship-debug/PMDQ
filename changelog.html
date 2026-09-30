@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Changelog — PMDQ v2.7.22</title><link rel="stylesheet" href="style.css"></head><body>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Changelog — PMDQ v2.7.23</title><link rel="stylesheet" href="style.css"></head><body>
 <div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
-<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.22 + Livre X<span>Changelog public</span></div><nav class="nav">
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.23 + Livre X<span>Changelog public</span></div><nav class="nav">
 <a href="index.html">Accueil</a>
 <a href="changelog.html" class="active">Changelog</a>
 <a href="livres.html">Livres</a>
@@ -45,9 +45,20 @@
 
 <h1>Changelog public</h1>
 <p class="lede">Historique des versions et des corrections du Dossier Maître PMDQ</p>
+<div class="alert info">
+<p><strong>Maintenance du 30 septembre 2026 — v2.7.23-clean</strong></p>
+<ul>
+<li><strong>Empreinte JSON</strong> — Creation de <code>data/empreinte_pmdq.json</code> avec les valeurs figees v2.7.23 (ratio D moyen 1,4048 ; decaisse 7,127 G$ ; 6 RUPT documentees).</li>
+<li><strong>Audit visuel</strong> — Nouvel outil <code>audit_visuel.py</code> (detecte viewport manquant, charset, liens casses, IDs dupliques).</li>
+<li><strong>5 corrections HTML</strong> — <code>audit_dashboard.html</code> (+ viewport) ; <code>section_corrigee.html</code> (+ viewport, charset, title, lang).</li>
+<li><strong>Script tout-en-un</strong> — <code>verifier.sh</code> (audit visuel + empreinte + archive).</li>
+<li><strong>Archivage</strong> — 18 fichiers redondants dans <code>_archive_20260930/</code> (aucune suppression).</li>
+<li><strong>Git</strong> — Commits <code>e1b646e</code> et <code>40349fd</code>, tags <code>v2.7.23-audit-visuel</code> et <code>v2.7.23-clean</code>.</li>
+</ul>
+</div>
 
 <div class="alert info">
-<p><strong>Version actuelle :</strong> <span class="badge green">2.7.5 + Livre X</span> — 26 septembre 2026</p>
+<p><strong>Version actuelle :</strong> <span class="badge green">2.7.23 + Livre X</span> — 30 septembre 2026</p>
 <p>Cette page documente toutes les modifications depuis la version initialement diffusée (v2.7.1). Elle sert aux lecteurs qui auraient reçu une version antérieure et qui constatent un écart.</p>
 </div>
 
