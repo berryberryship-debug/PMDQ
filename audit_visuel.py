@@ -15,6 +15,10 @@ PROBLEMES = {
     "broken_css": "Fichier CSS reference introuvable",
     "dup_id": "ID HTML duplique",
     "mojibake": "Encodage suspect (caracteres casses)",
+    "broken_img": "Image referencee introuvable",
+    "no_alt": "Attribut alt manquant sur <img>",
+    "suspect_url": "URL externe suspecte (typo probable)",
+    "unclosed_tag": "Balise HTML probablement non fermee",
 }
 
 PROTO_OK = ("http://", "https://", "mailto:", "tel:", "//",
@@ -22,7 +26,6 @@ PROTO_OK = ("http://", "https://", "mailto:", "tel:", "//",
 
 
 def est_fragment(contenu, taille):
-    """Un fragment est court et ne contient pas de <html> ou <body>."""
     if taille >= 500:
         return False
     return not re.search(r"<(html|body|head)\b", contenu, re.I)
@@ -84,6 +87,57 @@ def analyse_ids(contenu):
     return anomalies
 
 
+def analyse_images(f, contenu):
+    """Detecte : images referencees mais absentes + <img> sans alt."""
+    anomalies = []
+    for m in re.finditer(r'<img\b([^>]*)>', contenu, re.I):
+        attrs = m.group(1)
+        # alt manquant
+        if not re.search(r'\balt\s*=', attrs, re.I):
+            src_m = re.search(r'\bsrc=["\']([^"\']+)["\']', attrs, re.I)
+            cible = src_m.group(1) if src_m else "(sans src)"
+            anomalies.append(("no_alt", cible))
+        # src casse
+        src_m = re.search(r'\bsrc=["\']([^"\']+)["\']', attrs, re.I)
+        if src_m:
+            cible = src_m.group(1)
+            if cible.startswith(PROTO_OK):
+                continue
+            chemin = (f.parent / cible.split("?")[0]).resolve()
+            if not chemin.exists():
+                anomalies.append(("broken_img", cible))
+    return anomalies
+
+
+def analyse_urls_externes(contenu):
+    """Detecte les typos probables dans les URLs externes."""
+    anomalies = []
+    # http:/ au lieu de http://
+    for m in re.finditer(r'https?:/(?!/)', contenu, re.I):
+        extrait = contenu[max(0, m.start() - 10):m.end() + 30].strip()
+        anomalies.append(("suspect_url", extrait))
+    # ww. au lieu de www.
+    for m in re.finditer(r'["\']https?://ww\.(?!ww)', contenu, re.I):
+        extrait = contenu[m.start():m.end() + 30].strip()
+        anomalies.append(("suspect_url", extrait))
+    return anomalies
+
+
+def analyse_tags(contenu):
+    """Detecte les balises HTML probablement non fermees (heuristique)."""
+    anomalies = []
+    paires = ["div", "section", "article", "main", "aside", "header", "footer", "nav"]
+    texte = re.sub(r"<script[^>]*>.*?</script>", "", contenu, flags=re.I | re.S)
+    texte = re.sub(r"<style[^>]*>.*?</style>", "", texte, flags=re.I | re.S)
+    texte = re.sub(r"<!--.*?-->", "", texte, flags=re.S)
+    for tag in paires:
+        ouvrants = len(re.findall(r"<" + tag + r"\b[^>]*>", texte, re.I))
+        fermants = len(re.findall(r"</" + tag + r"\s*>", texte, re.I))
+        if ouvrants != fermants:
+            anomalies.append(("unclosed_tag", tag + " : " + str(ouvrants) + " ouverts / " + str(fermants) + " fermes"))
+    return anomalies
+
+
 def main():
     fichiers = liste_html()
     print("=" * 72)
@@ -111,6 +165,9 @@ def main():
         anomalies.extend(analyse_liens(f, contenu))
         anomalies.extend(analyse_css(f, contenu))
         anomalies.extend(analyse_ids(contenu))
+        anomalies.extend(analyse_images(f, contenu))
+        anomalies.extend(analyse_urls_externes(contenu))
+        anomalies.extend(analyse_tags(contenu))
         if anomalies:
             ko.append((f.name, anomalies))
             total += len(anomalies)
@@ -127,6 +184,8 @@ def main():
             for d in details[:3]:
                 if d:
                     print("      " + d)
+            if len(details) > 3:
+                print("      ... +" + str(len(details) - 3) + " autres")
 
     print("\n" + "=" * 72)
     print("RESUME")
