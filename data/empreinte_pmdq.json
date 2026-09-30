@@ -1,0 +1,32 @@
+{
+  "version": "2.7.23",
+  "date": "2026-09-30",
+  "source": "changelog.html + captures plateforme",
+  "invariants_numeriques": {
+    "ratio_D_moyen": 1.4048,
+    "somme_VAN_G": 17.23,
+    "somme_couts_G": 12.09,
+    "decaisse_total_G": 7.127,
+    "taux_execution": 0.8485,
+    "dette_pib": 0.446,
+    "effort_domar_central_G_an": 5.29,
+    "ecart_enveloppe_couts_G": 3.69
+  },
+  "invariants_structurels": {
+    "nb_livres": 10,
+    "nb_pages_publiees": 74,
+    "nb_moteurs": 11,
+    "audit_integrite": "20/20",
+    "audit_robustesse": "76/76",
+    "nb_volets_conformes": 7,
+    "nb_volets_total": 16
+  },
+  "ruptures_documentees": {
+    "RUPT-001": {"objet": "Ratio D moyen", "avant": 1.3962, "apres": 1.4048, "statut": "CORRIGEE"},
+    "RUPT-002": {"objet": "Somme VAN", "avant": 16.85, "apres": 17.23, "statut": "CORRIGEE"},
+    "RUPT-003": {"objet": "Somme couts", "avant": 8.02, "apres": 12.09, "statut": "CORRIGEE"},
+    "RUPT-004": {"objet": "Enveloppe vs cout", "avant": null, "apres": 3.69, "statut": "SCENARIO_2_RETENU"},
+    "RUPT-005": {"objet": "Volets conformes", "avant": "9/16", "apres": "7/16", "statut": "CORRIGEE"},
+    "RUPT-006": {"objet": "Version fantome", "avant": "2.6.7", "apres": "2.6.5", "statut": "NON_AVENUE"}
+  }
+}
