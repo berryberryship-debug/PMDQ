@@ -114,7 +114,7 @@ Défavorable        5.50 %    1.80 %    3.70 %      1.537 %       9.91 G$
   ECART                        : 2.3 points
 
 ========================================================================
-TRAJECTOIRES SUR 25 ANS — effort fixe = 5,02 G$/an
+TRAJECTOIRES SUR 25 ANS — effort fixe = 5,29 G$/an
 ========================================================================
   Favorable       → d(25 ans) =   36.6 %  (baisse)
   Central         → d(25 ans) =   48.7 %  (explose)
@@ -144,7 +144,7 @@ Défavorable        5.50 %    1.80 %    3.70 %      1.621 %      10.45 G$
   Code utilise                 : 44.6 % (coherent)
 
 ========================================================================
-TRAJECTOIRES SUR 25 ANS — effort fixe = 5,02 G$/an
+TRAJECTOIRES SUR 25 ANS — effort fixe = 5,29 G$/an
 ========================================================================
   Favorable       → d(25 ans) =   38.5 %  (baisse)
   Central         → d(25 ans) =   51.4 %  (explose)

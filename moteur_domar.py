@@ -133,6 +133,33 @@ def appliquer_references_officielles(cache):
     return d_off / 100, f"cache ({dette.get('annee', '?')})"
 
 
+def charger_reference_marche():
+    """Charge le taux 10 ans BoC depuis pmdq_data (cache marché)."""
+    try:
+        from market_data import MarketData
+        md = MarketData()
+        value, meta = md.get_value("taux_10ans_canada", return_meta=True)
+        return value, meta
+    except (ImportError, FileNotFoundError, KeyError, ValueError):
+        return None, None
+
+
+def afficher_ecart_taux(i_central, taux_marche, meta_marche):
+    """Affiche l'écart entre hypothèse i et taux BoC observé."""
+    if taux_marche is None:
+        return
+    ecart = abs(i_central * 100 - taux_marche)
+    print()
+    print("  --- Taux de marché (BoC) ---")
+    print(f"  Taux 10 ans Canada         : {taux_marche:.2f} %  ({meta_marche.get('last_date', '?')})")
+    print(f"  Source                     : {meta_marche.get('source', '?')}")
+    print(f"  Hypothèse i (central)      : {i_central * 100:.2f} %")
+    print(f"  Écart                      : {ecart:.2f} point(s)")
+    if ecart > 1.0:
+        print("  Note : i = taux effectif de la dette (moyenne pondérée),")
+        print("         pas le taux marginal 10 ans. Écart normal si dette ancienne.")
+
+
 def main():
     verifier_variables()
 
@@ -183,6 +210,10 @@ def main():
         })
 
     afficher_references(cache, D_utilisee)
+
+    # --- Vérification taux de marché (BoC) ---
+    taux_boC, meta_boC = charger_reference_marche()
+    afficher_ecart_taux(SCENARIOS["Central"]["i"], taux_boC, meta_boC)
 
     # --- Test de trajectoire sur 25 ans avec effort central fixe ---
     print()

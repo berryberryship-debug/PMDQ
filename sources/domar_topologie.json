@@ -2,7 +2,7 @@
   "date_calcul": "2026-09-30",
   "parametres": {
     "d": {
-      "valeur": 0.423,
+      "valeur": 0.446,
       "statut": "[C]"
     },
     "PIB_2026": {
@@ -17,27 +17,27 @@
       "i": 0.04,
       "g": 0.032,
       "i_minus_g": 0.8,
-      "s_star_pct": 0.328,
-      "effort_G$": 2.11,
-      "d_final_25ans": 36.6
+      "s_star_pct": 0.346,
+      "effort_G$": 2.23,
+      "d_final_25ans": 38.5
     },
     {
       "nom": "Central",
       "i": 0.046,
       "g": 0.0271,
       "i_minus_g": 1.89,
-      "s_star_pct": 0.778,
-      "effort_G$": 5.02,
-      "d_final_25ans": 48.7
+      "s_star_pct": 0.821,
+      "effort_G$": 5.29,
+      "d_final_25ans": 51.4
     },
     {
       "nom": "Défavorable",
       "i": 0.055,
       "g": 0.018,
       "i_minus_g": 3.7,
-      "s_star_pct": 1.537,
-      "effort_G$": 9.91,
-      "d_final_25ans": 77.8
+      "s_star_pct": 1.621,
+      "effort_G$": 10.45,
+      "d_final_25ans": 82.0
     }
   ]
 }
