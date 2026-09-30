@@ -12,12 +12,43 @@ marquée [SCÉN] — hypothèse de travail non sourcée.
 L'objectif de cette RFI est d'obtenir une référence de marché réelle pour
 valider ou corriger cette hypothèse.
 
-## Destinataires
+## Destinataires et coordonnées
 
-- ABB Robotics (Canada)
-- KUKA Robotics (Canada)
-- Revtech Systèmes (Québec)
-- Autres intégrateurs québécois à identifier
+### ABB Robotics Canada
+- **Site** : https://new.abb.com/products/robotics/fr
+- **Courriel** : ca-roboticscanada@abb.com
+- **Téléphone** : 1-800-HELP-365
+- **Adresse** : 201 Westcreek Blvd, Brampton, ON L6T 5S6
+
+### KUKA Robotics Canada
+- **Site** : https://www.kuka.com/fr-fr
+- **Courriel** : info.ca@kuka.com
+- **Téléphone** : +1 905-858-KUKA
+- **Adresse** : 2865 Argentia Road, Mississauga, ON L5N 8G6
+
+### Fanuc Robotics Canada
+- **Site** : https://www.fanucamerica.com
+- **Téléphone (Toronto)** : (905) 812-2300
+- **Téléphone (Québec)** : (450) 492-9001
+- **Adresse** : 6774 Financial Drive, Mississauga, ON L5N 7J6
+
+### Revtech Systèmes (Québec)
+- **Site** : https://revtechsys.com
+- **Courriel** : info@revtechsys.com
+- **Téléphone** : (418) 446-1413
+- **Adresse** : 1500, 3e Avenue du Parc-Industriel, Sainte-Marie, QC G6E 3T9
+
+### Robotiq (Québec)
+- **Site** : https://robotiq.com/fr
+- **Courriel** : info@robotiq.com
+- **Téléphone** : 1-888-966-8993
+- **Adresse** : 966, chemin Olivier, bureau 500, Lévis, QC G7A 2N1
+
+### A3 — Association for Advancing Automation
+- **Site** : https://www.automate.org
+- **Téléphone** : (734) 994-6088
+- **Adresse** : 900 Victors Way, Suite 140, Ann Arbor, MI 48108
+- **Utilité** : réseau d'intégrateurs certifiés, référence normative
 
 ## Courriel type
 
