@@ -33,3 +33,7 @@ Chaque contribution sera consignée dans un fichier CSV avec les colonnes suivan
 - `contributions.csv` — à créer dès la première contribution.
 
 Dernière mise à jour : 28 septembre 2026.
+
+---
+
+**Statut : vide intentionnel** — structure en place, contenu à produire lors d'une phase ultérieure.

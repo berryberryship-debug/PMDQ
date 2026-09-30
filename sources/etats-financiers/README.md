@@ -31,3 +31,7 @@ Chaque exercice financier produira 4 états :
 - `2026-flux-tresorerie.md`
 
 Dernière mise à jour : 28 septembre 2026.
+
+---
+
+**Statut : vide intentionnel** — structure en place, contenu à produire lors d'une phase ultérieure.
