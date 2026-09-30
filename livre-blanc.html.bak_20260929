@@ -82,7 +82,7 @@
 
 <h3>2.3 Outils techniques</h3>
 
-<p>Onze moteurs de calcul Python, tous reproductibles :</p>
+<p>Huit moteurs de calcul Python, tous reproductibles :</p>
 
 <table class="tableau-simulation">
 <thead><tr><th>Moteur</th><th>Rôle</th></tr></thead>

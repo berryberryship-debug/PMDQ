@@ -51,7 +51,7 @@
 <div class="alert info" style="text-align: center; margin: 1rem 0; background-color: #e8f0f8; border-left-color: #1a3a5c;">
 <h4>📘 Livre blanc — Dossier maître</h4>
 <p><strong>Présentation académique et professionnelle</strong> — 223 pages équivalentes</p>
-<p style="font-size: 0.9rem; color: #555;">73 pages HTML, 138 fichiers, 11 moteurs de calcul, audit 19/19</p>
+<p style="font-size: 0.9rem; color: #555;">72 pages HTML, 138 fichiers, 8 moteurs de calcul, audit 75/75</p>
 <a href="livre-blanc.html" style="display:inline-block; background:#1a3a5c; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; font-weight:bold;">Lire le livre blanc</a>
 </div>
 <h1>PMDQ — Un État qui livre</h1>
@@ -77,7 +77,7 @@
 <tr>
 <td><strong>[C] Certain</strong></td>
 <td>Financé, mesuré, réalisable dès maintenant.</td>
-<td>Les 73 pages sont en ligne, l'audit est à 19/19.</td>
+<td>Les 63 pages sont en ligne, l'audit est à 66/66.</td>
 </tr>
 <tr>
 <td><strong>[K] Conditionnel</strong></td>
