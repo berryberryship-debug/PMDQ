@@ -56,6 +56,25 @@
 <table>
 <thead><tr><th>ID</th><th>Champ corrigé</th><th>Valeur initiale</th><th>Valeur corrigée</th><th>Nature</th><th>Statut</th></tr></thead>
 <tbody>
+<tr>
+  <td><strong>2.7.23</strong></td>
+  <td>30 sept. 2026</td>
+  <td>
+    <strong>Infrastructure de marché + nav harmonisée</strong>
+    <ul>
+      <li><strong>Extracteur Banque du Canada</strong> — <code>boc_extractor.py</code>, sans clé API, cache CSV local.</li>
+      <li><strong>Couche marché</strong> — <code>market_data.py</code> branchée dans le dépôt.</li>
+      <li><strong>Moteur Domar</strong> — vérification taux BoC, flag <code>--officiel</code>, écart hypothèse/marché affiché.</li>
+      <li><strong>Livre V</strong> — aligné sur dette officielle 44,6 % (2,23 / 5,29 / 10,45 G$).</li>
+      <li><strong>Nav harmonisée</strong> — 10 variantes → 1 seule sur 71 pages.</li>
+      <li><strong>Cadre idéologique</strong> — <code>IDEOLOGIE.md</code> + page publique.</li>
+      <li><strong>Plan opérationnel</strong> — <code>PLAN-OPERATIONNEL.md</code>, 5 phases.</li>
+      <li><strong>Documentation 5 constantes</strong> — <code>sources/vehicule-constantes.md</code>.</li>
+      <li><strong>Version v2.7.22</strong> propagée sur 11 fichiers.</li>
+    </ul>
+  </td>
+</tr>
+
 
 
 <tr><td><strong>RUPT-001</strong></td><td>Ratio D moyen (16 conformes)</td><td>1,3962</td><td><strong>1,4048</strong></td><td>Coquille — libellé non respecté</td><td><span class="badge green">Corrigée</span></td></tr>
