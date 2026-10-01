@@ -28,6 +28,9 @@ echo
 echo "=== 0b. Collecte Donnees Quebec ==="
 python3 moteur_donnees_quebec.py 2>&1 | tail -3
 
+echo "=== 0c. Generation de la page Donnees publiques ==="
+python3 generer_page_dq.py 2>&1 | tail -1
+
 echo "=== 0. Collecte des references economiques ==="
 python3 collecteur.py > /dev/null 2>&1
 code_collecte=$?
