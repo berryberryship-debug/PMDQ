@@ -140,7 +140,7 @@ def analyser():
     }
 
     return {
-        "date_analyse": str(date.today()),
+        "date_analyse": "",
         "ecarts": resultats,
         "resume": resume,
     }

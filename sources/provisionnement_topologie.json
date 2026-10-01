@@ -1,5 +1,4 @@
 {
-  "date_calcul": "2026-09-30",
   "parametres": {
     "taux_precaution": 0.15,
     "alpha_bootstrap": 0.05,

@@ -4,3 +4,12 @@
 [2026-09-29T18:08:06] ALERTE | SOCLE STRICT : sections en probleme
     Des variables sensibles sont en retard ou a revoir.
 
+[2026-10-01T00:40:23] ALERTE | SOCLE : 2 moteur(s) en echec
+    Bilan : 9 OK, 2 ECHEC
+
+[2026-10-01T00:41:58] ALERTE | SOCLE : 2 moteur(s) en echec
+    Bilan : 9 OK, 2 ECHEC
+
+[2026-10-01T00:44:16] ALERTE | SOCLE : 2 moteur(s) en echec
+    Bilan : 9 OK, 2 ECHEC
+

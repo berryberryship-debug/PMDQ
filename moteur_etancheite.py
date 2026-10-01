@@ -204,7 +204,6 @@ def main():
 
     # 6. Sauvegarde JSON
     rapport = {
-        "date_calcul": str(date.today()),
         "topologie": {
             "noeuds": G.number_of_nodes(),
             "aretes": G.number_of_edges(),

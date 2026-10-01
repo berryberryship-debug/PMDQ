@@ -1,5 +1,5 @@
 {
-  "date_analyse": "2026-09-30",
+  "date_analyse": "2026-10-01",
   "date_fichier": "2026-09-29",
   "sections": [
     {
@@ -7,7 +7,7 @@
       "frequence_jours": 90,
       "date_maj": "2026-09-29",
       "source_date": "date explicite",
-      "jours_depuis_maj": 1,
+      "jours_depuis_maj": 2,
       "statut": "A JOUR"
     },
     {
@@ -15,7 +15,7 @@
       "frequence_jours": 365,
       "date_maj": "2026-09-29",
       "source_date": "date explicite",
-      "jours_depuis_maj": 1,
+      "jours_depuis_maj": 2,
       "statut": "A JOUR"
     },
     {
@@ -23,7 +23,7 @@
       "frequence_jours": 365,
       "date_maj": "2026-09-29",
       "source_date": "date explicite",
-      "jours_depuis_maj": 1,
+      "jours_depuis_maj": 2,
       "statut": "A JOUR"
     },
     {
@@ -31,7 +31,7 @@
       "frequence_jours": 30,
       "date_maj": "2026-09-29",
       "source_date": "date explicite",
-      "jours_depuis_maj": 1,
+      "jours_depuis_maj": 2,
       "statut": "A JOUR"
     },
     {
@@ -39,7 +39,7 @@
       "frequence_jours": 365,
       "date_maj": "2026-09-29",
       "source_date": "date explicite",
-      "jours_depuis_maj": 1,
+      "jours_depuis_maj": 2,
       "statut": "A JOUR"
     },
     {
@@ -47,7 +47,7 @@
       "frequence_jours": 180,
       "date_maj": "2026-09-29",
       "source_date": "date explicite",
-      "jours_depuis_maj": 1,
+      "jours_depuis_maj": 2,
       "statut": "A JOUR"
     },
     {
@@ -55,7 +55,7 @@
       "frequence_jours": 30,
       "date_maj": "2026-09-29",
       "source_date": "date explicite",
-      "jours_depuis_maj": 1,
+      "jours_depuis_maj": 2,
       "statut": "A JOUR"
     }
   ],

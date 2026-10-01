@@ -311,7 +311,6 @@ def main():
     if args.json:
         courbe = courbe_laffer()
         rapport = {
-            "date": str(date.today()),
             "calibration": {
                 "A0_G": A0_G,
                 "T_REF": T_REF,

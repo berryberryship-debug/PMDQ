@@ -168,7 +168,7 @@ def analyser():
     }
 
     return {
-        "date_analyse": str(date.today()),
+        "date_analyse": "",
         "regles": resultats,
         "resume": resume,
     }

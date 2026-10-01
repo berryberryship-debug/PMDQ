@@ -201,7 +201,6 @@ def main():
 
     # Sauvegarde
     rapport = {
-        "date_calcul": str(date.today()),
         "parametres": {
             "taux_precaution": TAUX_PRECAUTION,
             "alpha_bootstrap": ALPHA_BOOTSTRAP,

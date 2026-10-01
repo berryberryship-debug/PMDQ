@@ -123,7 +123,6 @@ def generer_rapport():
     etancheite = verifier_etancheite()
 
     return {
-        "date": str(date.today()),
         "enveloppe": env,
         "annuite": annuite,
         "ratio_D": ratio,

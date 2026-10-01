@@ -182,7 +182,6 @@ def main():
     print()
 
     resultats = {
-        "date_calcul": str(date.today()),
         "parametres": {
             "d": {"valeur": D_utilisee, "statut": "[C]"},
             "PIB_2026": {"valeur": PIB_2026, "statut": "[C]"},

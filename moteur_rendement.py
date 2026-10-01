@@ -149,7 +149,6 @@ def main():
     print()
 
     resultats = {
-        "date_calcul": str(date.today()),
         "taux_actualisation_social": TAUX_ACTUALISATION_SOCIAL,
         "seuil_D": SEUIL_D,
         "projets": []
