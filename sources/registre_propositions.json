@@ -1,0 +1,205 @@
+{
+  "version": "1.0",
+  "date": "2026-10-01",
+  "total": 22,
+  "propositions": [
+    {
+      "id": "PROP-001",
+      "titre": "Loi sur la réduction des délais chirurgicaux",
+      "engagement": 1,
+      "statut": "[C]",
+      "cout_m": "1200",
+      "base_legale": "Compétence Québec (santé)",
+      "moteur": "moteur_fiscal"
+    },
+    {
+      "id": "PROP-002",
+      "titre": "Programme de tutorat et de francisation scolaire",
+      "engagement": 2,
+      "statut": "[C]",
+      "cout_m": "450",
+      "base_legale": "Loi sur l'instruction publique",
+      "moteur": "moteur_fiscal"
+    },
+    {
+      "id": "PROP-003",
+      "titre": "Loi sur le logement abordable et l'accélération des permis",
+      "engagement": 3,
+      "statut": "[C]",
+      "cout_m": "2500",
+      "base_legale": "Compétence Québec (habitation)",
+      "moteur": "moteur_fiscal"
+    },
+    {
+      "id": "PROP-004",
+      "titre": "Indexation automatique des crédits d'impôt",
+      "engagement": 4,
+      "statut": "[C]",
+      "cout_m": "800",
+      "base_legale": "Loi sur les impôts",
+      "moteur": "moteur_fiscal"
+    },
+    {
+      "id": "PROP-005",
+      "titre": "Crédit d'impôt à l'automatisation des PME",
+      "engagement": 5,
+      "statut": "[C]",
+      "cout_m": "600",
+      "base_legale": "Loi sur les impôts",
+      "moteur": "moteur_fiscal"
+    },
+    {
+      "id": "PROP-006",
+      "titre": "Plan climat et adaptation municipale",
+      "engagement": 6,
+      "statut": "[C]",
+      "cout_m": "3500",
+      "base_legale": "Compétence Québec (environnement)",
+      "moteur": "moteur_etancheite"
+    },
+    {
+      "id": "PROP-007",
+      "titre": "Loi sur la protection des terres agricoles et la relève",
+      "engagement": 7,
+      "statut": "[T]",
+      "cout_m": "1200",
+      "base_legale": "Loi sur la protection du territoire agricole",
+      "moteur": "moteur_fiscal"
+    },
+    {
+      "id": "PROP-008",
+      "titre": "Plan décennal d'entretien des infrastructures",
+      "engagement": 8,
+      "statut": "[C]",
+      "cout_m": "4000",
+      "base_legale": "Compétence Québec (infrastructures)",
+      "moteur": "moteur_etancheite"
+    },
+    {
+      "id": "PROP-009",
+      "titre": "Loi sur la francisation et l'intégration civique",
+      "engagement": 9,
+      "statut": "[C]",
+      "cout_m": "900",
+      "base_legale": "Compétence Québec (immigration, entente fédérale)",
+      "moteur": "moteur_fiscal"
+    },
+    {
+      "id": "PROP-010",
+      "titre": "Modernisation des cégeps techniques et stages rémunérés",
+      "engagement": 10,
+      "statut": "[C]",
+      "cout_m": "600",
+      "base_legale": "Loi sur les cégeps",
+      "moteur": "moteur_fiscal"
+    },
+    {
+      "id": "PROP-011",
+      "titre": "Module scolaire sur les relations saines",
+      "engagement": 11,
+      "statut": "[C]",
+      "cout_m": "150",
+      "base_legale": "Loi sur l'instruction publique",
+      "moteur": "—"
+    },
+    {
+      "id": "PROP-012",
+      "titre": "Fonds de gouvernance locale (modèle Ostrom)",
+      "engagement": 12,
+      "statut": "[É]",
+      "cout_m": "800",
+      "base_legale": "Compétence Québec (affaires municipales)",
+      "moteur": "moteur_fiscal"
+    },
+    {
+      "id": "PROP-013",
+      "titre": "Bouclier numérique anti-fraude et rapatriement des fonds",
+      "engagement": 13,
+      "statut": "[C]",
+      "cout_m": "500",
+      "base_legale": "Compétence Québec (cybersécurité)",
+      "moteur": "moteur_etancheite"
+    },
+    {
+      "id": "PROP-014",
+      "titre": "Loi sur la capacité énergétique et le fonds tarifaire",
+      "engagement": 14,
+      "statut": "[K]",
+      "cout_m": "4500",
+      "base_legale": "Compétence Québec (énergie, entente fédérale)",
+      "moteur": "moteur_domar"
+    },
+    {
+      "id": "PROP-015",
+      "titre": "Loi sur la sécurité publique et la police de proximité",
+      "engagement": 15,
+      "statut": "[C]",
+      "cout_m": "1800",
+      "base_legale": "Compétence Québec (sécurité publique)",
+      "moteur": "moteur_fiscal"
+    },
+    {
+      "id": "PROP-016",
+      "titre": "Loi sur le maintien à domicile des aînés",
+      "engagement": 16,
+      "statut": "[C]",
+      "cout_m": "2200",
+      "base_legale": "Compétence Québec (santé, services sociaux)",
+      "moteur": "moteur_fiscal"
+    },
+    {
+      "id": "PROP-017",
+      "titre": "Loi sur le financement de la culture et des médias régionaux",
+      "engagement": 17,
+      "statut": "[C]",
+      "cout_m": "700",
+      "base_legale": "Compétence Québec (culture)",
+      "moteur": "moteur_fiscal"
+    },
+    {
+      "id": "PROP-018",
+      "titre": "Mandat de négociation Québec-Ottawa",
+      "engagement": 18,
+      "statut": "[K]",
+      "cout_m": "50",
+      "base_legale": "Compétence partagée (fédéralisme)",
+      "moteur": "—"
+    },
+    {
+      "id": "PROP-019",
+      "titre": "Loi sur la transformation locale des ressources",
+      "engagement": 19,
+      "statut": "[C]",
+      "cout_m": "600",
+      "base_legale": "Compétence Québec (ressources naturelles)",
+      "moteur": "moteur_domar"
+    },
+    {
+      "id": "PROP-020",
+      "titre": "Stratégie industrielle et zones d'innovation",
+      "engagement": 20,
+      "statut": "[C]",
+      "cout_m": "1500",
+      "base_legale": "Compétence Québec (économie)",
+      "moteur": "moteur_domar"
+    },
+    {
+      "id": "PROP-021",
+      "titre": "Loi sur la simplification administrative et la transmission des PME",
+      "engagement": 21,
+      "statut": "[C]",
+      "cout_m": "450",
+      "base_legale": "Compétence Québec (économie)",
+      "moteur": "moteur_fiscal"
+    },
+    {
+      "id": "PROP-022",
+      "titre": "Cadre éthique de l'IA publique et cybersécurité institutionnelle",
+      "engagement": 22,
+      "statut": "[É]",
+      "cout_m": "800",
+      "base_legale": "Compétence Québec (numérique)",
+      "moteur": "moteur_etancheite"
+    }
+  ]
+}
