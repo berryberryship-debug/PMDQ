@@ -1,0 +1,462 @@
+{
+  "source": "Données Québec (API CKAN)",
+  "url": "https://www.donneesquebec.ca/api/3/action/",
+  "date_collecte": "2026-10-01",
+  "mots_cles": {
+    "contrats": {
+      "total": 10,
+      "jeux": [
+        {
+          "titre": "Contrats octroyés",
+          "id": "contrats-octroyes",
+          "organisation": "Ville de Laval",
+          "notes": "Liste des contrats octroyés telle que stipule la [loi sur les cités et villes] (http://www2.publicationsduquebec.gouv.qc.ca/dynamicSearch/telecharge.php?type=2&file=/C_19/C19.html), article 477.3\n"
+        },
+        {
+          "titre": "Contrats – Fonctionnaires",
+          "id": "vmtl-contrats-octroyes-par-les-fonctionnaires-ville-centrale",
+          "organisation": "Ville de Montréal",
+          "notes": "Contrats accordés par les fonctionnaires en vertu des pouvoirs délégués.\r\n\r\nIl est à noter que les données peuvent également être visualisées à l'aide d'un [API](https://donnees.montreal.ca/dataset/co"
+        },
+        {
+          "titre": "Contrats et transactions de déneigement",
+          "id": "vmtl-contrats-transaction-deneigement",
+          "organisation": "Ville de Montréal",
+          "notes": "Ensemble de données contenant les informations sur les contrats de déneigement de la Ville de Montréal ainsi que les données détaillées sur les transactions de transport de la neige par camion des sou"
+        },
+        {
+          "titre": "Contrats et subventions – API",
+          "id": "vmtl-contrats-et-subventions-api",
+          "organisation": "Ville de Montréal",
+          "notes": "Notez que l’API **Vue sur les contrats** a été désactivée en janvier 2026.\r\n\r\nMême si l'API n'est plus accessible, les données utilisées pour l'alimenter continueront d'être disponibles sur ces pages "
+        },
+        {
+          "titre": "Contrats – Conseils d'arrondissement",
+          "id": "vmtl-contrats-conseils-d-arrondissement",
+          "organisation": "Ville de Montréal",
+          "notes": "Contrats accordés par les 19 conseils d'arrondissement.\r\n\r\nIl est à noter que les données peuvent également être visualisées à l'aide d'un [API](/ville-de-montreal/contrats-et-subventions-api) ou de l"
+        },
+        {
+          "titre": "Contrats – Comité exécutif",
+          "id": "vmtl-contrats-comite-executif",
+          "organisation": "Ville de Montréal",
+          "notes": "Contrats accordés par le comité exécutif.\r\n\r\nIl est à noter que les données peuvent également être visualisées à l'aide d'un [API](/ville-de-montreal/contrats-et-subventions-api) ou de l'outil [Vue su"
+        },
+        {
+          "titre": "Contrats – Conseil municipal et conseil d’agglomération",
+          "id": "vmtl-contrats-conseil-municipal-et-conseil-d-agglomeration",
+          "organisation": "Ville de Montréal",
+          "notes": "Contrats accordés par le conseil municipal et le conseil d’agglomération.\r\n\r\nIl est à noter que les données peuvent également être visualisées à l'aide d'un [API](/ville-de-montreal/contrats-et-subven"
+        },
+        {
+          "titre": "Registre des entreprises non admissibles aux contrats publics (RENA)",
+          "id": "registre-des-entreprises-non-admissibles-aux-contrats-publics-rena",
+          "organisation": "Autorité des marchés publics",
+          "notes": "Le Registre des entreprises non admissibles aux contrats publics (RENA) consigne le nom des entreprises ayant commis une infraction prévue à l'annexe 1 de la Loi sur les contrats des organismes public"
+        },
+        {
+          "titre": "Contrats octroyés par les fonctionnaires - 2016 - Côte-des-Neiges–Notre-Dame-de-Grâce",
+          "id": "vmtl-contrats-octroyes-par-les-fonctionnaires-cote-des-neiges-notre-dame-de-grace-2016",
+          "organisation": "Ville de Montréal",
+          "notes": "Liste des contrats octroyés par les fonctionnaires de l'arrondissement de Côte-des-Neiges–Notre-Dame-de-Grâce en vertu du pouvoir délégué."
+        },
+        {
+          "titre": "Contrats octroyés par les fonctionnaires - 2014 - Côte-des-Neiges–Notre-Dame-de-Grâce",
+          "id": "vmtl-contrats-octroyes-par-les-fonctionnaires-cote-des-neiges-notre-dame-de-grace-2014",
+          "organisation": "Ville de Montréal",
+          "notes": "Liste des contrats octroyés par les fonctionnaires de l'arrondissement de Côte-des-Neiges–Notre-Dame-de-Grâce en vertu du pouvoir délégué."
+        }
+      ]
+    },
+    "subventions": {
+      "total": 10,
+      "jeux": [
+        {
+          "titre": "Contrats et subventions – API",
+          "id": "vmtl-contrats-et-subventions-api",
+          "organisation": "Ville de Montréal",
+          "notes": "Notez que l’API **Vue sur les contrats** a été désactivée en janvier 2026.\r\n\r\nMême si l'API n'est plus accessible, les données utilisées pour l'alimenter continueront d'être disponibles sur ces pages "
+        },
+        {
+          "titre": "Programmes et subventions destinés à la population et aux organismes",
+          "id": "vmtl-programmes-subventions-destines-population",
+          "organisation": "Ville de Montréal",
+          "notes": "La Ville de Montréal offre une multitude de programmes destinés à la population montréalaise et aux organismes établis sur le territoire. Cet ensemble de données permet de consulter la liste des progr"
+        },
+        {
+          "titre": "Subventions - Comité exécutif",
+          "id": "vmtl-subventions-du-comite-executif",
+          "organisation": "Ville de Montréal",
+          "notes": "Subventions accordées par le comité exécutif pour les compétences de la ville centrale et de l’agglomération."
+        },
+        {
+          "titre": "Subventions en habitation destinées aux citoyennes et citoyens",
+          "id": "vmtl-subvention-habitation",
+          "organisation": "Ville de Montréal",
+          "notes": "La Ville de Montréal administre des programmes de subventions en habitation destinés à aider les citoyennes et les citoyens. Ces programmes ont entre autres pour objectif de préserver la qualité du pa"
+        },
+        {
+          "titre": "Allocation Famille",
+          "id": "allocation-famille",
+          "organisation": "Retraite Québec",
+          "notes": "L’Allocation famille est une aide financière versée à toutes les familles admissibles ayant des enfants à charge de moins de 18 ans qui résident avec elles."
+        },
+        {
+          "titre": "Subventions - Conseil de ville et d'agglomération",
+          "id": "vmtl-subventions-conseil-de-ville-et-d-agglomeration",
+          "organisation": "Ville de Montréal",
+          "notes": "Subventions accordées par le conseil municipal et le conseil d’agglomération."
+        },
+        {
+          "titre": "Liaison maritime",
+          "id": "liaison-maritime",
+          "organisation": "Ministère des Transports et de la Mobilité durable",
+          "notes": "Localisation des traverses et dessertes maritimes. Type de liaison, origine et destinations, temps de traverse, accessibilité aux véhicules lourds et subvention."
+        },
+        {
+          "titre": "Remboursement des allocations aux partis autorisés (archives)",
+          "id": "vmtl-allocation-aux-partis-autorises",
+          "organisation": "Ville de Montréal",
+          "notes": "Allocation destinée au remboursement des dépenses faites pour l'administration courante de tout parti autorisé en vertu de l’article 474.0.4. de la Loi sur les cités et  villes."
+        },
+        {
+          "titre": "Téléphone d'urgence",
+          "id": "telephone-durgence",
+          "organisation": "Ministère des Transports et de la Mobilité durable",
+          "notes": "Localisation ponctuelle des téléphones de secours ou d'urgence installés sur le réseau routier. "
+        },
+        {
+          "titre": "Entreprises certifiées par l’Office québécois de la langue française",
+          "id": "entreprises-certifiees-oqlf",
+          "organisation": "Office québécois de la langue française (OQLF)",
+          "notes": "Un certificat de francisation est remis à une entreprise lorsque l’utilisation du français est généralisée à tous les niveaux de celle-ci, et ce, dans l’ensemble de ses activités au Québec.\r\n\r\nUne ent"
+        }
+      ]
+    },
+    "financement politique": {
+      "total": 10,
+      "jeux": [
+        {
+          "titre": "Nomination par les instances politiques centrales",
+          "id": "vmtl-nomination-par-les-instance-politiques-centrales",
+          "organisation": "Ville de Montréal",
+          "notes": "Nomination par le conseil d'agglomération, le conseil municipal et le comité exécutif. "
+        },
+        {
+          "titre": "Calendrier - Instances politiques - Ville centrale",
+          "id": "vmtl-calendrier-instances-politiques-ville-centrale",
+          "organisation": "Ville de Montréal",
+          "notes": "Calendrier des réunions des instances politiques de la ville centrale. "
+        },
+        {
+          "titre": "Statistiques fiscales des sociétés",
+          "id": "statistiques-fiscales-des-societes-sommaire-des-statistiques-fiscales-des-societes",
+          "organisation": "Ministère des Finances du Québec",
+          "notes": "Données relatives aux principaux prélèvements fiscaux effectués auprès des sociétés ayant eu des activités au Québec."
+        },
+        {
+          "titre": "Députées et députés en fonction",
+          "id": "deputees-et-deputes-en-fonction",
+          "organisation": "Assemblée nationale du Québec",
+          "notes": "Liste des députées et députés de l'Assemblée nationale du Québec et de leurs fonctions en cours."
+        },
+        {
+          "titre": "Solutions en logiciels libres",
+          "id": "vmtl-solutions-en-logiciels-libres",
+          "organisation": "Ville de Montréal",
+          "notes": "Dans le cadre de la [Politique et directives traitant du code et matériel libre à la Ville de Montréal](https://github.com/VilledeMontreal/politique-libre), le Service des technologies de l'informatio"
+        },
+        {
+          "titre": "Élections municipales partielles - Résultats détaillés",
+          "id": "vmtl-elections-municipales-partielles-resultats-detailles",
+          "organisation": "Ville de Montréal",
+          "notes": "Ensemble comprenant les différentes ressources des résultats des élections municipales partielles."
+        },
+        {
+          "titre": "Commissions permanentes du conseil - membres",
+          "id": "vmtl-commissions-permanentes-du-conseil-membres",
+          "organisation": "Ville de Montréal",
+          "notes": "Élus siégeant aux commissions du conseil de la ville et du conseil d’agglomération"
+        },
+        {
+          "titre": "Logiciels libres entretenus par la Ville de Montréal",
+          "id": "vmtl-logiciels-libres-entretenus-par-la-ville-de-montreal",
+          "organisation": "Ville de Montréal",
+          "notes": "Dans le cadre de la [Politique et directives traitant du code et matériel libre à la Ville de Montréal](https://github.com/VilledeMontreal/politique-libre), le Service des technologies de l'informatio"
+        },
+        {
+          "titre": "Budget de dépenses",
+          "id": "budget-de-depenses",
+          "organisation": "Secrétariat du Conseil du trésor",
+          "notes": "Présente des données budgétaires du [Budget de dépenses](https://www.tresor.gouv.qc.ca/budget-de-depenses/politiques-et-gestion-des-ressources-budgetaires/) déposé annuellement par le Conseil du tréso"
+        },
+        {
+          "titre": "Remboursement des allocations aux partis autorisés (archives)",
+          "id": "vmtl-allocation-aux-partis-autorises",
+          "organisation": "Ville de Montréal",
+          "notes": "Allocation destinée au remboursement des dépenses faites pour l'administration courante de tout parti autorisé en vertu de l’article 474.0.4. de la Loi sur les cités et  villes."
+        }
+      ]
+    },
+    "entreprises": {
+      "total": 10,
+      "jeux": [
+        {
+          "titre": "Statistiques fiscales des sociétés",
+          "id": "statistiques-fiscales-des-societes-sommaire-des-statistiques-fiscales-des-societes",
+          "organisation": "Ministère des Finances du Québec",
+          "notes": "Données relatives aux principaux prélèvements fiscaux effectués auprès des sociétés ayant eu des activités au Québec."
+        },
+        {
+          "titre": "Registre des entreprises",
+          "id": "registre-des-entreprises",
+          "organisation": "Registraire des entreprises",
+          "notes": "Le Registraire tient un registre à caractère public dans lequel sont déposées et diffusées les informations prescrites par la loi et relatives aux associations et aux entreprises constituées ou immatr"
+        },
+        {
+          "titre": "Stages d'innovation en entreprise",
+          "id": "stages-d-innovation-en-entreprise",
+          "organisation": "Ministère de l'Économie, de l'Innovation et de l'Énergie",
+          "notes": "Les jeux de données concernent la mesure Stages d’innovation en entreprise et les programmes Mitacs Accélération, Mitacs Accélération internationale et Mitacs Élévation, qui sont subventionnés conjoin"
+        },
+        {
+          "titre": "Perspectives d'emploi par industrie",
+          "id": "perspective-d-emploi-par-industrie",
+          "organisation": "Ministère de l'Emploi et de la Solidarité sociale",
+          "notes": "Le Secteur de l’emploi, secteur rattaché au ministère de l’Emploi et de la Solidarité sociale (MESS), fait chaque année des prévisions du marché du travail à moyen (cinq ans) et à long termes (dix ans"
+        },
+        {
+          "titre": "Firmes à rendement insatisfaisant",
+          "id": "vmtl-firmes-a-rendement-insatisfaisant",
+          "organisation": "Ville de Montréal",
+          "notes": "Cet ensemble présente les firmes inscrites sur la liste des firmes à rendement insatisfaisant. Cette liste est générée dans la cadre de l'application de la Directive sur l’évaluation des fournisseurs "
+        },
+        {
+          "titre": "Requêtes des entreprises dans le cadre de la COVID-19",
+          "id": "vmtl-requetes-entreprises-covid-19",
+          "organisation": "Ville de Montréal",
+          "notes": "Pour soutenir les entreprises montréalaises durant cette situation exceptionnelle, le Service du développement économique de la Ville de Montréal a mis à la disposition des entreprises et des organisa"
+        },
+        {
+          "titre": "Perspectives d’emploi par industrie 2015-2019",
+          "id": "perspectives-d-emploi-par-industrie",
+          "organisation": "Ministère de l'Emploi et de la Solidarité sociale",
+          "notes": "Perspectives d'emploi par industrie à moyen terme 2015-2019"
+        },
+        {
+          "titre": "Sondage sur la perception des entreprises lavalloises - 2014",
+          "id": "sondage-sur-la-perception-des-entreprises-lavalloises-2014",
+          "organisation": "Ville de Laval",
+          "notes": "Résultats du sondage sur la perception des entreprises lavalloises à l’égard du milieu des affaires à Laval​, mené en 2014.​"
+        },
+        {
+          "titre": "Répertoire des locaux et entreprises du territoire de Sherbrooke",
+          "id": "repertoire-des-entreprises",
+          "organisation": "Entreprendre Sherbrooke",
+          "notes": "Liste des entreprises et organisations présentes sur le territoire de Sherbrooke"
+        },
+        {
+          "titre": "Limite des sociétés de développement commercial (SDC)",
+          "id": "vmtl-limite-des-societes-de-developpement-commercial-sdc",
+          "organisation": "Ville de Montréal",
+          "notes": "Polygones des limites des sociétés de développement commercial (SDC) présentent sur le territoire de la Ville de Montréal. \r\n\r\nLes [sociétés de développement commercial (SDC)](https://montreal.ca/suje"
+        }
+      ]
+    },
+    "budget": {
+      "total": 10,
+      "jeux": [
+        {
+          "titre": "Budget de dépenses",
+          "id": "budget-de-depenses",
+          "organisation": "Secrétariat du Conseil du trésor",
+          "notes": "Présente des données budgétaires du [Budget de dépenses](https://www.tresor.gouv.qc.ca/budget-de-depenses/politiques-et-gestion-des-ressources-budgetaires/) déposé annuellement par le Conseil du tréso"
+        },
+        {
+          "titre": "Prévision des revenus et des dépenses par composante",
+          "id": "revenus-et-depenses-par-composante-automne-2021",
+          "organisation": "Ministère des Finances du Québec",
+          "notes": "Ce jeu de données inclut la prévision des revenus et des dépenses du gouvernement du Québec par composante. Il est usuellement publié deux fois par année, soit lors du dépôt du budget du Québec  et lo"
+        },
+        {
+          "titre": "Résultats du Budget participatif de Montréal",
+          "id": "vmtl-budget-participatif-montreal",
+          "organisation": "Ville de Montréal",
+          "notes": "Cet ensemble de données contient les informations recueillies dans le cadre des trois éditions du budget participatif de la Ville de Montréal. Les données présentent les résultats récoltés pour chaque"
+        },
+        {
+          "titre": "Budget de fonctionnement",
+          "id": "vmtl-budget",
+          "organisation": "Ville de Montréal",
+          "notes": "Ensemble de données contenant les budgets déposés chaque année pour la Ville de Montréal, incluant certaines informations concernant l'agglomération de Montréal. \r\n\r\nLes données présentées dans cet en"
+        },
+        {
+          "titre": "Kilométrage du budget d'exploitation du métro",
+          "id": "vmtl-stm-kilometrage-du-budget-d-exploitation-du-metro-de-la-stm",
+          "organisation": "Société de transport de Montréal",
+          "notes": "Ensemble de données décrivant le kilométrage calculé pour la préparation du budget d'exploitation du métro de la Société de transport de Montréal.\r\n\r\nSi vous avez des questions sur cet ensemble, veuil"
+        },
+        {
+          "titre": "Budget - Rosemont–La Petite-Patrie (Archive)",
+          "id": "vmtl-budget-rosemont-la-petite-patrie",
+          "organisation": "Ville de Montréal",
+          "notes": "On trouve ici les documents suivants :\r\n\r\n- Présentation du budget 2015 de l'arrondissement de Rosemont–La Petite-Patrie en format pdf.\r\n- Tableaux du budget de fonctionnement  et du Programme trienna"
+        },
+        {
+          "titre": "Niveaux d'intensification urbaine, seuils minimaux moyens de densité nette et affectation du sol (Plan d'urbanisme et de mobilité 2050)",
+          "id": "vmtl-niveaux-intensification-urbaine-densite-affectation-sol-pum-2050",
+          "organisation": "Ville de Montréal",
+          "notes": "####  &nbsp;\r\nCet ensemble de données contient les informations apparaissant aux cartes 2-10 – Niveaux d'intensification urbaine, 2-11 – Seuils minimaux moyens de densité nette, 5-1 – Affectations du "
+        },
+        {
+          "titre": "Prévisions hydrologiques des débits et niveaux de cours d’eau du Québec méridional",
+          "id": "previsions-hydrologiques",
+          "organisation": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs",
+          "notes": "Le ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs (MELCCFP) développe et exploite un système de prévision du niveau et du débit de certains cour"
+        },
+        {
+          "titre": "Cadre financier pluriannuel du gouvernement du Québec",
+          "id": "http-www-budget-finances-gouv-qc-ca-budget-en-chiffres",
+          "organisation": "Ministère des Finances du Québec",
+          "notes": "Ce jeu de données présente le cadre financier pluriannuel du gouvernement du Québec. Il est usuellement publié deux fois par année, soit lors du dépôt du budget du Québec et lors de celui du _Point su"
+        },
+        {
+          "titre": "Dépenses des élus - autorisées par le comité exécutif",
+          "id": "vmtl-depenses-des-elus-autorisees-par-le-comite-executif",
+          "organisation": "Ville de Montréal",
+          "notes": "Dépenses des élus-élues de la Ville de Montréal. "
+        }
+      ]
+    },
+    "dépenses": {
+      "total": 10,
+      "jeux": [
+        {
+          "titre": "Dépenses des directeurs",
+          "id": "depenses-des-directeurs-de-la-ville-de-gatineau",
+          "organisation": "Ville de Gatineau",
+          "notes": "Dépenses des directeurs"
+        },
+        {
+          "titre": "Dépenses des élus",
+          "id": "depenses-des-elus",
+          "organisation": "Ville de Laval",
+          "notes": "Dépenses des élus engagées dans le cadre de leur fonction et pour représenter la Ville"
+        },
+        {
+          "titre": "Budget de dépenses",
+          "id": "budget-de-depenses",
+          "organisation": "Secrétariat du Conseil du trésor",
+          "notes": "Présente des données budgétaires du [Budget de dépenses](https://www.tresor.gouv.qc.ca/budget-de-depenses/politiques-et-gestion-des-ressources-budgetaires/) déposé annuellement par le Conseil du tréso"
+        },
+        {
+          "titre": "Prévision des revenus et des dépenses par composante",
+          "id": "revenus-et-depenses-par-composante-automne-2021",
+          "organisation": "Ministère des Finances du Québec",
+          "notes": "Ce jeu de données inclut la prévision des revenus et des dépenses du gouvernement du Québec par composante. Il est usuellement publié deux fois par année, soit lors du dépôt du budget du Québec  et lo"
+        },
+        {
+          "titre": "Élection municipale 2013 - Dépenses électorales",
+          "id": "vgat_1392746024",
+          "organisation": "Ville de Gatineau",
+          "notes": "Élection municipale 2013 - Dépenses électorales"
+        },
+        {
+          "titre": "Dépenses des élus - autorisées par le comité exécutif",
+          "id": "vmtl-depenses-des-elus-autorisees-par-le-comite-executif",
+          "organisation": "Ville de Montréal",
+          "notes": "Dépenses des élus-élues de la Ville de Montréal. "
+        },
+        {
+          "titre": "Contour financier - Dépenses par programme et par région",
+          "id": "contour-financier-depenses-par-programme-et-par-region",
+          "organisation": "Ministère de la Santé et des services sociaux",
+          "notes": "Rapports statistiques périodiques"
+        },
+        {
+          "titre": "Contour financier - Dépenses par programme et par centre d'activités",
+          "id": "contour-financier-depenses-par-programme-et-par-cr",
+          "organisation": "Ministère de la Santé et des services sociaux",
+          "notes": "Rapports statistiques périodiques"
+        },
+        {
+          "titre": "Contour financier - Dépenses de services à domicile par programme et par région",
+          "id": "contour-financier-depenses-de-services-a-domicile-par-programme-et-par-region",
+          "organisation": "Ministère de la Santé et des services sociaux",
+          "notes": "Rapports statistiques périodiques"
+        },
+        {
+          "titre": "Contour financier - Dépenses de services à domicile par centre d'activités et par région",
+          "id": "contour-financier-depenses-de-services-a-domicile-par-centre-d-activites-et-par-region",
+          "organisation": "Ministère de la Santé et des services sociaux",
+          "notes": "Rapports statistiques périodiques"
+        }
+      ]
+    },
+    "environnement": {
+      "total": 10,
+      "jeux": [
+        {
+          "titre": "Signalements des événements nuisibles à l'environnement",
+          "id": "vmtl-signalements-evenements-nuisibles-environnement",
+          "organisation": "Ville de Montréal",
+          "notes": "Cet ensemble de données contient les signalements des événements nuisibles à l'environnement soumis au Service de l'environnement et de la transition écologique."
+        },
+        {
+          "titre": "Panneaux d’interprétation relatifs à l’environnement",
+          "id": "panneaux-d-interpretation-relatifs-a-l-environnement",
+          "organisation": "Ville de Laval",
+          "notes": "Liste et localisation des panneaux d’interprétation relatifs à l’environnement installés sur le territoire lavallois"
+        },
+        {
+          "titre": "Schéma d'aménagement et de développement - Environnement et milieux naturels",
+          "id": "vmtl-schema-environnement-milieux-naturels",
+          "organisation": "Ville de Montréal",
+          "notes": "Le schéma d'aménagement et de développement met de l'avant un cadre de référence visant à mieux connaître, protéger et mettre en valeur le patrimoine. Les données disponibles dans le présent ensemble "
+        },
+        {
+          "titre": "Carte de vigilance multirisque-avertissements et alertes d'Environnement et Changement climatique Canada",
+          "id": "carte-vigilance-multirisque-meteo-alerte-ec",
+          "organisation": "Ministère de la Sécurité intérieure",
+          "notes": "La carte de Vigilance multirisque est un produit développé par le ministère de la Sécurité publique (MSP) qui regroupe des avertissements et des signalements sur des phénomènes, d’origine naturelle po"
+        },
+        {
+          "titre": "Évaluation de la condition b) du paragraphe 2° du premier alinéa de l'article 269 de la Loi modifiant la Loi sur la qualité de l'environnement",
+          "id": "evaluation-de-la-condition-a-1-du-paragraphe-2-de-l-article-254-de-la-loi-modifiant-la-lqe",
+          "organisation": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs",
+          "notes": "Cette thématique présente les résultats d’une analyse de l’occupation du territoire réalisée pour vérifier le respect de la condition de soustraction b) applicable aux travaux d’installation ou de pro"
+        },
+        {
+          "titre": "Publications sur la qualité de l'air (archives)",
+          "id": "publications-qualite-de-l-air-archives",
+          "organisation": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs",
+          "notes": "Publications sur la qualité de l'air ambiant au Québec, produites à partir des données du [Réseau de surveillance de la qualité de l'air du Québec (RSQAQ)](https://www.environnement.gouv.qc.ca/air/res"
+        },
+        {
+          "titre": "RSQAQ - Données horaires de l'indice de la qualité de l'air",
+          "id": "rsqaq-donnees-horaires-indice-qualite-air",
+          "organisation": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs",
+          "notes": "Ce jeu de données contient les résultats horaires validés de [l'indice de la qualité de l'air (IQA)](https://www.iqa.environnement.gouv.qc.ca/contenu/index.asp) et de ses sous-indices pour chaque stat"
+        },
+        {
+          "titre": "RSQAQ - Indice de la qualité de l'air horaire (temps réel)",
+          "id": "rsqaq-indice-de-la-qualite-de-l-air",
+          "organisation": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs",
+          "notes": "Résultats de la dernière heure disponible, en temps réel, de [l'indice de la qualité de l'air (IQA)](https://www.iqa.environnement.gouv.qc.ca/contenu/index.asp) pour les stations du [Réseau de surveil"
+        },
+        {
+          "titre": "Transport collectif",
+          "id": "transport-collectif",
+          "organisation": "Ville de Rimouski",
+          "notes": "Localisation des arrêts de transport collectif de la Ville de Rimouski (Citébus et Taxibus) ainsi que les circuits de Citébus."
+        },
+        {
+          "titre": "Transport collectif_Avant20221219",
+          "id": "transport-collectif_avant20221219",
+          "organisation": "Ville de Rimouski",
+          "notes": "Localisation des arrêts de transport collectif de la Ville de Rimouski (Citébus et Taxibus) ainsi que les circuits de Citébus."
+        }
+      ]
+    }
+  }
+}
