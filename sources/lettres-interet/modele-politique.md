@@ -1,4 +1,4 @@
-# Modèle de courriel — Sollicitation politique (rencontre exploratoire)
+# Modèle de courriel — Sollicitation politique
 
 ## Objet
 Rencontre exploratoire — PMDQ, Sherbrooke
@@ -7,32 +7,24 @@ Rencontre exploratoire — PMDQ, Sherbrooke
 
 Bonjour [Nom],
 
-Je me présente, [Votre nom], responsable du projet **PMDQ — Parti de la Mouvance Démocratique du Québec**, basé à Sherbrooke.
+Je me présente, [Votre nom], responsable du projet PMDQ — Parti de la Mouvance Démocratique du Québec, basé à Sherbrooke.
 
-Nous construisons un projet politique structuré autour de trois principes : **chiffrer avant de promettre, publier chaque correction, refuser tout financement corporatif ou syndical**. Notre plateforme est publique et entièrement vérifiable : https://berryberryship-debug.github.io/PMDQ/
+Notre projet repose sur trois principes : chiffrer avant de promettre, publier chaque correction, refuser tout financement corporatif ou syndical. Notre plateforme est publique : https://berryberryship-debug.github.io/PMDQ/
 
-Votre parcours et votre expertise en [domaine] nous ont été signalés comme particulièrement pertinents. Nous sollicitons une **rencontre exploratoire de 30 minutes** (en personne ou en visioconférence) pour :
-
-- Vous présenter brièvement notre démarche.
-- Recueillir votre regard critique sur notre approche.
-- Identifier d'éventuelles pistes de collaboration, **sans aucun engagement** de votre part.
+Votre parcours en [domaine] nous a été signalé comme pertinent. Nous sollicitons une rencontre exploratoire de 30 minutes pour vous présenter notre démarche, recueillir votre regard critique, et identifier d'éventuelles pistes — sans engagement de votre part.
 
 Aucun soutien public ni mention de votre nom ne sera fait sans votre accord écrit préalable.
 
-Seriez-vous disponible pour un échange dans les prochaines semaines ?
-
 Cordialement,
 [Votre nom]
-PMDQ — Parti de la Mouvance Démocratique du Québec
+PMDQ — Sherbrooke
 [Coordonnées]
 
 ---
 
 ## Notes d'utilisation
-
-1. **Personnaliser** : nom exact, parcours précis, raison spécifique du contact.
-2. **Adapter** le niveau de sollicitation (écoute, avis, appui discret, appui public, adhésion).
-3. **Ne jamais mentionner** de partenariat existant qui n'existe pas.
-4. **Ne pas joindre** de document lourd — un lien vers la plateforme suffit.
-5. **Conserver une trace** de chaque envoi dans `sources/lettres-interet/suivi.csv`.
-6. **Respecter le silence** : si pas de réponse après 10 jours, une seule relance polie. Pas plus.
+1. Personnaliser le nom et la raison du contact.
+2. Adapter le niveau : écoute, avis, appui discret, appui public, adhésion.
+3. Ne pas mentionner de partenariat qui n'existe pas.
+4. Tracer chaque envoi dans suivi.csv.
+5. Une seule relance polie après 10 jours de silence.
