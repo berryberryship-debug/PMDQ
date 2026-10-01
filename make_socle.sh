@@ -25,10 +25,10 @@ else
 fi
 echo
 
-echo "echo "=== 0b. Collecte Donnees Quebec ==="
+echo "=== 0b. Collecte Donnees Quebec ==="
 python3 moteur_donnees_quebec.py 2>&1 | tail -3
 
-=== 0. Collecte des references economiques ==="
+echo "=== 0. Collecte des references economiques ==="
 python3 collecteur.py > /dev/null 2>&1
 code_collecte=$?
 if [ "$code_collecte" = "0" ]; then
