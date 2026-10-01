@@ -1,0 +1,200 @@
+{
+  "source_principale": "Données Québec (API CKAN) + DGEQ (fichiers CSV)",
+  "date_collecte": "2026-10-01",
+  "note": "Le DGEQ ne publie pas d'API REST. Voir 'sources_reference' pour les accès directs.",
+  "mots_cles": {
+    "élections": {
+      "total": 10,
+      "jeux": [
+        {
+          "titre": "Élections municipales - Postes électifs",
+          "id": "vmtl-postes-electifs",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Élections municipales - Sections de vote",
+          "id": "vmtl-sections-de-vote",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Limites des sections de vote des dernières élections municipales",
+          "id": "limite-section-de-vote",
+          "organisation": "Ville de Laval"
+        },
+        {
+          "titre": "Atlas des élections au Québec",
+          "id": "atlas-des-elections-au-quebec",
+          "organisation": "Fondation Lionel-Groulx"
+        },
+        {
+          "titre": "Élections municipales - Candidatures",
+          "id": "vmtl-candidatures",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Élections municipales - Bureaux de vote (archives)",
+          "id": "vmtl-bureaux-vote",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Élections municipales - Résultats détaillés",
+          "id": "vmtl-resultats-detailles",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Élections municipales - Résultats sommaires",
+          "id": "vmtl-resultats-sommaires",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Élections municipales - Bassins électoraux",
+          "id": "vmtl-bassins-electoraux",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Résultats des élections municipales générales",
+          "id": "resultats-des-elections-municipales-generales",
+          "organisation": "Ministère des Affaires municipales et de l'Habitation"
+        }
+      ]
+    },
+    "financement politique": {
+      "total": 10,
+      "jeux": [
+        {
+          "titre": "Nomination par les instances politiques centrales",
+          "id": "vmtl-nomination-par-les-instance-politiques-centrales",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Calendrier - Instances politiques - Ville centrale",
+          "id": "vmtl-calendrier-instances-politiques-ville-centrale",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Statistiques fiscales des sociétés",
+          "id": "statistiques-fiscales-des-societes-sommaire-des-statistiques-fiscales-des-societes",
+          "organisation": "Ministère des Finances du Québec"
+        },
+        {
+          "titre": "Députées et députés en fonction",
+          "id": "deputees-et-deputes-en-fonction",
+          "organisation": "Assemblée nationale du Québec"
+        },
+        {
+          "titre": "Solutions en logiciels libres",
+          "id": "vmtl-solutions-en-logiciels-libres",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Élections municipales partielles - Résultats détaillés",
+          "id": "vmtl-elections-municipales-partielles-resultats-detailles",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Commissions permanentes du conseil - membres",
+          "id": "vmtl-commissions-permanentes-du-conseil-membres",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Logiciels libres entretenus par la Ville de Montréal",
+          "id": "vmtl-logiciels-libres-entretenus-par-la-ville-de-montreal",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Budget de dépenses",
+          "id": "budget-de-depenses",
+          "organisation": "Secrétariat du Conseil du trésor"
+        },
+        {
+          "titre": "Remboursement des allocations aux partis autorisés (archives)",
+          "id": "vmtl-allocation-aux-partis-autorises",
+          "organisation": "Ville de Montréal"
+        }
+      ]
+    },
+    "partis politiques": {
+      "total": 10,
+      "jeux": [
+        {
+          "titre": "Remboursement des allocations aux partis autorisés (archives)",
+          "id": "vmtl-allocation-aux-partis-autorises",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Évaluation de la condition b) du paragraphe 2° du premier alinéa de l'article 269 de la Loi modifiant la Loi sur la qualité de l'environnement",
+          "id": "evaluation-de-la-condition-a-1-du-paragraphe-2-de-l-article-254-de-la-loi-modifiant-la-lqe",
+          "organisation": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs"
+        },
+        {
+          "titre": "Déclaration de l’employeur en matière d’équité salariale (DEMES)",
+          "id": "declaration-de-l-employeur-en-matiere-d-equite-salariale-demes",
+          "organisation": "Commission des normes, de l’équité, de la santé et de la sécurité du travail"
+        },
+        {
+          "titre": "Élections municipales partielles - Résultats détaillés",
+          "id": "vmtl-elections-municipales-partielles-resultats-detailles",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Districts électoraux",
+          "id": "vque_43",
+          "organisation": "Ville de Québec"
+        },
+        {
+          "titre": "Commissions permanentes du conseil - membres",
+          "id": "vmtl-commissions-permanentes-du-conseil-membres",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Inventaire de données",
+          "id": "vmtl-inventaire-donnees-ouvertes",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Liste des fournisseurs",
+          "id": "vmtl-liste-des-fournisseurs",
+          "organisation": "Ville de Montréal"
+        },
+        {
+          "titre": "Zones inondées au-delà de la cartographie établie",
+          "id": "zones-inondees-au-dela-de-la-cartographie-etablie",
+          "organisation": "Ministère des Ressources naturelles et des Forêts"
+        },
+        {
+          "titre": "Remboursement des frais de recherches et de soutien",
+          "id": "vmtl-remboursement-des-frais-de-recherches-et-de-soutien",
+          "organisation": "Ville de Montréal"
+        }
+      ]
+    },
+    "dépenses électorales": {
+      "total": 1,
+      "jeux": [
+        {
+          "titre": "Élection municipale 2013 - Dépenses électorales",
+          "id": "vgat_1392746024",
+          "organisation": "Ville de Gatineau"
+        }
+      ]
+    }
+  },
+  "sources_reference": [
+    {
+      "nom": "DGEQ — Données ouvertes",
+      "url": "https://www.electionsquebec.qc.ca/donnees-ouvertes/"
+    },
+    {
+      "nom": "DGEQ — Financement politique",
+      "url": "https://www.electionsquebec.qc.ca/financement-politique/"
+    },
+    {
+      "nom": "DGEQ — Résultats électoraux",
+      "url": "https://www.electionsquebec.qc.ca/resultats/"
+    },
+    {
+      "nom": "Élections Canada — Données ouvertes",
+      "url": "https://www.elections.ca/content.aspx?section=res&dir=rep&document=index&lang=f"
+    }
+  ]
+}
