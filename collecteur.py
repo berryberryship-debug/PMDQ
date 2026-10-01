@@ -362,7 +362,6 @@ def collecter(verbose=True):
             "date_observation": val["date_observation"],
             "source": info["source"],
             "unite": info["unite"],
-            "recupere_le": str(date.today()),
         }
         resultats.append({
             "cle": cle, "nom": info["nom"], "statut": "OK",
@@ -398,7 +397,6 @@ def collecter(verbose=True):
             "date_observation": val["date_observation"],
             "source": info["source"],
             "unite": info["unite"],
-            "recupere_le": str(date.today()),
         }
         resultats.append({
             "cle": cle, "nom": info["nom"], "statut": "OK",
@@ -466,7 +464,6 @@ def collecter(verbose=True):
             "date_observation": annee,
             "source": info["source"],
             "unite": info["unite"],
-            "recupere_le": str(date.today()),
         }
         resultats.append({
             "cle": cle, "nom": info["nom"], "statut": "OK",
@@ -559,7 +556,6 @@ def collecter(verbose=True):
             "date_observation": annee,
             "source": info["source"],
             "unite": info["unite"],
-            "recupere_le": str(date.today()),
         }
         resultats.append({
             "cle": cle, "nom": info["nom"], "statut": "OK",
@@ -600,7 +596,6 @@ def collecter(verbose=True):
             "date_observation": agg["annee"],
             "source": info["source"],
             "unite": info["unite"],
-            "recupere_le": str(date.today()),
         }
         resultats.append({
             "cle": cle, "nom": info["nom"], "statut": "OK",
@@ -628,7 +623,6 @@ def collecter(verbose=True):
                     "date_observation": pts[-1]["refPer"],
                     "source": "Statistique Canada (IPC 12 mois)",
                     "unite": "%",
-                    "recupere_le": str(date.today()),
                 }
                 resultats.append({
                     "cle": "taux_inflation_annuel",
@@ -644,7 +638,6 @@ def collecter(verbose=True):
                 print(f"  ECHEC  Taux inflation annuel : {len(pts)} points (13 requis)")
 
     cache["_meta"] = {
-        "derniere_mise_a_jour": str(date.today()),
         "nb_sources": len(SOURCES_VALET) + len(SOURCES_STATCAN) + len(SOURCES_CKAN) + len(SOURCES_CKAN_PIVOT) + len(SOURCES_CKAN_AGREGAT),
     }
     sauver_cache(cache)
