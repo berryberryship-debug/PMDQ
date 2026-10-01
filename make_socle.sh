@@ -14,6 +14,17 @@ for arg in "$@"; do
     esac
 done
 
+echo ""
+echo "=== 0a. Rafraichissement du cache marche (BoC + StatCan) ==="
+PMDQ_DATA="$HOME/pmdq_data"
+if [ -d "$PMDQ_DATA" ]; then
+    (cd "$PMDQ_DATA" && python3 boc_extractor.py > /dev/null 2>&1) && echo "  OK  BoC" || echo "  WARN BoC (cache inchange)"
+    (cd "$PMDQ_DATA" && python3 statcan_extractor.py > /dev/null 2>&1) && echo "  OK  StatCan" || echo "  WARN StatCan (cache inchange)"
+else
+    echo "  WARN $PMDQ_DATA absent — etape ignoree"
+fi
+echo
+
 echo "=== 0. Collecte des references economiques ==="
 python3 collecteur.py > /dev/null 2>&1
 code_collecte=$?
