@@ -337,17 +337,20 @@ p.note-bas-de-page {
 
 
 /* Bouton vedette — Programme 2030 */
-.nav .bouton-vedette {
-    background: linear-gradient(135deg, #2980b9 0%, #1a3555 100%);
-    color: #fff !important;
-    font-weight: 700;
-    border: 2px solid #f39c12;
-    box-shadow: 0 2px 8px rgba(243, 156, 18, 0.35);
-    padding: 0.4rem 0.9rem;
-    border-radius: 6px;
+
+
+/* Bouton vedette — Programme 2030 (priorité maximale) */
+.nav > a.bouton-vedette,
+.nav a.bouton-vedette {
+    background: linear-gradient(135deg, #2980b9 0%, #1a3555 100%) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    border: 2px solid #f39c12 !important;
+    box-shadow: 0 2px 10px rgba(243, 156, 18, 0.5) !important;
+    padding: 0.45rem 1rem !important;
+    border-radius: 6px !important;
 }
-.nav .bouton-vedette:hover {
-    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
-    transform: translateY(-1px);
-    transition: all 0.2s ease;
+.nav > a.bouton-vedette:hover,
+.nav a.bouton-vedette:hover {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%) !important;
 }
