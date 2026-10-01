@@ -10,7 +10,8 @@
       "statut": "[C]",
       "cout_m": "1200",
       "base_legale": "Compétence Québec (santé)",
-      "moteur": "moteur_fiscal"
+      "moteur": "moteur_fiscal",
+      "prioritaire": true
     },
     {
       "id": "PROP-002",
@@ -19,7 +20,8 @@
       "statut": "[C]",
       "cout_m": "450",
       "base_legale": "Loi sur l'instruction publique",
-      "moteur": "moteur_fiscal"
+      "moteur": "moteur_fiscal",
+      "prioritaire": false
     },
     {
       "id": "PROP-003",
@@ -28,7 +30,8 @@
       "statut": "[C]",
       "cout_m": "2500",
       "base_legale": "Compétence Québec (habitation)",
-      "moteur": "moteur_fiscal"
+      "moteur": "moteur_fiscal",
+      "prioritaire": true
     },
     {
       "id": "PROP-004",
@@ -37,7 +40,8 @@
       "statut": "[C]",
       "cout_m": "800",
       "base_legale": "Loi sur les impôts",
-      "moteur": "moteur_fiscal"
+      "moteur": "moteur_fiscal",
+      "prioritaire": false
     },
     {
       "id": "PROP-005",
@@ -46,7 +50,8 @@
       "statut": "[C]",
       "cout_m": "600",
       "base_legale": "Loi sur les impôts",
-      "moteur": "moteur_fiscal"
+      "moteur": "moteur_fiscal",
+      "prioritaire": false
     },
     {
       "id": "PROP-006",
@@ -55,7 +60,8 @@
       "statut": "[C]",
       "cout_m": "3500",
       "base_legale": "Compétence Québec (environnement)",
-      "moteur": "moteur_etancheite"
+      "moteur": "moteur_etancheite",
+      "prioritaire": false
     },
     {
       "id": "PROP-007",
@@ -64,7 +70,8 @@
       "statut": "[T]",
       "cout_m": "1200",
       "base_legale": "Loi sur la protection du territoire agricole",
-      "moteur": "moteur_fiscal"
+      "moteur": "moteur_fiscal",
+      "prioritaire": false
     },
     {
       "id": "PROP-008",
@@ -73,7 +80,8 @@
       "statut": "[C]",
       "cout_m": "4000",
       "base_legale": "Compétence Québec (infrastructures)",
-      "moteur": "moteur_etancheite"
+      "moteur": "moteur_etancheite",
+      "prioritaire": false
     },
     {
       "id": "PROP-009",
@@ -82,7 +90,8 @@
       "statut": "[C]",
       "cout_m": "900",
       "base_legale": "Compétence Québec (immigration, entente fédérale)",
-      "moteur": "moteur_fiscal"
+      "moteur": "moteur_fiscal",
+      "prioritaire": false
     },
     {
       "id": "PROP-010",
@@ -91,7 +100,8 @@
       "statut": "[C]",
       "cout_m": "600",
       "base_legale": "Loi sur les cégeps",
-      "moteur": "moteur_fiscal"
+      "moteur": "moteur_fiscal",
+      "prioritaire": false
     },
     {
       "id": "PROP-011",
@@ -100,7 +110,8 @@
       "statut": "[C]",
       "cout_m": "150",
       "base_legale": "Loi sur l'instruction publique",
-      "moteur": "—"
+      "moteur": "—",
+      "prioritaire": false
     },
     {
       "id": "PROP-012",
@@ -109,7 +120,8 @@
       "statut": "[É]",
       "cout_m": "800",
       "base_legale": "Compétence Québec (affaires municipales)",
-      "moteur": "moteur_fiscal"
+      "moteur": "moteur_fiscal",
+      "prioritaire": false
     },
     {
       "id": "PROP-013",
@@ -118,7 +130,8 @@
       "statut": "[C]",
       "cout_m": "500",
       "base_legale": "Compétence Québec (cybersécurité)",
-      "moteur": "moteur_etancheite"
+      "moteur": "moteur_etancheite",
+      "prioritaire": false
     },
     {
       "id": "PROP-014",
@@ -127,7 +140,8 @@
       "statut": "[K]",
       "cout_m": "4500",
       "base_legale": "Compétence Québec (énergie, entente fédérale)",
-      "moteur": "moteur_domar"
+      "moteur": "moteur_domar",
+      "prioritaire": true
     },
     {
       "id": "PROP-015",
@@ -136,7 +150,8 @@
       "statut": "[C]",
       "cout_m": "1800",
       "base_legale": "Compétence Québec (sécurité publique)",
-      "moteur": "moteur_fiscal"
+      "moteur": "moteur_fiscal",
+      "prioritaire": false
     },
     {
       "id": "PROP-016",
@@ -145,7 +160,8 @@
       "statut": "[C]",
       "cout_m": "2200",
       "base_legale": "Compétence Québec (santé, services sociaux)",
-      "moteur": "moteur_fiscal"
+      "moteur": "moteur_fiscal",
+      "prioritaire": false
     },
     {
       "id": "PROP-017",
@@ -154,7 +170,8 @@
       "statut": "[C]",
       "cout_m": "700",
       "base_legale": "Compétence Québec (culture)",
-      "moteur": "moteur_fiscal"
+      "moteur": "moteur_fiscal",
+      "prioritaire": false
     },
     {
       "id": "PROP-018",
@@ -163,7 +180,8 @@
       "statut": "[K]",
       "cout_m": "50",
       "base_legale": "Compétence partagée (fédéralisme)",
-      "moteur": "—"
+      "moteur": "—",
+      "prioritaire": false
     },
     {
       "id": "PROP-019",
@@ -172,7 +190,8 @@
       "statut": "[C]",
       "cout_m": "600",
       "base_legale": "Compétence Québec (ressources naturelles)",
-      "moteur": "moteur_domar"
+      "moteur": "moteur_domar",
+      "prioritaire": false
     },
     {
       "id": "PROP-020",
@@ -181,7 +200,8 @@
       "statut": "[C]",
       "cout_m": "1500",
       "base_legale": "Compétence Québec (économie)",
-      "moteur": "moteur_domar"
+      "moteur": "moteur_domar",
+      "prioritaire": true
     },
     {
       "id": "PROP-021",
@@ -190,7 +210,8 @@
       "statut": "[C]",
       "cout_m": "450",
       "base_legale": "Compétence Québec (économie)",
-      "moteur": "moteur_fiscal"
+      "moteur": "moteur_fiscal",
+      "prioritaire": false
     },
     {
       "id": "PROP-022",
@@ -199,7 +220,8 @@
       "statut": "[É]",
       "cout_m": "800",
       "base_legale": "Compétence Québec (numérique)",
-      "moteur": "moteur_etancheite"
+      "moteur": "moteur_etancheite",
+      "prioritaire": false
     },
     {
       "id": "PROP-023",
@@ -208,7 +230,8 @@
       "statut": "[É]",
       "cout_m": "120",
       "base_legale": "Compétence Québec (environnement)",
-      "moteur": "moteur_etancheite"
+      "moteur": "moteur_etancheite",
+      "prioritaire": true
     }
   ]
 }

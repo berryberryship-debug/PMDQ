@@ -10,10 +10,11 @@ couleurs = {"[C]": "#27ae60", "[K]": "#f39c12", "[É]": "#2980b9",
 lignes = ""
 for p in data["propositions"]:
     c = couleurs.get(p["statut"], "#555")
+    marqueur = ' <span style="color:#f39c12;font-weight:bold;">★</span>' if p.get("prioritaire") else ""
     lignes += (
         f'<tr>'
         f'<td><code>{p["id"]}</code></td>'
-        f'<td>{p["titre"]}</td>'
+        f'<td>{p["titre"]}{marqueur}</td>'
         f'<td>Eng. {p["engagement"]}</td>'
         f'<td><span style="color:{c};font-weight:bold;">{p["statut"]}</span></td>'
         f'<td>{p["cout_m"]} M$</td>'
