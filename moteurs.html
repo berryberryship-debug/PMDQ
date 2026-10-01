@@ -102,7 +102,7 @@
         <tr>
           <td><strong>Audit robustesse</strong></td>
           <td>Python</td>
-          <td>Vérifie que les 73 pages répondent HTTP 200.</td>
+          <td>Vérifie que les 84 pages répondent HTTP 200.</td>
           <td>CSV de verdicts</td>
         </tr>
         <tr>
@@ -160,12 +160,49 @@
             <td>sources/dgeq_verdicts.json</td>
         </tr>
 <tr>
-  <td><strong>Audit de publication</strong></td>
-  <td>Python</td>
-  <td>Détecte tactiques Cialdini, blocages traçabilité, alertes DGEQ.</td>
-</tr>
+            <td><strong>Audit de publication</strong></td>
+            <td>Python</td>
+            <td>Détecte tactiques Cialdini, blocages traçabilité, alertes DGEQ.</td>
+            <td>Rapport d'audit</td>
+        </tr>
 
-      </tbody>
+            <tr>
+        <td><strong>Vérification des variables</strong></td>
+        <td>Python</td>
+        <td>Valide que les 8 variables sensibles sont à jour (BoC, StatCan)</td>
+        <td>sources/etat_variables.json</td>
+      </tr>
+      <tr>
+        <td><strong>Cohérence interne</strong></td>
+        <td>Python</td>
+        <td>Détecte les incohérences arithmétiques entre les livres</td>
+        <td>Rapport d'audit</td>
+      </tr>
+      <tr>
+        <td><strong>Écarts hypothèse/marché</strong></td>
+        <td>Python</td>
+        <td>Compare les hypothèses du dossier aux données de marché réelles</td>
+        <td>Rapport d'écarts</td>
+      </tr>
+      <tr>
+        <td><strong>Nomenclature</strong></td>
+        <td>Python</td>
+        <td>Vérifie l'uniformité des noms et marqueurs [C]/[K]/[É]/[T]/[P]</td>
+        <td>Rapport de conformité</td>
+      </tr>
+      <tr>
+        <td><strong>Données Québec (CKAN)</strong></td>
+        <td>Python</td>
+        <td>Extrait 7 mots-clés via l'API officielle Données Québec</td>
+        <td>sources/donnees_quebec.json</td>
+      </tr>
+      <tr>
+        <td><strong>Lobbyisme</strong></td>
+        <td>Python</td>
+        <td>Documente les sources du Commissaire au lobbyisme</td>
+        <td>sources/donnees_lobbyisme.json</td>
+      </tr>
+</tbody>
     </table>
 
     <h2>1. Validation Ratio D</h2>
@@ -335,7 +372,13 @@ Réserve 15   : alimentée à 100 % par les revenus Co</code></pre>
 <h2>10. Monte-Carlo — Analyse des dépassements</h2>
 <p>Simule 10 000 scénarios par problème de dépassement de coût. Distingue automatiquement les <strong>causes superficielles</strong> (taxables) des <strong>causes profondes</strong> (exonérées).</p>
 <table class="tableau-simulation">
-<thead><tr><th>Type</th><th>Cause</th><th>Traitement</th></tr></thead>
+<thead><tr><th>Type</th><th>Cause</th><th>Traitement</th></tr>
+<tr><td><code>moteur_variables.py</code></td><td>Vérification des variables sensibles</td></tr>
+<tr><td><code>moteur_coherence.py</code></td><td>Cohérence interne des chiffres</td></tr>
+<tr><td><code>moteur_ecarts.py</code></td><td>Détection des écarts hypothèse/marché</td></tr>
+<tr><td><code>moteur_nomenclature.py</code></td><td>Uniformité de la nomenclature</td></tr>
+<tr><td><code>moteur_donnees_quebec.py</code></td><td>Extraction API CKAN Données Québec</td></tr>
+<tr><td><code>moteur_lobbyisme.py</code></td><td>Extraction Commissaire au lobbyisme</td></tr></thead>
 <tbody>
 <tr><td><strong>Superficielle</strong></td><td>Température, transport, prix, erreur de planification</td><td>Malus 50 % appliqué</td></tr>
 <tr><td><strong>Profonde</strong></td><td>Tremblement de terre, guerre, pandémie, découverte archéologique</td><td>Aucune taxation</td></tr>
