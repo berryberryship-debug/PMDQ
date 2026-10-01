@@ -34,6 +34,9 @@ python3 generer_page_dq.py 2>&1 | tail -1
 echo "=== 0d. Collecte DGEQ ==="
 python3 moteur_dgeq.py 2>&1 | tail -3
 
+echo "=== 0d-bis. Extraction DGEQ (Donnees Quebec) ==="
+python3 extracteur_dgeq_ckan.py 2>&1 | tail -3
+
 echo "=== 0e. Regeneration propositions.html ==="
 python3 generer_page_prop.py 2>&1 | tail -1
 
