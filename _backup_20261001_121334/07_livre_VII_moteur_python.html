@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Livre VII — Python — PMDQ v2.7.22 + Livre X</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.22 + Livre X<span>Dossier Maître — Sherbrooke, Québec</span></div><nav class="nav">
+<a href="index.html">Accueil</a>
+<a href="changelog.html">Changelog</a>
+<a href="livres.html">Livres</a>
+<a href="lois.html">Lois</a><a href="ideologie.html">Idéologie</a>
+<a href="programme-2030.html">Programme 2030</a>
+<details class="menu-groupe">
+<summary>Dossiers ▾</summary>
+<div class="sous-menu">
+<a href="loi-ilots-chaleur.html">Îlots de chaleur</a>
+<a href="plantation-arbres.html">Plantation</a>
+<a href="narp-gold-card.html">NARP / Gold Card</a>
+<a href="obsolescence-programmee.html">Obsolescence</a>
+<a href="importations-grade12.html">Importations</a>
+<a href="indice-reparabilite.html">IRQ</a>
+<a href="rapport-frontalier.html">Rapport frontalier</a>
+<a href="coalition-pmdq.html">Coalition</a>
+<a href="mobilite-urbaine.html">Mobilité</a>
+<a href="pnspsts.html">PNSPTS</a>
+<a href="module-eco-circ.html">ECO-CIRC</a>
+</div>
+</details>
+<details class="menu-groupe">
+<summary>Politique ▾</summary>
+<div class="sous-menu">
+<a href="pourquoi-maintenant.html">Pourquoi maintenant</a>
+<a href="programme-2030.html">Programme 2030</a>
+<a href="comparaison-partis.html">Comparaison</a>
+<a href="classe-moyenne.html">Classe moyenne</a>
+<a href="technopolitique.html">Technopolitique</a>
+<a href="reforme-education-impact.html">Éducation</a>
+<a href="depassements-couts.html">Dépassements</a>
+<a href="immigration-cohesion.html">Immigration</a>
+<a href="strategie-alliances.html">Alliances</a>
+<a href="campagne-financement.html">Campagne</a>
+</div>
+</details>
+<a href="tout.html">Tout</a>
+<a href="moteurs.html">Moteurs</a>
+<a href="livre-blanc.html">Livre blanc</a>
+<a href="methodologie.html">Méthodologie</a>
+<a href="propriete-intellectuelle.html">PI</a>
+</nav></div></header>
+<main>
+<h1>Livre VII — Moteur Python</h1>
+<p class="lede">Modèle Pydantic strict, tests anti-entropiques, API de validation.</p>
+
+<h2>ModeleRatioD — Pydantic strict</h2>
+<pre><code>from pydantic import BaseModel, ConfigDict, Field, field_validator
+from math import isfinite
+from typing import Literal
+
+
+class ModeleRatioD(BaseModel):
+    model_config = ConfigDict(
+        strict=True, extra="forbid",
+        allow_inf_nan=False, str_strip_whitespace=True
+    )
+    identifiant_projet: str = Field(..., min_length=1, max_length=100)
+    axe_rattachement: str = Field(..., min_length=1, max_length=80)
+    valeur_creee_nette: float = Field(..., gt=0)
+    cout_cycle_vie: float = Field(..., gt=0)
+    cout_risque: float = Field(..., ge=0)
+    taux_actualisation: float = Field(..., ge=0.0, le=0.20)
+    horizon_annees: int = Field(..., gt=0, le=100)
+    categorie: Literal["M", "C", "P", "T"]
+
+    @field_validator("valeur_creee_nette", "cout_cycle_vie",
+                     "cout_risque", "taux_actualisation")
+    @classmethod
+    def verifier_valeur_finie(cls, valeur: float) -> float:
+        if not isfinite(valeur):
+            raise ValueError("NaN et infinis interdits.")
+        return valeur
+
+    @property
+    def cout_total(self) -> float:
+        return self.cout_cycle_vie + self.cout_risque
+
+    def evaluer_ratio(self) -> float:
+        return self.valeur_creee_nette / self.cout_total
+
+    def statut(self) -> Literal["CONFORME", "REJETE"]:
+        return "CONFORME" if self.evaluer_ratio() > 1.30 else "REJETE"</code></pre>
+
+<h2>Les 7 mécanismes de protection anti-entropique</h2>
+<table><thead><tr><th>Mécanisme</th><th>Effet</th></tr></thead><tbody>
+<tr><td><code>strict=True</code></td><td>Interdit la coercition de type (str → float)</td></tr>
+<tr><td><code>extra="forbid"</code></td><td>Rejette tout champ non déclaré</td></tr>
+<tr><td><code>allow_inf_nan=False</code></td><td>Bloque NaN et ±∞ dès la construction</td></tr>
+<tr><td><code>isfinite(valeur)</code></td><td>Validateur explicite redondant (défense en profondeur)</td></tr>
+<tr><td><code>Field(gt=...)</code> / <code>Field(ge=...)</code></td><td>Bornes numériques strictes</td></tr>
+<tr><td><code>Literal["M","C","P","T"]</code></td><td>Catégorisation épistémique verrouillée</td></tr>
+<tr><td><code>min_length</code> / <code>max_length</code></td><td>Bornes textuelles</td></tr>
+</tbody></table>
+
+<h2>Tests anti-entropiques</h2>
+<table><thead><tr><th>Test</th><th>Entrée</th><th>Résultat</th></tr></thead><tbody>
+<tr><td>Injection NaN</td><td><code>float("nan")</code></td><td><span class="badge green">Rejeté ✔</span></td></tr>
+<tr><td>Injection infini</td><td><code>float("inf")</code></td><td><span class="badge green">Rejeté ✔</span></td></tr>
+<tr><td>Champ non déclaré</td><td><code>champ_inconnu="valeur"</code></td><td><span class="badge green">Rejeté ✔</span></td></tr>
+<tr><td>Coercition type</td><td><code>"100.0"</code> (str au lieu de float)</td><td><span class="badge green">Rejeté ✔</span></td></tr>
+<tr><td>Catégorie invalide</td><td><code>"X"</code></td><td><span class="badge green">Rejeté ✔</span></td></tr>
+</tbody></table>
+
+<div class="alert success"><h4>Taux de réussite : 100 %</h4><p>5 tests sur 5 passent (audit Volet 15 — niveau N3 exemplaire).</p></div>
+
+<h2>Instanciation de référence — RESEAU-NARP-001</h2>
+<pre><code>projet_narp = ModeleRatioD(
+    identifiant_projet="RESEAU-NARP-001",
+    axe_rattachement="Santé",
+    valeur_creee_nette=1_850_000_000.0,   # 1,850 G$
+    cout_cycle_vie=980_000_000.0,          # 0,980 G$
+    cout_risque=180_000_000.0,             # 0,180 G$
+    taux_actualisation=0.045,              # 4,5 %
+    horizon_annees=10,
+    categorie="T",
+)
+
+# Calcul :
+#   cout_total = 0,980e9 + 0,180e9 = 1,160e9
+#   ratio      = 1,850e9 / 1,160e9 = 1,5948275862...
+#   arrondi    = 1,5948
+#   statut     = "CONFORME" (1,5948 > 1,30)</code></pre>
+
+<h2>Instanciation du projet REJETÉ — COMM-AUTOG-013</h2>
+<pre><code>projet_comm = ModeleRatioD(
+    identifiant_projet="COMM-AUTOG-013",
+    axe_rattachement="Justice",
+    valeur_creee_nette=190_000_000.0,      # 0,190 G$
+    cout_cycle_vie=130_000_000.0,          # 0,130 G$
+    cout_risque=20_000_000.0,              # 0,020 G$
+    taux_actualisation=0.040,              # 4,0 %
+    horizon_annees=8,
+    categorie="P",
+)
+
+# Calcul :
+#   cout_total = 0,130e9 + 0,020e9 = 0,150e9
+#   ratio      = 0,190e9 / 0,150e9 = 1,2666666667...
+#   arrondi    = 1,2667
+#   statut     = "REJETE" (1,2667 ≤ 1,30)</code></pre>
+
+<h2>API de validation (spécification)</h2>
+<table><thead><tr><th>Endpoint</th><th>Méthode</th><th>Entrée</th><th>Sortie</th></tr></thead><tbody>
+<tr><td><code>/api/v1/projets</code></td><td>POST</td><td>JSON conforme</td><td>Ratio D + statut</td></tr>
+<tr><td><code>/api/v1/projets/{id}</code></td><td>GET</td><td>Identifiant</td><td>Fiche complète</td></tr>
+<tr><td><code>/api/v1/portefeuille</code></td><td>GET</td><td>—</td><td>17 projets + stats</td></tr>
+<tr><td><code>/api/v1/audit/tests</code></td><td>GET</td><td>—</td><td>Rapport tests anti-NaN/∞</td></tr>
+</tbody></table>
+
+<h2>Contraintes de l'API</h2>
+<ul>
+<li>Content-Type : application/json</li>
+<li>Erreur 422 : schéma Pydantic non respecté</li>
+<li>Erreur 404 : projet non trouvé</li>
+<li>Erreur 400 : règle métier violée</li>
+<li>Journalisation intégrale (registre immuable, art. 25)</li>
+</ul>
+
+<h2>Articulation avec les autres livres</h2>
+<table><thead><tr><th>Livre</th><th>Articulation</th></tr></thead><tbody>
+<tr><td>Livre II — Finances</td><td>Encadré 1 : règle D > 1,30 appliquée par le code</td></tr>
+<tr><td>Livre III — Portefeuille</td><td>17 projets instanciés et validés</td></tr>
+<tr><td>Livre VI — Audit</td><td>Volet 9 (ratio D) + Volet 15 (anti-NaN)</td></tr>
+</tbody></table>
+</main>
+<footer class="footer"><p><strong>Dossier Maître PMDQ — Version 2.7.22 + Livre X</strong></p><p>Documentairement clos. Arithmétiquement propre. Techniquement arbitré. Non adopté.</p></footer>
+</body></html>
+<div class="annexe-icu">
+  <h3>Annexe Technique : Résorption Thermodynamique des Îlots de Chaleur Urbains (ICU)</h3>
+  <p>La valeur de <strong>climatisation passive</strong> calculée par le moteur Python n'est pas abstraite. Elle représente la conversion mathématique de la chaleur sensible en chaleur latente via l'évapotranspiration du système racinaire et de la canopée.</p>
+  <ul>
+    <li><strong>Capacité de dissipation :</strong> À pleine maturité, un tilleul transpire jusqu'à 400 litres d'eau par jour de canicule. Pour le réseau ciblé de 400 arbres, cela équivaut à un transfert thermique massif abaissant la température ambiante locale de 2 à 8°C dans les zones minéralisées.</li>
+    <li><strong>Allègement du réseau d'État :</strong> Les kWh électriques évités modélisés dans l'audit démontrent une réduction de la pression sur le réseau énergétique lors des pointes estivales de climatisation.</li>
+    <li><strong>Bouclier sanitaire :</strong> Le ciblage strict des quartiers est et des zones défavorisées convertit cette infrastructure biologique en bouclier contre la surmortalité liée aux extrêmes climatiques, justifiant structurellement le défraiement de 50 % de l'OPEX par les Villes.</li>
+  </ul>
+</div>
+

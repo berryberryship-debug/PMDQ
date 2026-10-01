@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MOD-ECO-CIRC-2025 — Autofinancement de la durabilité — PMDQ v2.7.22</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.22<span>MOD-ECO-CIRC-2025 — Autofinancement de la durabilité</span></div>
+<nav class="nav">
+<a href="index.html">Accueil</a>
+<a href="changelog.html">Changelog</a>
+<a href="livres.html">Livres</a>
+<a href="lois.html">Lois</a><a href="ideologie.html">Idéologie</a>
+<a href="programme-2030.html">Programme 2030</a>
+<details class="menu-groupe">
+<summary>Dossiers ▾</summary>
+<div class="sous-menu">
+<a href="loi-ilots-chaleur.html">Îlots de chaleur</a>
+<a href="plantation-arbres.html">Plantation</a>
+<a href="narp-gold-card.html">NARP / Gold Card</a>
+<a href="obsolescence-programmee.html">Obsolescence</a>
+<a href="importations-grade12.html">Importations</a>
+<a href="indice-reparabilite.html">IRQ</a>
+<a href="rapport-frontalier.html">Rapport frontalier</a>
+<a href="coalition-pmdq.html">Coalition</a>
+<a href="mobilite-urbaine.html">Mobilité</a>
+<a href="pnspsts.html">PNSPTS</a>
+<a href="module-eco-circ.html" class="active">ECO-CIRC</a>
+</div>
+</details>
+<details class="menu-groupe">
+<summary>Politique ▾</summary>
+<div class="sous-menu">
+<a href="pourquoi-maintenant.html">Pourquoi maintenant</a>
+<a href="programme-2030.html">Programme 2030</a>
+<a href="comparaison-partis.html">Comparaison</a>
+<a href="classe-moyenne.html">Classe moyenne</a>
+<a href="technopolitique.html">Technopolitique</a>
+<a href="reforme-education-impact.html">Éducation</a>
+<a href="depassements-couts.html">Dépassements</a>
+<a href="immigration-cohesion.html">Immigration</a>
+<a href="strategie-alliances.html">Alliances</a>
+<a href="campagne-financement.html">Campagne</a>
+</div>
+</details>
+<a href="tout.html">Tout</a>
+<a href="moteurs.html">Moteurs</a>
+<a href="livre-blanc.html">Livre blanc</a>
+<a href="methodologie.html">Méthodologie</a>
+<a href="propriete-intellectuelle.html">PI</a>
+</nav></div></header>
+<main>
+
+<h1>MOD-ECO-CIRC-2025 — Autofinancement de la durabilité</h1>
+<p class="lede">Modèle computationnel d'autofinancement et de valorisation de la durabilité — Version 2.7.5</p>
+
+<h2>1. Principe</h2>
+<p>Le moteur repose sur une boucle d'autofinancement vertueuse (<em>Tax & Dividend / Feebate model</em>) : les pénalités et surtaxes prélevées sur les produits non durables financent directement la promotion des pratiques vertueuses, la notoriété du label régional et l'amortissement des infrastructures logicielles.</p>
+
+<h2>2. Variables et équations</h2>
+<table class="tableau-simulation">
+<thead><tr><th>Variable</th><th>Symbole</th><th>Rôle</th></tr></thead>
+<tbody>
+<tr><td>Volume de biens importés ciblés</td><td>V_import</td><td>Unités transitant par les corridors douaniers / an</td></tr>
+<tr><td>Taux de biens non conformes</td><td>α_obsol</td><td>Proportion d'appareils assujettis à la surtaxe</td></tr>
+<tr><td>Surtaxe unitaire moyenne</td><td>S_unit</td><td>Montant perçu par appareil non réparable ($/unité)</td></tr>
+<tr><td>Pénalités administratives</td><td>P_amendes</td><td>Recettes issues des sanctions réglementaires (Loi 29)</td></tr>
+<tr><td>Revenus de labellisation</td><td>R_label</td><td>Frais payés par les fabricants de produits réparables</td></tr>
+<tr><td>Coût d'infrastructure fixe initial</td><td>C_infra</td><td>Coût de développement de la plateforme</td></tr>
+<tr><td>Durée d'amortissement</td><td>T</td><td>Période cible d'amortissement (3 ou 5 ans)</td></tr>
+<tr><td>Ratio d'allocation marketing</td><td>γ_mktg</td><td>Pourcentage des recettes réinvesti dans la communication</td></tr>
+</tbody>
+</table>
+
+<p><strong>Recettes totales annuelles :</strong><br>
+R_total = (V_import × α_obsol × S_unit) + P_amendes + R_label</p>
+<p><strong>Amortissement annuel :</strong><br>
+A_infra = C_infra / T</p>
+<p><strong>Enveloppe marketing nette :</strong><br>
+E_mktg = γ_mktg × (R_total − A_infra)</p>
+
+<h2>3. Simulation indicative (corridor Québec-Ontario-NY)</h2>
+<ul>
+<li>V_import = 20 000 000 unités/an</li>
+<li>α_obsol = 15 %</li>
+<li>S_unit = 4,50 $</li>
+<li>P_amendes = 2 500 000 $</li>
+<li>R_label = 1 500 000 $</li>
+<li>C_infra = 6 000 000 $ amortis sur 3 ans (A_infra = 2 000 000 $/an)</li>
+<li>γ_mktg = 35 %</li>
+</ul>
+<p><strong>Revenu des surtaxes :</strong> 20 000 000 × 0,15 × 4,50 = 13 500 000 $</p>
+<p><strong>R_total =</strong> 13 500 000 + 2 500 000 + 1 500 000 = 17 500 000 $</p>
+<p><strong>Solde net après amortissement :</strong> 17 500 000 − 2 000 000 = 15 500 000 $</p>
+<p><strong>Enveloppe marketing :</strong> 15 500 000 × 0,35 = 5 425 000 $/an</p>
+
+<h2>4. Ventilation de l'enveloppe</h2>
+<table class="tableau-simulation">
+<thead><tr><th>Poste</th><th>Part</th><th>Montant</th></tr></thead>
+<tbody>
+<tr><td>Campagnes grand public (droit à réparer)</td><td>40 %</td><td>2,17 M$</td></tr>
+<tr><td>Promotion & annuaire certifié des réparateurs</td><td>25 %</td><td>1,36 M$</td></tr>
+<tr><td>Déploiement transfrontalier du Label</td><td>20 %</td><td>1,08 M$</td></tr>
+<tr><td>Relations publiques, plaidoyer ACEUM, veille</td><td>15 %</td><td>0,81 M$</td></tr>
+</tbody>
+</table>
+
+<h2>5. Ajustement dynamique</h2>
+<p>À mesure que les fabricants s'adaptent, α_obsol diminue. La baisse des surtaxes est compensée par la hausse des adhésions au label (R_label), assurant la pérennité du budget sans fonds publics récurrents.</p>
+
+<h2>6. Fiche d'enregistrement</h2>
+<pre><code>Fiche_Module:
+  id: "MOD-ECO-CIRC-2025"
+  titre: "Modèle computationnel d'autofinancement et de valorisation de la durabilité"
+  livre_rattachement: "Livre X — Politiques industrielles, commerce et transition"
+  statut: "[P] — Proposition structurée (validation juridique requise [T])"
+  cadre_juridique_pivot:
+    quebec: "Loi 29 (sanctions jusqu'à 5 % du CA mondial)"
+    federal: "Nécessite entente fédérale-provinciale (art. 91 LC 1867) ou délégation ASFC"
+    international: "ACEUM Chapitre 24 (Exceptions environnementales) — mesure non-discriminatoire par origine"
+    plateforme_douaniere: "CARM (CBSA/ASFC) pour perception; Revenu Québec pour redevances provinciales"
+  standard_technique:
+    critere_principal: "Indice de réparabilité objectif (à définir)"
+    seuils_grade:
+      grade_1: "Non réparable, pièces indisponibles, durée de vie < 2 ans"
+      grade_2: "Réparabilité partielle, pièces rares, durée de vie < 5 ans"
+    non_discrimination: "Critère objectif, applicable à toute origine"
+  source_amorcage: "Avance remboursable FQBC ou subvention fédérale (programme à identifier)"
+  indicateurs_cles_5ans:
+    capex_initial: 6.00 M$ (amorti sur 3 ans)
+    revenus_cumules_5ans: 69.40 M$ (scénario central)
+    enveloppe_marketing_5ans: 22.20 M$
+    taux_non_conformite_cible: "15,0 % → 4,0 % (central)"
+  scenarios:
+    optimiste: "Conformité 85 %, revenus +20 %"
+    central: "Conformité 70 %, revenus +5 %"
+    pessimiste: "Conformité 50 %, revenus -15 % — amortissement à 5 ans"
+  alliances_a_mobiliser:
+    - "Organisations environnementales (Équiterre, Fondation David Suzuki)"
+    - "Associations de consommateurs (Option consommateurs)"
+    - "Syndicats (FTQ, CSN) — enjeux de réparation locale"
+    - "Municipalités (UMQ) — relais territoriaux"
+    - "Chercheurs (Polytechnique, ÉTS) — validation technique de l'indice"</code></pre>
+
+<p>🌳 <a href="plantation-arbres.html"><strong>Programme de plantation d'arbres</strong> — 10 arbres × 20 quartiers défavorisés →</a></p>
+<p>📊 <a href="indice-reparabilite.html"><strong>Indice de Réparabilité Québécois (IRQ)</strong> — Moteur d'évaluation objective →</a></p>
+<p><a href="loi-ilots-chaleur.html">← Retour à l'annexe Îlots de chaleur</a></p>
+
+<p><a href="index.html">← Retour à l'accueil</a></p>
+</main>
+<footer class="footer"><p>PMDQ v2.7.22 — MOD-ECO-CIRC-2025 — Sherbrooke, Québec — 26 septembre 2026</p><p>Langue de foi : français</p></footer>
+
+<footer class="reserve-juridique">
+  <p><strong>Réserve juridique :</strong> Ce dossier demeure
+  <strong>non adopté</strong>, <strong>non opérationnel</strong> et
+  <strong>non opposable</strong>. Les corrections documentées sont des
+  corrections internes, sans engagement de tiers.</p>
+</footer>
+</body>
+</html>

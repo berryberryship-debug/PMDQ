@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Forêt urbaine — Simulateur — PMDQ v2.7.22</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">⚜</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Démocratique du Québec</div></div></div></div>
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.22 + Livre X<span>Forêt urbaine</span></div><nav class="nav">
+<a href="index.html">Accueil</a>
+<a href="changelog.html">Changelog</a>
+<a href="livres.html">Livres</a>
+<a href="lois.html">Lois</a><a href="ideologie.html">Idéologie</a>
+<a href="programme-2030.html">Programme 2030</a>
+<details class="menu-groupe">
+<summary>Dossiers ▾</summary>
+<div class="sous-menu">
+<a href="loi-ilots-chaleur.html">Îlots de chaleur</a>
+<a href="plantation-arbres.html">Plantation</a>
+<a href="narp-gold-card.html">NARP / Gold Card</a>
+<a href="obsolescence-programmee.html">Obsolescence</a>
+<a href="importations-grade12.html">Importations</a>
+<a href="indice-reparabilite.html">IRQ</a>
+<a href="rapport-frontalier.html">Rapport frontalier</a>
+<a href="coalition-pmdq.html">Coalition</a>
+<a href="mobilite-urbaine.html">Mobilité</a>
+<a href="pnspsts.html">PNSPTS</a>
+<a href="module-eco-circ.html">ECO-CIRC</a>
+</div>
+</details>
+<details class="menu-groupe">
+<summary>Politique ▾</summary>
+<div class="sous-menu">
+<a href="pourquoi-maintenant.html">Pourquoi maintenant</a>
+<a href="programme-2030.html">Programme 2030</a>
+<a href="comparaison-partis.html">Comparaison</a>
+<a href="classe-moyenne.html">Classe moyenne</a>
+<a href="technopolitique.html">Technopolitique</a>
+<a href="reforme-education-impact.html">Éducation</a>
+<a href="depassements-couts.html">Dépassements</a>
+<a href="immigration-cohesion.html">Immigration</a>
+<a href="strategie-alliances.html">Alliances</a>
+<a href="campagne-financement.html">Campagne</a>
+</div>
+</details>
+<a href="tout.html">Tout</a>
+<a href="moteurs.html">Moteurs</a>
+<a href="livre-blanc.html">Livre blanc</a>
+<a href="methodologie.html">Méthodologie</a>
+<a href="propriete-intellectuelle.html">PI</a>
+</nav></div></header>
+<main>
+<h1>Forêt urbaine — Simulateur</h1>
+<p class="lede">Résorption des îlots de chaleur par plantation d'arbres fruitiers et mellifères</p>
+
+<div class="alert info"><p><strong>Statut :</strong> <span class="badge info">P/T</span> — Modèle indicatif. Paramètres à valider par agronomes.</p></div>
+
+<div class="alert success"><h4>Résumé exécutif</h4><p>Un bloc de 10 tilleuls + 10 amélanchiers dissipe jusqu'à <strong>5 000 L d'eau par jour</strong> en canicule par évapotranspiration. Sur 10 ans, la valeur cumulée dépasse <strong>25 000 $</strong> (usufruit + kWh évités).</p></div>
+
+<h2>1. Réalité physique — La canopée comme climatiseur passif</h2>
+<p>Un tilleul mature dissipe jusqu'à <strong>400 litres d'eau par jour</strong> en canicule par évapotranspiration. À l'échelle d'un bloc de 10 tilleuls + 10 amélanchiers, cela représente un transfert thermique massif qui abaisse la température ambiante locale de <strong>2 à 8 °C</strong> dans les zones minéralisées.</p>
+<p>Cette dissipation thermique est corrélée dans le script aux <strong>kWh électriques évités</strong> (réduction de la charge de climatisation mécanique des bâtiments voisins).</p>
+
+<h2>2. Résultats du simulateur (10 tilleuls + 10 amélanchiers, 10 ans)</h2>
+<table>
+<thead><tr><th>Année</th><th>Maturation (%)</th><th>Fleurs tilleul (kg)</th><th>Baies amélanchier (kg)</th><th>Valeur usufruit ($)</th><th>kWh évités</th><th>Valeur clim. ($)</th><th>Total annuel ($)</th><th>Cumulé ($)</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>3,9</td><td>0,59</td><td>3,13</td><td>117,50</td><td>4 442</td><td>66,64</td><td>184,13</td><td>184,13</td></tr>
+<tr><td>2</td><td>8,3</td><td>1,25</td><td>6,65</td><td>249,52</td><td>9 434</td><td>141,51</td><td>391,03</td><td>575,16</td></tr>
+<tr><td>3</td><td>16,8</td><td>2,52</td><td>13,44</td><td>503,94</td><td>19 053</td><td>285,80</td><td>789,75</td><td>1 364,91</td></tr>
+<tr><td>4</td><td>31,0</td><td>4,65</td><td>24,80</td><td>930,08</td><td>35 165</td><td>527,47</td><td>1 457,55</td><td>2 822,46</td></tr>
+<tr><td>5</td><td>50,0</td><td>7,50</td><td>40,00</td><td>1 500,00</td><td>56 713</td><td>850,69</td><td>2 350,69</td><td>5 173,15</td></tr>
+<tr><td>6</td><td>69,0</td><td>10,35</td><td>55,20</td><td>2 069,92</td><td>78 261</td><td>1 173,91</td><td>3 243,84</td><td>8 416,99</td></tr>
+<tr><td>7</td><td>83,2</td><td>12,48</td><td>66,56</td><td>2 496,06</td><td>94 372</td><td>1 415,59</td><td>3 911,64</td><td>12 328,63</td></tr>
+<tr><td>8</td><td>91,7</td><td>13,75</td><td>73,35</td><td>2 750,48</td><td>103 992</td><td>1 559,88</td><td>4 310,36</td><td>16 638,99</td></tr>
+<tr><td>9</td><td>96,1</td><td>14,41</td><td>76,87</td><td>2 882,50</td><td>108 984</td><td>1 634,75</td><td>4 517,26</td><td>21 156,25</td></tr>
+<tr><td>10</td><td>98,2</td><td>14,73</td><td>78,56</td><td>2 946,04</td><td>111 386</td><td>1 670,79</td><td>4 616,83</td><td>25 773,08</td></tr>
+</tbody>
+</table>
+
+<h2>3. Lecture</h2>
+<ul>
+<li>Valeur cumulée sur 10 ans : plus de <strong>25 000 $</strong> par bloc (10 tilleuls + 10 amélanchiers).</li>
+<li>Les kWh évités croissent avec la maturation (climatisation mécanique évitée).</li>
+<li>Usufruit (fruits + miel) + économies énergétiques.</li>
+</ul>
+
+<h2>4. Pont avec la politique sociale</h2>
+<p>En ciblant prioritairement les quartiers est et les îlots de chaleur urbains (ICU), cette infrastructure biologique se transforme en <strong>bouclier sanitaire</strong> contre la surmortalité estivale.</p>
+<p>C'est cet argument de santé publique et de résilience climatique qui justifie que les Villes défraient <strong>50 % des coûts opérationnels (OPEX)</strong> dans le cadre d'un partenariat public-communautaire.</p>
+
+<h2>5. Code source</h2>
+<p>Le simulateur est exécutable localement (Python 3 + numpy + pandas) :</p>
+<pre><code>def simuler_foret_nourriciere_urbaine(
+    annees=10,
+    n_tilleuls=10,
+    n_amelanchiers=10,
+    prix_kwh=0.10,
+    pct_efficacite_batiment=0.15,
+    jours_chaleur=100
+):
+    ans = np.arange(1, annees + 1)
+    taux_maturation = 1 / (1 + np.exp(-0.8 * (ans - 5)))
+
+    delta_H_v = 2.45
+    cop_climatiseur = 3.0
+
+    evap_tilleul_max = 400.0
+    rendement_tilleul_max = 1.5
+    prix_tilleul_kg = 120.0
+
+    evap_amelanchier_max = 100.0
+    rendement_amelanchier_max = 8.0
+    prix_amelanchier_kg = 15.0
+
+    evap_totale_tilleuls = n_tilleuls * (evap_tilleul_max * jours_chaleur) * taux_maturation
+    evap_totale_amelanchiers = n_amelanchiers * (evap_amelanchier_max * jours_chaleur) * taux_maturation
+
+    kwh_evites_tilleuls = (evap_totale_tilleuls * delta_H_v) / (3.6 * cop_climatiseur)
+    kwh_evites_amelanchiers = (evap_totale_amelanchiers * delta_H_v) / (3.6 * cop_climatiseur)
+
+    valeur_clim_totale = (kwh_evites_tilleuls + kwh_evites_amelanchiers) * pct_efficacite_batiment * prix_kwh
+
+    recolte_tilleuls_kg = n_tilleuls * rendement_tilleul_max * taux_maturation
+    recolte_amelanchiers_kg = n_amelanchiers * rendement_amelanchier_max * taux_maturation
+
+    valeur_usufruit_totale = (recolte_tilleuls_kg * prix_tilleul_kg
+                              + recolte_amelanchiers_kg * prix_amelanchier_kg)
+
+    df = pd.DataFrame({
+        'Année': ans,
+        'Maturation (%)': np.round(taux_maturation * 100, 1),
+        'Fleurs Tilleul (kg)': np.round(recolte_tilleuls_kg, 2),
+        'Baies Amélanchier (kg)': np.round(recolte_amelanchiers_kg, 2),
+        'Valeur Usufruit ($)': np.round(valeur_usufruit_totale, 2),
+        'kWh Électriques Évités': np.round(kwh_evites_tilleuls + kwh_evites_amelanchiers, 0),
+        'Valeur Climatisation ($)': np.round(valeur_clim_totale, 2),
+        'Valeur Totale Annuelle ($)': np.round(valeur_usufruit_totale + valeur_clim_totale, 2)
+    })
+    df['Valeur Cumulée ($)'] = np.round(df['Valeur Totale Annuelle ($)'].cumsum(), 2)
+    return df</code></pre>
+<p><a href="foret_urbaine.py">Télécharger le code source complet</a></p>
+
+<h2>6. Rattachement</h2>
+<table>
+<thead><tr><th>Élément</th><th>Référence</th></tr></thead>
+<tbody>
+<tr><td>Loi îlots de chaleur</td><td><a href="loi-ilots-chaleur.html">Avant-projet</a></td></tr>
+<tr><td>Livre I axe 5</td><td><a href="01_livre_I_architecture.html">Villes résilientes</a></td></tr>
+<tr><td>Coalition sci-tech</td><td><a href="coalition-scientifique-technologique.html">Matériaux frais</a></td></tr>
+</tbody>
+</table>
+
+<div class="alert"><p><strong>Note :</strong> modèle indicatif [P/T]. Les paramètres agronomiques et les prix doivent être validés.</p></div>
+
+<hr>
+<p><em>Simulateur — Sherbrooke, Québec — 26 septembre 2026.</em></p>
+</main>
+<footer class="footer"><p>PMDQ v2.7.22 — Forêt urbaine — 26 septembre 2026</p></footer>
+
+<footer class="reserve-juridique">
+  <p><strong>Réserve juridique :</strong> Ce dossier demeure
+  <strong>non adopté</strong>, <strong>non opérationnel</strong> et
+  <strong>non opposable</strong>. Les corrections documentées sont des
+  corrections internes, sans engagement de tiers.</p>
+</footer>
+</body></html>
