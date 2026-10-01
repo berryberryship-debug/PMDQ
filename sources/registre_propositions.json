@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "date": "2026-10-01",
-  "total": 22,
+  "total": 23,
   "propositions": [
     {
       "id": "PROP-001",
@@ -199,6 +199,15 @@
       "statut": "[É]",
       "cout_m": "800",
       "base_legale": "Compétence Québec (numérique)",
+      "moteur": "moteur_etancheite"
+    },
+    {
+      "id": "PROP-023",
+      "titre": "Loi sur l'audit de la biodiversité et le tableau de bord public",
+      "engagement": 23,
+      "statut": "[É]",
+      "cout_m": "120",
+      "base_legale": "Compétence Québec (environnement)",
       "moteur": "moteur_etancheite"
     }
   ]
