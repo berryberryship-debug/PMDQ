@@ -79,6 +79,12 @@ class MarketData:
         return update_one(key, recent=recent)
 
 
+
+    def update_statcan(self, key, latest_n=24):
+        """Déclenche la mise à jour d'une série StatCan."""
+        from statcan_extractor import update_one
+        return update_one(key, latest_n=latest_n)
+
 if __name__ == "__main__":
     md = MarketData()
     print("Variables en cache :", md.list_available() or "aucune")
