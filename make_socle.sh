@@ -37,6 +37,9 @@ python3 moteur_dgeq.py 2>&1 | tail -3
 echo "=== 0e. Regeneration propositions.html ==="
 python3 generer_page_prop.py 2>&1 | tail -1
 
+echo "=== 0f. Collecte Lobbyisme ==="
+python3 moteur_lobbyisme.py 2>&1 | tail -3
+
 echo "=== 0. Collecte des references economiques ==="
 python3 collecteur.py > /dev/null 2>&1
 code_collecte=$?
