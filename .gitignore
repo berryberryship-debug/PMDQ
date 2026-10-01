@@ -1,23 +1,13 @@
-.precommit_socle.log
+# Sauvegardes locales
+_backup_*/
+*.bak
+*.bak_*
+
+# Fichiers temporaires
 __pycache__/
 *.pyc
-.tests_moteurs.log
+.DS_Store
 
-# Sauvegardes locales (ne pas committer)
-*.bak
-*.html.bak
-*.py.bak
-*.json.bak
-*.md.bak
-
-# Fichiers versionnés de travail
-*.v2.*
-*.v2.7.*
-*.bak_*
-*.bak2
-*.backup
-audit_registry.jsonl
-audit_dashboard.html
-audit_registry.jsonl
-etat_socle.txt
-etat_socle.txt
+# Caches
+.cache/
+*.log
