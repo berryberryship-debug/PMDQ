@@ -1,69 +1,77 @@
 {
   "date_analyse": "2026-10-01",
-  "date_fichier": "2026-09-29",
+  "date_fichier": "2026-10-01",
   "sections": [
     {
       "section": "1. Variables macroeconomiques",
       "frequence_jours": 90,
-      "date_maj": "2026-09-29",
+      "date_maj": "2026-10-01",
       "source_date": "date explicite",
-      "jours_depuis_maj": 2,
+      "jours_depuis_maj": 0,
       "statut": "A JOUR"
     },
     {
       "section": "2. Variables fiscales",
       "frequence_jours": 365,
-      "date_maj": "2026-09-29",
+      "date_maj": "2026-10-01",
       "source_date": "date explicite",
-      "jours_depuis_maj": 2,
+      "jours_depuis_maj": 0,
       "statut": "A JOUR"
     },
     {
       "section": "3. Variables budgetaires",
       "frequence_jours": 365,
-      "date_maj": "2026-09-29",
+      "date_maj": "2026-10-01",
       "source_date": "date explicite",
-      "jours_depuis_maj": 2,
+      "jours_depuis_maj": 0,
       "statut": "A JOUR"
     },
     {
       "section": "4. Variables de marche",
       "frequence_jours": 30,
-      "date_maj": "2026-09-29",
+      "date_maj": "2026-10-01",
       "source_date": "date explicite",
-      "jours_depuis_maj": 2,
+      "jours_depuis_maj": 0,
       "statut": "A JOUR"
     },
     {
       "section": "5. Variables legales",
       "frequence_jours": 365,
-      "date_maj": "2026-09-29",
+      "date_maj": "2026-10-01",
       "source_date": "date explicite",
-      "jours_depuis_maj": 2,
+      "jours_depuis_maj": 0,
       "statut": "A JOUR"
     },
     {
       "section": "6. Variables de projet",
       "frequence_jours": 180,
-      "date_maj": "2026-09-29",
+      "date_maj": "2026-10-01",
       "source_date": "date explicite",
-      "jours_depuis_maj": 2,
+      "jours_depuis_maj": 0,
       "statut": "A JOUR"
     },
     {
       "section": "7. Variables de contexte",
       "frequence_jours": 30,
-      "date_maj": "2026-09-29",
+      "date_maj": "2026-10-01",
       "source_date": "date explicite",
-      "jours_depuis_maj": 2,
+      "jours_depuis_maj": 0,
+      "statut": "A JOUR"
+    },
+    {
+      "section": "8. Donnees de contexte ISQ",
+      "frequence_jours": 365,
+      "date_maj": "2026-10-01",
+      "source_date": "date explicite",
+      "jours_depuis_maj": 0,
       "statut": "A JOUR"
     }
   ],
   "schema_version": "1.0",
   "registre": "sources/variables-sensibles.md",
   "resume": {
-    "total": 7,
-    "a_jour": 7,
+    "total": 8,
+    "a_jour": 8,
     "en_retard": 0,
     "a_revoir": 0,
     "section_absente": 0

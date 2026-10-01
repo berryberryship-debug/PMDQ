@@ -32,6 +32,7 @@ FREQUENCES = {
     "5. Variables legales": 365,
     "6. Variables de projet": 180,
     "7. Variables de contexte": 30,
+    "8. Donnees de contexte ISQ": 365,
 }
 
 
