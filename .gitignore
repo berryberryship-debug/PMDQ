@@ -9,3 +9,4 @@ _archive_*/
 *.tar.gz
 output/
 data/
+_archives_locales/
