@@ -43,6 +43,9 @@ python3 generer_page_prop.py 2>&1 | tail -1
 echo "=== 0f. Collecte Lobbyisme ==="
 python3 moteur_lobbyisme.py 2>&1 | tail -3
 
+echo "=== 0g. Collecte socio-economique ==="
+python3 moteur_socioeco.py 2>&1 | tail -3 || echo "  ⚠ Etape 0g ignoree"
+
 echo "=== 0. Collecte des references economiques ==="
 python3 collecteur.py > /dev/null 2>&1
 code_collecte=$?

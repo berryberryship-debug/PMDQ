@@ -1,0 +1,58 @@
+{
+  "source": "ISQ via Données Québec (API CKAN)",
+  "url": "https://www.donneesquebec.ca/api/3/action/",
+  "date_collecte": "2026-10-02",
+  "mots_cles": {
+    "population": [],
+    "démographie": [],
+    "emploi": [],
+    "revenu": [],
+    "économie régionale": [],
+    "marché du travail": []
+  },
+  "total_jeux_uniques": 6,
+  "jeux": [
+    {
+      "titre": "Géographie du recensement de 2021 harmonisée pour le Québec",
+      "id": "geographie-recensement-2021-harmo",
+      "organisation": "Institut de la statistique du Québec",
+      "notes": "Base de données géographique contenant le résultat du __processus d’harmonisation de la géographie du recensement de 2021 de Statistique Canada__. \n\nL’harmonisation est un processus d’édition de limit",
+      "date_modif": "2024-07-08T17:47:59.063889"
+    },
+    {
+      "titre": "Système de grilles vectorielles pour une infrastructure québécoise de données spatiales, mise à jour 2026",
+      "id": "systeme-de-grilles-vectorielles-pour-une-infrastructure-quebecoise-de-donnees-spatiales",
+      "organisation": "Institut de la statistique du Québec",
+      "notes": "Le système de grilles vectorielles offre une infrastructure spatiale et statistique qui permet l’intégration de données environnementales et socioéconomiques. Son exploitation permet le croisement de ",
+      "date_modif": "2026-04-21T13:14:52.367467"
+    },
+    {
+      "titre": "Codes postaux et territoires – table de géolocalisation des codes postaux",
+      "id": "cp-territoires",
+      "organisation": "Institut de la statistique du Québec",
+      "notes": "Le fichier CP Territoires (anciennement diffusé sous le nom AQgéopostal) est basé sur les données du Référentiel québécois des adresses (RQA) du ministère des Ressources naturelles et des Forêts (MRNF",
+      "date_modif": "2026-08-25T12:53:59.647483"
+    },
+    {
+      "titre": "Fichiers du code géographique du Québec",
+      "id": "fichiers-code-geographique-quebec",
+      "organisation": "Institut de la statistique du Québec",
+      "notes": "Les fichiers du code géographique du Québec correspondent à un ensemble de données tabulaires présentant le portait le plus récent du découpage municipal en vigueur (fichier D001) ainsi que l’historiq",
+      "date_modif": "2026-09-18T15:55:01.692033"
+    },
+    {
+      "titre": "Géographie du recensement de 2016 harmonisée pour le Québec",
+      "id": "geographie-recensement-2016-harmo",
+      "organisation": "Institut de la statistique du Québec",
+      "notes": "Base de données géographique contenant le résultat du processus d’harmonisation de la géographie du recensement de 2016 de Statistique Canada. \r\n\r\nL’harmonisation est un processus d’édition de limites",
+      "date_modif": "2026-02-09T20:05:21.072172"
+    },
+    {
+      "titre": "Comptes des terres du Québec méridional (changement de la couverture terrestre), mise à jour 2026",
+      "id": "comptes-des-terres-du-quebec-meridional-changement-de-la-couverture-terrestre",
+      "organisation": "Institut de la statistique du Québec",
+      "notes": "Les données géographiques des comptes des terres du Québec méridional correspondent à un jeu de fichiers matriciels d’une résolution spatiale de 50 mètres, qualifiant à trois temps distincts le type d",
+      "date_modif": "2026-04-22T12:43:02.895595"
+    }
+  ]
+}

@@ -1,0 +1,3145 @@
+{
+  "source": "Données Québec (API CKAN) — socio-économique",
+  "url": "https://www.donneesquebec.ca/api/3/action/",
+  "date_collecte": "2026-10-02",
+  "par_organisation": {
+    "travaill": {
+      "mots_cles": {
+        "emploi": [],
+        "marché du travail": [],
+        "revenu": [],
+        "aide sociale": []
+      }
+    },
+    "mifi": {
+      "mots_cles": {
+        "immigration": [
+          {
+            "titre": "Registre québécois des consultants en immigration",
+            "id": "registre-quebecois-des-consultants-en-immigration",
+            "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+            "notes": "Le [Règlement sur les consultants en immigration](http://legisquebec.gouv.qc.ca/fr/showDoc/cr/I-0.2.1,%20r.%201) (chapitre I-0.2.1, r. 1) a pour objectif d’enrayer les mauvaises pratiques et de mieux ",
+            "date_modif": "2026-09-18T15:42:26.873494",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Présence des personnes immigrantes",
+            "id": "presence-des-personnes-immigrantes",
+            "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+            "notes": "Des données relatives aux taux de présence des personnes immigrantes admises au Québec dans la dernière décennie selon certaines caractéristiques, dont la durée de résidence, la catégorie d'immigratio",
+            "date_modif": "2026-06-02T13:57:38.919514",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 73
+          },
+          {
+            "titre": "Planification des admissions des personnes immigrantes au Québec pour les années 2024 et 2025",
+            "id": "planification-des-admissions-des-personnes-immigrantes-au-quebec-24-et-25",
+            "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+            "notes": "Le jeu de données présente des tableaux qui décrivent le volume planifié des admissions des personnes immigrantes au Québec selon la planification pluriannuelle 2024 et 2025 et le plan annuel d'immigr",
+            "date_modif": "2025-11-25T13:24:38.202317",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 4
+          },
+          {
+            "titre": "Plan d'immigration du Québec 2023",
+            "id": "plan-d-immigration-du-quebec-2023",
+            "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+            "notes": "Nombre d’admissions prévues dans le Plan annuel d'immigration pour l'année 2023 selon la catégorie d'immigration.",
+            "date_modif": "2023-06-26T19:37:06.887000",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Admission de personnes immigrantes au Québec (trimestriel)",
+            "id": "admission-de-personnes-immigrantes-au-quebec-trimestriel",
+            "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+            "notes": "Le jeu de données présente une série de tableaux qui décrivent diverses caractéristiques des personnes immigrantes admises au Québec au cours d'un trimestre.",
+            "date_modif": "2025-06-02T16:15:04.673544",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 33
+          },
+          {
+            "titre": "Planification des admissions des personnes immigrantes au Québec 2020-2022",
+            "id": "planification-admissions-quebec",
+            "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+            "notes": "Le jeu de données présente des tableaux qui décrivent le volume planifié des admissions des personnes immigrantes au Québec selon la planification pluriannuelle 2020-2022 et les plans annuels d'immigr",
+            "date_modif": "2024-11-18T16:00:16.107219",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 5
+          },
+          {
+            "titre": "Nombre de certificats de sélection du Québec (CSQ) délivrés par programme d’immigration, 2016-2023",
+            "id": "nombre-de-certificats-de-selection-du-quebec-csq-delivres-par-programme-d-immigration-2016-2021",
+            "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+            "notes": "Le jeu de données présente un tableau qui porte les informations sur nombre des Certificats de sélection du Québec (CSQ)  délivrés dans le cadre des programmes permanentes.",
+            "date_modif": "2024-10-15T13:22:32.069102",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 3
+          },
+          {
+            "titre": "Portraits annuels des admissions permanentes au Québec",
+            "id": "portraits-annuels-des-admissions-permanentes-au-quebec",
+            "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+            "notes": "Le jeu de données présente une série de tableaux qui décrivent, pour les cinq dernières années, les données annuelles sur le nombre de personnes immigrantes admises au Québec selon certaines caractéri",
+            "date_modif": "2026-08-17T19:25:17.872578",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 51
+          },
+          {
+            "titre": "Portraits annuels des admissions temporaires au Québec - flux et stock au 31 décembre",
+            "id": "portraits-annuels-des-admissions-temporaires-au-quebec-flux-et-stock-au-31-decembre",
+            "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+            "notes": "Le jeu de données  présente une série de tableaux qui portent sur les nouvelles entrées de personnes immigrantes temporaires au Québec ainsi que sur l’effectif au 31 décembre pour chacune des années d",
+            "date_modif": "2025-06-02T16:00:39.283871",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 19
+          },
+          {
+            "titre": "Programme de sélection des travailleurs qualifiés – invitations – pays de citoyenneté",
+            "id": "programme-regulier-des-travailleurs-qualifies-invitations-pays-de-residence",
+            "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+            "notes": "Pays de citoyenneté des personnes invitées à présenter une demande de sélection permanente dans le cadre du Programme de sélection des travailleurs qualifiés par année et par trimestre.",
+            "date_modif": "2026-09-02T11:59:09.450669",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 2
+          }
+        ],
+        "francisation": [
+          {
+            "titre": "Nombre de personnes ayant participé à un cours de français offert par le MIFI, par année financière",
+            "id": "nombre-de-personnes-ayant-participe-a-un-cours-de-francais-offert-par-le-mifi-par-annee-financiere",
+            "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+            "notes": "Le jeu de données présente un tableau qui porte les informations sur nombre de personnes ayant participé à un cours de français offert par le MIFI, par année financière (2016-2017 au 2023-2024).",
+            "date_modif": "2024-10-15T13:35:13.952542",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 2
+          },
+          {
+            "titre": "Présence des personnes immigrantes",
+            "id": "presence-des-personnes-immigrantes",
+            "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+            "notes": "Des données relatives aux taux de présence des personnes immigrantes admises au Québec dans la dernière décennie selon certaines caractéristiques, dont la durée de résidence, la catégorie d'immigratio",
+            "date_modif": "2026-06-02T13:57:38.919514",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 73
+          }
+        ],
+        "intégration": [
+          {
+            "titre": "Présence des personnes immigrantes",
+            "id": "presence-des-personnes-immigrantes",
+            "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+            "notes": "Des données relatives aux taux de présence des personnes immigrantes admises au Québec dans la dernière décennie selon certaines caractéristiques, dont la durée de résidence, la catégorie d'immigratio",
+            "date_modif": "2026-06-02T13:57:38.919514",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 73
+          }
+        ]
+      }
+    },
+    "affaires-municipales-et-occupation-du-territoire": {
+      "mots_cles": {
+        "population": [
+          {
+            "titre": "Richesse foncière uniformisée",
+            "id": "richesse-fonciere-uniformisee",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "La richesse foncière uniformisée (RFU) permet de mesurer et de comparer la capacité des municipalités à générer des revenus de taxes et de compensations tenant lieu de taxes. Elle peut servir au parta",
+            "date_modif": "2026-09-22T11:45:55.841490",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "XLSX"
+            ],
+            "nb_ressources": 37
+          },
+          {
+            "titre": "Profil financier des municipalités locales",
+            "id": "profil-financier-des-municipalites-locales",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "Le Profil financier d'une municipalité locale permet d'obtenir différentes données financières et fiscales, des ratios calculés à partir de ces données ainsi que des comparaisons avec différents group",
+            "date_modif": "2026-09-01T08:18:38.438256",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF",
+              "XLSX"
+            ],
+            "nb_ressources": 215
+          },
+          {
+            "titre": "Stratégie québécoise d'économie d'eau potable 2019-2025",
+            "id": "sqeep-2019-2025",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "La Stratégie québécoise d’économie d’eau potable (la Stratégie) 2019-2025 comprend des outils plus complets permettant de dresser un meilleur portrait de l’utilisation de l’eau potable et du coût des ",
+            "date_modif": "2026-09-11T17:21:04.527652",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 42
+          },
+          {
+            "titre": "Répertoire des municipalités du Québec",
+            "id": "repertoire-des-municipalites-du-quebec",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "<div style=\"\r\n    box-shadow: 0 0 0 1px #C7CCD4;\r\n    background-color: white; \r\n    border-left: 40px solid #F8E69A; \r\n    padding: 15px;\r\n    margin: 20px 0;\r\n    border-radius: 4px;\r\n    font-famil",
+            "date_modif": "2026-10-01T11:04:50.064703",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "XML"
+            ],
+            "nb_ressources": 19
+          },
+          {
+            "titre": "Rapport financier des organismes municipaux et autres documents connexes",
+            "id": "rapport-financier-des-organismes-municipaux-et-autres-documents",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "Chaque année, les municipalités locales, les MRC, les communautés métropolitaines, les organismes publics de transport et les régies intermunicipales doivent transmettre au ministère des Affaires muni",
+            "date_modif": "2026-09-01T08:25:11.337358",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF",
+              "XLSX"
+            ],
+            "nb_ressources": 189
+          }
+        ],
+        "habitation": [
+          {
+            "titre": "Densité d'occupation résidentielle du territoire",
+            "id": "densite-d-occupation-residentielle-du-territoire",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "La densité d’occupation résidentielle du territoire est une estimation du nombre d’habitantes et d’habitants au kilomètre carré (km²) basée sur les données du recensement de Statistique Canada. Elle e",
+            "date_modif": "2024-08-05T20:14:42.146592",
+            "obsolète": true,
+            "licence": "Attribution, partage dans les mêmes conditions (CC-BY-SA 4.0)",
+            "formats": [
+              "PDF",
+              "ZIP"
+            ],
+            "nb_ressources": 5
+          },
+          {
+            "titre": "Richesse foncière uniformisée",
+            "id": "richesse-fonciere-uniformisee",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "La richesse foncière uniformisée (RFU) permet de mesurer et de comparer la capacité des municipalités à générer des revenus de taxes et de compensations tenant lieu de taxes. Elle peut servir au parta",
+            "date_modif": "2026-09-22T11:45:55.841490",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "XLSX"
+            ],
+            "nb_ressources": 37
+          },
+          {
+            "titre": "Résultats des élections municipales générales",
+            "id": "resultats-des-elections-municipales-generales",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "Le ministère des Affaires municipales et de l'Habitation rend disponibles, pour chacune des municipalités, les informations transmises par les présidents d’élection lors des élections générales 2005, ",
+            "date_modif": "2026-08-25T18:12:03.912118",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "XLSX"
+            ],
+            "nb_ressources": 16
+          },
+          {
+            "titre": "Stratégie québécoise d'économie d'eau potable 2011 à 2017",
+            "id": "sqeep",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "La Stratégie québécoise d’économie d’eau potable (la Stratégie) a été mise en place en mars 2011 par le ministère des Affaires municipales et de l’Habitation (MAMH) pour répondre à l’engagement 49 de ",
+            "date_modif": "2024-04-02T13:58:21.099536",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 6
+          },
+          {
+            "titre": "Rapport financier des organismes municipaux et autres documents connexes",
+            "id": "rapport-financier-des-organismes-municipaux-et-autres-documents",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "Chaque année, les municipalités locales, les MRC, les communautés métropolitaines, les organismes publics de transport et les régies intermunicipales doivent transmettre au ministère des Affaires muni",
+            "date_modif": "2026-09-01T08:25:11.337358",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF",
+              "XLSX"
+            ],
+            "nb_ressources": 189
+          },
+          {
+            "titre": "Stratégie québécoise d'économie d'eau potable 2019-2025",
+            "id": "sqeep-2019-2025",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "La Stratégie québécoise d’économie d’eau potable (la Stratégie) 2019-2025 comprend des outils plus complets permettant de dresser un meilleur portrait de l’utilisation de l’eau potable et du coût des ",
+            "date_modif": "2026-09-11T17:21:04.527652",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 42
+          },
+          {
+            "titre": "Rôle d'évaluation foncière du Québec",
+            "id": "roles-d-evaluation-fonciere-du-quebec",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "Le rôle d’évaluation foncière présente l’inventaire des immeubles situés sur le territoire d’une municipalité, évalués sur une même base et à une même date. Il constitue l'élément central du régime fi",
+            "date_modif": "2026-08-24T15:17:22.558193",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "FGDB",
+              "GEOJSON",
+              "GPKG",
+              "PDF",
+              "SHP",
+              "ZIP"
+            ],
+            "nb_ressources": 52
+          },
+          {
+            "titre": "Répertoire des municipalités du Québec",
+            "id": "repertoire-des-municipalites-du-quebec",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "<div style=\"\r\n    box-shadow: 0 0 0 1px #C7CCD4;\r\n    background-color: white; \r\n    border-left: 40px solid #F8E69A; \r\n    padding: 15px;\r\n    margin: 20px 0;\r\n    border-radius: 4px;\r\n    font-famil",
+            "date_modif": "2026-10-01T11:04:50.064703",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "XML"
+            ],
+            "nb_ressources": 19
+          }
+        ],
+        "municipalités": [
+          {
+            "titre": "Résultats des élections municipales générales",
+            "id": "resultats-des-elections-municipales-generales",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "Le ministère des Affaires municipales et de l'Habitation rend disponibles, pour chacune des municipalités, les informations transmises par les présidents d’élection lors des élections générales 2005, ",
+            "date_modif": "2026-08-25T18:12:03.912118",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "XLSX"
+            ],
+            "nb_ressources": 16
+          },
+          {
+            "titre": "Répertoire des municipalités du Québec",
+            "id": "repertoire-des-municipalites-du-quebec",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "<div style=\"\r\n    box-shadow: 0 0 0 1px #C7CCD4;\r\n    background-color: white; \r\n    border-left: 40px solid #F8E69A; \r\n    padding: 15px;\r\n    margin: 20px 0;\r\n    border-radius: 4px;\r\n    font-famil",
+            "date_modif": "2026-10-01T11:04:50.064703",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "XML"
+            ],
+            "nb_ressources": 19
+          },
+          {
+            "titre": "Profil financier des municipalités locales",
+            "id": "profil-financier-des-municipalites-locales",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "Le Profil financier d'une municipalité locale permet d'obtenir différentes données financières et fiscales, des ratios calculés à partir de ces données ainsi que des comparaisons avec différents group",
+            "date_modif": "2026-09-01T08:18:38.438256",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF",
+              "XLSX"
+            ],
+            "nb_ressources": 215
+          },
+          {
+            "titre": "Rapport financier des organismes municipaux et autres documents connexes",
+            "id": "rapport-financier-des-organismes-municipaux-et-autres-documents",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "Chaque année, les municipalités locales, les MRC, les communautés métropolitaines, les organismes publics de transport et les régies intermunicipales doivent transmettre au ministère des Affaires muni",
+            "date_modif": "2026-09-01T08:25:11.337358",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF",
+              "XLSX"
+            ],
+            "nb_ressources": 189
+          },
+          {
+            "titre": "Richesse foncière uniformisée",
+            "id": "richesse-fonciere-uniformisee",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "La richesse foncière uniformisée (RFU) permet de mesurer et de comparer la capacité des municipalités à générer des revenus de taxes et de compensations tenant lieu de taxes. Elle peut servir au parta",
+            "date_modif": "2026-09-22T11:45:55.841490",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "XLSX"
+            ],
+            "nb_ressources": 37
+          },
+          {
+            "titre": "Stratégie québécoise d'économie d'eau potable 2011 à 2017",
+            "id": "sqeep",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "La Stratégie québécoise d’économie d’eau potable (la Stratégie) a été mise en place en mars 2011 par le ministère des Affaires municipales et de l’Habitation (MAMH) pour répondre à l’engagement 49 de ",
+            "date_modif": "2024-04-02T13:58:21.099536",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 6
+          },
+          {
+            "titre": "Rôle d'évaluation foncière du Québec",
+            "id": "roles-d-evaluation-fonciere-du-quebec",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "Le rôle d’évaluation foncière présente l’inventaire des immeubles situés sur le territoire d’une municipalité, évalués sur une même base et à une même date. Il constitue l'élément central du régime fi",
+            "date_modif": "2026-08-24T15:17:22.558193",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "FGDB",
+              "GEOJSON",
+              "GPKG",
+              "PDF",
+              "SHP",
+              "ZIP"
+            ],
+            "nb_ressources": 52
+          },
+          {
+            "titre": "Stratégie québécoise d'économie d'eau potable 2019-2025",
+            "id": "sqeep-2019-2025",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "La Stratégie québécoise d’économie d’eau potable (la Stratégie) 2019-2025 comprend des outils plus complets permettant de dresser un meilleur portrait de l’utilisation de l’eau potable et du coût des ",
+            "date_modif": "2026-09-11T17:21:04.527652",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 42
+          },
+          {
+            "titre": "Densité d'occupation résidentielle du territoire",
+            "id": "densite-d-occupation-residentielle-du-territoire",
+            "organisation": "Ministère des Affaires municipales et de l'Habitation",
+            "notes": "La densité d’occupation résidentielle du territoire est une estimation du nombre d’habitantes et d’habitants au kilomètre carré (km²) basée sur les données du recensement de Statistique Canada. Elle e",
+            "date_modif": "2024-08-05T20:14:42.146592",
+            "obsolète": true,
+            "licence": "Attribution, partage dans les mêmes conditions (CC-BY-SA 4.0)",
+            "formats": [
+              "PDF",
+              "ZIP"
+            ],
+            "nb_ressources": 5
+          }
+        ]
+      }
+    },
+    "inspq": {
+      "mots_cles": {
+        "population": [
+          {
+            "titre": "Cartographie de la répartition actuelle et future des tiques Ixodes scapularis au Québec en fonction des changements climatiques",
+            "id": "municipalites-avec-populations-etablies-de-tiques-ixodes-scapularis",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "Les municipalités avec des populations établies de tiques _Ixodes scapularis_ (tiques à pattes noires) sont les municipalités où des populations de tiques se reproduisent et survivent d’une année à l’",
+            "date_modif": "2026-07-24T20:22:31.809341",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "HTML",
+              "PDF",
+              "SHP"
+            ],
+            "nb_ressources": 19
+          },
+          {
+            "titre": "Îlots de chaleur/fraîcheur urbains, écarts de température et indice d’intensité d’îlots de chaleur urbains 2020-2022",
+            "id": "ilots-de-chaleur-fraicheur-urbains-et-ecarts-de-temperature-relatifs-2020-2022",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "Les données présentées sur cette page concernent la cartographie 2020-2022 des écarts de température, les cartes de classification de ces écarts de température (soit les îlots de chaleur et fraicheur ",
+            "date_modif": "2026-07-24T18:41:55.750326",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOTIFF",
+              "GPKG",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 17
+          },
+          {
+            "titre": "Îlots de chaleur/fraîcheur urbains, écarts de température et indice d’intensité d’îlots de chaleur urbains 2013-2014",
+            "id": "ilots-de-chaleur-fraicheur-urbains-et-ecarts-de-temperature-relatifs-2013-2014",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "Les données présentées sur cette page concernent la cartographie 2013-2014 des écarts de température, les cartes de classification de ces écarts de température (soit les îlots de chaleur et fraicheur ",
+            "date_modif": "2026-07-24T18:20:39.363111",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOTIFF",
+              "GPKG",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 16
+          },
+          {
+            "titre": "Indice de défavorisation du Québec 2021",
+            "id": "indice-de-defavorisation-du-quebec-2021",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "L’indice de défavorisation a été conçu à la fin des années 1990 dans le but de mesurer la défavorisation des Québécois à petite échelle géographique. Il sert à des fins de recherche sur les inégalités",
+            "date_modif": "2026-07-24T19:37:14.905328",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOJSON",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 8
+          },
+          {
+            "titre": "Indice de défavorisation du Québec 2011",
+            "id": "indice-de-defavorisation-du-quebec-2011",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "L’indice de défavorisation a été conçu à la fin des années 1990 dans le but de mesurer la défavorisation des Québécois à petite échelle géographique. Il sert à des fins de recherche sur les inégalités",
+            "date_modif": "2026-07-24T19:51:43.156088",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOJSON",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 8
+          },
+          {
+            "titre": "Indice de défavorisation du Québec 2016",
+            "id": "indice-de-defavorisation-du-quebec-2016",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "L’indice de défavorisation a été conçu à la fin des années 1990 dans le but de mesurer la défavorisation des Québécois à petite échelle géographique. Il sert à des fins de recherche sur les inégalités",
+            "date_modif": "2026-07-24T19:44:50.326519",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOJSON",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 8
+          },
+          {
+            "titre": "Variations des températures pour les périmètres d’urbanisation des plus petites municipalités 2020-2022",
+            "id": "variations-des-temperatures-pour-les-perimetres-d-urbanisation-des-plus-petites-municipalites",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "Carte d’illustration des écarts de température relatifs de surface pour tous les périmètres d’urbanisation de petite taille du Québec. L’écart de température relatif est la différence de température e",
+            "date_modif": "2026-07-24T18:57:46.618268",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOTIFF",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 8
+          },
+          {
+            "titre": "Indices de désert alimentaire et d’accessibilité aux commerces d’alimentation",
+            "id": "indices-de-desert-alimentaire-et-d-accessibilite-aux-commerces-d-alimentation",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "Le désert alimentaire est un secteur offrant un faible accès à des commerces d’alimentation (épiceries, supermarchés et marchés publics), c’est-à-dire une aire de diffusion (AD) dans laquelle les rési",
+            "date_modif": "2026-07-24T20:08:45.827901",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 7
+          },
+          {
+            "titre": "Analyse de changement entre la cartographie des îlots de chaleur/fraîcheur 2013-2014 et 2020-2022",
+            "id": "analyse-de-changement-ilots-chaleur-fraicheur-et-indice-intensite-ilots-chaleur-urbains",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "Cartographies de l’analyse de changement entre la *[cartographie des îlots de chaleur/fraîcheur 2020-2022](https://www.donneesquebec.ca/recherche/dataset/ilots-de-chaleur-fraicheur-urbains-et-ecarts-d",
+            "date_modif": "2026-07-24T18:43:08.463821",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOTIFF",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 9
+          },
+          {
+            "titre": "Îlots de chaleur/fraîcheur urbains et température de surface 2012",
+            "id": "ilots-de-chaleur-fraicheur-urbains-et-temperature-de-surface",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "**Avertissement**\r\n\r\nLa version des Îlots de chaleur/fraîcheur urbains et température de surface de 2012 est maintenant remplacée par une version plus récente de 2013-2014 et de 2020-2022. Les données",
+            "date_modif": "2026-07-24T17:51:58.643564",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "GEOTIFF",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB"
+            ],
+            "nb_ressources": 7
+          }
+        ],
+        "santé publique": [
+          {
+            "titre": "Canopée des six RMR du Québec 2022",
+            "id": "canopee-des-six-rmr-du-quebec",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "La canopée se définit par la projection au sol de la cime (couronne) des arbres (incluant les feuilles, les branches et le tronc), qui est visible du ciel. Toute végétation ayant une hauteur supérieur",
+            "date_modif": "2026-07-24T19:22:03.674937",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "FGDB",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB"
+            ],
+            "nb_ressources": 21
+          },
+          {
+            "titre": "Indice de défavorisation du Québec 2021",
+            "id": "indice-de-defavorisation-du-quebec-2021",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "L’indice de défavorisation a été conçu à la fin des années 1990 dans le but de mesurer la défavorisation des Québécois à petite échelle géographique. Il sert à des fins de recherche sur les inégalités",
+            "date_modif": "2026-07-24T19:37:14.905328",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOJSON",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 8
+          },
+          {
+            "titre": "Indice de défavorisation du Québec 2011",
+            "id": "indice-de-defavorisation-du-quebec-2011",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "L’indice de défavorisation a été conçu à la fin des années 1990 dans le but de mesurer la défavorisation des Québécois à petite échelle géographique. Il sert à des fins de recherche sur les inégalités",
+            "date_modif": "2026-07-24T19:51:43.156088",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOJSON",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 8
+          },
+          {
+            "titre": "Indice de défavorisation du Québec 2016",
+            "id": "indice-de-defavorisation-du-quebec-2016",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "L’indice de défavorisation a été conçu à la fin des années 1990 dans le but de mesurer la défavorisation des Québécois à petite échelle géographique. Il sert à des fins de recherche sur les inégalités",
+            "date_modif": "2026-07-24T19:44:50.326519",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOJSON",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 8
+          },
+          {
+            "titre": "Îlots de chaleur/fraîcheur urbains, écarts de température et indice d’intensité d’îlots de chaleur urbains 2013-2014",
+            "id": "ilots-de-chaleur-fraicheur-urbains-et-ecarts-de-temperature-relatifs-2013-2014",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "Les données présentées sur cette page concernent la cartographie 2013-2014 des écarts de température, les cartes de classification de ces écarts de température (soit les îlots de chaleur et fraicheur ",
+            "date_modif": "2026-07-24T18:20:39.363111",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOTIFF",
+              "GPKG",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 16
+          },
+          {
+            "titre": "Variations des températures pour les périmètres d’urbanisation des plus petites municipalités 2020-2022",
+            "id": "variations-des-temperatures-pour-les-perimetres-d-urbanisation-des-plus-petites-municipalites",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "Carte d’illustration des écarts de température relatifs de surface pour tous les périmètres d’urbanisation de petite taille du Québec. L’écart de température relatif est la différence de température e",
+            "date_modif": "2026-07-24T18:57:46.618268",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOTIFF",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 8
+          },
+          {
+            "titre": "Îlots de chaleur/fraîcheur urbains, écarts de température et indice d’intensité d’îlots de chaleur urbains 2020-2022",
+            "id": "ilots-de-chaleur-fraicheur-urbains-et-ecarts-de-temperature-relatifs-2020-2022",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "Les données présentées sur cette page concernent la cartographie 2020-2022 des écarts de température, les cartes de classification de ces écarts de température (soit les îlots de chaleur et fraicheur ",
+            "date_modif": "2026-07-24T18:41:55.750326",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOTIFF",
+              "GPKG",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 17
+          },
+          {
+            "titre": "Indices de désert alimentaire et d’accessibilité aux commerces d’alimentation",
+            "id": "indices-de-desert-alimentaire-et-d-accessibilite-aux-commerces-d-alimentation",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "Le désert alimentaire est un secteur offrant un faible accès à des commerces d’alimentation (épiceries, supermarchés et marchés publics), c’est-à-dire une aire de diffusion (AD) dans laquelle les rési",
+            "date_modif": "2026-07-24T20:08:45.827901",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 7
+          },
+          {
+            "titre": "Analyse de changement entre la cartographie des îlots de chaleur/fraîcheur 2013-2014 et 2020-2022",
+            "id": "analyse-de-changement-ilots-chaleur-fraicheur-et-indice-intensite-ilots-chaleur-urbains",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "Cartographies de l’analyse de changement entre la *[cartographie des îlots de chaleur/fraîcheur 2020-2022](https://www.donneesquebec.ca/recherche/dataset/ilots-de-chaleur-fraicheur-urbains-et-ecarts-d",
+            "date_modif": "2026-07-24T18:43:08.463821",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOTIFF",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 9
+          },
+          {
+            "titre": "Cartographie de la répartition actuelle et future des tiques Ixodes scapularis au Québec en fonction des changements climatiques",
+            "id": "municipalites-avec-populations-etablies-de-tiques-ixodes-scapularis",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "Les municipalités avec des populations établies de tiques _Ixodes scapularis_ (tiques à pattes noires) sont les municipalités où des populations de tiques se reproduisent et survivent d’une année à l’",
+            "date_modif": "2026-07-24T20:22:31.809341",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "HTML",
+              "PDF",
+              "SHP"
+            ],
+            "nb_ressources": 19
+          }
+        ],
+        "déterminants sociaux": [
+          {
+            "titre": "Indice de défavorisation du Québec 2021",
+            "id": "indice-de-defavorisation-du-quebec-2021",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "L’indice de défavorisation a été conçu à la fin des années 1990 dans le but de mesurer la défavorisation des Québécois à petite échelle géographique. Il sert à des fins de recherche sur les inégalités",
+            "date_modif": "2026-07-24T19:37:14.905328",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOJSON",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 8
+          },
+          {
+            "titre": "Indice de défavorisation du Québec 2011",
+            "id": "indice-de-defavorisation-du-quebec-2011",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "L’indice de défavorisation a été conçu à la fin des années 1990 dans le but de mesurer la défavorisation des Québécois à petite échelle géographique. Il sert à des fins de recherche sur les inégalités",
+            "date_modif": "2026-07-24T19:51:43.156088",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOJSON",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 8
+          },
+          {
+            "titre": "Indice de défavorisation du Québec 2016",
+            "id": "indice-de-defavorisation-du-quebec-2016",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "L’indice de défavorisation a été conçu à la fin des années 1990 dans le but de mesurer la défavorisation des Québécois à petite échelle géographique. Il sert à des fins de recherche sur les inégalités",
+            "date_modif": "2026-07-24T19:44:50.326519",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "GEOJSON",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB",
+              "XLSX"
+            ],
+            "nb_ressources": 8
+          },
+          {
+            "titre": "Canopée des six RMR du Québec 2022",
+            "id": "canopee-des-six-rmr-du-quebec",
+            "organisation": "Institut national de santé publique du Québec (INSPQ)",
+            "notes": "La canopée se définit par la projection au sol de la cime (couronne) des arbres (incluant les feuilles, les branches et le tronc), qui est visible du ciel. Toute végétation ayant une hauteur supérieur",
+            "date_modif": "2026-07-24T19:22:03.674937",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "FGDB",
+              "HTML",
+              "PDF",
+              "SHP",
+              "WEB"
+            ],
+            "nb_ressources": 21
+          }
+        ]
+      }
+    },
+    "revenu-quebec": {
+      "mots_cles": {
+        "revenu": [
+          {
+            "titre": "Répartition géographique des particuliers ayant un revenu total de 1 M$ ou plus, 2014 à 2023",
+            "id": "repartition-geographique-des-particuliers-ayant-un-revenu-total-de-1-m-ou-plus-2014-a-2023",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant déclaré un revenu total de 1 000 000 $ ou plus selon la région administrative, pour les années d’imposition 2014 à 2023, en date du 30 septembre 2024.",
+            "date_modif": "2024-12-03T14:00:57.091324",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Crédit d'impôt pour aidant naturel, 2014 à 2019",
+            "id": "credit-d-impot-pour-aidant-naturel-2014-a-2019",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour aidant naturel et montant moyen versé, selon l’âge, le genre et la région administrative, pour les années d’imposition 2014 à 2019, en d",
+            "date_modif": "2024-04-05T12:10:19.431107",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Crédit d'impôt pour personne aidante - volet personne aidée majeure et atteinte d'une déficience, 2020 à 2023",
+            "id": "credit-d-impot-pour-personne-aidante-personne-aidee-majeure-atteinte-d-une-deficience-2020-a-2023",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour personne aidante et montant moyen versé, spécifiquement pour le volet où la personne aidée est majeure et atteinte d’une déficience (ave",
+            "date_modif": "2024-12-03T13:10:06.351181",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Crédit d'impôt RénoVert, 2016 à 2019",
+            "id": "credit-d-impot-renovert-2016-a-2019",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt RénoVert et montant moyen versé, selon l’âge, le genre, l’état civil et la région administrative, pour les années d’imposition 2016 à 2019, e",
+            "date_modif": "2024-04-05T12:08:07.391601",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Crédit d'impôt pour frais de garde d'enfants, 2014 à 2023",
+            "id": "credit-d-impot-pour-frais-de-garde-d-enfants-2014-a-2023",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour frais de garde d’enfants et montant moyen versé, selon l’âge, le sexe, l’état civil et la région administrative, pour les années d’impos",
+            "date_modif": "2024-12-03T14:31:26.257494",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Crédit d'impôt pour personne aidante - volet personne aidée âgée de 70 ans ou plus et atteinte d'aucune déficience, 2020 à 2023",
+            "id": "credit-d-impot-pour-personne-aidante-personne-aidee-70-ans-ou-plus-2020-a-2023",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour personne aidante et montant moyen versé, spécifiquement pour le volet où il y a cohabitation avec la personne aidée (autre que le conjoi",
+            "date_modif": "2024-12-03T14:17:43.699053",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          }
+        ],
+        "fiscalité": [
+          {
+            "titre": "Crédit d'impôt pour aidant naturel, 2014 à 2019",
+            "id": "credit-d-impot-pour-aidant-naturel-2014-a-2019",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour aidant naturel et montant moyen versé, selon l’âge, le genre et la région administrative, pour les années d’imposition 2014 à 2019, en d",
+            "date_modif": "2024-04-05T12:10:19.431107",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Crédit d'impôt pour personne aidante - volet personne aidée majeure et atteinte d'une déficience, 2020 à 2023",
+            "id": "credit-d-impot-pour-personne-aidante-personne-aidee-majeure-atteinte-d-une-deficience-2020-a-2023",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour personne aidante et montant moyen versé, spécifiquement pour le volet où la personne aidée est majeure et atteinte d’une déficience (ave",
+            "date_modif": "2024-12-03T13:10:06.351181",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Crédit d'impôt RénoVert, 2016 à 2019",
+            "id": "credit-d-impot-renovert-2016-a-2019",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt RénoVert et montant moyen versé, selon l’âge, le genre, l’état civil et la région administrative, pour les années d’imposition 2016 à 2019, e",
+            "date_modif": "2024-04-05T12:08:07.391601",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Crédit d'impôt pour frais de garde d'enfants, 2014 à 2023",
+            "id": "credit-d-impot-pour-frais-de-garde-d-enfants-2014-a-2023",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour frais de garde d’enfants et montant moyen versé, selon l’âge, le sexe, l’état civil et la région administrative, pour les années d’impos",
+            "date_modif": "2024-12-03T14:31:26.257494",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Crédit d'impôt pour personne aidante - volet personne aidée âgée de 70 ans ou plus et atteinte d'aucune déficience, 2020 à 2023",
+            "id": "credit-d-impot-pour-personne-aidante-personne-aidee-70-ans-ou-plus-2020-a-2023",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour personne aidante et montant moyen versé, spécifiquement pour le volet où il y a cohabitation avec la personne aidée (autre que le conjoi",
+            "date_modif": "2024-12-03T14:17:43.699053",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Répartition géographique des particuliers ayant un revenu total de 1 M$ ou plus, 2014 à 2023",
+            "id": "repartition-geographique-des-particuliers-ayant-un-revenu-total-de-1-m-ou-plus-2014-a-2023",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant déclaré un revenu total de 1 000 000 $ ou plus selon la région administrative, pour les années d’imposition 2014 à 2023, en date du 30 septembre 2024.",
+            "date_modif": "2024-12-03T14:00:57.091324",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          }
+        ],
+        "impôt": [
+          {
+            "titre": "Crédit d'impôt RénoVert, 2016 à 2019",
+            "id": "credit-d-impot-renovert-2016-a-2019",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt RénoVert et montant moyen versé, selon l’âge, le genre, l’état civil et la région administrative, pour les années d’imposition 2016 à 2019, e",
+            "date_modif": "2024-04-05T12:08:07.391601",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Crédit d'impôt pour aidant naturel, 2014 à 2019",
+            "id": "credit-d-impot-pour-aidant-naturel-2014-a-2019",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour aidant naturel et montant moyen versé, selon l’âge, le genre et la région administrative, pour les années d’imposition 2014 à 2019, en d",
+            "date_modif": "2024-04-05T12:10:19.431107",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Crédit d'impôt pour frais de garde d'enfants, 2014 à 2023",
+            "id": "credit-d-impot-pour-frais-de-garde-d-enfants-2014-a-2023",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour frais de garde d’enfants et montant moyen versé, selon l’âge, le sexe, l’état civil et la région administrative, pour les années d’impos",
+            "date_modif": "2024-12-03T14:31:26.257494",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Crédit d'impôt pour personne aidante - volet personne aidée majeure et atteinte d'une déficience, 2020 à 2023",
+            "id": "credit-d-impot-pour-personne-aidante-personne-aidee-majeure-atteinte-d-une-deficience-2020-a-2023",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour personne aidante et montant moyen versé, spécifiquement pour le volet où la personne aidée est majeure et atteinte d’une déficience (ave",
+            "date_modif": "2024-12-03T13:10:06.351181",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Crédit d'impôt pour personne aidante - volet personne aidée âgée de 70 ans ou plus et atteinte d'aucune déficience, 2020 à 2023",
+            "id": "credit-d-impot-pour-personne-aidante-personne-aidee-70-ans-ou-plus-2020-a-2023",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour personne aidante et montant moyen versé, spécifiquement pour le volet où il y a cohabitation avec la personne aidée (autre que le conjoi",
+            "date_modif": "2024-12-03T14:17:43.699053",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Répartition géographique des particuliers ayant un revenu total de 1 M$ ou plus, 2014 à 2023",
+            "id": "repartition-geographique-des-particuliers-ayant-un-revenu-total-de-1-m-ou-plus-2014-a-2023",
+            "organisation": "Revenu Québec",
+            "notes": "Nombre de particuliers ayant déclaré un revenu total de 1 000 000 $ ou plus selon la région administrative, pour les années d’imposition 2014 à 2023, en date du 30 septembre 2024.",
+            "date_modif": "2024-12-03T14:00:57.091324",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          }
+        ]
+      }
+    },
+    "mfq": {
+      "mots_cles": {
+        "finances publiques": [
+          {
+            "titre": "Indice des bons du Trésor du Québec",
+            "id": "indice-des-bons-du-tresor-du-quebec",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "L'indice des bons du Trésor du Québec (91 jours), préparé par le ministère des Finances du Québec, est basé sur un portefeuille théorique de bons du Trésor du Québec d'une durée d'environ 91 jours au ",
+            "date_modif": "2023-06-26T19:37:40.663000",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 4
+          },
+          {
+            "titre": "Cadre financier pluriannuel du gouvernement du Québec publié dans le Rapport préélectoral sur l’état des finances publiques du Québec",
+            "id": "cadre-financier-pluriannuel-du-gouvernement-du-quebec-publie-dans-le-rapport-preelectoral",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Ce jeu de données présente le cadre financier pluriannuel du gouvernement du Québec tel que publié dans le Rapport préélectoral sur l’état des finances publiques du Québec. Ce rapport est publié le tr",
+            "date_modif": "2024-08-09T18:11:44.261330",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Comptes publics du gouvernement – Volume 2",
+            "id": "comptes-publics-du-gouvernement-volume-2",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Ces jeux de données présentent certaines données du volume 2 des comptes publics déposés annuellement par le ministère des Finances à l’Assemblée nationale.\r\n\r\nIls regroupent des renseignements financ",
+            "date_modif": "2025-10-21T14:39:28.346482",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 15
+          },
+          {
+            "titre": "Comptes publics du gouvernement – Volume 1",
+            "id": "depenses-consolidees-par-mission",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Présente certaines données du volume 1 des comptes publics déposés annuellement par le ministère des Finances à l’Assemblée nationale.\r\n\r\nCe jeu de données regroupe des renseignements financiers des a",
+            "date_modif": "2025-10-21T14:01:55.878545",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Dette brute du gouvernement du Québec",
+            "id": "dette-du-gouvernement-du-quebec",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Au cours des dernières années, la dette du gouvernement a pris une importance grandissante dans les discussions sur les finances publiques. Les citoyens sont préoccupés par le niveau de la dette et pa",
+            "date_modif": "2024-08-09T18:35:04.395629",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 5
+          },
+          {
+            "titre": "Cadre financier pluriannuel du gouvernement du Québec",
+            "id": "http-www-budget-finances-gouv-qc-ca-budget-en-chiffres",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Ce jeu de données présente le cadre financier pluriannuel du gouvernement du Québec. Il est usuellement publié deux fois par année, soit lors du dépôt du budget du Québec et lors de celui du _Point su",
+            "date_modif": "2024-08-09T18:08:15.364112",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 3
+          },
+          {
+            "titre": "Dette nette du gouvernement du Québec",
+            "id": "dette-nette-du-gouvernement-du-quebec",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "La dette nette correspond à la dette qui a servi à financer les actifs non financiers (immobilisations) et les déficits cumulés. Elle est obtenue si l’on soustrait les actifs financiers du gouvernemen",
+            "date_modif": "2023-07-07T12:42:35.749123",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 5
+          },
+          {
+            "titre": "Réhabilitation des sites contaminés sous la responsabilité de l'État",
+            "id": "rehabilitation-des-sites-contamines-sous-la-responsabilite-de-l-etat",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Ce jeu de données a pour but de fournir les informations pour comprendre la gestion des sites contaminés sous la responsabilité du gouvernement du Québec et en suivre la réhabilitation. Pour constitue",
+            "date_modif": "2026-01-29T19:15:26.648360",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "HTML",
+              "PDF"
+            ],
+            "nb_ressources": 3
+          },
+          {
+            "titre": "Dette représentant les déficits cumulés",
+            "id": "dette-representant-les-deficits-cumules",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "La dette représentant les déficits cumulés au sens des comptes publics représente la différence entre les passifs et les actifs du gouvernement (financiers et non financiers). Il s’agit de la « mauvai",
+            "date_modif": "2024-08-09T18:37:27.958775",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 5
+          },
+          {
+            "titre": "Prévision des revenus et des dépenses par composante",
+            "id": "revenus-et-depenses-par-composante-automne-2021",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Ce jeu de données inclut la prévision des revenus et des dépenses du gouvernement du Québec par composante. Il est usuellement publié deux fois par année, soit lors du dépôt du budget du Québec  et lo",
+            "date_modif": "2024-08-21T18:36:45.603396",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 3
+          }
+        ],
+        "budget": [
+          {
+            "titre": "Prévision des revenus et des dépenses par composante",
+            "id": "revenus-et-depenses-par-composante-automne-2021",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Ce jeu de données inclut la prévision des revenus et des dépenses du gouvernement du Québec par composante. Il est usuellement publié deux fois par année, soit lors du dépôt du budget du Québec  et lo",
+            "date_modif": "2024-08-21T18:36:45.603396",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 3
+          },
+          {
+            "titre": "Cadre financier pluriannuel du gouvernement du Québec",
+            "id": "http-www-budget-finances-gouv-qc-ca-budget-en-chiffres",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Ce jeu de données présente le cadre financier pluriannuel du gouvernement du Québec. Il est usuellement publié deux fois par année, soit lors du dépôt du budget du Québec et lors de celui du _Point su",
+            "date_modif": "2024-08-09T18:08:15.364112",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 3
+          },
+          {
+            "titre": "Dette représentant les déficits cumulés",
+            "id": "dette-representant-les-deficits-cumules",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "La dette représentant les déficits cumulés au sens des comptes publics représente la différence entre les passifs et les actifs du gouvernement (financiers et non financiers). Il s’agit de la « mauvai",
+            "date_modif": "2024-08-09T18:37:27.958775",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 5
+          },
+          {
+            "titre": "Comptes publics du gouvernement – Volume 2",
+            "id": "comptes-publics-du-gouvernement-volume-2",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Ces jeux de données présentent certaines données du volume 2 des comptes publics déposés annuellement par le ministère des Finances à l’Assemblée nationale.\r\n\r\nIls regroupent des renseignements financ",
+            "date_modif": "2025-10-21T14:39:28.346482",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 15
+          },
+          {
+            "titre": "Comptes publics du gouvernement – Volume 1",
+            "id": "depenses-consolidees-par-mission",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Présente certaines données du volume 1 des comptes publics déposés annuellement par le ministère des Finances à l’Assemblée nationale.\r\n\r\nCe jeu de données regroupe des renseignements financiers des a",
+            "date_modif": "2025-10-21T14:01:55.878545",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Cadre financier pluriannuel du gouvernement du Québec publié dans le Rapport préélectoral sur l’état des finances publiques du Québec",
+            "id": "cadre-financier-pluriannuel-du-gouvernement-du-quebec-publie-dans-le-rapport-preelectoral",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Ce jeu de données présente le cadre financier pluriannuel du gouvernement du Québec tel que publié dans le Rapport préélectoral sur l’état des finances publiques du Québec. Ce rapport est publié le tr",
+            "date_modif": "2024-08-09T18:11:44.261330",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Dette nette du gouvernement du Québec",
+            "id": "dette-nette-du-gouvernement-du-quebec",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "La dette nette correspond à la dette qui a servi à financer les actifs non financiers (immobilisations) et les déficits cumulés. Elle est obtenue si l’on soustrait les actifs financiers du gouvernemen",
+            "date_modif": "2023-07-07T12:42:35.749123",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 5
+          },
+          {
+            "titre": "Dette brute du gouvernement du Québec",
+            "id": "dette-du-gouvernement-du-quebec",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Au cours des dernières années, la dette du gouvernement a pris une importance grandissante dans les discussions sur les finances publiques. Les citoyens sont préoccupés par le niveau de la dette et pa",
+            "date_modif": "2024-08-09T18:35:04.395629",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 5
+          }
+        ],
+        "dette": [
+          {
+            "titre": "Dette représentant les déficits cumulés",
+            "id": "dette-representant-les-deficits-cumules",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "La dette représentant les déficits cumulés au sens des comptes publics représente la différence entre les passifs et les actifs du gouvernement (financiers et non financiers). Il s’agit de la « mauvai",
+            "date_modif": "2024-08-09T18:37:27.958775",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 5
+          },
+          {
+            "titre": "Dette brute du gouvernement du Québec",
+            "id": "dette-du-gouvernement-du-quebec",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Au cours des dernières années, la dette du gouvernement a pris une importance grandissante dans les discussions sur les finances publiques. Les citoyens sont préoccupés par le niveau de la dette et pa",
+            "date_modif": "2024-08-09T18:35:04.395629",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 5
+          },
+          {
+            "titre": "Dette nette du gouvernement du Québec",
+            "id": "dette-nette-du-gouvernement-du-quebec",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "La dette nette correspond à la dette qui a servi à financer les actifs non financiers (immobilisations) et les déficits cumulés. Elle est obtenue si l’on soustrait les actifs financiers du gouvernemen",
+            "date_modif": "2023-07-07T12:42:35.749123",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 5
+          },
+          {
+            "titre": "Prévision des revenus et des dépenses par composante",
+            "id": "revenus-et-depenses-par-composante-automne-2021",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Ce jeu de données inclut la prévision des revenus et des dépenses du gouvernement du Québec par composante. Il est usuellement publié deux fois par année, soit lors du dépôt du budget du Québec  et lo",
+            "date_modif": "2024-08-21T18:36:45.603396",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 3
+          },
+          {
+            "titre": "Comptes publics du gouvernement – Volume 1",
+            "id": "depenses-consolidees-par-mission",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "Présente certaines données du volume 1 des comptes publics déposés annuellement par le ministère des Finances à l’Assemblée nationale.\r\n\r\nCe jeu de données regroupe des renseignements financiers des a",
+            "date_modif": "2025-10-21T14:01:55.878545",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Titres et emprunts émis par le  Québec",
+            "id": "titres-et-emprunts-emis-par-le-quebec",
+            "organisation": "Ministère des Finances du Québec",
+            "notes": "# Nouveaux emprunts émis par le gouvernement du Québec (non vérifiés).\n\n__DÉFINITIONS DES PRODUITS D’ÉPARGNE :__\n\n\n__RÉGIMES DE BILLETS À MOYEN TERME DU QUÉBEC__\n\nEmprunts réalisés par le gouvernement",
+            "date_modif": "2025-05-30T15:29:51.240099",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 7
+          }
+        ]
+      }
+    },
+    "mels": {
+      "mots_cles": {
+        "diplomation": [
+          {
+            "titre": "Enquête La Relance au secondaire en formation professionnelle",
+            "id": "enquete-la-relance-au-secondaire-en-formation-professionnelle",
+            "organisation": "Ministère de l'Éducation et Ministère de l'Enseignement supérieur",
+            "notes": "Le ministère de l’Éducation vise à arrimer les programmes de formation aux exigences du marché du travail et de la société québécoise. L’un des outils privilégiés pour atteindre cet objectif est celui",
+            "date_modif": "2026-03-09T20:20:54.671682",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 3
+          },
+          {
+            "titre": "Indices de défavorisation",
+            "id": "indices-de-defavorisation",
+            "organisation": "Ministère de l'Éducation et Ministère de l'Enseignement supérieur",
+            "notes": "Le ministère de l'Éducation (MEQ) calcule annuellement deux indices de défavorisation pour les 69 centres de services scolaires et commissions scolaires linguistiques soit :\r\n\r\n•\tl'Indice de milieu so",
+            "date_modif": "2026-07-03T17:50:57.042127",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "FGDB",
+              "GEOJSON",
+              "GPKG",
+              "HTML",
+              "PDF",
+              "SHP"
+            ],
+            "nb_ressources": 11
+          }
+        ],
+        "décrochage": [],
+        "étudiants": [
+          {
+            "titre": "Indices de défavorisation",
+            "id": "indices-de-defavorisation",
+            "organisation": "Ministère de l'Éducation et Ministère de l'Enseignement supérieur",
+            "notes": "Le ministère de l'Éducation (MEQ) calcule annuellement deux indices de défavorisation pour les 69 centres de services scolaires et commissions scolaires linguistiques soit :\r\n\r\n•\tl'Indice de milieu so",
+            "date_modif": "2026-07-03T17:50:57.042127",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "FGDB",
+              "GEOJSON",
+              "GPKG",
+              "HTML",
+              "PDF",
+              "SHP"
+            ],
+            "nb_ressources": 11
+          },
+          {
+            "titre": "Enquête La Relance au secondaire en formation professionnelle",
+            "id": "enquete-la-relance-au-secondaire-en-formation-professionnelle",
+            "organisation": "Ministère de l'Éducation et Ministère de l'Enseignement supérieur",
+            "notes": "Le ministère de l’Éducation vise à arrimer les programmes de formation aux exigences du marché du travail et de la société québécoise. L’un des outils privilégiés pour atteindre cet objectif est celui",
+            "date_modif": "2026-03-09T20:20:54.671682",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 3
+          },
+          {
+            "titre": "Localisation des établissements d'enseignement du réseau scolaire au Québec",
+            "id": "localisation-des-etablissements-d-enseignement-du-reseau-scolaire-au-quebec",
+            "organisation": "Ministère de l'Éducation et Ministère de l'Enseignement supérieur",
+            "notes": "Localisation des écoles du réseau public (francophone, anglophone et statut particulier) ainsi que les écoles privées et gouvernementales pour les ordres d'enseignement préscolaire, primaire, secondai",
+            "date_modif": "2026-09-22T12:59:36.299573",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "FGDB",
+              "GEOJSON",
+              "HTML",
+              "KML",
+              "LYR",
+              "PDF",
+              "SHP",
+              "TAB",
+              "WFS",
+              "WMS"
+            ],
+            "nb_ressources": 28
+          }
+        ]
+      }
+    },
+    "msss": {
+      "mots_cles": {
+        "santé": [
+          {
+            "titre": "Soins et services en santé périnatale",
+            "id": "soins-et-services-en-sante-perinatale",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "12 octobre 2022 - Ce jeu de données a été archivé puisqu'il n'est plus mis à jour. Tableaux de résultats sur les soins et services en santé périnatale. Les tableaux présentent notamment des statistiqu",
+            "date_modif": "2024-03-26T14:33:11.578210",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "ZIP"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "AS-471 – Rapports financiers annuels des établissements de santé et de services sociaux",
+            "id": "as-471-rapports-financiers-annuels-des-etablissements",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Selon la Loi sur les services de santé et les services sociaux (articles 295 et 395), les établissements de santé et de services sociaux, au plus tard le 30 juin de chaque année, doivent transmettre a",
+            "date_modif": "2026-04-29T21:28:21.726417",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 17
+          },
+          {
+            "titre": "Portrait des effectifs du réseau de la santé et des services sociaux",
+            "id": "portrait-des-effectifs-du-reseau-de-la-sante-et-des-services-sociaux",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Répartition du personnel des établissements publics et privés conventionnés  du réseau de la santé et des services sociaux, selon les sous-catégories de personnel, les statuts d’emploi et les régions,",
+            "date_modif": "2026-04-29T21:57:46.781909",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 5
+          },
+          {
+            "titre": "Fichiers cartographiques M02 des installations et établissements",
+            "id": "fichiers-cartographiques-m02-des-installations-et-etablissements",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Fichier cartographique (shapefile) relatif à la localisation des installations du réseau de la santé et des services sociaux. L’installation est le lieu physique où sont dispensés des soins de santé e",
+            "date_modif": "2026-09-16T18:20:45.134090",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF",
+              "SHP"
+            ],
+            "nb_ressources": 6
+          },
+          {
+            "titre": "Limites territoriales",
+            "id": "limites-territoriales",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "La mise à jour du jeu de données a été effectuée le 15 avril 2026.\r\nInformations concernant les limites territoriales :\r\n* des réseaux locaux de services (RLS)\r\n* des centres locaux de services commun",
+            "date_modif": "2026-04-16T18:20:40.853070",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "SHP"
+            ],
+            "nb_ressources": 5
+          },
+          {
+            "titre": "Estimations et projections de population comparables",
+            "id": "estimations-et-projections-de-population-comparables",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Les données sont produites par l'Institut de la statistique du Québec (ISQ). Cet organisme est responsable de la gestion des données officielles de population pour l'ensemble du territoire québécois. ",
+            "date_modif": "2026-04-29T21:48:05.778446",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 2
+          },
+          {
+            "titre": "Répartition des capacités et des services par installation",
+            "id": "m02-repartition-des-capacites-et-des-services-autorises-au-permis-par-installation",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "L’information présentée dans la présente publication est également disponible sur le portail web « M02-Répertoire des établissements » (https://m02.pub.msss.rtss.qc.ca/index.asp). Il peut toutefois y ",
+            "date_modif": "2026-09-03T18:30:02.540434",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 3
+          },
+          {
+            "titre": "COVID-19 - Portrait quotidien des cas confirmés",
+            "id": "covid-19-portrait-quotidien-des-cas-confirmes",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Ce jeu présente le portrait quotidien du nombre de cas confirmés de COVID-19 au Québec. Veuillez consulter les notes méthodologiques pour plus de détails. \r\n***Considérant l'évolution de la pandémie d",
+            "date_modif": "2026-10-01T18:00:45.642873",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 3
+          },
+          {
+            "titre": "Fichier cumulatif des données des urgences",
+            "id": "fichier-cumulatif-des-donnees-des-urgences",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Le fichier des données cumulatives à l’urgence affiche le portrait global des indicateurs ciblés observés du 1er avril à la fin de la dernière période validée de l’année financière courante, ainsi que",
+            "date_modif": "2026-09-13T17:40:22.652076",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 2
+          },
+          {
+            "titre": "Chirurgies - Portrait de la liste d'attente",
+            "id": "chirurgies-portrait-de-la-liste-d-attente",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Le fichier présente le portrait de la liste des interventions en attente au bloc opératoire au Québec selon différentes ventilations : par période financière, par région socio-sanitaire, par délai d'a",
+            "date_modif": "2026-08-18T14:31:50.595919",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 2
+          }
+        ],
+        "urgences": [
+          {
+            "titre": "Fichier cumulatif des données des urgences",
+            "id": "fichier-cumulatif-des-donnees-des-urgences",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Le fichier des données cumulatives à l’urgence affiche le portrait global des indicateurs ciblés observés du 1er avril à la fin de la dernière période validée de l’année financière courante, ainsi que",
+            "date_modif": "2026-09-13T17:40:22.652076",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 2
+          },
+          {
+            "titre": "Fichier horaire des données de la situation à l'urgence",
+            "id": "fichier-horaire-des-donnees-de-la-situation-a-l-urgence",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Le fichier horaire des données de la situation à l'urgence présente le nombre de patients sur civière, le nombre de patients sur civière plus de 24 heures et le nombre de patients sur civière plus de ",
+            "date_modif": "2026-10-02T03:46:00.134365",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 3
+          },
+          {
+            "titre": "COVID-19 - Portrait quotidien des hospitalisations",
+            "id": "covid-19-portrait-quotidien-des-hospitalisations",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Ce jeu présente le portrait quotidien des hospitalisations actives de patients ayant un test positif au SRAS-CoV-2 ou patients ayant reçu un diagnostic de COVID-19 à l'urgence dont le type d'orientati",
+            "date_modif": "2026-10-01T15:00:25.927075",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 3
+          },
+          {
+            "titre": "MED-ÉCHO – Rapport S16 - Sommaire des départs selon le diagnostic principal par groupe de rubriques",
+            "id": "med-echo-rapport-s16-sommaire-des-departs-selon-le-diagnostic-principal-par-groupe-de-rubrique",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Ce tableau donne, par groupe de rubrique, de l'information sur les départs, les séjours, les départs par groupe d'âge, les décès, les autopsies, le nombre d'opérés et le pourcentage des bénéficiaires ",
+            "date_modif": "2026-04-29T21:30:02.853040",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 16
+          }
+        ],
+        "services sociaux": [
+          {
+            "titre": "AS-471 – Rapports financiers annuels des établissements de santé et de services sociaux",
+            "id": "as-471-rapports-financiers-annuels-des-etablissements",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Selon la Loi sur les services de santé et les services sociaux (articles 295 et 395), les établissements de santé et de services sociaux, au plus tard le 30 juin de chaque année, doivent transmettre a",
+            "date_modif": "2026-04-29T21:28:21.726417",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 17
+          },
+          {
+            "titre": "Portrait des effectifs du réseau de la santé et des services sociaux",
+            "id": "portrait-des-effectifs-du-reseau-de-la-sante-et-des-services-sociaux",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Répartition du personnel des établissements publics et privés conventionnés  du réseau de la santé et des services sociaux, selon les sous-catégories de personnel, les statuts d’emploi et les régions,",
+            "date_modif": "2026-04-29T21:57:46.781909",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 5
+          },
+          {
+            "titre": "Soins et services en santé périnatale",
+            "id": "soins-et-services-en-sante-perinatale",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "12 octobre 2022 - Ce jeu de données a été archivé puisqu'il n'est plus mis à jour. Tableaux de résultats sur les soins et services en santé périnatale. Les tableaux présentent notamment des statistiqu",
+            "date_modif": "2024-03-26T14:33:11.578210",
+            "obsolète": true,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "ZIP"
+            ],
+            "nb_ressources": 1
+          },
+          {
+            "titre": "Répartition des capacités et des services par installation",
+            "id": "m02-repartition-des-capacites-et-des-services-autorises-au-permis-par-installation",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "L’information présentée dans la présente publication est également disponible sur le portail web « M02-Répertoire des établissements » (https://m02.pub.msss.rtss.qc.ca/index.asp). Il peut toutefois y ",
+            "date_modif": "2026-09-03T18:30:02.540434",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 3
+          },
+          {
+            "titre": "Contour financier - Dépenses de services à domicile par programme et par région",
+            "id": "contour-financier-depenses-de-services-a-domicile-par-programme-et-par-region",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Rapports statistiques périodiques",
+            "date_modif": "2026-04-29T21:53:51.527185",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 12
+          },
+          {
+            "titre": "Contour financier - Dépenses de services à domicile par centre d'activités et par région",
+            "id": "contour-financier-depenses-de-services-a-domicile-par-centre-d-activites-et-par-region",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Rapports statistiques périodiques",
+            "date_modif": "2026-04-29T21:52:17.987267",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV"
+            ],
+            "nb_ressources": 12
+          },
+          {
+            "titre": "Fichiers cartographiques M02 des installations et établissements",
+            "id": "fichiers-cartographiques-m02-des-installations-et-etablissements",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Fichier cartographique (shapefile) relatif à la localisation des installations du réseau de la santé et des services sociaux. L’installation est le lieu physique où sont dispensés des soins de santé e",
+            "date_modif": "2026-09-16T18:20:45.134090",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF",
+              "SHP"
+            ],
+            "nb_ressources": 6
+          },
+          {
+            "titre": "Limites territoriales",
+            "id": "limites-territoriales",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "La mise à jour du jeu de données a été effectuée le 15 avril 2026.\r\nInformations concernant les limites territoriales :\r\n* des réseaux locaux de services (RLS)\r\n* des centres locaux de services commun",
+            "date_modif": "2026-04-16T18:20:40.853070",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "SHP"
+            ],
+            "nb_ressources": 5
+          },
+          {
+            "titre": "Estimations et projections de population comparables",
+            "id": "estimations-et-projections-de-population-comparables",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Les données sont produites par l'Institut de la statistique du Québec (ISQ). Cet organisme est responsable de la gestion des données officielles de population pour l'ensemble du territoire québécois. ",
+            "date_modif": "2026-04-29T21:48:05.778446",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 2
+          },
+          {
+            "titre": "Fichier cumulatif des données des urgences",
+            "id": "fichier-cumulatif-des-donnees-des-urgences",
+            "organisation": "Ministère de la Santé et des services sociaux",
+            "notes": "Le fichier des données cumulatives à l’urgence affiche le portrait global des indicateurs ciblés observés du 1er avril à la fin de la dernière période validée de l’année financière courante, ainsi que",
+            "date_modif": "2026-09-13T17:40:22.652076",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 2
+          }
+        ]
+      }
+    },
+    "mtrav": {
+      "mots_cles": {
+        "travail": [
+          {
+            "titre": "Liste regroupée des arrêts de travail au Québec",
+            "id": "liste-des-arrets-de-travail-au-quebec",
+            "organisation": "Ministère du Travail",
+            "notes": " Le ministère du Travail rend dorénavant disponibles deux ensembles de données à partir des avis de grève et de lock-out qu’il reçoit. \r\n\r\n[Pour consulter les données non regroupées](/recherche/datase",
+            "date_modif": "2026-08-27T16:41:03.439192",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF",
+              "XLSX"
+            ],
+            "nb_ressources": 25
+          },
+          {
+            "titre": "Liste non regroupée des arrêts de travail au Québec",
+            "id": "liste-non-regroupee-des-arrets-de-travail-au-quebec",
+            "organisation": "Ministère du Travail",
+            "notes": " Le ministère du Travail rend dorénavant disponibles deux ensembles de données à partir des avis de grève et de lock-out qu’il reçoit.  \r\n\r\n[Pour consulter les données regroupées](/recherche/dataset/l",
+            "date_modif": "2026-08-27T16:41:11.874390",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF",
+              "XLSX"
+            ],
+            "nb_ressources": 11
+          },
+          {
+            "titre": "Liste des conventions collectives en vigueur au Québec",
+            "id": "la-liste-des-conventions-collectives-en-vigueur-au-quebec",
+            "organisation": "Ministère du Travail",
+            "notes": "Ce fichier contient la liste des conventions collectives en vigueur relevant du Code du travail québécois, incluant les conventions de dernière génération expirées depuis moins de trois ans. \r\nOn y pr",
+            "date_modif": "2026-09-18T19:39:59.590745",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "PDF",
+              "XLSX"
+            ],
+            "nb_ressources": 3
+          },
+          {
+            "titre": "Indice de croissance des taux de salaire négociés",
+            "id": "indice-de-croissance-des-taux-de-salaires-negocies",
+            "organisation": "Ministère du Travail",
+            "notes": "Le Secrétariat du travail du Québec fait un suivi systématique des clauses salariales qui figurent dans les conventions collectives dont la taille minimale de l’unité de négociation est de 50 salariés",
+            "date_modif": "2026-04-10T16:49:02.185785",
+            "obsolète": false,
+            "licence": "Attribution (CC-BY 4.0)",
+            "formats": [
+              "CSV",
+              "XLSX"
+            ],
+            "nb_ressources": 2
+          }
+        ],
+        "normes du travail": [],
+        "santé et sécurité": []
+      }
+    },
+    "cnestt": {
+      "mots_cles": {
+        "normes du travail": [],
+        "équité salariale": []
+      }
+    },
+    "frqs": {
+      "mots_cles": {
+        "recherche": [
+          {
+            "titre": "Liste du financement accordé par le Fonds de recherche du Québec - Santé",
+            "id": "liste-du-financement-accorde-par-le-fonds-de-recherche-du-quebec-sante",
+            "organisation": "Fonds de recherche du Québec – Santé",
+            "notes": "Liste du financement accordé par le Fonds de recherche du Québec - Santé \r\n\r\nLe 1er juin 2024 est entrée en vigueur la Loi modifiant principalement la Loi sur le ministère de l’Économie et de l’Innova",
+            "date_modif": "2026-01-30T12:51:17.461408",
+            "obsolète": false,
+            "licence": "Attribution, pas d’utilisation commerciale (CC-BY-NC 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 7
+          }
+        ],
+        "santé": [
+          {
+            "titre": "Liste du financement accordé par le Fonds de recherche du Québec - Santé",
+            "id": "liste-du-financement-accorde-par-le-fonds-de-recherche-du-quebec-sante",
+            "organisation": "Fonds de recherche du Québec – Santé",
+            "notes": "Liste du financement accordé par le Fonds de recherche du Québec - Santé \r\n\r\nLe 1er juin 2024 est entrée en vigueur la Loi modifiant principalement la Loi sur le ministère de l’Économie et de l’Innova",
+            "date_modif": "2026-01-30T12:51:17.461408",
+            "obsolète": false,
+            "licence": "Attribution, pas d’utilisation commerciale (CC-BY-NC 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 7
+          }
+        ],
+        "société": [
+          {
+            "titre": "Liste du financement accordé par le Fonds de recherche du Québec - Santé",
+            "id": "liste-du-financement-accorde-par-le-fonds-de-recherche-du-quebec-sante",
+            "organisation": "Fonds de recherche du Québec – Santé",
+            "notes": "Liste du financement accordé par le Fonds de recherche du Québec - Santé \r\n\r\nLe 1er juin 2024 est entrée en vigueur la Loi modifiant principalement la Loi sur le ministère de l’Économie et de l’Innova",
+            "date_modif": "2026-01-30T12:51:17.461408",
+            "obsolète": false,
+            "licence": "Attribution, pas d’utilisation commerciale (CC-BY-NC 4.0)",
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "nb_ressources": 7
+          }
+        ]
+      }
+    }
+  },
+  "jeux_uniques": {
+    "registre-quebecois-des-consultants-en-immigration": {
+      "titre": "Registre québécois des consultants en immigration",
+      "id": "registre-quebecois-des-consultants-en-immigration",
+      "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+      "notes": "Le [Règlement sur les consultants en immigration](http://legisquebec.gouv.qc.ca/fr/showDoc/cr/I-0.2.1,%20r.%201) (chapitre I-0.2.1, r. 1) a pour objectif d’enrayer les mauvaises pratiques et de mieux ",
+      "date_modif": "2026-09-18T15:42:26.873494",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 1
+    },
+    "presence-des-personnes-immigrantes": {
+      "titre": "Présence des personnes immigrantes",
+      "id": "presence-des-personnes-immigrantes",
+      "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+      "notes": "Des données relatives aux taux de présence des personnes immigrantes admises au Québec dans la dernière décennie selon certaines caractéristiques, dont la durée de résidence, la catégorie d'immigratio",
+      "date_modif": "2026-06-02T13:57:38.919514",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 73
+    },
+    "planification-des-admissions-des-personnes-immigrantes-au-quebec-24-et-25": {
+      "titre": "Planification des admissions des personnes immigrantes au Québec pour les années 2024 et 2025",
+      "id": "planification-des-admissions-des-personnes-immigrantes-au-quebec-24-et-25",
+      "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+      "notes": "Le jeu de données présente des tableaux qui décrivent le volume planifié des admissions des personnes immigrantes au Québec selon la planification pluriannuelle 2024 et 2025 et le plan annuel d'immigr",
+      "date_modif": "2025-11-25T13:24:38.202317",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 4
+    },
+    "plan-d-immigration-du-quebec-2023": {
+      "titre": "Plan d'immigration du Québec 2023",
+      "id": "plan-d-immigration-du-quebec-2023",
+      "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+      "notes": "Nombre d’admissions prévues dans le Plan annuel d'immigration pour l'année 2023 selon la catégorie d'immigration.",
+      "date_modif": "2023-06-26T19:37:06.887000",
+      "obsolète": true,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 1
+    },
+    "admission-de-personnes-immigrantes-au-quebec-trimestriel": {
+      "titre": "Admission de personnes immigrantes au Québec (trimestriel)",
+      "id": "admission-de-personnes-immigrantes-au-quebec-trimestriel",
+      "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+      "notes": "Le jeu de données présente une série de tableaux qui décrivent diverses caractéristiques des personnes immigrantes admises au Québec au cours d'un trimestre.",
+      "date_modif": "2025-06-02T16:15:04.673544",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 33
+    },
+    "planification-admissions-quebec": {
+      "titre": "Planification des admissions des personnes immigrantes au Québec 2020-2022",
+      "id": "planification-admissions-quebec",
+      "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+      "notes": "Le jeu de données présente des tableaux qui décrivent le volume planifié des admissions des personnes immigrantes au Québec selon la planification pluriannuelle 2020-2022 et les plans annuels d'immigr",
+      "date_modif": "2024-11-18T16:00:16.107219",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 5
+    },
+    "nombre-de-certificats-de-selection-du-quebec-csq-delivres-par-programme-d-immigration-2016-2021": {
+      "titre": "Nombre de certificats de sélection du Québec (CSQ) délivrés par programme d’immigration, 2016-2023",
+      "id": "nombre-de-certificats-de-selection-du-quebec-csq-delivres-par-programme-d-immigration-2016-2021",
+      "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+      "notes": "Le jeu de données présente un tableau qui porte les informations sur nombre des Certificats de sélection du Québec (CSQ)  délivrés dans le cadre des programmes permanentes.",
+      "date_modif": "2024-10-15T13:22:32.069102",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 3
+    },
+    "portraits-annuels-des-admissions-permanentes-au-quebec": {
+      "titre": "Portraits annuels des admissions permanentes au Québec",
+      "id": "portraits-annuels-des-admissions-permanentes-au-quebec",
+      "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+      "notes": "Le jeu de données présente une série de tableaux qui décrivent, pour les cinq dernières années, les données annuelles sur le nombre de personnes immigrantes admises au Québec selon certaines caractéri",
+      "date_modif": "2026-08-17T19:25:17.872578",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 51
+    },
+    "portraits-annuels-des-admissions-temporaires-au-quebec-flux-et-stock-au-31-decembre": {
+      "titre": "Portraits annuels des admissions temporaires au Québec - flux et stock au 31 décembre",
+      "id": "portraits-annuels-des-admissions-temporaires-au-quebec-flux-et-stock-au-31-decembre",
+      "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+      "notes": "Le jeu de données  présente une série de tableaux qui portent sur les nouvelles entrées de personnes immigrantes temporaires au Québec ainsi que sur l’effectif au 31 décembre pour chacune des années d",
+      "date_modif": "2025-06-02T16:00:39.283871",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 19
+    },
+    "programme-regulier-des-travailleurs-qualifies-invitations-pays-de-residence": {
+      "titre": "Programme de sélection des travailleurs qualifiés – invitations – pays de citoyenneté",
+      "id": "programme-regulier-des-travailleurs-qualifies-invitations-pays-de-residence",
+      "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+      "notes": "Pays de citoyenneté des personnes invitées à présenter une demande de sélection permanente dans le cadre du Programme de sélection des travailleurs qualifiés par année et par trimestre.",
+      "date_modif": "2026-09-02T11:59:09.450669",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 2
+    },
+    "nombre-de-personnes-ayant-participe-a-un-cours-de-francais-offert-par-le-mifi-par-annee-financiere": {
+      "titre": "Nombre de personnes ayant participé à un cours de français offert par le MIFI, par année financière",
+      "id": "nombre-de-personnes-ayant-participe-a-un-cours-de-francais-offert-par-le-mifi-par-annee-financiere",
+      "organisation": "Ministère de l’Immigration, de la Francisation et de l’Intégration",
+      "notes": "Le jeu de données présente un tableau qui porte les informations sur nombre de personnes ayant participé à un cours de français offert par le MIFI, par année financière (2016-2017 au 2023-2024).",
+      "date_modif": "2024-10-15T13:35:13.952542",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 2
+    },
+    "richesse-fonciere-uniformisee": {
+      "titre": "Richesse foncière uniformisée",
+      "id": "richesse-fonciere-uniformisee",
+      "organisation": "Ministère des Affaires municipales et de l'Habitation",
+      "notes": "La richesse foncière uniformisée (RFU) permet de mesurer et de comparer la capacité des municipalités à générer des revenus de taxes et de compensations tenant lieu de taxes. Elle peut servir au parta",
+      "date_modif": "2026-09-22T11:45:55.841490",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "XLSX"
+      ],
+      "nb_ressources": 37
+    },
+    "profil-financier-des-municipalites-locales": {
+      "titre": "Profil financier des municipalités locales",
+      "id": "profil-financier-des-municipalites-locales",
+      "organisation": "Ministère des Affaires municipales et de l'Habitation",
+      "notes": "Le Profil financier d'une municipalité locale permet d'obtenir différentes données financières et fiscales, des ratios calculés à partir de ces données ainsi que des comparaisons avec différents group",
+      "date_modif": "2026-09-01T08:18:38.438256",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF",
+        "XLSX"
+      ],
+      "nb_ressources": 215
+    },
+    "sqeep-2019-2025": {
+      "titre": "Stratégie québécoise d'économie d'eau potable 2019-2025",
+      "id": "sqeep-2019-2025",
+      "organisation": "Ministère des Affaires municipales et de l'Habitation",
+      "notes": "La Stratégie québécoise d’économie d’eau potable (la Stratégie) 2019-2025 comprend des outils plus complets permettant de dresser un meilleur portrait de l’utilisation de l’eau potable et du coût des ",
+      "date_modif": "2026-09-11T17:21:04.527652",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 42
+    },
+    "repertoire-des-municipalites-du-quebec": {
+      "titre": "Répertoire des municipalités du Québec",
+      "id": "repertoire-des-municipalites-du-quebec",
+      "organisation": "Ministère des Affaires municipales et de l'Habitation",
+      "notes": "<div style=\"\r\n    box-shadow: 0 0 0 1px #C7CCD4;\r\n    background-color: white; \r\n    border-left: 40px solid #F8E69A; \r\n    padding: 15px;\r\n    margin: 20px 0;\r\n    border-radius: 4px;\r\n    font-famil",
+      "date_modif": "2026-10-01T11:04:50.064703",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "XML"
+      ],
+      "nb_ressources": 19
+    },
+    "rapport-financier-des-organismes-municipaux-et-autres-documents": {
+      "titre": "Rapport financier des organismes municipaux et autres documents connexes",
+      "id": "rapport-financier-des-organismes-municipaux-et-autres-documents",
+      "organisation": "Ministère des Affaires municipales et de l'Habitation",
+      "notes": "Chaque année, les municipalités locales, les MRC, les communautés métropolitaines, les organismes publics de transport et les régies intermunicipales doivent transmettre au ministère des Affaires muni",
+      "date_modif": "2026-09-01T08:25:11.337358",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF",
+        "XLSX"
+      ],
+      "nb_ressources": 189
+    },
+    "densite-d-occupation-residentielle-du-territoire": {
+      "titre": "Densité d'occupation résidentielle du territoire",
+      "id": "densite-d-occupation-residentielle-du-territoire",
+      "organisation": "Ministère des Affaires municipales et de l'Habitation",
+      "notes": "La densité d’occupation résidentielle du territoire est une estimation du nombre d’habitantes et d’habitants au kilomètre carré (km²) basée sur les données du recensement de Statistique Canada. Elle e",
+      "date_modif": "2024-08-05T20:14:42.146592",
+      "obsolète": true,
+      "licence": "Attribution, partage dans les mêmes conditions (CC-BY-SA 4.0)",
+      "formats": [
+        "PDF",
+        "ZIP"
+      ],
+      "nb_ressources": 5
+    },
+    "resultats-des-elections-municipales-generales": {
+      "titre": "Résultats des élections municipales générales",
+      "id": "resultats-des-elections-municipales-generales",
+      "organisation": "Ministère des Affaires municipales et de l'Habitation",
+      "notes": "Le ministère des Affaires municipales et de l'Habitation rend disponibles, pour chacune des municipalités, les informations transmises par les présidents d’élection lors des élections générales 2005, ",
+      "date_modif": "2026-08-25T18:12:03.912118",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "XLSX"
+      ],
+      "nb_ressources": 16
+    },
+    "sqeep": {
+      "titre": "Stratégie québécoise d'économie d'eau potable 2011 à 2017",
+      "id": "sqeep",
+      "organisation": "Ministère des Affaires municipales et de l'Habitation",
+      "notes": "La Stratégie québécoise d’économie d’eau potable (la Stratégie) a été mise en place en mars 2011 par le ministère des Affaires municipales et de l’Habitation (MAMH) pour répondre à l’engagement 49 de ",
+      "date_modif": "2024-04-02T13:58:21.099536",
+      "obsolète": true,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 6
+    },
+    "roles-d-evaluation-fonciere-du-quebec": {
+      "titre": "Rôle d'évaluation foncière du Québec",
+      "id": "roles-d-evaluation-fonciere-du-quebec",
+      "organisation": "Ministère des Affaires municipales et de l'Habitation",
+      "notes": "Le rôle d’évaluation foncière présente l’inventaire des immeubles situés sur le territoire d’une municipalité, évalués sur une même base et à une même date. Il constitue l'élément central du régime fi",
+      "date_modif": "2026-08-24T15:17:22.558193",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "FGDB",
+        "GEOJSON",
+        "GPKG",
+        "PDF",
+        "SHP",
+        "ZIP"
+      ],
+      "nb_ressources": 52
+    },
+    "municipalites-avec-populations-etablies-de-tiques-ixodes-scapularis": {
+      "titre": "Cartographie de la répartition actuelle et future des tiques Ixodes scapularis au Québec en fonction des changements climatiques",
+      "id": "municipalites-avec-populations-etablies-de-tiques-ixodes-scapularis",
+      "organisation": "Institut national de santé publique du Québec (INSPQ)",
+      "notes": "Les municipalités avec des populations établies de tiques _Ixodes scapularis_ (tiques à pattes noires) sont les municipalités où des populations de tiques se reproduisent et survivent d’une année à l’",
+      "date_modif": "2026-07-24T20:22:31.809341",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "HTML",
+        "PDF",
+        "SHP"
+      ],
+      "nb_ressources": 19
+    },
+    "ilots-de-chaleur-fraicheur-urbains-et-ecarts-de-temperature-relatifs-2020-2022": {
+      "titre": "Îlots de chaleur/fraîcheur urbains, écarts de température et indice d’intensité d’îlots de chaleur urbains 2020-2022",
+      "id": "ilots-de-chaleur-fraicheur-urbains-et-ecarts-de-temperature-relatifs-2020-2022",
+      "organisation": "Institut national de santé publique du Québec (INSPQ)",
+      "notes": "Les données présentées sur cette page concernent la cartographie 2020-2022 des écarts de température, les cartes de classification de ces écarts de température (soit les îlots de chaleur et fraicheur ",
+      "date_modif": "2026-07-24T18:41:55.750326",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "GEOTIFF",
+        "GPKG",
+        "HTML",
+        "PDF",
+        "SHP",
+        "WEB",
+        "XLSX"
+      ],
+      "nb_ressources": 17
+    },
+    "ilots-de-chaleur-fraicheur-urbains-et-ecarts-de-temperature-relatifs-2013-2014": {
+      "titre": "Îlots de chaleur/fraîcheur urbains, écarts de température et indice d’intensité d’îlots de chaleur urbains 2013-2014",
+      "id": "ilots-de-chaleur-fraicheur-urbains-et-ecarts-de-temperature-relatifs-2013-2014",
+      "organisation": "Institut national de santé publique du Québec (INSPQ)",
+      "notes": "Les données présentées sur cette page concernent la cartographie 2013-2014 des écarts de température, les cartes de classification de ces écarts de température (soit les îlots de chaleur et fraicheur ",
+      "date_modif": "2026-07-24T18:20:39.363111",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "GEOTIFF",
+        "GPKG",
+        "HTML",
+        "PDF",
+        "SHP",
+        "WEB",
+        "XLSX"
+      ],
+      "nb_ressources": 16
+    },
+    "indice-de-defavorisation-du-quebec-2021": {
+      "titre": "Indice de défavorisation du Québec 2021",
+      "id": "indice-de-defavorisation-du-quebec-2021",
+      "organisation": "Institut national de santé publique du Québec (INSPQ)",
+      "notes": "L’indice de défavorisation a été conçu à la fin des années 1990 dans le but de mesurer la défavorisation des Québécois à petite échelle géographique. Il sert à des fins de recherche sur les inégalités",
+      "date_modif": "2026-07-24T19:37:14.905328",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "GEOJSON",
+        "HTML",
+        "PDF",
+        "SHP",
+        "WEB",
+        "XLSX"
+      ],
+      "nb_ressources": 8
+    },
+    "indice-de-defavorisation-du-quebec-2011": {
+      "titre": "Indice de défavorisation du Québec 2011",
+      "id": "indice-de-defavorisation-du-quebec-2011",
+      "organisation": "Institut national de santé publique du Québec (INSPQ)",
+      "notes": "L’indice de défavorisation a été conçu à la fin des années 1990 dans le but de mesurer la défavorisation des Québécois à petite échelle géographique. Il sert à des fins de recherche sur les inégalités",
+      "date_modif": "2026-07-24T19:51:43.156088",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "GEOJSON",
+        "HTML",
+        "PDF",
+        "SHP",
+        "WEB",
+        "XLSX"
+      ],
+      "nb_ressources": 8
+    },
+    "indice-de-defavorisation-du-quebec-2016": {
+      "titre": "Indice de défavorisation du Québec 2016",
+      "id": "indice-de-defavorisation-du-quebec-2016",
+      "organisation": "Institut national de santé publique du Québec (INSPQ)",
+      "notes": "L’indice de défavorisation a été conçu à la fin des années 1990 dans le but de mesurer la défavorisation des Québécois à petite échelle géographique. Il sert à des fins de recherche sur les inégalités",
+      "date_modif": "2026-07-24T19:44:50.326519",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "GEOJSON",
+        "HTML",
+        "PDF",
+        "SHP",
+        "WEB",
+        "XLSX"
+      ],
+      "nb_ressources": 8
+    },
+    "variations-des-temperatures-pour-les-perimetres-d-urbanisation-des-plus-petites-municipalites": {
+      "titre": "Variations des températures pour les périmètres d’urbanisation des plus petites municipalités 2020-2022",
+      "id": "variations-des-temperatures-pour-les-perimetres-d-urbanisation-des-plus-petites-municipalites",
+      "organisation": "Institut national de santé publique du Québec (INSPQ)",
+      "notes": "Carte d’illustration des écarts de température relatifs de surface pour tous les périmètres d’urbanisation de petite taille du Québec. L’écart de température relatif est la différence de température e",
+      "date_modif": "2026-07-24T18:57:46.618268",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "GEOTIFF",
+        "HTML",
+        "PDF",
+        "SHP",
+        "WEB",
+        "XLSX"
+      ],
+      "nb_ressources": 8
+    },
+    "indices-de-desert-alimentaire-et-d-accessibilite-aux-commerces-d-alimentation": {
+      "titre": "Indices de désert alimentaire et d’accessibilité aux commerces d’alimentation",
+      "id": "indices-de-desert-alimentaire-et-d-accessibilite-aux-commerces-d-alimentation",
+      "organisation": "Institut national de santé publique du Québec (INSPQ)",
+      "notes": "Le désert alimentaire est un secteur offrant un faible accès à des commerces d’alimentation (épiceries, supermarchés et marchés publics), c’est-à-dire une aire de diffusion (AD) dans laquelle les rési",
+      "date_modif": "2026-07-24T20:08:45.827901",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "HTML",
+        "PDF",
+        "SHP",
+        "WEB",
+        "XLSX"
+      ],
+      "nb_ressources": 7
+    },
+    "analyse-de-changement-ilots-chaleur-fraicheur-et-indice-intensite-ilots-chaleur-urbains": {
+      "titre": "Analyse de changement entre la cartographie des îlots de chaleur/fraîcheur 2013-2014 et 2020-2022",
+      "id": "analyse-de-changement-ilots-chaleur-fraicheur-et-indice-intensite-ilots-chaleur-urbains",
+      "organisation": "Institut national de santé publique du Québec (INSPQ)",
+      "notes": "Cartographies de l’analyse de changement entre la *[cartographie des îlots de chaleur/fraîcheur 2020-2022](https://www.donneesquebec.ca/recherche/dataset/ilots-de-chaleur-fraicheur-urbains-et-ecarts-d",
+      "date_modif": "2026-07-24T18:43:08.463821",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "GEOTIFF",
+        "HTML",
+        "PDF",
+        "SHP",
+        "WEB",
+        "XLSX"
+      ],
+      "nb_ressources": 9
+    },
+    "ilots-de-chaleur-fraicheur-urbains-et-temperature-de-surface": {
+      "titre": "Îlots de chaleur/fraîcheur urbains et température de surface 2012",
+      "id": "ilots-de-chaleur-fraicheur-urbains-et-temperature-de-surface",
+      "organisation": "Institut national de santé publique du Québec (INSPQ)",
+      "notes": "**Avertissement**\r\n\r\nLa version des Îlots de chaleur/fraîcheur urbains et température de surface de 2012 est maintenant remplacée par une version plus récente de 2013-2014 et de 2020-2022. Les données",
+      "date_modif": "2026-07-24T17:51:58.643564",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "GEOTIFF",
+        "HTML",
+        "PDF",
+        "SHP",
+        "WEB"
+      ],
+      "nb_ressources": 7
+    },
+    "canopee-des-six-rmr-du-quebec": {
+      "titre": "Canopée des six RMR du Québec 2022",
+      "id": "canopee-des-six-rmr-du-quebec",
+      "organisation": "Institut national de santé publique du Québec (INSPQ)",
+      "notes": "La canopée se définit par la projection au sol de la cime (couronne) des arbres (incluant les feuilles, les branches et le tronc), qui est visible du ciel. Toute végétation ayant une hauteur supérieur",
+      "date_modif": "2026-07-24T19:22:03.674937",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "FGDB",
+        "HTML",
+        "PDF",
+        "SHP",
+        "WEB"
+      ],
+      "nb_ressources": 21
+    },
+    "repartition-geographique-des-particuliers-ayant-un-revenu-total-de-1-m-ou-plus-2014-a-2023": {
+      "titre": "Répartition géographique des particuliers ayant un revenu total de 1 M$ ou plus, 2014 à 2023",
+      "id": "repartition-geographique-des-particuliers-ayant-un-revenu-total-de-1-m-ou-plus-2014-a-2023",
+      "organisation": "Revenu Québec",
+      "notes": "Nombre de particuliers ayant déclaré un revenu total de 1 000 000 $ ou plus selon la région administrative, pour les années d’imposition 2014 à 2023, en date du 30 septembre 2024.",
+      "date_modif": "2024-12-03T14:00:57.091324",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 1
+    },
+    "credit-d-impot-pour-aidant-naturel-2014-a-2019": {
+      "titre": "Crédit d'impôt pour aidant naturel, 2014 à 2019",
+      "id": "credit-d-impot-pour-aidant-naturel-2014-a-2019",
+      "organisation": "Revenu Québec",
+      "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour aidant naturel et montant moyen versé, selon l’âge, le genre et la région administrative, pour les années d’imposition 2014 à 2019, en d",
+      "date_modif": "2024-04-05T12:10:19.431107",
+      "obsolète": true,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 1
+    },
+    "credit-d-impot-pour-personne-aidante-personne-aidee-majeure-atteinte-d-une-deficience-2020-a-2023": {
+      "titre": "Crédit d'impôt pour personne aidante - volet personne aidée majeure et atteinte d'une déficience, 2020 à 2023",
+      "id": "credit-d-impot-pour-personne-aidante-personne-aidee-majeure-atteinte-d-une-deficience-2020-a-2023",
+      "organisation": "Revenu Québec",
+      "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour personne aidante et montant moyen versé, spécifiquement pour le volet où la personne aidée est majeure et atteinte d’une déficience (ave",
+      "date_modif": "2024-12-03T13:10:06.351181",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 1
+    },
+    "credit-d-impot-renovert-2016-a-2019": {
+      "titre": "Crédit d'impôt RénoVert, 2016 à 2019",
+      "id": "credit-d-impot-renovert-2016-a-2019",
+      "organisation": "Revenu Québec",
+      "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt RénoVert et montant moyen versé, selon l’âge, le genre, l’état civil et la région administrative, pour les années d’imposition 2016 à 2019, e",
+      "date_modif": "2024-04-05T12:08:07.391601",
+      "obsolète": true,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 1
+    },
+    "credit-d-impot-pour-frais-de-garde-d-enfants-2014-a-2023": {
+      "titre": "Crédit d'impôt pour frais de garde d'enfants, 2014 à 2023",
+      "id": "credit-d-impot-pour-frais-de-garde-d-enfants-2014-a-2023",
+      "organisation": "Revenu Québec",
+      "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour frais de garde d’enfants et montant moyen versé, selon l’âge, le sexe, l’état civil et la région administrative, pour les années d’impos",
+      "date_modif": "2024-12-03T14:31:26.257494",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 1
+    },
+    "credit-d-impot-pour-personne-aidante-personne-aidee-70-ans-ou-plus-2020-a-2023": {
+      "titre": "Crédit d'impôt pour personne aidante - volet personne aidée âgée de 70 ans ou plus et atteinte d'aucune déficience, 2020 à 2023",
+      "id": "credit-d-impot-pour-personne-aidante-personne-aidee-70-ans-ou-plus-2020-a-2023",
+      "organisation": "Revenu Québec",
+      "notes": "Nombre de particuliers ayant bénéficié d’un crédit d’impôt pour personne aidante et montant moyen versé, spécifiquement pour le volet où il y a cohabitation avec la personne aidée (autre que le conjoi",
+      "date_modif": "2024-12-03T14:17:43.699053",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 1
+    },
+    "indice-des-bons-du-tresor-du-quebec": {
+      "titre": "Indice des bons du Trésor du Québec",
+      "id": "indice-des-bons-du-tresor-du-quebec",
+      "organisation": "Ministère des Finances du Québec",
+      "notes": "L'indice des bons du Trésor du Québec (91 jours), préparé par le ministère des Finances du Québec, est basé sur un portefeuille théorique de bons du Trésor du Québec d'une durée d'environ 91 jours au ",
+      "date_modif": "2023-06-26T19:37:40.663000",
+      "obsolète": true,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 4
+    },
+    "cadre-financier-pluriannuel-du-gouvernement-du-quebec-publie-dans-le-rapport-preelectoral": {
+      "titre": "Cadre financier pluriannuel du gouvernement du Québec publié dans le Rapport préélectoral sur l’état des finances publiques du Québec",
+      "id": "cadre-financier-pluriannuel-du-gouvernement-du-quebec-publie-dans-le-rapport-preelectoral",
+      "organisation": "Ministère des Finances du Québec",
+      "notes": "Ce jeu de données présente le cadre financier pluriannuel du gouvernement du Québec tel que publié dans le Rapport préélectoral sur l’état des finances publiques du Québec. Ce rapport est publié le tr",
+      "date_modif": "2024-08-09T18:11:44.261330",
+      "obsolète": true,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 1
+    },
+    "comptes-publics-du-gouvernement-volume-2": {
+      "titre": "Comptes publics du gouvernement – Volume 2",
+      "id": "comptes-publics-du-gouvernement-volume-2",
+      "organisation": "Ministère des Finances du Québec",
+      "notes": "Ces jeux de données présentent certaines données du volume 2 des comptes publics déposés annuellement par le ministère des Finances à l’Assemblée nationale.\r\n\r\nIls regroupent des renseignements financ",
+      "date_modif": "2025-10-21T14:39:28.346482",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 15
+    },
+    "depenses-consolidees-par-mission": {
+      "titre": "Comptes publics du gouvernement – Volume 1",
+      "id": "depenses-consolidees-par-mission",
+      "organisation": "Ministère des Finances du Québec",
+      "notes": "Présente certaines données du volume 1 des comptes publics déposés annuellement par le ministère des Finances à l’Assemblée nationale.\r\n\r\nCe jeu de données regroupe des renseignements financiers des a",
+      "date_modif": "2025-10-21T14:01:55.878545",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 1
+    },
+    "dette-du-gouvernement-du-quebec": {
+      "titre": "Dette brute du gouvernement du Québec",
+      "id": "dette-du-gouvernement-du-quebec",
+      "organisation": "Ministère des Finances du Québec",
+      "notes": "Au cours des dernières années, la dette du gouvernement a pris une importance grandissante dans les discussions sur les finances publiques. Les citoyens sont préoccupés par le niveau de la dette et pa",
+      "date_modif": "2024-08-09T18:35:04.395629",
+      "obsolète": true,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 5
+    },
+    "http-www-budget-finances-gouv-qc-ca-budget-en-chiffres": {
+      "titre": "Cadre financier pluriannuel du gouvernement du Québec",
+      "id": "http-www-budget-finances-gouv-qc-ca-budget-en-chiffres",
+      "organisation": "Ministère des Finances du Québec",
+      "notes": "Ce jeu de données présente le cadre financier pluriannuel du gouvernement du Québec. Il est usuellement publié deux fois par année, soit lors du dépôt du budget du Québec et lors de celui du _Point su",
+      "date_modif": "2024-08-09T18:08:15.364112",
+      "obsolète": true,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 3
+    },
+    "dette-nette-du-gouvernement-du-quebec": {
+      "titre": "Dette nette du gouvernement du Québec",
+      "id": "dette-nette-du-gouvernement-du-quebec",
+      "organisation": "Ministère des Finances du Québec",
+      "notes": "La dette nette correspond à la dette qui a servi à financer les actifs non financiers (immobilisations) et les déficits cumulés. Elle est obtenue si l’on soustrait les actifs financiers du gouvernemen",
+      "date_modif": "2023-07-07T12:42:35.749123",
+      "obsolète": true,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 5
+    },
+    "rehabilitation-des-sites-contamines-sous-la-responsabilite-de-l-etat": {
+      "titre": "Réhabilitation des sites contaminés sous la responsabilité de l'État",
+      "id": "rehabilitation-des-sites-contamines-sous-la-responsabilite-de-l-etat",
+      "organisation": "Ministère des Finances du Québec",
+      "notes": "Ce jeu de données a pour but de fournir les informations pour comprendre la gestion des sites contaminés sous la responsabilité du gouvernement du Québec et en suivre la réhabilitation. Pour constitue",
+      "date_modif": "2026-01-29T19:15:26.648360",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "HTML",
+        "PDF"
+      ],
+      "nb_ressources": 3
+    },
+    "dette-representant-les-deficits-cumules": {
+      "titre": "Dette représentant les déficits cumulés",
+      "id": "dette-representant-les-deficits-cumules",
+      "organisation": "Ministère des Finances du Québec",
+      "notes": "La dette représentant les déficits cumulés au sens des comptes publics représente la différence entre les passifs et les actifs du gouvernement (financiers et non financiers). Il s’agit de la « mauvai",
+      "date_modif": "2024-08-09T18:37:27.958775",
+      "obsolète": true,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 5
+    },
+    "revenus-et-depenses-par-composante-automne-2021": {
+      "titre": "Prévision des revenus et des dépenses par composante",
+      "id": "revenus-et-depenses-par-composante-automne-2021",
+      "organisation": "Ministère des Finances du Québec",
+      "notes": "Ce jeu de données inclut la prévision des revenus et des dépenses du gouvernement du Québec par composante. Il est usuellement publié deux fois par année, soit lors du dépôt du budget du Québec  et lo",
+      "date_modif": "2024-08-21T18:36:45.603396",
+      "obsolète": true,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 3
+    },
+    "titres-et-emprunts-emis-par-le-quebec": {
+      "titre": "Titres et emprunts émis par le  Québec",
+      "id": "titres-et-emprunts-emis-par-le-quebec",
+      "organisation": "Ministère des Finances du Québec",
+      "notes": "# Nouveaux emprunts émis par le gouvernement du Québec (non vérifiés).\n\n__DÉFINITIONS DES PRODUITS D’ÉPARGNE :__\n\n\n__RÉGIMES DE BILLETS À MOYEN TERME DU QUÉBEC__\n\nEmprunts réalisés par le gouvernement",
+      "date_modif": "2025-05-30T15:29:51.240099",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 7
+    },
+    "enquete-la-relance-au-secondaire-en-formation-professionnelle": {
+      "titre": "Enquête La Relance au secondaire en formation professionnelle",
+      "id": "enquete-la-relance-au-secondaire-en-formation-professionnelle",
+      "organisation": "Ministère de l'Éducation et Ministère de l'Enseignement supérieur",
+      "notes": "Le ministère de l’Éducation vise à arrimer les programmes de formation aux exigences du marché du travail et de la société québécoise. L’un des outils privilégiés pour atteindre cet objectif est celui",
+      "date_modif": "2026-03-09T20:20:54.671682",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 3
+    },
+    "indices-de-defavorisation": {
+      "titre": "Indices de défavorisation",
+      "id": "indices-de-defavorisation",
+      "organisation": "Ministère de l'Éducation et Ministère de l'Enseignement supérieur",
+      "notes": "Le ministère de l'Éducation (MEQ) calcule annuellement deux indices de défavorisation pour les 69 centres de services scolaires et commissions scolaires linguistiques soit :\r\n\r\n•\tl'Indice de milieu so",
+      "date_modif": "2026-07-03T17:50:57.042127",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "FGDB",
+        "GEOJSON",
+        "GPKG",
+        "HTML",
+        "PDF",
+        "SHP"
+      ],
+      "nb_ressources": 11
+    },
+    "localisation-des-etablissements-d-enseignement-du-reseau-scolaire-au-quebec": {
+      "titre": "Localisation des établissements d'enseignement du réseau scolaire au Québec",
+      "id": "localisation-des-etablissements-d-enseignement-du-reseau-scolaire-au-quebec",
+      "organisation": "Ministère de l'Éducation et Ministère de l'Enseignement supérieur",
+      "notes": "Localisation des écoles du réseau public (francophone, anglophone et statut particulier) ainsi que les écoles privées et gouvernementales pour les ordres d'enseignement préscolaire, primaire, secondai",
+      "date_modif": "2026-09-22T12:59:36.299573",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "FGDB",
+        "GEOJSON",
+        "HTML",
+        "KML",
+        "LYR",
+        "PDF",
+        "SHP",
+        "TAB",
+        "WFS",
+        "WMS"
+      ],
+      "nb_ressources": 28
+    },
+    "soins-et-services-en-sante-perinatale": {
+      "titre": "Soins et services en santé périnatale",
+      "id": "soins-et-services-en-sante-perinatale",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "12 octobre 2022 - Ce jeu de données a été archivé puisqu'il n'est plus mis à jour. Tableaux de résultats sur les soins et services en santé périnatale. Les tableaux présentent notamment des statistiqu",
+      "date_modif": "2024-03-26T14:33:11.578210",
+      "obsolète": true,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "ZIP"
+      ],
+      "nb_ressources": 1
+    },
+    "as-471-rapports-financiers-annuels-des-etablissements": {
+      "titre": "AS-471 – Rapports financiers annuels des établissements de santé et de services sociaux",
+      "id": "as-471-rapports-financiers-annuels-des-etablissements",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "Selon la Loi sur les services de santé et les services sociaux (articles 295 et 395), les établissements de santé et de services sociaux, au plus tard le 30 juin de chaque année, doivent transmettre a",
+      "date_modif": "2026-04-29T21:28:21.726417",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 17
+    },
+    "portrait-des-effectifs-du-reseau-de-la-sante-et-des-services-sociaux": {
+      "titre": "Portrait des effectifs du réseau de la santé et des services sociaux",
+      "id": "portrait-des-effectifs-du-reseau-de-la-sante-et-des-services-sociaux",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "Répartition du personnel des établissements publics et privés conventionnés  du réseau de la santé et des services sociaux, selon les sous-catégories de personnel, les statuts d’emploi et les régions,",
+      "date_modif": "2026-04-29T21:57:46.781909",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 5
+    },
+    "fichiers-cartographiques-m02-des-installations-et-etablissements": {
+      "titre": "Fichiers cartographiques M02 des installations et établissements",
+      "id": "fichiers-cartographiques-m02-des-installations-et-etablissements",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "Fichier cartographique (shapefile) relatif à la localisation des installations du réseau de la santé et des services sociaux. L’installation est le lieu physique où sont dispensés des soins de santé e",
+      "date_modif": "2026-09-16T18:20:45.134090",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF",
+        "SHP"
+      ],
+      "nb_ressources": 6
+    },
+    "limites-territoriales": {
+      "titre": "Limites territoriales",
+      "id": "limites-territoriales",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "La mise à jour du jeu de données a été effectuée le 15 avril 2026.\r\nInformations concernant les limites territoriales :\r\n* des réseaux locaux de services (RLS)\r\n* des centres locaux de services commun",
+      "date_modif": "2026-04-16T18:20:40.853070",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "SHP"
+      ],
+      "nb_ressources": 5
+    },
+    "estimations-et-projections-de-population-comparables": {
+      "titre": "Estimations et projections de population comparables",
+      "id": "estimations-et-projections-de-population-comparables",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "Les données sont produites par l'Institut de la statistique du Québec (ISQ). Cet organisme est responsable de la gestion des données officielles de population pour l'ensemble du territoire québécois. ",
+      "date_modif": "2026-04-29T21:48:05.778446",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 2
+    },
+    "m02-repartition-des-capacites-et-des-services-autorises-au-permis-par-installation": {
+      "titre": "Répartition des capacités et des services par installation",
+      "id": "m02-repartition-des-capacites-et-des-services-autorises-au-permis-par-installation",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "L’information présentée dans la présente publication est également disponible sur le portail web « M02-Répertoire des établissements » (https://m02.pub.msss.rtss.qc.ca/index.asp). Il peut toutefois y ",
+      "date_modif": "2026-09-03T18:30:02.540434",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 3
+    },
+    "covid-19-portrait-quotidien-des-cas-confirmes": {
+      "titre": "COVID-19 - Portrait quotidien des cas confirmés",
+      "id": "covid-19-portrait-quotidien-des-cas-confirmes",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "Ce jeu présente le portrait quotidien du nombre de cas confirmés de COVID-19 au Québec. Veuillez consulter les notes méthodologiques pour plus de détails. \r\n***Considérant l'évolution de la pandémie d",
+      "date_modif": "2026-10-01T18:00:45.642873",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 3
+    },
+    "fichier-cumulatif-des-donnees-des-urgences": {
+      "titre": "Fichier cumulatif des données des urgences",
+      "id": "fichier-cumulatif-des-donnees-des-urgences",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "Le fichier des données cumulatives à l’urgence affiche le portrait global des indicateurs ciblés observés du 1er avril à la fin de la dernière période validée de l’année financière courante, ainsi que",
+      "date_modif": "2026-09-13T17:40:22.652076",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 2
+    },
+    "chirurgies-portrait-de-la-liste-d-attente": {
+      "titre": "Chirurgies - Portrait de la liste d'attente",
+      "id": "chirurgies-portrait-de-la-liste-d-attente",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "Le fichier présente le portrait de la liste des interventions en attente au bloc opératoire au Québec selon différentes ventilations : par période financière, par région socio-sanitaire, par délai d'a",
+      "date_modif": "2026-08-18T14:31:50.595919",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 2
+    },
+    "fichier-horaire-des-donnees-de-la-situation-a-l-urgence": {
+      "titre": "Fichier horaire des données de la situation à l'urgence",
+      "id": "fichier-horaire-des-donnees-de-la-situation-a-l-urgence",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "Le fichier horaire des données de la situation à l'urgence présente le nombre de patients sur civière, le nombre de patients sur civière plus de 24 heures et le nombre de patients sur civière plus de ",
+      "date_modif": "2026-10-02T03:46:00.134365",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 3
+    },
+    "covid-19-portrait-quotidien-des-hospitalisations": {
+      "titre": "COVID-19 - Portrait quotidien des hospitalisations",
+      "id": "covid-19-portrait-quotidien-des-hospitalisations",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "Ce jeu présente le portrait quotidien des hospitalisations actives de patients ayant un test positif au SRAS-CoV-2 ou patients ayant reçu un diagnostic de COVID-19 à l'urgence dont le type d'orientati",
+      "date_modif": "2026-10-01T15:00:25.927075",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 3
+    },
+    "med-echo-rapport-s16-sommaire-des-departs-selon-le-diagnostic-principal-par-groupe-de-rubrique": {
+      "titre": "MED-ÉCHO – Rapport S16 - Sommaire des départs selon le diagnostic principal par groupe de rubriques",
+      "id": "med-echo-rapport-s16-sommaire-des-departs-selon-le-diagnostic-principal-par-groupe-de-rubrique",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "Ce tableau donne, par groupe de rubrique, de l'information sur les départs, les séjours, les départs par groupe d'âge, les décès, les autopsies, le nombre d'opérés et le pourcentage des bénéficiaires ",
+      "date_modif": "2026-04-29T21:30:02.853040",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 16
+    },
+    "contour-financier-depenses-de-services-a-domicile-par-programme-et-par-region": {
+      "titre": "Contour financier - Dépenses de services à domicile par programme et par région",
+      "id": "contour-financier-depenses-de-services-a-domicile-par-programme-et-par-region",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "Rapports statistiques périodiques",
+      "date_modif": "2026-04-29T21:53:51.527185",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 12
+    },
+    "contour-financier-depenses-de-services-a-domicile-par-centre-d-activites-et-par-region": {
+      "titre": "Contour financier - Dépenses de services à domicile par centre d'activités et par région",
+      "id": "contour-financier-depenses-de-services-a-domicile-par-centre-d-activites-et-par-region",
+      "organisation": "Ministère de la Santé et des services sociaux",
+      "notes": "Rapports statistiques périodiques",
+      "date_modif": "2026-04-29T21:52:17.987267",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV"
+      ],
+      "nb_ressources": 12
+    },
+    "liste-des-arrets-de-travail-au-quebec": {
+      "titre": "Liste regroupée des arrêts de travail au Québec",
+      "id": "liste-des-arrets-de-travail-au-quebec",
+      "organisation": "Ministère du Travail",
+      "notes": " Le ministère du Travail rend dorénavant disponibles deux ensembles de données à partir des avis de grève et de lock-out qu’il reçoit. \r\n\r\n[Pour consulter les données non regroupées](/recherche/datase",
+      "date_modif": "2026-08-27T16:41:03.439192",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF",
+        "XLSX"
+      ],
+      "nb_ressources": 25
+    },
+    "liste-non-regroupee-des-arrets-de-travail-au-quebec": {
+      "titre": "Liste non regroupée des arrêts de travail au Québec",
+      "id": "liste-non-regroupee-des-arrets-de-travail-au-quebec",
+      "organisation": "Ministère du Travail",
+      "notes": " Le ministère du Travail rend dorénavant disponibles deux ensembles de données à partir des avis de grève et de lock-out qu’il reçoit.  \r\n\r\n[Pour consulter les données regroupées](/recherche/dataset/l",
+      "date_modif": "2026-08-27T16:41:11.874390",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF",
+        "XLSX"
+      ],
+      "nb_ressources": 11
+    },
+    "la-liste-des-conventions-collectives-en-vigueur-au-quebec": {
+      "titre": "Liste des conventions collectives en vigueur au Québec",
+      "id": "la-liste-des-conventions-collectives-en-vigueur-au-quebec",
+      "organisation": "Ministère du Travail",
+      "notes": "Ce fichier contient la liste des conventions collectives en vigueur relevant du Code du travail québécois, incluant les conventions de dernière génération expirées depuis moins de trois ans. \r\nOn y pr",
+      "date_modif": "2026-09-18T19:39:59.590745",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "PDF",
+        "XLSX"
+      ],
+      "nb_ressources": 3
+    },
+    "indice-de-croissance-des-taux-de-salaires-negocies": {
+      "titre": "Indice de croissance des taux de salaire négociés",
+      "id": "indice-de-croissance-des-taux-de-salaires-negocies",
+      "organisation": "Ministère du Travail",
+      "notes": "Le Secrétariat du travail du Québec fait un suivi systématique des clauses salariales qui figurent dans les conventions collectives dont la taille minimale de l’unité de négociation est de 50 salariés",
+      "date_modif": "2026-04-10T16:49:02.185785",
+      "obsolète": false,
+      "licence": "Attribution (CC-BY 4.0)",
+      "formats": [
+        "CSV",
+        "XLSX"
+      ],
+      "nb_ressources": 2
+    },
+    "liste-du-financement-accorde-par-le-fonds-de-recherche-du-quebec-sante": {
+      "titre": "Liste du financement accordé par le Fonds de recherche du Québec - Santé",
+      "id": "liste-du-financement-accorde-par-le-fonds-de-recherche-du-quebec-sante",
+      "organisation": "Fonds de recherche du Québec – Santé",
+      "notes": "Liste du financement accordé par le Fonds de recherche du Québec - Santé \r\n\r\nLe 1er juin 2024 est entrée en vigueur la Loi modifiant principalement la Loi sur le ministère de l’Économie et de l’Innova",
+      "date_modif": "2026-01-30T12:51:17.461408",
+      "obsolète": false,
+      "licence": "Attribution, pas d’utilisation commerciale (CC-BY-NC 4.0)",
+      "formats": [
+        "CSV",
+        "PDF"
+      ],
+      "nb_ressources": 7
+    }
+  },
+  "total_jeux_uniques": 71
+}
