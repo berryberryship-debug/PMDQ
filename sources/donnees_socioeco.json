@@ -1797,7 +1797,7 @@
             "id": "fichier-horaire-des-donnees-de-la-situation-a-l-urgence",
             "organisation": "Ministère de la Santé et des services sociaux",
             "notes": "Le fichier horaire des données de la situation à l'urgence présente le nombre de patients sur civière, le nombre de patients sur civière plus de 24 heures et le nombre de patients sur civière plus de ",
-            "date_modif": "2026-10-02T04:46:13.080598",
+            "date_modif": "2026-10-02T05:46:07.203792",
             "obsolète": false,
             "licence": "Attribution (CC-BY 4.0)",
             "formats": [
@@ -3004,7 +3004,7 @@
       "id": "fichier-horaire-des-donnees-de-la-situation-a-l-urgence",
       "organisation": "Ministère de la Santé et des services sociaux",
       "notes": "Le fichier horaire des données de la situation à l'urgence présente le nombre de patients sur civière, le nombre de patients sur civière plus de 24 heures et le nombre de patients sur civière plus de ",
-      "date_modif": "2026-10-02T04:46:13.080598",
+      "date_modif": "2026-10-02T05:46:07.203792",
       "obsolète": false,
       "licence": "Attribution (CC-BY 4.0)",
       "formats": [
