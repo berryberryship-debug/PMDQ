@@ -1,16 +1,13 @@
 {
   "version": "2.7.24",
-  "date": "2026-10-01",
-  "pages_html": 84,
-  "fichiers_totaux": 267,
-  "fichiers_python": 56,
-  "moteurs": 14,
-  "generateurs": 3,
-  "fichiers_markdown": 56,
-  "fichiers_json": 16,
+  "date": "2026-10-02",
+  "pages_html": 85,
+  "fichiers_totaux": 276,
+  "moteurs": 15,
+  "generateurs": 4,
+  "extracteurs": 1,
   "livres": 10,
-  "engagements_publies": 23,
-  "engagements_cibles": 23,
+  "engagements_publies": 24,
   "propositions": 23,
   "chantiers_ouverts": 3
 }
