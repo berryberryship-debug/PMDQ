@@ -1,14 +1,11 @@
-# Sauvegardes locales
-_backup_*/
 *.bak
 *.bak_*
-
-# Fichiers temporaires
+*.sauvegarde
+*.v2.7.*
 __pycache__/
 *.pyc
-.DS_Store
-
-# Caches
-.cache/
-*.log
-etat_socle.txt
+_backup_*/
+_archive_*/
+*.tar.gz
+output/
+data/

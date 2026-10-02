@@ -1,0 +1,1055 @@
+2026-09-29 15:47 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 8/8 OK
+  Commit    : 9160648
+
+2026-09-29 15:48 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 8/8 OK
+  Commit    : 9160648
+
+2026-09-29 15:49 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 8/8 OK
+  Commit    : a5da8ab
+
+2026-09-29 15:49 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 8/8 OK
+  Commit    : a5da8ab
+
+2026-09-29 15:54 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 8/8 OK
+  Commit    : a5da8ab
+
+2026-09-29 16:03 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 8/8 OK
+  Commit    : a5da8ab
+
+2026-09-29 16:06 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 9/9 OK
+  Commit    : ee55128
+
+2026-09-29 16:07 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 9/9 OK
+  Commit    : ee55128
+
+2026-09-29 16:13 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 9/9 OK
+  Commit    : 73a372e
+
+2026-09-29 16:14 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 9/9 OK
+  Commit    : 73a372e
+
+2026-09-29 16:20 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 9/9 OK
+  Commit    : 4774efa
+
+2026-09-29 16:20 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 9/9 OK
+  Commit    : 4774efa
+
+2026-09-29 16:23 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : cbd4fcc
+
+2026-09-29 16:24 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : cbd4fcc
+
+2026-09-29 16:33 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : b911fa5
+
+2026-09-29 16:47 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : b911fa5
+
+2026-09-29 16:47 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : b911fa5
+
+2026-09-29 16:49 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 0424e9a
+
+2026-09-29 16:49 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 0424e9a
+
+2026-09-29 16:53 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : f1e4cce
+
+2026-09-29 16:53 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : f1e4cce
+
+2026-09-29 16:55 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 6f42941
+
+2026-09-29 16:56 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 6f42941
+
+2026-09-29 17:07 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : ec3b3aa
+
+2026-09-29 17:07 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : ec3b3aa
+
+2026-09-29 17:11 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 2ee111e
+
+2026-09-29 17:12 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 2ee111e
+
+2026-09-29 17:13 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 1d50970
+
+2026-09-29 17:14 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 1d50970
+
+2026-09-29 17:23 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 997d6c6
+
+2026-09-29 17:24 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 997d6c6
+
+2026-09-29 17:29 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 7362379
+
+2026-09-29 17:29 — SOCLE v2.7.7
+  Variables : 6/6 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 7362379
+
+2026-09-29 18:00 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 74c6541
+
+2026-09-29 18:00 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 74c6541
+
+2026-09-29 18:03 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : b76b103
+
+2026-09-29 18:03 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : b76b103
+
+2026-09-29 18:06 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : aca9009
+
+2026-09-29 18:06 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : aca9009
+
+2026-09-29 18:07 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : c1df9b7
+
+2026-09-29 18:09 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : c1df9b7
+
+2026-09-29 18:10 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : c1df9b7
+
+2026-09-29 18:11 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : a1b9149
+
+2026-09-29 18:11 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : a1b9149
+
+2026-09-29 18:13 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 10/10 OK
+  Commit    : 534dd7c
+
+2026-09-29 18:14 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 4772a4b
+
+2026-09-29 18:14 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 4772a4b
+
+2026-09-29 18:15 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 3006956
+
+2026-09-29 18:18 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : c06718c
+
+2026-09-29 20:00 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : c06718c
+
+2026-09-29 20:00 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 00ba739
+
+2026-09-29 20:17 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : a78e92f
+
+2026-09-29 21:57 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : b008b61
+
+2026-09-29 22:06 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : c94fc12
+
+2026-09-29 22:06 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 5c35a99
+
+2026-09-29 22:12 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 3dd9268
+
+2026-09-29 22:26 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 023ef79
+
+2026-09-29 22:31 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : dae1c26
+
+2026-09-30 00:44 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : e6d6a01
+
+2026-09-30 00:45 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : be9db2b
+
+2026-09-30 00:46 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : d779fd8
+
+2026-09-30 00:51 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 4013881
+
+2026-09-30 01:10 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : e61560a
+
+2026-09-30 01:20 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 0c8aab1
+
+2026-09-30 01:22 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 4899a75
+
+2026-09-30 01:32 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : f1924c1
+
+2026-09-30 03:08 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 91f32b4
+
+2026-09-30 03:16 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 0f39f35
+
+2026-09-30 03:19 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : a72e8eb
+
+2026-09-30 03:23 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 67f2687
+
+2026-09-30 03:30 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 317b7da
+
+2026-09-30 03:41 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : c5c82dd
+
+2026-09-30 03:50 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 59758a9
+
+2026-09-30 04:05 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : a711eed
+
+2026-09-30 04:07 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 003d0fa
+
+2026-09-30 04:16 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 60eb1ef
+
+2026-09-30 04:29 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 7036803
+
+2026-09-30 11:16 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : b80edb4
+
+2026-09-30 11:31 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 6b63a60
+
+2026-09-30 11:39 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 6195312
+
+2026-09-30 11:42 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 151818c
+
+2026-09-30 11:53 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 9c8c52e
+
+2026-09-30 11:56 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 04379ae
+
+2026-09-30 16:35 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 3eafda1
+
+2026-09-30 16:36 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : e1b646e
+
+2026-09-30 16:38 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 40349fd
+
+2026-09-30 16:44 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : f86fbfc
+
+2026-09-30 16:46 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : f86fbfc
+
+2026-09-30 17:12 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : c253609
+
+2026-09-30 20:55 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : adf5ff5
+
+2026-09-30 21:03 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 885d3bd
+
+2026-09-30 21:05 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : e1273a7
+
+2026-09-30 21:13 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 30efab5
+
+2026-09-30 21:13 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : e6f14a2
+
+2026-09-30 21:45 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 131b598
+
+2026-09-30 21:51 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : e1f2c34
+
+2026-09-30 22:44 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : dbdd29b
+
+2026-10-01 00:09 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 2593a4b
+
+2026-10-01 00:20 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : bd32095
+
+2026-10-01 00:21 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 43598df
+
+2026-10-01 00:46 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 51b1910
+
+2026-10-01 00:48 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : e20aaa2
+
+2026-10-01 00:51 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : e20aaa2
+
+2026-10-01 00:51 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 07bf0b1
+
+2026-10-01 00:51 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 07bf0b1
+
+2026-10-01 01:13 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 07bf0b1
+
+2026-10-01 01:25 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : fe8ccd6
+
+2026-10-01 01:32 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : a94145d
+
+2026-10-01 02:09 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : a648baa
+
+2026-10-01 02:12 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : a648baa
+
+2026-10-01 02:12 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : a648baa
+
+2026-10-01 02:39 — SOCLE v2.7.7
+  Variables : 7/7 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : f3f6f1d
+
+2026-10-01 03:02 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 08c4f08
+
+2026-10-01 03:23 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 9df1c00
+
+2026-10-01 03:41 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 1b06963
+
+2026-10-01 03:55 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : eeb6eee
+
+2026-10-01 11:17 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : eeb6eee
+
+2026-10-01 11:20 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 286eb8e
+
+2026-10-01 11:24 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : b3e83df
+
+2026-10-01 11:41 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 174ae4e
+
+2026-10-01 11:48 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : c46c022
+
+2026-10-01 11:51 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 203838b
+
+2026-10-01 11:53 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 203838b
+
+2026-10-01 12:02 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 806d6ca
+
+2026-10-01 12:03 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : e7b59b7
+
+2026-10-01 12:07 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 455ff52
+
+2026-10-01 12:13 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : a8cb8ef
+
+2026-10-01 12:16 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 7bc45e8
+
+2026-10-01 12:19 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 73bc46c
+
+2026-10-01 12:23 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 8ad88cd
+
+2026-10-01 12:24 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : f621346
+
+2026-10-01 12:27 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : fa8926a
+
+2026-10-01 12:36 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 9cf2388
+
+2026-10-01 12:40 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 87ff5e0
+
+2026-10-01 12:44 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : df1a11d
+
+2026-10-01 13:00 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : e23cbfe
+
+2026-10-01 13:01 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 83a09d7
+
+2026-10-01 13:02 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : c409941
+
+2026-10-01 13:05 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : c409941
+
+2026-10-01 13:06 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 0ac6faa
+
+2026-10-01 13:07 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : fe06f2d
+
+2026-10-01 13:13 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 496800d
+
+2026-10-01 13:17 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : cf015ba
+
+2026-10-01 13:19 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : cb0129a
+
+2026-10-01 13:24 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : a68e98c
+
+2026-10-01 13:25 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : e4a5e9f
+
+2026-10-01 13:34 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 2dacee3
+
+2026-10-01 13:37 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 87e2021
+
+2026-10-01 13:47 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 87d658e
+
+2026-10-01 13:50 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : aa379ae
+
+2026-10-01 13:53 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 40c9752
+
+2026-10-01 13:58 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : d7c11ce
+
+2026-10-01 14:01 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 703759e
+
+2026-10-01 14:12 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 4d02b14
+
+2026-10-01 14:14 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 8c09a6b
+
+2026-10-01 14:15 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 27028ad
+
+2026-10-01 14:16 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 2c2d621
+
+2026-10-01 14:30 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 7caaf36
+
+2026-10-01 14:35 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 6cfbafe
+
+2026-10-01 14:37 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : dd19bcd
+
+2026-10-01 15:04 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 4b3a931
+
+2026-10-01 15:05 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : b9b40e9
+
+2026-10-01 15:10 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : b9b40e9
+
+2026-10-01 15:13 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 67cbbff
+
+2026-10-01 15:15 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 60b1c57
+
+2026-10-01 15:16 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : d86dad3
+
+2026-10-01 17:21 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 86e4c83
+
+2026-10-01 17:28 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 86e4c83
+
+2026-10-01 17:36 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 2e3267e
+
+2026-10-01 17:42 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 2e3267e
+
+2026-10-01 17:44 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 2e3267e
+
+2026-10-01 17:46 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 4bba6f8
+
+2026-10-01 17:52 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : ec105b3
+
+2026-10-01 18:02 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : ec105b3
+
+2026-10-01 18:06 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 3d8a703
+
+2026-10-01 18:20 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 7ef14fa
+
+2026-10-01 18:30 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 83b4ae5
+
+2026-10-01 18:33 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : f5c9f0a
+
+2026-10-01 18:46 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 0733811
+
+2026-10-01 18:47 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 0733811
+
+2026-10-01 18:52 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : ead4ec4
+
+2026-10-01 19:17 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 8c9e7b8
+
+2026-10-01 23:37 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : da69964
+
+2026-10-01 23:44 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 289df6d
+
+2026-10-01 23:50 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 2163f1c
+
+2026-10-01 23:54 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 2163f1c
+
+2026-10-02 00:24 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 2163f1c
+
+2026-10-02 00:26 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 0fd2b1a
+
+2026-10-02 00:31 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : f2329eb
+
+2026-10-02 00:33 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 19a931d
+
+2026-10-02 00:36 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 19a931d
+
+2026-10-02 00:38 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 19a931d
+
+2026-10-02 00:41 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 19a931d
+
+2026-10-02 00:43 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : a235db8
+
+2026-10-02 00:45 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : a235db8
+
+2026-10-02 00:47 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : a235db8
+
+2026-10-02 01:13 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : b2ff6ea
+
+2026-10-02 01:15 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 806c273
+
+2026-10-02 01:19 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 806c273
+
+2026-10-02 01:28 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 433ff7b
+
+2026-10-02 01:29 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : dc0c3da
+
+2026-10-02 01:35 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : de0c958
+
+2026-10-02 01:38 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 7df6433
+
+2026-10-02 01:44 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 4e4982f
+
+2026-10-02 01:54 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 4e4982f
+
+2026-10-02 01:56 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 4e4982f
+
+2026-10-02 02:06 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 5312ce4
+
+2026-10-02 02:08 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : da747f2
+
+2026-10-02 02:33 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 45186a4
+
+2026-10-02 03:42 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 242fc57
+
+2026-10-02 03:43 — SOCLE v2.7.7
+  Variables : 8/8 A JOUR
+  Moteurs   : 11/11 OK
+  Commit    : 76b2049
+

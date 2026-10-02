@@ -1,0 +1,61 @@
+
+=== 0a. Rafraichissement du cache marche (BoC + StatCan) ===
+  OK  BoC
+  OK  StatCan
+
+=== 0b. Collecte Donnees Quebec ===
+
+✓ Écrit : sources/donnees_quebec.json
+  Total mots-clés : 7
+=== 0c. Generation de la page Donnees publiques ===
+✓ donnees-publiques.html généré (7 sections)
+=== 0d. Collecte DGEQ ===
+      X Plafond annuel depasse : 140.00 $ > 100.00 $ (depassement de 40.00 $)
+
+=================================================================
+=== 0d-bis. Extraction DGEQ (Donnees Quebec) ===
+  ✓ 'dépenses électorales' : 1 jeu(x)
+✓ Écrit : sources/donnees_dgeq.json
+  4 sources de référence documentées
+=== 0e. Regeneration propositions.html ===
+✓ propositions.html régénéré (23 propositions)
+=== 0f. Collecte Lobbyisme ===
+  ✓ 'transparence' : 10 jeu(x)
+✓ Écrit : sources/donnees_lobbyisme.json
+  5 sources de référence documentées
+=== 0g. Collecte socio-economique ===
+  ✓ Validation : OK : 71/71 (100%)
+✓ Écrit : sources/donnees_socioeco.json
+  71 jeu(x) unique(s) — 13 obsolète(s)
+=== 0. Collecte des references economiques ===
+  OK : cache_economique.json a jour.
+
+=== 1. Regeneration de l'etat des variables ===
+Ecrit : sources/etat_variables.json
+
+=== 2. Resume de l'etat ===
+  Total     : 8
+  A jour    : 8
+  En retard : 0
+  A revoir  : 0
+  Absentes  : 0
+
+=== 2b. Tests unitaires ===
+  OK : 19 tests passes.
+
+=== 3. Verification des moteurs ===
+  OK    moteur_variables.py
+  OK    moteur_domar.py
+  OK    moteur_fiscal.py
+  OK    moteur_dgeq.py
+  OK    moteur_etancheite.py
+  OK    moteur_provisionnement.py
+  OK    moteur_rendement.py
+  OK    moteur_vehicule.py
+  OK    moteur_coherence.py
+  OK    moteur_ecarts.py
+  OK    moteur_nomenclature.py
+
+  Bilan : 11 OK, 0 ECHEC
+  Resultat : SOCLE OK
+  Journal : etat_socle.txt

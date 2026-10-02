@@ -1,0 +1,28 @@
+
+========================================================================
+  TESTS UNITAIRES — SOCLE PMDQ
+========================================================================
+
+  OK    nettoyer : entier canadien
+  OK    nettoyer : decimale quebecoise
+  OK    nettoyer : nombre negatif avec tiret long
+  OK    nettoyer : tiret em-dash
+  OK    nettoyer : symbole dollar
+  OK    nettoyer : chaine invalide retourne None
+  OK    nettoyer : None retourne None
+  OK    normaliser : accents supprimes
+  OK    normaliser : casse uniformisee
+  OK    normaliser : espaces normalises
+  OK    mv.normaliser : accents et casse
+  OK    mv.normaliser : marche vs marché
+  OK    cache : lecture fichier valide
+  OK    cache : fichier absent retourne dict vide
+  OK    ecart fiscal : R_OBS vs impot officiel
+  OK    ecart dette : D_INITIALE vs ratio officiel
+  OK    cache : structure attendue des cles
+  OK    cache : dette a les bonnes sous-cles
+  OK    cache : impot particuliers structure
+
+  Bilan : 19 OK, 0 ECHEC
+========================================================================
+
