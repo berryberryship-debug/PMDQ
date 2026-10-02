@@ -67,6 +67,7 @@
 <li><strong>Moteur socio-économique</strong> — <code>moteur_socioeco.py</code> interroge l'API CKAN de Données Québec sur 11 organisations (INSPQ, MFQ, MSSS, MAMH, Revenu Québec, MIFI, MELS, MTrav, CNESTT, FRQS). 71 jeux uniques, dont 13 marqués obsolètes.</li>
 <li><strong>Garde-fous du moteur</strong> — Fallback si API plante (garde le dernier JSON valide), validation anti-régression (refus si &lt; 50 % des jeux précédents), enrichissement (date de modif, licence, formats).</li>
 <li><strong>Page <code>donnees-socioeco.html</code></strong> — générée automatiquement, classée par organisation, avec date de mise à jour et signalement des données anciennes.</li>
+<li><strong>Portrait de l'Estrie</strong> — ajouté dans <code>conseil-initial.html</code> : 9 indicateurs ISQ (527 340 habitants, +15,2 % croissance 2021-2051, 3,2 % chômage, salaire 1,70 $ sous la moyenne québécoise). Encadré « paradoxe estrien ».</li>
 <li><strong>Pipeline make_socle.sh</strong> — ajout de l'étape 0g (socio-économique, non-bloquante). Séquence complète : 0a à 0g, puis 0 à 3.</li>
 <li><strong>Page d'accueil</strong> — bloc « Ancré dans les données réelles » enrichi avec Données Québec (contrats, subventions, financement politique, budget, environnement).</li>
 <li><strong>Bouton « Programme 2030 »</strong> — mis en vedette dans la navigation (fond dégradé bleu + bordure dorée).</li>
