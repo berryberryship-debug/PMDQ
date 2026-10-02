@@ -10,6 +10,7 @@
 <a href="propositions.html">Propositions</a>
 <a href="sources-externes.html">Sources externes</a>
 <a href="donnees-publiques.html">Données publiques</a>
+<a href="donnees-socioeco.html">Données socio-éco</a>
 <details class="menu-groupe">
 <summary>Dossiers ▾</summary>
 <div class="sous-menu">
@@ -56,6 +57,27 @@
 <h1>Changelog public</h1>
 
 <section class="changelog-session">
+<section class="changelog-session">
+<h2>Session du 2 octobre 2026 — v2.7.24</h2>
+<p><strong>Renforcement des engagements, ajout de données socio-économiques, cybersécurité économique.</strong></p>
+<ul>
+<li><strong>Engagement 13 renforcé</strong> — Cybersécurité : pôle québécois à Sherbrooke (UdeS, 3IT), récupération des fonds frauduleux, 150 M$ dédiés au pôle et à la formation.</li>
+<li><strong>Engagement fondateur</strong> — Règle des dépassements de coûts placée en tête du Programme 2030 (encadré rouge avec bordure dorée). Aucun projet public > 100 M$ ne peut dépasser de plus de 10 % sans commission parlementaire publique.</li>
+<li><strong>Réécriture engagée des 5 priorités ★</strong> — Santé (« On ne demande plus aux Québécois d'attendre »), Logement (« On arrête l'hémorragie »), Énergie (« On ne la brade plus »), Économie (« On arrête d'exporter nos ressources brutes »), Biodiversité (« On ne protégera pas ce qu'on ne mesure pas »).</li>
+<li><strong>Moteur socio-économique</strong> — <code>moteur_socioeco.py</code> interroge l'API CKAN de Données Québec sur 11 organisations (INSPQ, MFQ, MSSS, MAMH, Revenu Québec, MIFI, MELS, MTrav, CNESTT, FRQS). 71 jeux uniques, dont 13 marqués obsolètes.</li>
+<li><strong>Garde-fous du moteur</strong> — Fallback si API plante (garde le dernier JSON valide), validation anti-régression (refus si &lt; 50 % des jeux précédents), enrichissement (date de modif, licence, formats).</li>
+<li><strong>Page <code>donnees-socioeco.html</code></strong> — générée automatiquement, classée par organisation, avec date de mise à jour et signalement des données anciennes.</li>
+<li><strong>Pipeline make_socle.sh</strong> — ajout de l'étape 0g (socio-économique, non-bloquante). Séquence complète : 0a à 0g, puis 0 à 3.</li>
+<li><strong>Page d'accueil</strong> — bloc « Ancré dans les données réelles » enrichi avec Données Québec (contrats, subventions, financement politique, budget, environnement).</li>
+<li><strong>Bouton « Programme 2030 »</strong> — mis en vedette dans la navigation (fond dégradé bleu + bordure dorée).</li>
+<li><strong>Comité fondateur</strong> — lien remonté en premier dans le menu Politique + bloc de recrutement sur la page d'accueil.</li>
+<li><strong>Partenariat académique</strong> — Faculté de droit UdeS : échanges préliminaires sur le volet juridique de la Loi 29 (obsolescence programmée).</li>
+<li><strong>Sollicitation politique</strong> — Registre des acteurs dans <code>coalition-pmdq.html</code>, <code>suivi.csv</code>, <code>modele-politique.md</code>.</li>
+<li><strong>Comptage officiel</strong> — 85 pages HTML (avec socio-éco), 12 moteurs, 4 générateurs, 10 livres.</li>
+</ul>
+<p><em>Documentairement clos. Arithmétiquement propre. Techniquement arbitré. Non adopté.</em></p>
+</section>
+
 <h2>Bilan de la session — 1er octobre 2026 — v2.7.24</h2>
 <p><strong>Consolidation politique, alimentation par les données publiques, doctrine et chantiers ouverts.</strong></p>
 <ul>

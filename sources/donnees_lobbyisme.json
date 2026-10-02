@@ -12,114 +12,12 @@
       "jeux": []
     },
     "influence": {
-      "total": 10,
-      "jeux": [
-        {
-          "titre": "Bibliothèques de Montréal - statistiques sur le prêt, les collections et la fréquentation",
-          "id": "vmtl-bibliotheques-montreal-statistiques",
-          "organisation": "Ville de Montréal"
-        },
-        {
-          "titre": "Aire d’influence de milieu humide d’intérêt présumé du CDU",
-          "id": "cdu-aire-influence-milieu-humide-interet-presume",
-          "organisation": "Ville de Laval"
-        },
-        {
-          "titre": "Caractérisation des berges de la partie fluviale du Saint-Laurent et analyse de l'évolution des facteurs hydro-climatiques influençant les aléas d'érosion et d'inondation",
-          "id": "caracterisation-des-berges-et-analyse-de-l-evolution-des-facteurs-hydro-climatiques",
-          "organisation": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs"
-        },
-        {
-          "titre": "Personnes bénéficiant d'une mesure de représentation selon le type de mesure",
-          "id": "personnes-beneficiant-d-une-mesure-de-representation-selon-le-type-de-mesure",
-          "organisation": "Curateur public du Québec"
-        },
-        {
-          "titre": "Campings - Système d’information touristique Québec (SIT Québec)",
-          "id": "sit-quebec-campings",
-          "organisation": "Ministère du Tourisme"
-        },
-        {
-          "titre": "Contour financier - Dépenses par programme et par région",
-          "id": "contour-financier-depenses-par-programme-et-par-region",
-          "organisation": "Ministère de la Santé et des services sociaux"
-        },
-        {
-          "titre": "Contour financier - Dépenses par programme et par centre d'activités",
-          "id": "contour-financier-depenses-par-programme-et-par-cr",
-          "organisation": "Ministère de la Santé et des services sociaux"
-        },
-        {
-          "titre": "TOPEX",
-          "id": "topex",
-          "organisation": "Ministère des Ressources naturelles et des Forêts"
-        },
-        {
-          "titre": "RSMA – Points d’échantillonnage COURDO",
-          "id": "vmtl-rsma-points-d-echantillonnage-courdo",
-          "organisation": "Ville de Montréal"
-        },
-        {
-          "titre": "Milieux humides RCI",
-          "id": "milieux-humides-rci",
-          "organisation": "Ville de Sherbrooke - Données géomatiques"
-        }
-      ]
+      "total": 0,
+      "jeux": []
     },
     "transparence": {
-      "total": 10,
-      "jeux": [
-        {
-          "titre": "Routes et circuits touristiques du Québec",
-          "id": "routes-et-circuits-touristiques-du-quebec",
-          "organisation": "Ministère du Tourisme"
-        },
-        {
-          "titre": "Flore exotique envahissante",
-          "id": "flore-exotique-envahissante",
-          "organisation": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs"
-        },
-        {
-          "titre": "Aérodrome (Aéroport de Montréal)",
-          "id": "vmtl-aerodrome-aeroport-de-montreal",
-          "organisation": "Ville de Montréal"
-        },
-        {
-          "titre": "Sondage sur l'ouverture des données - mars 2016",
-          "id": "vmtl-sondage-sur-l-ouverture-des-donnees-mars-2016",
-          "organisation": "Ville de Montréal"
-        },
-        {
-          "titre": "Liste des principales espèces exotiques envahissantes",
-          "id": "liste-des-principales-especes-exotiques-envahissantes",
-          "organisation": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs"
-        },
-        {
-          "titre": "Portrait de la diffusion des jeux de données municipaux à haute valeur",
-          "id": "portrait-de-la-diffusion-des-jeux-de-donnees-municipaux-a-haute-valeur",
-          "organisation": "Ministère de la Cybersécurité et du Numérique"
-        },
-        {
-          "titre": "Système d'information hydrogéologique (SIH)",
-          "id": "eau-souterraines-sih-index",
-          "organisation": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs"
-        },
-        {
-          "titre": "Requêtes des entreprises dans le cadre de la COVID-19",
-          "id": "vmtl-requetes-entreprises-covid-19",
-          "organisation": "Ville de Montréal"
-        },
-        {
-          "titre": "Diffusion proactive - Documents remis des demandes d’accès à l’information",
-          "id": "vmtl-diffusion-proactive-acces-information",
-          "organisation": "Ville de Montréal"
-        },
-        {
-          "titre": "Indice d’humidité topographique issu du LiDAR",
-          "id": "indice-humidite-topographique-issu-du-lidar",
-          "organisation": "Ministère des Ressources naturelles et des Forêts"
-        }
-      ]
+      "total": 0,
+      "jeux": []
     }
   },
   "sources_reference": [
