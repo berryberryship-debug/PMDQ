@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moteur d'allocation publique — PMDQ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="logo-banner"><div class="logo-banner__inner"><div class="logo-banner__lys">&#x269C;</div><div class="logo-banner__text"><div class="logo-banner__name">PMDQ</div><div class="logo-banner__sub">Parti de la Mouvance Democratique du Quebec</div></div></div></div>
+
+<header class="site-header"><div class="site-header__inner"><div class="brand">PMDQ v2.7.24<span>Moteur d'allocation publique</span></div>
+<nav class="nav">
+<a href="index.html">Accueil</a>
+<a href="changelog.html">Changelog</a>
+<a href="livres.html">Livres</a>
+<a href="lois.html">Lois</a>
+<a href="ideologie.html">Ideologie</a>
+<a href="programme-2030.html">Programme 2030</a>
+<a href="plateforme.html">Plateforme complete</a>
+</nav></div></header>
+
+<main style="max-width:800px;margin:0 auto;padding:2rem 1.5rem 4rem;line-height:1.7;">
+
+<h1 style="color:#1a3555;border-bottom:3px solid #8e44ad;padding-bottom:0.5rem;">Moteur d'allocation publique</h1>
+
+<div style="background:#f4f8fb;border-left:4px solid #8e44ad;padding:1.25rem 1.5rem;margin:1.5rem 0;border-radius:6px;">
+<p style="margin:0;"><strong>Engagement 25 du Programme 2030.</strong> Ce document decrit le moteur math&#233;matique qui sous-tend l'allocation publique au PMDQ. Il ne s'agit pas d'un calculateur de subventions, mais d'une architecture generale de decision publique.</p>
+</div>
+
+<h2 style="color:#1a3555;">1. Le principe</h2>
+<p>Le moteur ne commence pas par la demande de subvention. Il commence par mesurer l'ecart entre une situation reelle et une situation de reference.</p>
+<p style="text-align:center;font-size:1.15em;color:#1a3555;font-weight:600;margin:1.5rem 0;">Realite observee &#8594; Deficit &#8594; Besoin &#8594; Priorite &#8594; Allocation</p>
+
+<h2 style="color:#1a3555;">2. Le besoin comme vecteur</h2>
+<p>Chaque situation <em>i</em> est representee par un vecteur de deficits mesurables :</p>
+<p style="font-family:monospace;background:#f8f9fa;padding:0.75rem;border-radius:4px;">B_i = (d_logement, d_revenu, d_sante, d_mobilite, d_education, d_territoire)</p>
+<p>Le systeme ne compare pas des personnes, des organismes ou des projets. Il compare des <strong>configurations de besoins</strong>.</p>
+
+<h2 style="color:#1a3555;">3. La reference et le deficit relatif</h2>
+<p>Pour chaque dimension, une reference R est definie. Le deficit relatif D est calcule ainsi :</p>
+<p style="font-family:monospace;background:#f8f9fa;padding:0.75rem;border-radius:4px;">D_ij = (R_j - X_ij) / R_j, borne dans [0, 1]</p>
+<p>Ou R_j est le niveau de reference, X_ij la situation observee, et D_ij le deficit relatif. Grace a cette borne, deux demandes venant de domaines differents sont exprimees dans une meme geometrie mathematique.</p>
+
+<h2 style="color:#1a3555;">4. Intensite et portee</h2>
+<p>On calcule d'abord une intensite : <strong>N_i = somme(w_j * D_ij)</strong>, avec la somme des poids egale a 1.</p>
+<p>Mais un deficit de 0,8 touchant 20 personnes n'equivaut pas a un deficit de 0,6 touchant 200 000 personnes. On introduit donc une portee <strong>P_i</strong> (nombre touche, duree, territoire) :</p>
+<p style="font-family:monospace;background:#f8f9fa;padding:0.75rem;border-radius:4px;">N_i* = N_i x P_i</p>
+<p>On passe ainsi de l'intensite du besoin a l'<strong>ampleur du besoin collectif</strong>.</p>
+
+<h2 style="color:#1a3555;">5. Le risque de non-intervention</h2>
+<p>Une variable distincte : <strong>R_i = P(dommage) x Impact(dommage)</strong>. Cela permet de distinguer &#171; le probleme est important &#187; de &#171; ne rien faire maintenant augmente fortement le dommage futur &#187;.</p>
+<p>On obtient : <strong>N_i** = f(N_i*, R_i)</strong>.</p>
+
+<h2 style="color:#1a3555;">6. L'intervention, le cout, l'efficacite</h2>
+<p>Le besoin ne suffit pas. Il faut mesurer l'effet attendu de l'intervention (I_i) et son cout (C_i) :</p>
+<p style="font-family:monospace;background:#f8f9fa;padding:0.75rem;border-radius:4px;">E_i = I_i / C_i</p>
+<p>Ou une fonction plus sophistiquee si les rendements ne sont pas lineaires.</p>
+
+<h2 style="color:#1a3555;">7. Le moteur complet</h2>
+<p style="font-family:monospace;background:#f8f9fa;padding:0.75rem;border-radius:4px;">Q_i = F(D_i, P_i, R_i, I_i, C_i, F_i, E_i)</p>
+<p>Ou D est le deficit, P la portee, R le risque, I l'impact, C le cout, F la faisabilite, E l'equite. Le resultat Q_i, compris entre 0 et 1, est une <strong>priorite calculee</strong>, pas une decision politique.</p>
+
+<h2 style="color:#1a3555;">8. Les trois espaces separes</h2>
+<p>Une innovation importante : le moteur ne fait pas un seul score. Il separe trois espaces.</p>
+<ul>
+<li><strong>Besoin</strong> &#8212; Quelle est la situation ?</li>
+<li><strong>Intervention</strong> &#8212; Que produirait l'argent ?</li>
+<li><strong>Ressource</strong> &#8212; Quelle allocation est possible avec les ressources disponibles ?</li>
+</ul>
+<p style="text-align:center;font-size:1.15em;color:#1a3555;font-weight:600;margin:1.5rem 0;">Besoin &#8594; Intervention &#8594; Ressource</p>
+<p>Cela evite une erreur frequente : confondre gravite du besoin et qualite du projet. Un besoin extreme peut etre associe a une intervention peu efficace. Inversement, un excellent projet peut repondre a un besoin faible.</p>
+
+<h2 style="color:#1a3555;">9. Les conflits deviennent calculables</h2>
+<p>Prenons un conflit : impact economique contre equite territoriale. Le moteur ne pretend pas qu'une formule resout le conflit. Il rend l'arbitrage <strong>explicite</strong>.</p>
+<p>Exemple de ponderation : Q_i = 0,30 N + 0,25 I + 0,20 E + 0,15 R + 0,10 F</p>
+<p>Les poids sont des <strong>parametres de gouvernance</strong>. On peut les faire varier et observer l'effet sur l'allocation. C'est une analyse de sensibilite.</p>
+
+<h2 style="color:#1a3555;">10. La boucle d'apprentissage</h2>
+<p>Apres financement, l'impact reel est compare a l'impact prevu : <strong>Erreur_i = I_reel - I_prevu</strong>. Le moteur mesure systematiquement : surestimation, sous-estimation, depassement de couts, impact reel, delai, beneficiaires atteints.</p>
+<p style="text-align:center;font-size:1.05em;color:#1a3555;font-weight:600;margin:1.5rem 0;">Besoin &#8594; Decision &#8594; Intervention &#8594; Resultat &#8594; Mesure &#8594; Revision du modele</p>
+<p>C'est la qu'on quitte le simple calculateur de subventions. On obtient un <strong>systeme de decision publique</strong> fonde sur les ecarts, les ressources et les resultats observes.</p>
+
+<h2 style="color:#1a3555;">11. Transversalite</h2>
+<p>Le meme noyau mathematique peut traiter : logement, industrie, recherche, municipalites, infrastructures, environnement, agriculture, organismes communautaires. Chaque domaine apporte ses variables specifiques, mais la structure reste identique :</p>
+<p style="text-align:center;font-size:1.15em;color:#1a3555;font-weight:600;margin:1.5rem 0;">Deficit &#8594; Besoin &#8594; Impact &#8594; Cout &#8594; Optimisation &#8594; Resultat</p>
+
+<div style="background:#eaf5ea;border-left:4px solid #27ae60;padding:1.25rem 1.5rem;margin:2.5rem 0;border-radius:6px;">
+<p style="margin:0;"><strong>Le PMDQ ne promet pas. Il chiffre. Il publie. Il corrige.</strong> Ce moteur est la mecanique qui rend cet engagement verifiable, domaine par domaine.</p>
+</div>
+
+<p style="margin-top:2rem;"><a href="programme-2030.html">&#8592; Retour au Programme 2030</a> &middot; <a href="index.html">Accueil</a></p>
+
+</main>
+
+<footer class="footer"><p><strong>PMDQ &#8212; Version 2.7.24 + Livre X</strong></p><p>Documentairement clos. Arithmetiquement propre. Techniquement arbitre. Non adopte.</p></footer>
+
+</body>
+</html>

@@ -251,7 +251,7 @@
             "id": "repertoire-des-municipalites-du-quebec",
             "organisation": "Ministère des Affaires municipales et de l'Habitation",
             "notes": "<div style=\"\r\n    box-shadow: 0 0 0 1px #C7CCD4;\r\n    background-color: white; \r\n    border-left: 40px solid #F8E69A; \r\n    padding: 15px;\r\n    margin: 20px 0;\r\n    border-radius: 4px;\r\n    font-famil",
-            "date_modif": "2026-10-01T11:04:50.064703",
+            "date_modif": "2026-10-02T11:04:43.004268",
             "obsolète": false,
             "licence": "Attribution (CC-BY 4.0)",
             "formats": [
@@ -384,7 +384,7 @@
             "id": "repertoire-des-municipalites-du-quebec",
             "organisation": "Ministère des Affaires municipales et de l'Habitation",
             "notes": "<div style=\"\r\n    box-shadow: 0 0 0 1px #C7CCD4;\r\n    background-color: white; \r\n    border-left: 40px solid #F8E69A; \r\n    padding: 15px;\r\n    margin: 20px 0;\r\n    border-radius: 4px;\r\n    font-famil",
-            "date_modif": "2026-10-01T11:04:50.064703",
+            "date_modif": "2026-10-02T11:04:43.004268",
             "obsolète": false,
             "licence": "Attribution (CC-BY 4.0)",
             "formats": [
@@ -414,7 +414,7 @@
             "id": "repertoire-des-municipalites-du-quebec",
             "organisation": "Ministère des Affaires municipales et de l'Habitation",
             "notes": "<div style=\"\r\n    box-shadow: 0 0 0 1px #C7CCD4;\r\n    background-color: white; \r\n    border-left: 40px solid #F8E69A; \r\n    padding: 15px;\r\n    margin: 20px 0;\r\n    border-radius: 4px;\r\n    font-famil",
-            "date_modif": "2026-10-01T11:04:50.064703",
+            "date_modif": "2026-10-02T11:04:43.004268",
             "obsolète": false,
             "licence": "Attribution (CC-BY 4.0)",
             "formats": [
@@ -1739,7 +1739,7 @@
             "id": "covid-19-portrait-quotidien-des-cas-confirmes",
             "organisation": "Ministère de la Santé et des services sociaux",
             "notes": "Ce jeu présente le portrait quotidien du nombre de cas confirmés de COVID-19 au Québec. Veuillez consulter les notes méthodologiques pour plus de détails. \r\n***Considérant l'évolution de la pandémie d",
-            "date_modif": "2026-10-01T18:00:45.642873",
+            "date_modif": "2026-10-02T18:00:07.276888",
             "obsolète": false,
             "licence": "Attribution (CC-BY 4.0)",
             "formats": [
@@ -1797,7 +1797,7 @@
             "id": "fichier-horaire-des-donnees-de-la-situation-a-l-urgence",
             "organisation": "Ministère de la Santé et des services sociaux",
             "notes": "Le fichier horaire des données de la situation à l'urgence présente le nombre de patients sur civière, le nombre de patients sur civière plus de 24 heures et le nombre de patients sur civière plus de ",
-            "date_modif": "2026-10-02T06:46:06.332555",
+            "date_modif": "2026-10-03T00:45:58.357888",
             "obsolète": false,
             "licence": "Attribution (CC-BY 4.0)",
             "formats": [
@@ -1811,7 +1811,7 @@
             "id": "covid-19-portrait-quotidien-des-hospitalisations",
             "organisation": "Ministère de la Santé et des services sociaux",
             "notes": "Ce jeu présente le portrait quotidien des hospitalisations actives de patients ayant un test positif au SRAS-CoV-2 ou patients ayant reçu un diagnostic de COVID-19 à l'urgence dont le type d'orientati",
-            "date_modif": "2026-10-01T15:00:25.927075",
+            "date_modif": "2026-10-02T15:00:24.576062",
             "obsolète": false,
             "licence": "Attribution (CC-BY 4.0)",
             "formats": [
@@ -2301,7 +2301,7 @@
       "id": "repertoire-des-municipalites-du-quebec",
       "organisation": "Ministère des Affaires municipales et de l'Habitation",
       "notes": "<div style=\"\r\n    box-shadow: 0 0 0 1px #C7CCD4;\r\n    background-color: white; \r\n    border-left: 40px solid #F8E69A; \r\n    padding: 15px;\r\n    margin: 20px 0;\r\n    border-radius: 4px;\r\n    font-famil",
-      "date_modif": "2026-10-01T11:04:50.064703",
+      "date_modif": "2026-10-02T11:04:43.004268",
       "obsolète": false,
       "licence": "Attribution (CC-BY 4.0)",
       "formats": [
@@ -2962,7 +2962,7 @@
       "id": "covid-19-portrait-quotidien-des-cas-confirmes",
       "organisation": "Ministère de la Santé et des services sociaux",
       "notes": "Ce jeu présente le portrait quotidien du nombre de cas confirmés de COVID-19 au Québec. Veuillez consulter les notes méthodologiques pour plus de détails. \r\n***Considérant l'évolution de la pandémie d",
-      "date_modif": "2026-10-01T18:00:45.642873",
+      "date_modif": "2026-10-02T18:00:07.276888",
       "obsolète": false,
       "licence": "Attribution (CC-BY 4.0)",
       "formats": [
@@ -3004,7 +3004,7 @@
       "id": "fichier-horaire-des-donnees-de-la-situation-a-l-urgence",
       "organisation": "Ministère de la Santé et des services sociaux",
       "notes": "Le fichier horaire des données de la situation à l'urgence présente le nombre de patients sur civière, le nombre de patients sur civière plus de 24 heures et le nombre de patients sur civière plus de ",
-      "date_modif": "2026-10-02T06:46:06.332555",
+      "date_modif": "2026-10-03T00:45:58.357888",
       "obsolète": false,
       "licence": "Attribution (CC-BY 4.0)",
       "formats": [
@@ -3018,7 +3018,7 @@
       "id": "covid-19-portrait-quotidien-des-hospitalisations",
       "organisation": "Ministère de la Santé et des services sociaux",
       "notes": "Ce jeu présente le portrait quotidien des hospitalisations actives de patients ayant un test positif au SRAS-CoV-2 ou patients ayant reçu un diagnostic de COVID-19 à l'urgence dont le type d'orientati",
-      "date_modif": "2026-10-01T15:00:25.927075",
+      "date_modif": "2026-10-02T15:00:24.576062",
       "obsolète": false,
       "licence": "Attribution (CC-BY 4.0)",
       "formats": [
