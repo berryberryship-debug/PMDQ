@@ -1,7 +1,7 @@
 {
   "source": "Données Québec (API CKAN) — socio-économique",
   "url": "https://www.donneesquebec.ca/api/3/action/",
-  "date_collecte": "2026-10-02",
+  "date_collecte": "2026-10-03",
   "par_organisation": {
     "travaill": {
       "mots_cles": {
@@ -1797,7 +1797,7 @@
             "id": "fichier-horaire-des-donnees-de-la-situation-a-l-urgence",
             "organisation": "Ministère de la Santé et des services sociaux",
             "notes": "Le fichier horaire des données de la situation à l'urgence présente le nombre de patients sur civière, le nombre de patients sur civière plus de 24 heures et le nombre de patients sur civière plus de ",
-            "date_modif": "2026-10-03T00:45:58.357888",
+            "date_modif": "2026-10-03T04:45:56.230240",
             "obsolète": false,
             "licence": "Attribution (CC-BY 4.0)",
             "formats": [
@@ -3004,7 +3004,7 @@
       "id": "fichier-horaire-des-donnees-de-la-situation-a-l-urgence",
       "organisation": "Ministère de la Santé et des services sociaux",
       "notes": "Le fichier horaire des données de la situation à l'urgence présente le nombre de patients sur civière, le nombre de patients sur civière plus de 24 heures et le nombre de patients sur civière plus de ",
-      "date_modif": "2026-10-03T00:45:58.357888",
+      "date_modif": "2026-10-03T04:45:56.230240",
       "obsolète": false,
       "licence": "Attribution (CC-BY 4.0)",
       "formats": [
